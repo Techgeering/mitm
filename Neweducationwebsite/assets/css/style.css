@@ -1,0 +1,655 @@
+
+body{
+	font-family: Ubuntu;
+}
+*::-webkit-scrollbar{
+     height: .5rem;
+     width: .5rem;
+   }
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+*::-webkit-scrollbar-thumb{
+    background-color: #4e4d54;
+    border-radius: 5px;
+  }
+/* ----------------------------------------------------------- */
+/*  GO TO TOP BUTTON CSS
+/* ----------------------------------------------------------- */
+
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: #b9001c;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+/* ----------------------------------------------------------- */
+/*  TOP NAV / FIRST NAV CSS
+/* ----------------------------------------------------------- */
+.top-bgcolor{
+	background: linear-gradient(to bottom, #2e48f2 0%, #40dfff 100%);
+}
+.dropdown-menu-box{
+  border-bottom: .5px solid black;
+}
+.no-border-line{
+   border-right: 1px solid #fff;
+    padding: 0px 20px 0px 0px;
+}
+.email-spacing{
+  padding: 0px 0px 0px 20px
+}
+.dropdown-menu-box-position{
+    padding: 0px 0px;
+    margin-top: -6px !important;
+}
+.dropdown-menu-hover:hover{
+    background-color: #6251ac !important;
+    color: #fff ;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    transition: 3s;
+    list-style: none;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 3s;
+  }
+.top-z-index{
+  z-index: 2 !important;
+}
+.top-email-no-position{
+	text-align: end;
+}
+.top-icon{
+	background: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
+.top-fa-icon{
+	padding: 6px 2px 6px 2px
+}
+.twitter-color{
+	color: #2eb8f0;
+}
+.instagram-color{
+	color: #8a3ab9;
+}
+.linkdin-color{
+	color: #0e76a8 ;
+}
+.top-nav-text{
+	color: #fff;
+    text-decoration: none;
+}
+.top-nav-text:hover{
+	color: #fff;
+}
+
+/* ----------------------------------------------------------- */
+/* SECOND NAV CSS
+/* ----------------------------------------------------------- */
+.second-nav-position{
+	padding: 2px;
+}
+.second-nav-bg {
+  /* background: linear-gradient(to right, #2A273B, #e06d6d); */
+  background-color: white;
+  color: #000000; /* Set the text color for better contrast */
+}
+
+
+/* ----------------------------------------------------------- */
+/*  THIRD NAV CSS
+/* ----------------------------------------------------------- */
+.menu-position{
+	flex-direction: row !important;
+}
+.third-bg-color{
+	background: linear-gradient(to bottom, #40dfff 0%, #2e48f2 100%);;
+}
+.third-menu-color{
+	color: #fff !important;
+    font-size: 14px;
+    padding: 8px 10px 8px 10px !important;
+}
+/* ----------------------------------------------------------- */
+/*  ENQUIRY CSS
+/* ----------------------------------------------------------- */
+.Enquiry-btn-position{
+	position: fixed;
+	z-index: 1;
+	top: 50%;
+	 -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: -75px;
+}
+.enquiry-btn{
+	background-color: #6251ac;
+    color: #fff;
+}
+.enquiry-btn:hover{
+	color: #fff;
+}
+.first-captcha{
+      width: 0;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      /*border: 1px solid brown;*/
+    }
+    .first-captcha a {
+      text-decoration: none;
+      display: block;
+      transition: 0.3s;
+    }
+    .first-captcha .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    .table-size{
+        width: 100%;
+    }
+    .admission-enquiry-bg{
+      background-color: #6251ac;
+        padding: 8px 5px 1px 15px;
+        color: #fff;
+    }
+    .enquiry-contact-color{
+      color: #f6042e;
+    }
+    .contact-form-space{
+      margin-bottom: 10px;
+    }
+    #captchaHeading {
+     color: white;
+    }
+    .incorrectCaptcha {
+     color: #FF0000;
+    }
+    .correctCaptcha {
+     color: #7FFF00;
+    }
+    #captcha {
+     width: 100%;
+    }
+     #captcha2 {
+     width: 100%;
+    }
+/* ----------------------------------------------------------- */
+/*  CAROUSEL / HOME PAGE CSS
+/* ----------------------------------------------------------- */
+.carousel-img{
+	height: 400px;
+	width: 100%;
+}
+.zoom {
+  animation: scale 10s linear infinite;
+}
+  
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+}
+.carousel-position{
+  padding-top: 155px;
+}
+.home-text-box{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+.home-text-box:hover{
+  background: rgba(0, 0, 0, 1);
+}
+.carousel-box-position{
+  right: 10% !important;
+  left: 10% !important;
+}
+.img-carousel{
+    transition: none !important;
+}
+.text-img-position{
+  margin-top: 14px;
+}
+.box-anchor-text{
+   color: #ffb701;
+   text-decoration: none;
+}
+.box-anchor-text:hover{
+  color: #ffb701;
+  text-decoration: underline;
+}
+.indicator-z-index{
+  z-index: 1 !important;
+}
+/* ----------------------------------------------------------- */
+/*  Announcements CSS
+/* ----------------------------------------------------------- */
+.Announcements-box-decoration{
+  background-color: #b9001c;
+    color: #fff;
+    padding: 4px 0px 2px 15px;
+}
+.marquee-position{
+  padding: 4px 0px 0px 0px;
+}
+.marquee-border{
+  border-bottom: 2px solid #b9001c;
+    border-top: 2px solid #b9001c;
+}
+/* ----------------------------------------------------------- */
+/*  SINGLE COURSE SLIDE CSS
+/* ----------------------------------------------------------- */
+.owl-carousel .owl-nav button.owl-next ,.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    font-size: 60px;
+    color: #ffc900;
+    /*margin-top: -150px;*/
+    padding: 20px !important; 
+    margin-right: -40px;
+    bottom: 40%; 
+    display: block;      
+}
+.owl-carousel .owl-nav button.owl-next{
+    right: 40px;
+}
+
+.next-btn-position .owl-carousel .owl-nav button.owl-next{
+    margin-right: 116px !important;
+}
+ .img-position{
+        margin-left: 45%;
+    }
+
+.owl-carousel .owl-item img {
+    display: block;
+    height: auto;
+    width: 10%;
+}
+@media(max-width: 992px){
+    .owl-carousel .owl-nav button.owl-next ,.owl-carousel .owl-nav button.owl-prev {
+        display: none;
+    }
+    .img-position{
+        margin-left: 40%;
+    }
+}
+.owl-carousel, .owl-carousel .owl-item {
+    overflow: hidden;
+}
+ .carousel-img-size{
+    height: 60vh !important;
+    width: 100% !important;
+    
+ }
+ .star-position{
+    display: flex;
+    list-style: none;
+    margin-left: -31px;
+ }
+ .star-gap{
+  padding-right: 5px;
+ }
+ .star-color{
+  color: #ffb702
+ }
+ .course-text-color:hover{
+    color: #b9001c;
+ }
+ .course-text-color{
+  padding-top: 5px;
+ }
+ .courses-position{
+  padding: 40px 0px 15px 0px;
+  text-align: center ;
+ }
+ .courses-img-size{
+  height: 30vh !important;
+ }
+/* ----------------------------------------------------------- */
+/*  TEACHING APPROACH CSS
+/* ----------------------------------------------------------- */
+ .para-size{
+  text-align: justify;
+ }
+ .teaching-bg-color{
+  background-color: #ebeaf2;
+  padding: 35px 0px 35px 0px;
+ }
+ .teaching-img-size{
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #fff;
+ }
+/* ----------------------------------------------------------- */
+/*  testimonial CSS
+/* ----------------------------------------------------------- */
+
+.client {
+  width: 100%;
+  height: 100%;
+}
+.testimonial-position{
+  padding: 10px 110px 10px 110px;
+}
+@media(max-width: 982px){
+  .testimonial-position{
+    padding: 0px 0px 0px 0px;
+  }
+}
+.carousel-caption1 {
+    position: initial;
+    z-index: 10;
+    padding: 2rem 3rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem;
+}
+@media(max-width:767px) {
+    .carousel-caption1 {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+.carousel-caption1 img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+@media(max-width:767px) {
+    .carousel-caption1 img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+.image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+@media(max-width:767px) {
+    .image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+.quota-color{
+  color: #442ce5;
+}
+.left-angle-color{
+  color: #442ce5;
+  font-size: 40px;
+}
+/* ----------------------------------------------------------- */
+/*  total count CSS
+/* ----------------------------------------------------------- */
+.total-no-color{
+  background-image: url('E:/Differentwebsite/Neweducationwebsite/assets/img/totalbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.total-no-color-shadow{
+  background: rgba(0, 0, 0, 0.8);
+}
+#counter{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0px;
+  width: 100%;
+}
+@media(max-width: 810px){
+  .on-mobile-screen{
+    display: contents !important;
+  }
+}
+#counter .item{
+  padding: 35px 40px;
+} 
+#counter .item img{
+  height: 100px;
+} 
+#counter .item .count{
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+#counter .item .span-text{
+  color: #fff;
+}
+/* ----------------------------------------------------------- */
+/*  footer CSS
+/* ----------------------------------------------------------- */
+.techgeering-decoration{
+  text-decoration: none;
+  color: #06f7fc;
+}
+.techgeering-decoration:hover{
+    color: #dc3545 !important;
+}
+.e-color{
+    color:#dc3545 ;
+}
+.e-color:hover{
+    color: #06f7fc;
+}
+.footer-bg-img{
+  background-image: url(E:/Differentwebsite/Neweducationwebsite/assets/img/footerimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-bg-color{
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.text-position{
+  padding: 40px 0px 40px 0px;
+}
+.link-decoration{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.link-decoration:hover{
+  color: #ccc;
+}
+.text-size{
+  font-size: 14px;
+}
+.footer-heading-color{
+  color: #04fc04;
+}
+/* ----------------------------------------------------------- */
+/*  about dropdown CSS
+/* ----------------------------------------------------------- */
+.content-position{
+  border: 1px solid #b9001c;
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px #b9001c;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.para-size{
+  text-align: justify;
+}
+.heading-bg-img{
+  background-image: url(E:/Differentwebsite/Neweducationwebsite/assets/img/headingbgimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading-text-position{
+  text-align: center;
+  padding: 80px;
+  color: #fff;
+}
+.heading-bg-color{
+  background: rgb(0, 0, 0, 0.6);
+}
+.about-content-img{
+  border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px;
+}
+/* ----------------------------------------------------------- */
+/*  leader CSS
+/* ----------------------------------------------------------- */
+.leader-img-box{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* ----------------------------------------------------------- */
+/*  vission CSS
+/* ----------------------------------------------------------- */
+.vission-img-box{
+    height: 90vh;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+/* ----------------------------------------------------------- */
+/*  btech lecture note CSS
+/* ----------------------------------------------------------- */
+.list-class{
+   list-style: none;
+   margin-left: -31px;
+}
+.text-design{
+  text-decoration: none;
+  color: black;
+}
+.text-gap{
+  padding: 10px 0px 10px 0px;
+}
+.text-design:hover{
+  color: black;
+}
+/* ----------------------------------------------------------- */
+/*  campus CSS
+/* ----------------------------------------------------------- */
+.campus-img{
+  padding-bottom: 15px;
+}
+.campus-img-size{
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+/* ----------------------------------------------------------- */
+/*  career CSS
+/* ----------------------------------------------------------- */
+.career-input-field{
+  padding-bottom: 10px;
+}
+/* ----------------------------------------------------------- */
+/*  placement CSS
+/* ----------------------------------------------------------- */
+.placement-img{
+  height: 315px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+/* ----------------------------------------------------------- */
+/*  scholarship CSS
+/* ----------------------------------------------------------- */
+.scholar-box{
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10px;
+}
+/* ----------------------------------------------------------- */
+/*  programs CSS
+/* ----------------------------------------------------------- */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+td,.lab-design{
+  border: 1px solid gray;
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* ----------------------------------------------------------- */
+/*  text animation in home page CSS
+/* ----------------------------------------------------------- */
+.animation {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.animation span {
+  display: inline-block;
+  animation: slideLeft 1.5s forwards;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
