@@ -40,41 +40,53 @@
 	}
     </style>
 	<style>
+		.news-events-container {
+			overflow: hidden;
+			position: relative;
+			height: 280px;
+			box-shadow: 0 0 10px 0 rgba(52, 73, 94, 0.5);
+			padding: 10px;
+			border-radius: 10px;
+			position: relative;
+		}
 		
-        .news-events-container {
-            overflow: hidden;
-            position: relative;
-            height: 280px;
-            box-shadow: 0 0 10px 0 rgba(52, 73, 94, 0.5);
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-radius: 10px;
-        }
-
-        .scrolling-news-box {
-            animation: scrollNews 15s linear infinite;
-        }
-
-        .news-item {
-            margin-bottom: 10px;
-            padding: 5px;
-            border-radius: 5px;
-            transition: transform 0.3s ease; /* Add transition for smooth effect */
-        }
-
-        .news-item:hover {
-            animation-play-state: paused; /* Pause the animation on hover */
-            transform: translateY(0); /* Ensure the news item stays visible on hover */
-        }
-
-        @keyframes scrollNews {
-            0% {
-                transform: translateY(100%);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
-        }
+		.news-events-container::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.68)), url('assets/img/campus.jpg') center/cover no-repeat; /* Replace with your image path */
+			border-radius: 10px; /* Match the border-radius of the container */
+		}
+		
+		.scrolling-news-box {
+			animation: scrollNews 15s linear infinite;
+		}
+		
+		.news-item {
+			margin-bottom: 10px;
+			padding: 5px;
+			border-radius: 5px;
+			color: white;
+			transition: transform 0.3s ease;
+		}
+		
+		.news-item:hover {
+			animation-play-state: paused;
+			transform: translateY(0);
+		}
+		
+		@keyframes scrollNews {
+			0% {
+				transform: translateY(100%);
+			}
+			100% {
+				transform: translateY(-100%);
+			}
+		}
+		
 		.card {
 			max-width: 200px; /* Adjust the maximum width of the card */
 			margin: 0 auto; /* Center the card within the column */
@@ -418,7 +430,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="height: 437px;">
     <div class="carousel-item active img-carousel">
       <img src="assets/img/carousel1.jpg" class="carousel-img zoom" alt="picture">
       <div class="carousel-caption carousel-box-position d-none d-md-block">
@@ -586,34 +598,46 @@
 <!-- home page end-->
 
 <section>
-    <div class="container about-us clearfix py-5">
-        <div class="row">
-            <div class="col-md-7">
-                <h2 class="text-center text-uppercase">About Us</h2>
-                <p class="abt-uspara" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt corporis nulla accusantium expedita a ut quo delectus, velit officiis? Reprehenderit cum ipsum eum praesentium quasi velit vero dolorum incidunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam saepe, accusamus tempora magni, pariatur reiciendis expedita sunt repellat suscipit perspiciatis culpa similique temporibus! Quos tempora voluptatem, omnis ipsam tenetur perspiciatis.
-                </p>
-                <p class="abt-uspara" >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam minima delectus quod temporibus eligendi recusandae laboriosam aliquam alias sit aut cumque reiciendis placeat, optio quas molestias quidem omnis eaque qui.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad repellendus nam? Eos necessitatibus quae, quod quam et, repellat alias numquam, dolor vero molestias temporibus deserunt pariatur. Molestiae, sit. Atque!
-                </p>
-            </div>
+	<div class="overlay"></div>
+	<div class="container about-us clearfix py-5">
+		<div class="row">
+			<div class="col-md-7">
+				<h2 class="text-center text-uppercase">About Us</h2>
+				<p class="abt-uspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt
+					corporis nulla accusantium expedita a ut quo delectus, velit officiis? Reprehenderit cum ipsum eum
+					praesentium quasi velit vero dolorum incidunt? Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Aliquam saepe, accusamus tempora magni, pariatur reiciendis expedita sunt repellat suscipit
+					perspiciatis culpa similique temporibus! Quos tempora voluptatem, omnis ipsam tenetur
+					perspiciatis.
+				</p>
+				<p class="abt-uspara"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam minima
+					delectus quod temporibus eligendi recusandae laboriosam aliquam alias sit aut cumque reiciendis
+					placeat, optio quas molestias quidem omnis eaque qui. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Numquam ad repellendus nam? Eos necessitatibus quae, quod quam et, repellat
+					alias numquam, dolor vero molestias temporibus deserunt pariatur. Molestiae, sit. Atque!
+				</p>
+			</div>
 			<div class="col-md-5">
 				<h2 class="text-center text-uppercase" style="color: #3498db;">News and Events</h2>
 				<div class="news-events-container">
 					<div class="scrolling-news-box">
-						<div class="news-item"><a href="#" style="color: #2ecc71;">News 1: This is the first news item</a></div>
-						<div class="news-item"><a href="#" style="color: #ef2009;">News 2: Another important news item here</a></div>
-						<div class="news-item"><a href="#" style="color: #ef0101;">News 3: Breaking news just in!</a></div>
-						<div class="news-item"><a href="#" style="color: #000000;">News 4: Don't miss this update</a></div>
-						<div class="news-item"><a href="#" style="color: #0ff64c;">News 5: Final news for today</a></div>
+						<div class="news-item"><a href="#" style="color: #41deff;">News 1: This is the first news
+								item</a></div>
+						<div class="news-item"><a href="#" style="color: #ef2009;">News 2: Another important news
+								item here</a></div>
+						<div class="news-item"><a href="#" style="color: #ef0101;">News 3: Breaking news just in!</a>
+						</div>
+						<div class="news-item"><a href="#" style="color: #41deff;">News 4: Don't miss this update</a>
+						</div>
+						<div class="news-item"><a href="#" style="color: #41deff;">News 5: Final news for
+								today</a></div>
 					</div>
 				</div>
 			</div>
-		
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
+
 
 
 
