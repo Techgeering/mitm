@@ -669,3 +669,10 @@ tr:nth-child(even) {
 a{
   text-decoration: none;
 }
+
+.zoom-on-hover:hover {
+  transform: scale(1.05); /* Adjust the scale value for the desired zoom effect */
+  transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+  box-shadow: 50px 50px 200px rgb(87, 194, 237);
+}
+
