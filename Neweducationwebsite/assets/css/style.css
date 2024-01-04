@@ -255,15 +255,28 @@ body{
 /* ----------------------------------------------------------- */
 /*  Announcements CSS
 /* ----------------------------------------------------------- */
-.Announcements-box-decoration{
-  background-color: #b9001c;
-    color: #fff;
-    padding: 4px 0px 2px 15px;
+.marquee-position {
+  overflow: hidden;
 }
-.marquee-position{
-  padding: 4px 0px 0px 0px;
+
+.marquee-container {
+  display: flex;
+  animation: marqueeAnimation 20s linear infinite; /* Adjust the duration as needed */
 }
-/* ----------------------------------------------------------- */
+
+.marquee-item {
+  margin-right: 15px; /* Adjust the spacing between images */
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}---------------------------------------------------------- */
 /*  SINGLE COURSE SLIDE CSS
 /* ----------------------------------------------------------- */
 .owl-carousel .owl-nav button.owl-next ,.owl-carousel .owl-nav button.owl-prev {
