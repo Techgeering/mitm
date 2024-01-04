@@ -38,8 +38,66 @@
 		background-color: red !important;
 
 	}
-	
     </style>
+	<style>
+		
+        .news-events-container {
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            box-shadow: 0 0 10px 0 rgba(52, 73, 94, 0.5);
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+        }
+
+        .scrolling-news-box {
+            animation: scrollNews 15s linear infinite;
+        }
+
+        .news-item {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+
+        .news-item:hover {
+            animation-play-state: paused; /* Pause the animation on hover */
+            transform: translateY(0); /* Ensure the news item stays visible on hover */
+        }
+
+        @keyframes scrollNews {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+		.card {
+			max-width: 200px; /* Adjust the maximum width of the card */
+			margin: 0 auto; /* Center the card within the column */
+		}
+		
+		.card-img-top {
+			max-height: 150px; /* Adjust the maximum height of the image */
+			object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+		}
+		
+		.courses-position {
+			text-align: center; /* Center align the text within the courses-position div */
+			margin-bottom: 20px; /* Add some bottom margin for spacing */
+		}
+		.centered-heading {
+            text-align: center;
+        }
+
+        .count-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+	</style>
   </head>
   <body>
 
@@ -295,7 +353,7 @@
   <div class="p-3">
   	<div class="row">
   		<div class="col-12">
-  			<p class="enquiry-contact-color">Contact on +91-9114488727, +91-9114141172 or Email: admission@biplabinibbsr.com.</p>
+  			<p class="enquiry-contact-color">Contact on +91-xxxxxxxxxx, +91-xxxxxxxxxx or Email: admission@xx.com.</p>
   		</div>
   		<div class="col-12">
   			<form action="" method="POST" id="contactform" role="form"> 
@@ -326,14 +384,14 @@
               </div>
               <div class="contact-form-space">
                  <div id="captchaBackground">
-				    <div class="row">
+				    <!-- <div class="row">
 				      <div class="col-6">
 				        <input id="textBox2" type="text" name="text" placeholder="Verification Code" class="form-control">
 				      </div>
 				      <div class="col-6">
 				        <canvas id="captcha2">captcha text</canvas>
 				      </div>
-				    </div>
+				    </div> -->
 				    <div class="col-6 form-group contact-form-space">
 				      <div id="buttons">
 		                 <a class="btn enquiry-btn " type="btn" id="submitButton"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Enquiry</a>
@@ -526,129 +584,246 @@
   </div>
 </div>
 <!-- home page end-->
-<!--Announcements start-->
-<div class="container-fluid pt-2">
-	<div class="row marquee-border">
-		<div class="col-lg-2 Announcements-box-decoration">
-			<div class="">
-			  <h5 class="text-center"><i class="fa fa-bell" aria-hidden="true"></i>  Announcements</h5>
+
+<section>
+    <div class="container about-us clearfix py-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="text-center text-uppercase">About Us</h2>
+                <p class="abt-uspara" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt corporis nulla accusantium expedita a ut quo delectus, velit officiis? Reprehenderit cum ipsum eum praesentium quasi velit vero dolorum incidunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam saepe, accusamus tempora magni, pariatur reiciendis expedita sunt repellat suscipit perspiciatis culpa similique temporibus! Quos tempora voluptatem, omnis ipsam tenetur perspiciatis.
+                </p>
+                <p class="abt-uspara" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam minima delectus quod temporibus eligendi recusandae laboriosam aliquam alias sit aut cumque reiciendis placeat, optio quas molestias quidem omnis eaque qui.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad repellendus nam? Eos necessitatibus quae, quod quam et, repellat alias numquam, dolor vero molestias temporibus deserunt pariatur. Molestiae, sit. Atque!
+                </p>
+            </div>
+			<div class="col-md-5">
+				<h2 class="text-center text-uppercase" style="color: #3498db;">News and Events</h2>
+				<div class="news-events-container">
+					<div class="scrolling-news-box">
+						<div class="news-item"><a href="#" style="color: #2ecc71;">News 1: This is the first news item</a></div>
+						<div class="news-item"><a href="#" style="color: #ef2009;">News 2: Another important news item here</a></div>
+						<div class="news-item"><a href="#" style="color: #ef0101;">News 3: Breaking news just in!</a></div>
+						<div class="news-item"><a href="#" style="color: #000000;">News 4: Don't miss this update</a></div>
+						<div class="news-item"><a href="#" style="color: #0ff64c;">News 5: Final news for today</a></div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-lg-10 marquee-position">
-			<marquee width="100%" direction="left">
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </marquee>
-		</div>
-	</div>
-</div>
-<!-- Announcements end-->
-<!-- largest selection of course start-->
-<div class="container">
-	<div class="courses-position">
-	   <h1 class="fw-bold">The world's largest selection of courses</h1>
-	   <p>Choose from 130,000 online video courses with new additions published every month</p>
-	</div>
-	<div class="owl-carousel owl-theme owl-service" >
-        <div class="item">
-        	<img src="assets/img/course1.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-        	<img src="assets/img/course2.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-        	<img src="assets/img/course3.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-        	<img src="assets/img/course4.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-        	<img src="assets/img/course5.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-        	<img src="assets/img/course6.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-        	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
-        </div>
-        <div class="item">
-         	<img src="assets/img/course7.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
-         	<h5 class="course-text-color">Different Course Name </h5>
-        	<p>By Lorem Ipsum</p>
-        		<ul class="star-position">
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
-        			<p>4.8 (120 Review)</p>
-        		</ul>
+		
         </div>
     </div>
-</div>
+</section>
+
+
+
+<!-- largest selection of course start-->
+<!-- <div class="courses-color" >
+	<div class="container ">
+		<div class="courses-position">
+		   <h1 class="fw-bold">The world's largest selection of courses</h1>
+		   <p>Choose from 130,000 online video courses with new additions published every month</p>
+		</div>
+		<div class="owl-carousel owl-theme owl-service" >
+			<div class="item">
+				<img src="assets/img/course1.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				<img src="assets/img/course2.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				<img src="assets/img/course3.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				<img src="assets/img/course4.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				<img src="assets/img/course5.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				<img src="assets/img/course6.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				<h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+			<div class="item">
+				 <img src="assets/img/course7.png" class="img-fluid w-100 courses-img-size" alt="courseimg">
+				 <h5 class="course-text-color">Different Course Name </h5>
+				<p>By Lorem Ipsum</p>
+					<ul class="star-position">
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<li class="star-gap"><i class="fa fa-star star-color" aria-hidden="true"></i></li>
+						<p>4.8 (120 Review)</p>
+					</ul>
+			</div>
+		</div>
+	</div>
+</div> -->
 <!-- largest selection of course end-->
+
+
+<div class="courses-color" >
+	<div class="container py-4">
+		<div class="courses-position">
+			<h1 class="fw-bold text-white text-uppercase">Courses</h1>
+			<p class="text-white" >Choose from 130,000 online video courses with new additions published every month</p>
+		</div>
+		<div class="row row-cols-1 row-cols-md-5 g-2">
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mtech.png" class="card-img-top" alt="M.Tech">
+					<div class="card-body">
+						<h5 class="card-title">M.Tech</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/btech.png" class="card-img-top" alt="B.Tech">
+					<div class="card-body">
+						<h5 class="card-title">B.Tech</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
+					<div class="card-body">
+						<h5 class="card-title">MBA</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
+					<div class="card-body">
+						<h5 class="card-title">MCA</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mtech.png" class="card-img-top" alt="M.Tech">
+					<div class="card-body">
+						<h5 class="card-title">M.Tech</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/btech.png" class="card-img-top" alt="B.Tech">
+					<div class="card-body">
+						<h5 class="card-title">B.Tech</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
+					<div class="card-body">
+						<h5 class="card-title">MBA</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
+					<div class="card-body">
+						<h5 class="card-title">MCA</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
+					<div class="card-body">
+						<h5 class="card-title">MBA</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
+					<div class="card-body">
+						<h5 class="card-title">MCA</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
 <!-- TEACHING APPROACH section tart-->
 <div class="teaching-bg-color">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<h1 class="text-center">A Comprehensive Teaching Approach</h1>
+				<h1 class="text-center text-uppercase ">A Comprehensive Teaching Approach</h1>
 				<p class="para-size">Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
 			</div>
 			<div class="col-lg-6">
@@ -662,6 +837,7 @@
 <div class="total-no-color" style="background-image: url('assets/img/totalbg.jpg');">
 	<div class="total-no-color-shadow">
 		<div class="container">
+			<h1 class="facility pt-3 text-uppercase" >Facilities</h1>
 			<div id="counter" class="on-mobile-screen">
 				<div class="item">
 					 <img src="assets/img/students.png" alt="img">
@@ -693,23 +869,74 @@
 	</div>
 </div>
 <!-- total count section end-->
+
+
+
+
+
+<div class="py-5" >
+	
+    <section class="centered-heading">
+        <h1 class="fw-bold text-uppercase">Placement</h1>
+    </section>
+
+    <section class="count-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4 class="" >Recruiters</h4>
+                    <p id="recruitersCount" class="fw-bold">0</p>
+                </div>
+                <div class="col">
+                    <h4 class="" >Students Placed</h4>
+                    <p id="studentsPlacedCount" class="fw-bold">0</p>
+                </div>
+                <div class="col">
+                    <h4 class="" >Alumni</h4>
+                    <p id="alumniCount" class="fw-bold">0</p>
+                </div>
+            </div>
+        </div>
+		<div class="container-fluid pt-2">
+			<div class="row marquee-border">
+				<div class="marquee-position">
+					<marquee width="100%" direction="left">
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+						<img src="assets/img/campus.jpg" alt="" class="" height="100" width="120" >
+					</marquee>
+				</div>
+			</div>
+		</div>
+    </section>
+</div>
+
 <!-- testimonial section start-->
- <div>
+ <div class="courses-color" >
  	<div class="container">
  		<div class="courses-position">
- 		   <h1 class="text-center">Student Says About Us</h1>
+ 		   <h1 class="text-center text-white">Student Says About Us</h1>
  		</div>
 
         <div class="owl-carousel owl-theme owl-testimonial">
           <div class="item "> 
           <div class="carousel-caption1"> 
-          <p><i class="fa fa-quote-left quota-color" aria-hidden="true"></i>
+          <p class="text-white" ><i class="fa fa-quote-left quota-color" aria-hidden="true"></i>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus justo, a rhoncus dolor. Curabitur quis venenatis odio. Maecenas laoreet in libero eget vulputate. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. 
                 <i class="fa fa-quote-right quota-color" aria-hidden="true"></i></p> 
                 <img src="assets/img/student1.jpg" class="img-fluid img-position">
                 <div class="image-caption">
-                   <h4>Lorem Ipsum</h4>
-                   <p class="">Student at Biplabini Technology</p>
+                   <h4 class="text-white" >Lorem Ipsum</h4>
+                   <p class="text-white">Student at Modern Institute of Technology & Management (MITM) </p>
                 </div>
               </div>           
           </div>
@@ -721,7 +948,7 @@
                  <img src="assets/img/student1.jpg" class="img-fluid img-position">
                  <div class="image-caption">
                     <h4>Lorem Ipsum</h4>
-                    <p class="">Student at Biplabini Technology</p>
+                    <p class="">Student at Modern Institute of Technology & Management (MITM) </p>
                  </div>
             </div>
           </div>
@@ -733,7 +960,7 @@
                  <img src="assets/img/student1.jpg" class="img-fluid img-position">
                  <div class="image-caption">
                     <h4>Lorem Ipsum</h4>
-                    <p class="">Student at Biplabini Technology</p>
+                    <p class="">Student at Modern Institute of Technology & Management (MITM) Technology</p>
                  </div>
               </div>
           </div>
@@ -749,7 +976,7 @@
                 <img src="assets/img/student1.jpg" class="img-fluid">
                 <div class="image-caption">
                    <h4>Lorem Ipsum</h4>
-                   <p class="">Student at Biplabini Technology</p>
+                   <p class="">Student at Modern Institute of Technology & Management (MITM) Technology</p>
                 </div>
             </div>
         </div>    
@@ -761,7 +988,7 @@
                  <img src="assets/img/student1.jpg" class="img-fluid">
                  <div class="image-caption">
                     <h4>Lorem Ipsum</h4>
-                    <p class="">Student at Biplabini Technology</p>
+                    <p class="">Student at Modern Institute of Technology & Management (MITM) Technology</p>
                  </div>
             </div>
 		    </div>
@@ -773,7 +1000,7 @@
                  <img src="assets/img/student1.jpg" class="img-fluid">
                  <div class="image-caption">
                     <h4>Lorem Ipsum</h4>
-                    <p class="">Student at Biplabini Technology</p>
+                    <p class="">Student at Modern Institute of Technology & Management (MITM) Technology</p>
                  </div>
               </div>
 		      </div>
@@ -881,9 +1108,24 @@
 <script type="text/javascript" src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
-   <script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
+<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
 <script>
+	function startCountAnimation(targetId, endValue) {
+		let currentCount = 0;
+		const countElement = document.getElementById(targetId);
+		const interval = setInterval(function () {
+			currentCount++;
+			countElement.textContent = currentCount;
+			if (currentCount === endValue) {
+				clearInterval(interval);
+			}
+		}, 20); // Adjust the interval (speed) as needed
+	}
 
+	// Start count animations for each section
+	startCountAnimation('recruitersCount', 150);
+	startCountAnimation('studentsPlacedCount', 2000);
+	startCountAnimation('alumniCount', 5000);
 </script>
   </body>
 </html>

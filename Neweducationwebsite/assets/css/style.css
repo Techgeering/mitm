@@ -263,10 +263,6 @@ body{
 .marquee-position{
   padding: 4px 0px 0px 0px;
 }
-.marquee-border{
-  border-bottom: 2px solid #b9001c;
-    border-top: 2px solid #b9001c;
-}
 /* ----------------------------------------------------------- */
 /*  SINGLE COURSE SLIDE CSS
 /* ----------------------------------------------------------- */
@@ -343,7 +339,6 @@ body{
   text-align: justify;
  }
  .teaching-bg-color{
-  background-color: #ebeaf2;
   padding: 35px 0px 35px 0px;
  }
  .teaching-img-size{
@@ -438,7 +433,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 0px;
+  padding: 30px 0px;
   width: 100%;
 }
 @media(max-width: 810px){
@@ -652,4 +647,25 @@ tr:nth-child(even) {
     opacity: 1;
     transform: translateX(0%);
   }
+}
+
+.abt-sec{
+  padding:30px 30px;
+}
+
+.courses-color{
+  background: linear-gradient(to right, #2e48f2 0%, #40dfff 100%);
+}
+.facility{
+  z-index: 99999999;
+  color: white;
+  text-align: center;
+}
+
+.abt-uspara{
+  text-align: justify;
+}
+
+a{
+  text-decoration: none;
 }
