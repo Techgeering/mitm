@@ -693,3 +693,6 @@ a{
   margin-top: 200px;
 }
 
+.placement-data{
+  box-shadow: 0 0 10px 0 rgba(59, 141, 224, 0.5);
+}
