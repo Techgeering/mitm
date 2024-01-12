@@ -48,7 +48,23 @@
         }
         .notice-event{
             border: 2px black solid;
+            overflow: hidden;
+            position: relative;
+
         }
+        @keyframes moveNews {
+          0% {
+              transform: translateY(100%);
+          }
+          100% {
+              transform: translateY(-300%); /* Adjusted the value to accommodate three news items */
+          }
+      }
+      
+      
+      .notice-event li {
+          animation: moveNews 10s linear infinite; /* Adjust the duration as needed */
+      }
     </style>
 
   </head>
@@ -305,8 +321,8 @@
     <div>
         <div class="row" >
             <div class="col-8" >
+              <h2 class="text-center text-primary text-uppercase" ><i class="fa fa-calendar" aria-hidden="true"></i>News & Events</h2>
                 <div class="notice-event px-2 py-2" >
-                    <h2 class="text-center text-primary text-uppercase" ><i class="fa fa-calendar" aria-hidden="true"></i>News & Events</h2>
                     <li>1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quisquam, aut esse eligendi aperiam maiores ipsum doloribus ullam expedita in nulla libero! Aliquid, accusantium eligendi repudiandae culpa nulla ratione. Nulla!</li>
                     <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim velit molestiae recusandae ea vero quo, cum ab quasi? Vero amet expedita repellendus, perspiciatis animi illum veritatis exercitationem ullam eligendi asperiores.</li>
                     <li>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li>
