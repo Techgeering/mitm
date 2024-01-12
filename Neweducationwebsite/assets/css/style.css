@@ -530,10 +530,18 @@ body{
   background-size: cover;
   background-position: center;
 }
+.heading-bg-img-cnt{
+  background-image: url(E:/Differentwebsite/Neweducationwebsite/assets/img/headingbgimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 200px;
+}
 .heading-text-position{
   text-align: center;
   padding: 80px;
   color: #fff;
+  margin-top: -30px;
 }
 .heading-bg-color{
   background: rgb(0, 0, 0, 0.6);
@@ -687,10 +695,6 @@ a{
   transform: scale(1.05); /* Adjust the scale value for the desired zoom effect */
   transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
   box-shadow: 50px 50px 200px rgb(87, 194, 237);
-}
-
-.contact-form{
-  margin-top: 200px;
 }
 
 .placement-data{
