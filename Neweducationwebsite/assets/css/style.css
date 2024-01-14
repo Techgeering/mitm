@@ -790,3 +790,31 @@ a{
 .fascility-para{
   text-align: justify;
 }
+
+
+
+
+/* SIDE BAR SCROLL DESIGN */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
+  animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
+  animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99); 
+}
