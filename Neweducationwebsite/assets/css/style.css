@@ -142,7 +142,7 @@ body{
   left: -75px;
 }
 .enquiry-btn{
-	background-color: #6251ac;
+	background: linear-gradient(rgb(64, 223, 255) 0%, rgb(46, 72, 242) 100%);
     color: #fff;
 }
 .enquiry-btn:hover{
