@@ -62,7 +62,7 @@ body{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 11;
     border-radius: 5px;
     transition: 3s;
     list-style: none;
@@ -354,10 +354,12 @@ body{
  .teaching-bg-color{
   padding: 35px 0px 35px 0px;
  }
- .teaching-img-size{
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px 2px #fff;
- }
+ .teaching-img-size {
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px #fff;
+  filter: grayscale(20%) brightness(60%);
+}
+
 /* ----------------------------------------------------------- */
 /*  testimonial CSS
 /* ----------------------------------------------------------- */
@@ -544,7 +546,7 @@ body{
   margin-top: -30px;
 }
 .heading-bg-color{
-  background: rgb(0, 0, 0, 0.6);
+  /* background: rgb(0, 0, 0, 0.6); */
 }
 .about-content-img{
   border-radius: 15px;
@@ -709,7 +711,7 @@ a{
   text-align: center;
 }
 #cards_landscape_wrap-2 .container{
-  padding-top: 80px; 
+  /* padding-top: 80px;  */
   padding-bottom: 100px;
 }
 #cards_landscape_wrap-2 a{
@@ -731,7 +733,7 @@ a{
   -o-transition:all .9s ease;
   -ms-transition:all .9s ease; 
   width: 100%;
-  height: 200px;
+  height: 162px;
 }
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
   opacity: 0.7;
@@ -749,18 +751,18 @@ a{
 }
 #cards_landscape_wrap-2 .card-flyer{
   height: 190px;
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   margin-top: 50px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  /* box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40); */
 }
 #cards_landscape_wrap-2 .card-flyer:hover{
-  background: #fff;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  /* background: #fff; */
+  /* box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50); */
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -817,4 +819,17 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
   animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99); 
+}
+
+.ug-sec{
+  width: 151px;
+  margin: 0px;
+  padding: 4px;
+}
+
+.notice-head1{
+  background-color: rgb(0, 140, 255);
+}
+.notice-head2{
+  background-color: rgba(244, 0, 0, 0.813);
 }

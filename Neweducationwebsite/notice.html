@@ -46,29 +46,20 @@
 	}
     </style>
     <style>
-        .notice-event{
-            border: 0.3px black solid;
-            overflow: hidden;
-            position: relative;
-            height: 361px;
-
-        }
-        
-      @keyframes moveNews {
-        0% {
-          transform: translateY(460%);
-        }
-        100% {
-          transform: translateY(-300%);
-        }
+      .notice-event {
+        background: linear-gradient(to left, #2e48f259 0%, #40dfff45 100%);
+        animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
+        box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+        overflow-y: auto; /* Add overflow-y property to enable vertical scrolling */
+        height: 361px;
       }
-
-      .notice-event li {
+      
+      .notice-event p {
         animation: moveNews 10s linear infinite;
       }
+      
       /* Second Animation */
 .notice-event-2 {
-  border: 0.3px rgb(0, 0, 0) solid; /* Change border color or other properties */
   overflow: hidden;
   position: relative;
   height: 361px;
@@ -76,7 +67,7 @@
 
 @keyframes moveNews2 {
   0% {
-      transform: translateY(250%); /* Change initial translateY value */
+      transform: translateY(725%); /* Change initial translateY value */
   }
   100% {
       transform: translateY(-300%); /* Change final translateY value */
@@ -84,7 +75,7 @@
 }
 
 .notice-event-2 li {
-  animation: moveNews2 8s ease-in-out infinite; /* Adjust animation duration and timing function */
+  animation: moveNews2 18s ease-in-out infinite; /* Adjust animation duration and timing function */
 }
     </style>
 
@@ -176,7 +167,7 @@
                 <li class="nav-item dropdown">
                         <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
                         <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="javascript:void(0)">UG</a></li>
+                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="ugcourse.html">UG</a></li>
                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="javascript:void(0)">PG</a></li>
                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="javascript:void(0)">Polytechnic</a></li>
                           <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.html">Prospective</a></li>
@@ -346,40 +337,61 @@
      <h1 class="heading-text-position text-uppercase">notice</h1>
  </div>
 </div>
-<section class="container notice-section px-2 py-2 " >
-    <div>
-        <div class="row" >
-            <div class="col-8" >
-              <h2 class="text-center text-primary text-uppercase" ><i class="fa fa-calendar" aria-hidden="true"></i>News & Events
-                <button class="btn btn-primary" onclick="toggleAnimation()" id="toggleBtn" title="Toggle Animation">
+
+
+<section class="container notice-section px-2 py-2">
+  <div class="row">
+      <div class="col-lg-8 col-md-12 col-12">
+          <h2 class="text-center text-white text-uppercase notice-head1">
+              <i class="fa fa-calendar" aria-hidden="true"></i><span class="m-3">News & Events</span>
+              <!-- <button class="btn btn-light my-1" onclick="toggleAnimation()" id="toggleBtn" title="Toggle Animation">
                   <i class="fa fa-pause" aria-hidden="true"></i>
-                </button>
-              </h2>
-                <div class="notice-event px-2 py-2" >
-                    <li>1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quisquam, aut esse eligendi aperiam maiores ipsum doloribus ullam expedita in nulla libero! Aliquid, accusantium eligendi repudiandae culpa nulla ratione. Nulla!</li>
-                    <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim velit molestiae recusandae ea vero quo, cum ab quasi? Vero amet expedita repellendus, perspiciatis animi illum veritatis exercitationem ullam eligendi asperiores.</li>
-                    <li>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li>
-                    <!-- <li>4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li>
-                    <li>5. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li>
-                    <li>6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li> -->
-                </div>
-            </div>
-            <div class="col-4">
-              <h2 class="text-center text-primary text-uppercase">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>Notices
-                  <button class="btn btn-primary" onclick="toggleAnimationSecond()" id="toggleBtns" title="Toggle Animation">
-                      <i class="fa fa-pause" aria-hidden="true"></i>
-                  </button>
-              </h2>
-              <div class="notice-event-2 px-2 py-2">
-                  <li>1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quisquam, aut esse eligendi aperiam maiores ipsum doloribus ullam expedita in nulla libero! Aliquid, accusantium eligendi repudiandae culpa nulla ratione. Nulla!</li>
-                  <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim velit molestiae recusandae ea vero quo, cum ab quasi? Vero amet expedita repellendus, perspiciatis animi illum veritatis exercitationem ullam eligendi asperiores.</li>
-                  <li>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet provident quibusdam, quisquam harum aliquid qui repellendus nisi cupiditate totam repellat cum, quam rem reiciendis magni architecto quod minima obcaecati earum.</li>
-              </div>
+              </button> -->
+          </h2>
+          <div class="notice-event px-2 py-2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-download" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
           </div>
-        </div>
-    </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-12">
+          <h2 class="text-center text-white text-uppercase notice-head2">
+              <i class="fa fa-clock-o" aria-hidden="true"></i><span class="m-3">Notices</span>
+              <button class="btn btn-light my-2" onclick="toggleAnimationSecond()" id="toggleBtns" title="Toggle Animation">
+                  <i class="fa fa-pause text-danger" aria-hidden="true"></i>
+              </button>
+          </h2>
+          <div class="notice-event-2 px-2 py-2">
+            <li>1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+          </div>
+      </div>
+  </div>
 </section>
+
 
 
 
@@ -478,7 +490,7 @@
   var animationPaused = false;
 
   function toggleAnimation() {
-    var noticeEventItems = document.querySelectorAll('.notice-event li');
+    var noticeEventItems = document.querySelectorAll('.notice-event p');
 
     if (animationPaused) {
       // Play animation
@@ -510,13 +522,13 @@ function toggleAnimationSecond() {
     noticeEventItemsSecond.forEach(function(item) {
       item.style.animationPlayState = 'running';
     });
-    document.getElementById('toggleBtns').innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
+    document.getElementById('toggleBtns').innerHTML = '<i class="fa fa-pause text-danger" aria-hidden="true"></i>';
   } else {
     // Pause animation
     noticeEventItemsSecond.forEach(function(item) {
       item.style.animationPlayState = 'paused';
     });
-    document.getElementById('toggleBtns').innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+    document.getElementById('toggleBtns').innerHTML = '<i class="fa fa-play text-danger" aria-hidden="true"></i>';
   }
 
   // Toggle the state
