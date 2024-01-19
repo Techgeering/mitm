@@ -121,6 +121,7 @@ body{
 /* ----------------------------------------------------------- */
 .menu-position{
 	flex-direction: row !important;
+  margin-left: 112px !important;
 }
 .third-bg-color{
 	background: linear-gradient(to bottom, #40dfff 0%, #2e48f2 100%);;
@@ -672,9 +673,7 @@ tr:nth-child(even) {
   }
 }
 
-.abt-sec{
-  padding:30px 30px;
-}
+
 
 .courses-color{
   background: linear-gradient(to right, #2e48f2 0%, #40dfff 100%);
@@ -872,3 +871,83 @@ a{
 .head-name{
   margin-top: -13px;
 }
+
+.abt-sec{
+  margin-top: 175px;
+}
+
+
+.imp-link{
+  text-decoration: underline;
+  font-style: inherit;
+}
+.abt-ussec{
+  width: 507px;
+  margin-left: 55px;
+}
+.abt-ussec :hover{
+  background-color: skyblue;
+}
+.mission-head{
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 600;
+}
+.mission-head:after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #00b9fb;
+  left: 0;
+  bottom: 0;
+}
+.mission-heads{
+  margin-left: 661px;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 600;
+}
+.mission-heads:after{
+  margin-left:25px;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #00b9fb;
+  left: 0;
+  bottom: 0;
+}
+
+.mission-cont{
+  position: relative;
+  line-height: 28px;
+  padding-left: 45px;
+}
+
+       
+.abt-us{
+  margin-top: 166px;
+ 
+}
+.abt-uss{
+  margin-top: 107px;
+ 
+}
+
+.pricipal-para{
+  text-align: justify;
+  font-size: 16px;
+  line-height: 35px;
+}
+
