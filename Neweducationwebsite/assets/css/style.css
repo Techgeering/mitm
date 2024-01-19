@@ -868,3 +868,7 @@ a{
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
+
+.head-name{
+  margin-top: -13px;
+}

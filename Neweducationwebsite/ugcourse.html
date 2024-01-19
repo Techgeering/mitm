@@ -47,1231 +47,184 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
 
-  <title></title>
+  <title>MITM | UG </title>
   <style>
-    /* ****************
-   General
-****************** */
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    @import url(https://fonts.googleapis.com/css?family=Lato);
 
-
-    .hr-h1 {
-      margin: 0 auto 35px auto;
-      margin-bottom: 28px;
-      border-style: solid;
-      border-width: 5px;
-      border-color: #9C9A40;
-      width: 128px;
+    html {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
     }
 
-    section {
-      align-items: center;
-      padding: 70px 100px;
-      padding: 10px;
-      margin: 10px;
-      margin-top: 167px;
+    body {
+      height: 100%;
     }
 
-    section p {
-      text-align: center;
-      margin-bottom: 35px;
-      padding: 0 20px;
-      line-height: 2;
-      font-family: 'Lato', sans-serif;
-    }
-
-    .grid {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-
-    /* General slide up */
-    .slideanim {
-      visibility: hidden;
-    }
-
-    .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      -moz-animation-name: slide;
-      animation-duration: 2s;
-      -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
-      visibility: visible;
-    }
-
-    @keyframes slide {
-      0% {
-        opacity: 0;
-        transform: translateY(60%);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-
-    @-webkit-keyframes slide {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateY(60%);
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-      }
-    }
-
-    /* Service slide left */
-    .slideanimleft {
-      visibility: hidden;
-    }
-
-    .slideleft {
-      animation-name: slideleft;
-      -webkit-animation-name: slideleft;
-      -moz-animation-name: slideleft;
-      animation-duration: 1.5s;
-      -webkit-animation-duration: 1.5s;
-      -moz-animation-duration: 1.5s;
-      /* Make the element visible */
-      visibility: visible;
-    }
-
-    @keyframes slideleft {
-      0% {
-        opacity: 0;
-        transform: translateX(50%);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-    }
-
-    @-webkit-keyframes slideleft {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateX(50%);
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateX(0%);
-      }
-    }
-
-    @media (max-width: 375px) {
-      section {
-        padding: 20px 10px;
-      }
-
-      .bg-section h1 {
-        font-size: 27px;
-      }
-    }
-
-    /* ****************************************************
-   *    Head
-   **************************************************** */
-    .header-full {
-      color: white;
-      background: url("../img/hero.jpg") no-repeat;
-      background-size: cover;
-      background-position: bottom;
-      padding-bottom: 150px;
-    }
-
-    .header-full .logo-law {
-      position: absolute;
-      left: 0;
-      height: 100px;
-      width: 150px;
-    }
-
-    .header-full .logo-law:hover {
-      -webkit-filter: grayscale(50%);
-      filter: grayscale(50%);
-    }
-
-    .header-full .navbar {
-      height: 120px;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-      border-radius: 0;
-      overflow-x: none;
-    }
-
-    .header-full .navbar-right li {
-      position: absolute;
-      right: 40px;
-      margin-top: 25px;
-    }
-
-
-    .header-full .navbar-right .menu-icon {
-      position: absolute;
-      right: 100px;
-    }
-
-    .header-full .navbar-right>li>a {
-      color: white;
-      font-size: 14px;
-      font-weight: 600;
-      border: 1px white solid;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
-      padding: 8px 16px;
-      font-family: 'Lato', sans-serif;
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      transform: translateX(0);
-      right: 0px;
-      position: absolute;
-    }
-
-    .header-full .navbar-nav>li>a:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #eee;
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 0;
-      -moz-transform-origin: 0;
-      transform-origin: 0;
-      -webkit-transition-property: transform;
-      -moz-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-timing-function: ease;
-      -moz-transition-timing-function: ease;
-      transition-timing-function: ease;
-      -webkit-transition-duration: 0.4s;
-      -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-    }
-
-    .header-full .navbar-nav>li>a:focus,
-    .header-full .navbar-nav>li>a:hover,
-    .header-full .navbar-nav>li>a:active {
-      color: #41ac86;
-    }
-
-    .header-full .navbar-nav>li>a:focus:before,
-    .header-full .navbar-nav>li>a:hover:before,
-    .header-full .navbar-nav>li>a:active:before {
-      -webkit-transform: scaleX(1);
-      -moz-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      -o-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-
-
-    .menu-icon {
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .menu-icon:hover {
-      cursor: pointer;
-      color: #41ac86;
-    }
-
-    .icon-bar1,
-    .icon-bar2,
-    .icon-bar3 {
-      width: 35px;
-      height: 5px;
-      margin: 6px 0;
-      transition: 0.5s;
-      border-radius: 0;
-      background-color: #fff;
-    }
-
-    .change .icon-bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change .icon-bar2 {
-      opacity: 0;
-    }
-
-    .change .icon-bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-
-    .overlay {
-      height: 0%;
-      width: 100%;
+    nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      background-color: rgb(0, 0, 0);
-      background-color: rgba(0, 0, 0, 0.9);
-      overflow-y: hidden;
-      transition: 0.7s;
-      z-index: 5;
-    }
-
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .overlay a {
-      padding: 7px;
-      text-decoration: none;
-      font-size: 38px;
-      color: #757575;
-      display: block;
-      transition: .5s;
-      font-weight: 600;
-    }
-
-    .overlay a:hover,
-    .overlay a:focus {
-      color: #fff;
-    }
-
-
-    .header-full .welcome-header {
-      background-color: #fff;
-      width: 800px;
-      opacity: .9;
-
-      text-align: center;
-      margin-top: 80px;
-      margin-bottom: 130px;
-      border-right: 10px solid #555;
-      padding: 15px;
-      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.7);
-    }
-
-    .header-full .welcome-header h1 {
-      color: #9C9A40;
-      font-weight: bold;
-      font-size: 55px;
-      margin-bottom: 36px;
-      font-family: 'Lato', sans-serif;
-    }
-
-    .header-full .welcome-header p {
-      color: #545454;
-      font-size: 20px;
-      max-width: 660px;
-      margin: 0 auto 20px;
-      font-weight: 500;
-      line-height: 1.2;
-      font-family: 'Lato', sans-serif;
-    }
-
-    .header-full .welcome-contact {
-      position: absolute;
-      left: 0px;
-      width: 300px;
-      background-color: #fff;
-      opacity: .8;
-      margin-bottom: 50px;
-      box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.7);
-    }
-
-    .header-full .contact-info {
-      font-weight: 500;
-      font-size: 14px;
-      padding: 20px;
-      line-height: 5px;
-      right: 0px;
-      color: #555;
-
-    }
-
-
-
-    @media (max-width: 375px) {
-
-      .header-full {
-        color: white;
-        background-size: cover;
-        background-position: bottom;
-        padding-bottom: 100px;
-      }
-
-      .header-full .logo-law {
-        display: none !important;
-      }
-
-      .header-full .navbar-nav>li>a {
-        padding: 8px 16px;
-        margin: 0 5px 20px 5px;
-        text-align: center;
-      }
-
-      .header-full .welcome-header {
-        width: 100%;
-        border-right: none;
-        margin-top: 10px;
-        margin-bottom: 40px;
-      }
-
-      .header-full .welcome-header h1 {
-        font-size: 25px;
-        margin-bottom: 20px;
-      }
-
-      .header-full .welcome-header p {
-        font-size: 16px;
-      }
-
-      .header-full .welcome-contact {
-        width: 100%;
-        font-size: 14px;
-      }
-
-      .header-full .contact-info {
-        font-size: 12px;
-        padding: 20px;
-        line-height: 2px;
-      }
-
-      .overlay {
-        overflow-y: 0;
-      }
-
-      .overlay a {
-        font-size: 25px;
-      }
-
-      .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-
-    }
-
-
-    /* ************ 
-   * About 
-   **************/
-    #about {
-      background-color: #fff;
-    }
-
-
-    #about img {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
-      width: 100%;
-      height: 100%;
-    }
-
-    #about img:hover {
-      margin-right: 0;
-      -webkit-filter: grayscale(80%);
-      filter: grayscale(80%);
-      -webkit-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-
-    }
-
-    #about .img-txt-bg:hover {
-      background-color: #005960;
-      opacity: .7;
-    }
-
-    #about .carousel {
-      background-color: #fff;
-      margin-left: 0;
-      height: 478px;
-    }
-
-    #about .about-me h3 {
-      font-size: 25px;
-      font-weight: 600;
-      background-color: #005960;
-      margin: 0 auto;
-      padding: 20px;
-      color: #fff;
-      text-transform: none;
-      font-family: 'Lato', sans-serif;
-      opacity: .7
-    }
-
-    #about .carousel-inner p {
-      font-size: 17px;
-      font-weight: 500;
-      font-family: 'Mukta', sans-serif;
-      line-height: 22px;
-      text-align: left;
-      padding: 25px 40px;
-      color: rgba(25, 25, 25, 0.6);
-      word-spacing: 3px;
-    }
-
-    #about .img-txt-bg:hover p {
-      color: #fff;
-    }
-
-    #about .carousel-indicators li {
-      height: 16px;
-      width: 16px;
-      margin-right: 10px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%;
-      background-color: #fff;
-      right: 10px;
-      border: 2px solid #005960;
-    }
-
-    #about .img-txt-bg:hover li {
-      background-color: #005960;
-      border-color: #fff;
-    }
-
-    #about .carousel-indicators li.active {
-      background-color: #005960;
-      border: 2px solid #005960;
-    }
-
-    #about .img-txt-bg:hover li.active {
-      background-color: #fff;
-      border-color: #fff;
-    }
-
-    #about .no-padding {
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-
-    @media (max-width: 375px) {
-      #about .carousel-inner p {
-        font-size: 16px;
-        line-height: 20px;
-        padding: 10px;
-      }
-
-      #about .carousel {
-        min-height: 520px;
-      }
-
-
-    }
-
-    /*---------------------------------------------------
-   *  Service
-   *-------------------------------------------------- */
-    #service {
-      background-color: #eee;
-    }
-
-    #service .tab-content {
-      background-color: #fff;
-      min-height: 500px;
-      padding: 25px;
-    }
-
-    #service .brand-pills li a {
-      font-size: 15px;
-      padding: 45px 15px;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
-      background-color: #005960;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    #service .brand-pills li a:focus {
-      font-size: 15px;
-      padding: 45px 15px;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
-      background-color: #005960;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    #service .brand-pills li.active a {
-      background-color: #9C9A40;
-    }
-
-    #service .brand-pills li.active a:focus,
-    #service .brand-pills li.active a:hover,
-    #service .brand-pills li.active a:focus:hover {
-      background-color: #9C9A40;
-    }
-
-    #service .brand-pills>li>a:hover,
-    #service .brand-pills>li>a:focus:hover {
-      background-color: #9C9A40;
-    }
-
-    #service li.brand-nav.active a:after {
-      content: " ";
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 55px solid transparent;
-      border-bottom: 55px solid transparent;
-      border-left: 25px solid #9C9A40;
-      position: absolute;
-      top: 50%;
-      margin-top: -55px;
-      left: 100%;
-      z-index: 1;
-    }
-
-    #service h3 {
-      font-size: 24px;
-      text-align: center;
-      font-weight: 500;
-      color: #9C9A40;
-    }
-
-    #service p {
-      font-size: 16px;
-      line-height: 25px;
-      text-align: left;
-      font-weight: 500;
-      color: #0f0f0f;
-      color: rgba(15, 15, 15, 0.6);
-      font-family: 'Mukta', sans-serif;
-      word-spacing: 3px;
-    }
-
-
-    @media (max-width: 375px) {
-
-
-      #service .tab-content {
-        min-height: 680px;
-        padding: 10px;
-      }
-
-      #service h3 {
-        font-size: 20px;
-      }
-
-      #service p {
-        line-height: 20px;
-        padding: 5px;
-      }
-
-      #service .brand-pills li a {
-        font-size: 14px;
-        padding: 20px 15px;
-      }
-
-      #service .brand-pills li a:focus {
-        font-size: 14px;
-        padding: 20px 15px;
-      }
-
-      #service li.brand-nav.active a:after {
-        border-top: 30px solid transparent;
-        border-bottom: 30px solid transparent;
-        border-left: 10px solid #9C9A40;
-        margin-top: -30px;
-      }
-    }
-
-    /*************** 
-   *  Blog
-   **************** */
-    #blog {
-      background-color: #fff;
-    }
-
-    .thumbnail {
-      border-radius: 0;
-      padding: 0 0 10px 0;
-      border: none;
-      background-color: #bbb;
-    }
-
-    .thumbnail:hover {
-      background-color: #a1a1a1;
-      box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.8)
-    }
-
-    article {
-      min-height: 200px;
-    }
-
-    .blog-h3 {
-      color: #fff;
-      text-align: center;
-      font-weight: 500;
-      font-size: 24px;
-    }
-
-    .text-blog {
-      text-align: left;
-      color: #323232;
-    }
-
-    .badge-more {
-      background-color: #555;
-      color: #fff;
-      border-radius: 0;
-      padding: 3px;
-    }
-
-    .posted {
-      color: #757575;
-      font-style: italic;
-    }
-
-    .post-meta {
-      margin-bottom: 10px;
-    }
-
-    .header-blog {
-      margin-bottom: 0;
-    }
-
-
-    @media (max-width: 375px) {
-      aside {
-        margin-bottom: 25px;
-      }
-
-      .post {
-        margin: 25px 0;
-      }
-    }
-
-    /*----------------------
-   *   Testimonials
-   *---------------------- */
-
-    #testimonials {
-      background-color: #eee;
-    }
-
-    #testimonials .projects {
-      margin: auto 80px;
-    }
-
-    #testimonials .grid .result {
-      padding: 5px;
-      min-height: 220px;
-      border-radius: none;
-      background-clip: content-box;
-      background-size: cover;
-      background-position: center;
-      background-color: #555;
-    }
-
-    #testimonials .grid .small {
-      flex-basis: 40%;
-      background-color: #9C9A40;
-      display: block;
-    }
-
-    #testimonials .grid .big {
-      flex-basis: 60%;
-      background-color: #005960;
-      display: block;
-    }
-
-    #testimonials .text {
-      position: relative;
-      border: 1px solid transparent;
-      margin: 20px;
-      height: 80%;
-    }
-
-    #testimonials .text p {
-      color: #fff;
-      font-size: 15px;
-      padding: 10px;
-      line-height: 25px;
-      font-weight: 700;
-      font-family: 'Montserrat', serif;
-      text-transform: uppercase;
-    }
-
-    #testimonials .text::before,
-    #testimonials .text::after {
-      content: "";
-      width: 0;
-      height: 4px;
-      position: absolute;
-      transition: all 0.3s linear;
-      background: #fff;
-    }
-
-    #testimonials p::before,
-    #testimonials p::after {
-      content: "";
-      width: 4px;
-      height: 0;
-      position: absolute;
-      transition: all 0.3s linear;
-      background: #fff;
-    }
-
-    #testimonials .text:hover::before,
-    #testimonials .text:hover::after {
-      width: 100%;
-    }
-
-    #testimonials .text:hover p::before,
-    #testimonials .text:hover p::after {
-      height: 100%;
-    }
-
-    #testimonials .text::after {
-      left: 0;
-      bottom: 0;
-      transition-duration: 0.5s;
-    }
-
-    #testimonials .text p::after {
-      right: 0;
-      top: 0;
-      transition-duration: 0.5s;
-    }
-
-    #testimonials .text::before {
-      right: 0;
-      top: 0;
-      transition-duration: 0.5s;
-    }
-
-    #testimonials .text p::before {
-      left: 0;
-      bottom: 0;
-      transition-duration: 0.5s;
-    }
-
-
-    @media (max-width: 375px) {
-
-      #testimonials .projects p {
-        font-size: 14px;
-        padding: 20px;
-        line-height: 20px;
-      }
-    }
-
-    /*--------------------
-   *  Contact
-   *-------------------- */
-    #contact {
-      background-color: #fff;
-    }
-
-    #contact .cont-box {
-      height: 150px;
-      margin-bottom: 10px;
-    }
-
-    #contact .contact-address {
-      background-color: #00474d;
-    }
-
-    #contact .contact-hours {
-      background-color: #005e66;
-    }
-
-    #contact .contact-contact {
-      background-color: #007580;
-    }
-
-    #contact .cont-box h4 {
-      text-align: center;
-      padding: 15px 0 5px;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    #contact .cont-box p {
-      font-size: 15px;
-      text-align: center;
-      padding: 10px;
-      color: #fff;
-      font-weight: 500;
-    }
-
-    #contact .contacts>[class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    #contact .hr-contact {
-      width: 90%;
-      margin: 5px auto;
-
-    }
-
-    #contact .form-dropdown {
-      background-color: #007580;
-      margin-top: 12px;
-      padding: 20px 10px;
+      top: 5%;
+      bottom: auto;
       z-index: 10;
-      min-height: 360px;
     }
 
-    #contact .form-group {
-      padding: 0 auto;
+    ul {
+      list-style: none;
+      padding: 0;
     }
 
-
-    #contact .btn-form {
-      margin: 20px 130px;
-      justify-content: center;
-      background-color: #007580;
-      border-color: #fff;
-      border-radius: 0;
-      color: #fff;
-      padding: 10px 25px;
-
-
+    li {
+      padding: 10px 0;
     }
 
-    #contact .btn-form:hover {
-      background-color: #fff;
-      color: #007580;
-    }
-
-    #contact .form-app input,
-    #contact .form-app textarea {
-      border-radius: 15px;
-      background-color: #007580;
-      border-color: #fff;
-      color: #fff;
-
-    }
-
-    #contact .contact-buttons {
-      padding-bottom: 30px;
-
-    }
-
-    #contact .btn-two {
-      padding: 5px 10px;
-      border-radius: 0;
-      border-color: #fff;
-      border-width: 1px;
-      background-color: #007580;
-      color: #fff;
-    }
-
-    #contact .btn-two:hover {
-      color: #007580;
-      background-color: #fff;
-    }
-
-
-
-    @media (max-width: 375px) {
-      #contact .cont-box {
-        margin: 10px;
-      }
-
-      #contact .cont-box h4 {
-        padding: 15px 0 0 0;
-      }
-
-      #contact .cont-box p {
-        padding: 10px;
-      }
-
-    }
-
-    /*---------------------
-   *    Footer
-   *--------------------- */
-    #footer {
-      background-color: #191919;
-      background-color: rgba(25, 25, 25, 0.8);
-      color: #fff;
-      padding: 80px 70px;
-    }
-
-    #footer h4 {
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #00cc99;
-    }
-
-    #footer .footer-info {
-      text-align: left;
-    }
-
-    #footer .footer-icons a {
+    span {
       display: inline-block;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      background-color: #33383b;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
-      font-size: 22px;
-      color: #00b386;
-      text-align: center;
-      line-height: 35px;
-      margin-right: 15px;
+      position: relative;
     }
 
-    #footer .footer-icons a:hover {
-      background-color: #fff;
-    }
-
-    #footer .contacts .fa {
-      color: #00b386;
-    }
-
-    #footer ul {
-      font-size: 14px;
-      padding-bottom: 20px;
-      color: #fff;
-      line-height: 2.2;
-      margin-left: 0;
-      padding-left: 0;
-
-    }
-
-    #footer li {
-      text-align: left;
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    #footer .nav-links a:hover {
-      color: #00b386;
-    }
-
-    #footer .hr-footer {
-      display: block;
-      width: 100%;
-      color: #fff;
-      margin: 25px 0;
-    }
-
-    @media (max-width: 375px) {
-      #footer {
-        padding: 50px 10px;
-      }
-
-      #footer h4 {
-        font-size: 20px;
-        margin-bottom: 15px;
-      }
-
-      #footer .nav-links a {
-        font-size: 14px;
-        padding-bottom: 20px;
-        line-height: 20px;
-      }
-
-      #footer .footer-info {
-        padding-bottom: 30px;
-      }
-    }
-
-    .copyright {
-      background-color: #00aa9c;
-    }
-
-    .copyright p {
-      text-align: center;
-      color: #fff;
-      padding: 5px 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .to-top {
-      color: #fff;
-      font-size: 30px;
-      position: fixed;
-      right: 15px;
-      bottom: 15px;
-      height: 40px;
-      width: 40px;
+    nav a {
+      display: inline-block;
+      color: #272727;
       text-decoration: none;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
+      font-size: 1em;
+      text-decoration: none !important;
+    }
+
+    .circle {
+      height: 10px;
+      width: 10px;
+      left: -10px;
+      border-radius: 50%;
+      background-color: #272727;
+    }
+
+    .rect {
+      height: 3px;
+      width: 0px;
+      left: 0;
+      bottom: 4px;
+      background-color: #272727;
+      -webkit-transition: -webkit-transform 0.6s, width 1s;
+      -moz-transition: -webkit-transform 0.6s, width 1s;
+      transition: transform 0.6s, width 1s;
+    }
+
+    nav a:hover,
+    nav .active-section {
+      color: #9b59b6;
+    }
+
+    nav a:hover span,
+    nav .active-section span {
+      background-color: #9b59b6;
+    }
+
+    nav .active-section .rect {
+      width: 40px;
+    }
+
+    .content-sections {
+      position: relative;
+      margin-left: 78px;
+      margin-top: 194px;
+      width: 80%;
+      height: 66%;
+      left: 50%;
+      background-color: #ecf1f1;
       text-align: center;
-      background-color: #aaa;
-      opacity: .7;
-      background-repeat: no-repeat;
-      background-position: center;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
     }
 
-    .to-top:hover {
-      background-color: #222;
-      color: #00b386;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease;
+    .content-sections h3 {
+      position: relative;
+      top: 7%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      color: #9b59b6;
+      font-size: 2em;
     }
 
-    @media (max-width: 375px) {
-
-      .to-top {
-        right: 0;
-        bottom: 5px;
-      }
-    }
-
-
-    /*****************************************
-   Breadcrumb
-   *****************************************/
-    .breadcrumb {
-      background-color: #aaa;
-      border-radius: 0;
-      color: #fff;
-    }
-
-    .breadcrumb>li:hover>a {
-      color: #005960;
-    }
-
-    /****************************************
-   Pagination
-  *****************************************/
-
-    .pagination>li>a {
-      background-color: #fff;
-      color: #005960;
-      border-color: #005960;
-      border-radius: 0;
-    }
-
-    .pagination>li:hover>a,
-    .pagination>li:hover:focus>a,
-    .pagination>li.active a,
-    .pagination>li.active:hover a {
-      background-color: #005960;
-      color: #fff;
-      border: 1px solid #005960;
-    }
-
-    /*****************************************
-   Sidebar
-  *****************************************/
-    aside {
-      background-color: #eee;
-      box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8)
-    }
-
-    aside h3 {
-      color: #fff;
-      background-color: #005960;
-      font-size: 18px;
-      padding: 7px;
+    .content-section {
+      position: relative;
+      margin-left: 78px;
+      width: 80%;
+      height: 121%;
+      left: 50%;
+      background-color: #ecf1f1;
       text-align: center;
-      opacity: .7;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
     }
 
-
-    .sidebar-posts ol {
-      padding-bottom: 10px;
-      margin-left: 10px;
-      padding-left: 10px;
+    .content-section h1 {
+      position: relative;
+      top: 30%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      color: #9b59b6;
+      font-size: 2em;
     }
 
-    .sidebar-posts li {
-      color: #555;
-      font-size: 14px;
-      text-align: left;
-      margin-left: 10px;
-      padding-left: 10px;
-
+    /*CREDITS*/
+    .about {
+      position: fixed;
+      bottom: 0;
+      left: 1%;
     }
 
-    .sidebar-hr {
-      border-color: #555;
-      width: 90%;
-      padding-left: 0;
-      margin-left: 0;
-      margin-top: 0;
+    .about a {
+      text-decoration: none;
+      font-size: 1.5em;
     }
 
-
-    /************************************
-   Post
-  *************************************/
-
-    .main-content {
-      background-color: #eee;
-      min-height: 700px;
+    .about a:visited,
+    .about a:active,
+    .about a:link {
+      color: #000;
     }
 
-    .header-h3 h3 {
-      text-align: center;
-      padding-top: 20px;
-      font-size: 30px;
-      color: #005960;
-      font-weight: 600;
+    .about a:hover {
+      color: red;
     }
 
-    .header-h3 .post-meta {
-      text-align: right;
+    .courses-nav {
+      margin-top: 140px;
+      margin-left: 58px;
     }
 
-    .main-content .text-blog {
-      padding: 20px;
-      color: rgba(25, 25, 25, .8);
-      font-size: 15px;
+    .course-para{
+      margin-top: 207px;
     }
 
-    .main-content .text-blog::first-letter {
-      font-size: 150%;
-      font-weight: 600;
-      color: #005960;
+    .cs-img{
+      margin-top: -5px;
     }
 
-    @media (max-width: 375px) {
+    .courses-head{
+      margin-left: -7px;
+    }
 
-      .text-blog {
-        line-height: 20px;
-      }
+    .course-parasize{
+      font-size: 1.2em;
+      text-align: justify;
     }
   </style>
+
 </head>
 
 <body>
@@ -1331,8 +284,8 @@
                 <img src="assets/img/logos1.png" class="img-fluid">
               </a>
             </div>
-            <div class="col-8 text-center">
-              <h4>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h4>
+            <div class="col-8 text-center head-name">
+              <h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
               <p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
             </div>
             <div class="col-1 second-nav-position">
@@ -1548,155 +501,116 @@
   </div>
 
 
- <div>
-  <section class="bg-section" id="service">
-    <div class="container-fluid">
-      <div class="row slideanim slide">
-        <div class="tabpanel" role="tabpanel">
-          <div class="col-md-4 col-sm-4">
-            <ul class="nav nav-pills brand-pills nav-stacked" role="tablist">
-              <li role="presentation" class="brand-nav active ug-sec"><a href="#tab1" aria-controls="tab1" role="tab"
-                  data-toggle="tab" aria-expanded="false">Computer Science</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab2" aria-controls="tab2" role="tab"
-                  data-toggle="tab" aria-expanded="false">Mechanical Engineering</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab3" aria-controls="tab3" role="tab"
-                  data-toggle="tab" aria-expanded="false">EE</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab4" aria-controls="tab4" role="tab"
-                  data-toggle="tab" aria-expanded="true">EEE</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab5" aria-controls="tab5" role="tab"
-                  data-toggle="tab" aria-expanded="true">Civil Engineering</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab6" aria-controls="tab6" role="tab"
-                  data-toggle="tab" aria-expanded="true">Civil Engineering</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab7" aria-controls="tab7" role="tab"
-                  data-toggle="tab" aria-expanded="true">Chemical Engineering</a></li>
-              <li role="presentation" class="brand-nav ug-sec"><a href="#tab8" aria-controls="tab8" role="tab"
-                  data-toggle="tab" aria-expanded="true">Diploma</a></li>
-            </ul>
-          </div>
-          <div class="col-md-8 col-sm-8" style="margin-left: 300px; margin-top: -565px;">
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft active" id="tab1">
-                <h3 class="laws">Property law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Property law governs ownership and possession. Real property, sometimes called 'real estate', refers
-                  to ownership of land and things attached to it.[178] Personal property, refers to everything else;
-                  movable objects, such as computers, cars, jewelry or intangible rights, such as stocks and shares. A
-                  right in rem is a right to a specific piece of property, contrasting to a right in personam which
-                  allows compensation for a loss, but not a particular thing back.
-                </p>
-                <p>
-                  Land law forms the basis for most kinds of property law, and is the most complex. It concerns
-                  mortgages, rental agreements, licences, covenants, easements and the statutory systems for land
-                  registration.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft" id="tab2">
-                <h3 class="laws">Corporate law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Corporate law (also known as business law or enterprise law or company law or trade law or commercial
-                  law) is the body of law that applies to the rights, relations, and conduct of persons and businesses
-                  engaged in commerce, merchandising, trade, and sales.
-                </p>
-                <p>
-                  It studies how shareholders, directors, employees, creditors, and other stakeholders such as
-                  consumers, the community, and the environment interact with one another. Corporate law is a part of a
-                  broader companies law (or law of business associations). It is often considered to be a branch of
-                  civil law and deals with issues of both private law and public law.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft" id="tab3">
-                <h3 class="laws">Competition law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Competition law is a law that promotes or seeks to maintain market competition by regulating
-                  anti-competitive conduct by companies.[1][2] Competition law is implemented through public and private
-                  enforcement.
-                </p>
-                <p>
-                  Competition law is known as anti-trust law in the United States, and as anti-monopoly law in China[1]
-                  and Russia. In previous years it has been known as trade practices law in the United Kingdom and
-                  Australia. In the European Union, it is referred to as both antitrust[4] and competition law.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft " id="tab4">
-                <h3 class="laws">Labour law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Labour law (also known as labor law or employment law) mediates the relationship between workers,
-                  employing entities, trade unions and the government. Collective labour law relates to the tripartite
-                  relationship between employee, employer and union. Individual labour law concerns employees' rights at
-                  work and through the contract for work.
-                </p>
-                <p>
-                  Employment standards are social norms (in some cases also technical standards) for the minimum
-                  socially acceptable conditions under which employees or contractors are allowed to work.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft " id="tab5">
-                <h3 class="laws">Labour law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Labour law (also known as labor law or employment law) mediates the relationship between workers,
-                  employing entities, trade unions and the government. Collective labour law relates to the tripartite
-                  relationship between employee, employer and union. Individual labour law concerns employees' rights at
-                  work and through the contract for work.
-                </p>
-                <p>
-                  Employment standards are social norms (in some cases also technical standards) for the minimum
-                  socially acceptable conditions under which employees or contractors are allowed to work.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft " id="tab6">
-                <h3 class="laws">Labour law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Labour law (also known as labor law or employment law) mediates the relationship between workers,
-                  employing entities, trade unions and the government. Collective labour law relates to the tripartite
-                  relationship between employee, employer and union. Individual labour law concerns employees' rights at
-                  work and through the contract for work.
-                </p>
-                <p>
-                  Employment standards are social norms (in some cases also technical standards) for the minimum
-                  socially acceptable conditions under which employees or contractors are allowed to work.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft " id="tab7">
-                <h3 class="laws">Labour law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Labour law (also known as labor law or employment law) mediates the relationship between workers,
-                  employing entities, trade unions and the government. Collective labour law relates to the tripartite
-                  relationship between employee, employer and union. Individual labour law concerns employees' rights at
-                  work and through the contract for work.
-                </p>
-                <p>
-                  Employment standards are social norms (in some cases also technical standards) for the minimum
-                  socially acceptable conditions under which employees or contractors are allowed to work.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane slideanimleft slideleft " id="tab8">
-                <h3 class="laws">Labour law</h3>
-                <hr class="laws-hr">
-                <p>
-                  Labour law (also known as labor law or employment law) mediates the relationship between workers,
-                  employing entities, trade unions and the government. Collective labour law relates to the tripartite
-                  relationship between employee, employer and union. Individual labour law concerns employees' rights at
-                  work and through the contract for work.
-                </p>
-                <p>
-                  Employment standards are social norms (in some cases also technical standards) for the minimum
-                  socially acceptable conditions under which employees or contractors are allowed to work.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <nav class="courses-nav py-5">
+    <h3 class="text-primary text-uppercase courses-head" >UG Courses</h3>
+    <ul>
+      <li>
+        <a href="#section1">
+          <span class="rect"></span>
+          <span class="circle"></span>
+          Computer Science
+        </a>
+      </li>
+      <li>
+        <a href="#section2">
+          <span class="rect"></span>
+          <span class="circle"></span>
+          Mechanical
+        </a>
+      </li>
+      <li>
+        <a href="#section3">
+          <span class="rect"></span>
+          <span class="circle"></span>
+          EE
+        </a>
+      </li>
+      <li>
+        <a href="#section4">
+          <span class="rect"></span>
+          <span class="circle"></span>
+          EEE
+        </a>
+      </li>
+      <li>
+        <a href="#section5">
+          <span class="rect"></span>
+          <span class="circle"></span>
+          CIVIL
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section id="section1" class="content-sections">
+    <h3>Computer Science & Engineering</h3>
+    <div class="m-5">
+      <h4 class="m-5 course-parasize" >
+        Computer science is the study of computers and computational systems. It is a broad field which includes
+        everything from the algorithms that make up software to how software interacts with hardware to how well
+        software is developed and designed.
+      </h4>
+      <h4 class="m-5 course-parasize" >
+        Computer science courses can be taken as a degree or diploma. Some topics covered in computer science courses
+        include:
+        Database system architecture
+        Data models
+        Relational database design
+        Computer science is a fast-developing field with a wide range of career options. National intelligence agencies
+        are always looking for graduates with the skills to create software and understand systems.
+      </h4>
+      <img src="assets/img/cs-1.jpg" alt="" class="cs-img" >
+      <img src="assets/img/cs-2.png" alt="" class="cs-img" >
+      <img src="assets/img/cs-3.jpg" alt="" class="cs-img" >
     </div>
   </section>
- </div>
+  <section id="section2" class="content-section">
+    <h1>Mechanical Engineering</h1>
+    <h4 class="course-para" >
+      B. Tech Mechanical Engineering studies engineering concepts related to machine manufacturing, design, maintenance, and analysis. Furthermore, Btech Mechanical Engineering is a four-year undergraduate degree programme that will prepare you for a rewarding career that will benefit you and society.
+    </h4>
+    <h4 class="m-5" >
+      Some of the top job roles after completing BTech Mechanical Engineering are mechanical engineer, assistant mechanical engineer, professor, automobile engineer, and technical sales engineer. Some of the top specializations in mechanical engineering are robotics, automobile, and thermal engineering.
+    </h4>
+    <img src="assets/img/me-1.png" alt="">
+    <img src="assets/img/me-2.jpg" alt="">
+    <img src="assets/img/me-3.jpg" alt="">
+  </section>
+  <section id="section3" class="content-section">
+    <h1>Electrical Engineering(EE)</h1>
+    <h4 class="course-para" >
+      B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is the area of engineering that focuses on the study of applications of electronics, electricity and electromagnetism. The course also covers the fundamentals of electromagnetism and electronics.
+    </h4>
+    <h4 class="m-5" >
+      The BTech Electrical Engineering syllabus broadens the learning vision and helps students to manage various domains under electrical engineering. It covers a range of subtopics including electronics, power, control systems, signal processing, and telecommunications.
+    </h4>
+    <img src="assets/img/ee-1.jpg" alt="">
+    <img src="assets/img/ee-2.jpg" alt="">
+    <img src="assets/img/ee-3.jpg" alt="">
+  </section>
+  <section id="section4" class="content-section">
+    <h1>Electrical and Electronics Engineering (EEE)</h1>
+    <h4 class="course-para" >
+      B. Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course covers various topics about the application of electronics, electromagnetism, and the the function of various electrical components to develop new and advanced electrical equipment, etc.
+    </h4>
+    <h4 class="m-5" >
+      B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is the area of engineering that focuses on the study of applications of electronics, electricity and electromagnetism. The course also covers the fundamentals of electromagnetism and electronics.
+    </h4>
+    <img src="assets/img/eee-1.jpg" alt="">
+    <img src="assets/img/eee -2.jpg" alt="">
+    <img src="assets/img/eee-3.jpg" alt="">
+  </section>
+  <section id="section5" class="content-section">
+    <h1>Civil Engineering</h1>
+    <h4 class="course-para" >
+      Civil Engineering is a four years Undergraduate direction that specializes withinside the designing, making plans and building of buildings. It consists of the examine of fabric science, structural designs, creation materials & management.
+    </h4>
+    <h4 class="m-5" >
+      in Civil Engineering is an undergraduate engineering degree of four year duration. The course deals basically with the design and development of transportation systems, buildings, bridges, highways, flyovers etc.
+    </h4>
+    <img src="assets/img/ce-1.jpg" alt="">
+    <img src="assets/img/ce-2.jpg" alt="">
+    <img src="assets/img/ce-3.jpg" alt="">
+  </section>
 
   <!-- FOOTER section START-->
   <footer class="foot-sec" style="z-index: 999;">
@@ -1789,97 +703,43 @@
   <script type="text/javascript" src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
-    angular.module('formApp', [])
-      .controller('formController', ['$scope', function ($scope) {
-        $scope.master = {};
-
-        $scope.update = function (user) {
-          $scope.master = angular.copy(user);
-        };
-
-        $scope.reset = function () {
-          $scope.user = angular.copy($scope.master);
-        };
-
-        $scope.reset();
-      }]);
-  </script>
-  <script>
-    /* Scroll nav section */
     $(document).ready(function () {
-      $(".overlay-content a").on('click', function (event) {
+      var contentSection = $('.content-section');
+      var navigation = $('nav');
 
-        $(".overlay").css("height", "0%");
-        $(".menu-icon").toggleClass('change');
-
-        if (this.hash !== "") {
-          event.preventDefault();
-
-          var hash = this.hash;
-
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function () {
-
-            window.location.hash = hash;
-          });
-        } // End if
+      //when a nav link is clicked, smooth scroll to the section
+      navigation.on('click', 'a', function (event) {
+        event.preventDefault(); //prevents previous event
+        smoothScroll($(this.hash));
       });
 
+      //update navigation on scroll...
+      $(window).on('scroll', function () {
+        updateNavigation();
+      })
+      //...and when the page starts
+      updateNavigation();
 
-      /* Menu icon */
-      $(".menu-icon").click(function () {
-        var $this = $(this);
-        $this.toggleClass('change');
-        $(".menu-icon").css("z-index", "10");
-        if ($this.hasClass('change')) {
-          $(".overlay").css("height", "100%");
-        } else {
-          $(".overlay").css("height", "0%");
-        }
-      });
-
-
-      /* General slide animation up */
-      $(window).scroll(function () {
-        $(".slideanim").each(function () {
-          var pos = $(this).offset().top;
-
-          var winTop = $(window).scrollTop();
-          if (pos < winTop + 700) {
-            $(this).addClass("slide");
+      /////FUNCTIONS
+      function updateNavigation() {
+        contentSection.each(function () {
+          var sectionName = $(this).attr('id');
+          var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+          if (($(this).offset().top - $(window).height() / 2 < $(window).scrollTop()) &&
+            ($(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())) {
+            navigationMatch.addClass('active-section');
+          }
+          else {
+            navigationMatch.removeClass('active-section');
           }
         });
-      });
-
-
-      /* Service slide left */
-      $(".brand-nav").ready(function () {
-        $(".slideanimleft").each(function () {
-          $(this).addClass("slideleft");
-        });
-      });
-
-      /* Scroll to Top */
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-          $('.to-top').fadeIn(500);
-        } else {
-          $('.to-top').fadeOut(500);
-        }
-      });
-
-      $('.to-top').click(function (event) {
-        event.preventDefault();
-        $('.body,html').animate({
-          scrollTop: 0
-        }, 500);
-      });
-
-
-    })
-
-
+      }
+      function smoothScroll(target) {
+        $('body,html').animate({
+          scrollTop: target.offset().top
+        }, 800);
+      }
+    });
   </script>
 
 </body>
