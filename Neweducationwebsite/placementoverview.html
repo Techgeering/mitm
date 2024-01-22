@@ -15,6 +15,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/css/bootstrap.min.css">
 
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet"
@@ -33,8 +34,6 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
 	<title>MITM | About Us</title>
@@ -103,8 +102,58 @@
             color: #fff
         }
     </style>
-    <style>
-        .team .member {
+	<style>
+        section {
+            padding: 60px 0;
+            overflow: hidden;
+          }
+          
+          .section-bg {
+            background-color: #f3f5fa;
+          }
+          
+          .section-title {
+            text-align: center;
+            padding-bottom: 30px;
+          }
+          
+          .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            color: #40e1fe;
+          }
+          
+          .section-title h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+          }
+          
+          .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #47b2e4;
+            bottom: 0;
+            left: calc(50% - 20px);
+          }
+          
+          .section-title p {
+            margin-bottom: 0;
+          }
+          
+          .team .member {
             position: relative;
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
@@ -559,7 +608,6 @@
        </div>
     </div>
       
-      <section>
         <div class="container" >
             <div class="row" >
                 <div class="col-12" >
@@ -579,10 +627,9 @@
                 </div>
             </div>
         </div>
-      </section>
 
       <div class="containers">
-        <h2 class="text-uppercase text-primary text-center fw-bold py-2" >placement highlights</h2>
+        <h4 class="text-uppercase mission-head">PRE-PLACEMENT HIGHLIGHTS</h4>
         <div class="row py-2">
             <div class="four col-md-4">
                 <div class="counter-box colored"> <i class="fa fa-building-o"></i> <span class="counter">47</span>
@@ -602,22 +649,21 @@
         </div>
     </div>
 
-      <div class=" container py-5">
-        <h2 class="text-uppercase text-primary text-center fw-bold py-5" >training and placement cell</h2>
-        <div class="row py-2">
-           <h4 style="text-align: justify;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem qui magni quae nostrum sunt voluptatibus, voluptas nemo! Pariatur vero delectus ipsa harum earum, id, aliquam magni quidem placeat cupiditate ad.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda sapiente natus perspiciatis ex amet tempora similique veritatis officia, sunt molestias at unde maxime laudantium, ullam eveniet cumque. Ratione, ipsum!
-           </h4>
+	<section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+      
+          <div class="">
+            <h4 class="text-uppercase mission-head">PLACEMENT CELL</h4>
         </div>
-        
-        <div class="row">
+      
+          <div class="row">
       
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
               <div class="member d-flex align-items-start">
                 <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
                 <div class="member-info">
                   <h4>Akash Das</h4>
-                  <span>HOD of Computer Science & Master of Computer Application(MCA)</span>
+                  <span>Placement Cell Head</span>
                 </div>
               </div>
             </div>
@@ -627,7 +673,7 @@
                 <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
                 <div class="member-info">
                   <h4>Shalini Routray</h4>
-                  <span>Hod of Civil Department</span>
+                  <span>Placement Cell Enquiry</span>
                 </div>
               </div>
             </div>
@@ -637,7 +683,7 @@
                 <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
                 <div class="member-info">
                   <h4>Rashmikant Panda</h4>
-                  <span>HOD of Mechanical Department</span>
+                  <span>Placement Cell Management</span>
                 </div>
               </div>
             </div>
@@ -647,65 +693,14 @@
                 <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
                 <div class="member-info">
                   <h4>Sraddha Mishra</h4>
-                  <span>HOD of Electrical Engineering</span>
+                  <span>HOD of Internship and Training</span>
                 </div>
               </div>
             </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Sagar Sethy</h4>
-                  <span>HOD of Electrical and Electronics Department</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Anuja Barik</h4>
-                  <span>Hod Of Master of Bussiness Adminstration(MBA)</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Paresh Das</h4>
-                  <span>HOD of Polytechnic</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div>
-      
           </div>
-    </div>
-     
-
+      
+        </div>
+      </section><!-- End Team Section -->
 
 	<!-- FOOTER section START-->
 	<footer class="">
@@ -802,7 +797,6 @@
 	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
 	<script>
 		// Initialize Wow.js
