@@ -689,7 +689,7 @@ tr:nth-child(even) {
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .zoom-on-hover:hover {
@@ -870,6 +870,7 @@ a{
 
 .head-name{
   margin-top: -13px;
+  font-style: unset;
 }
 
 .abt-sec{
