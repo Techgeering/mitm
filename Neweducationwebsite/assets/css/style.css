@@ -912,7 +912,6 @@ a{
   margin-left: 661px;
   font-size: 18px;
   line-height: 24px;
-  width: 100%;
   float: left;
   padding-bottom: 19px;
   margin-bottom: 20px;
@@ -936,11 +935,7 @@ a{
   padding-left: 45px;
 }
 
-       
-.abt-us{
-  margin-top: 166px;
- 
-}
+
 .abt-uss{
   margin-top: 107px;
  
@@ -991,8 +986,5 @@ ion-icon:not([name="logo-codepen"]) {
   border: 1px solid currentColor;
   border-radius: 20%;
   padding: 1rem;
-}
-.contact-form{
-  margin-top: 166px;
 }
 
