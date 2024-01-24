@@ -1081,7 +1081,10 @@ ion-icon:not([name="logo-codepen"]) {
   width: 88%;
 margin-left: 30px;
 }
-
+.pre-placement{
+  width: 88%;
+    margin-left: 30px;
+}
 }
 
 
