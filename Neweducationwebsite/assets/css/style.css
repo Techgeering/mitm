@@ -1088,6 +1088,15 @@ margin-left: 30px;
 .maos{
   max-width: 100%;
 }
+.mob-logo{
+  margin-top: -16px !important;
+    margin-left: -62px !important;
+    height: 27% !important;
+}
+
+.top-bgcolor{
+  max-width: 100% !important;
+}
 }
 
 
