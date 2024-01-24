@@ -41,8 +41,8 @@
       animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
       overflow-y: auto;
       /* Add overflow-y property to enable vertical scrolling */
-      height: 361px;
-      margin-top: -8px;
+      height: 354px;
+      margin-top: -10px;
     }
 
     .notice-event p {
@@ -50,30 +50,40 @@
     }
 
     /* Second Animation */
-    .notice-event-2 {
-      overflow: hidden;
-      margin-top: -8px;
-      position: relative;
-      height: 360px;
-      background-color: #f22e2e17;
-    }
+.notice-event-2 {
+  overflow: hidden;
+  margin-top: -8px;
+  position: relative;
+  height: 360px;
+  background-color: #f22e2e17;
+}
 
-    @keyframes moveNews2 {
-      0% {
-        transform: translateY(725%);
-        /* Change initial translateY value */
-      }
+@keyframes moveNews2 {
+  0% {
+    transform: translateY(830%);
+  }
 
-      100% {
-        transform: translateY(-300%);
-        /* Change final translateY value */
-      }
-    }
+  100% {
+    transform: translateY(-460%);
+  }
+}
 
-    .notice-event-2 li {
-      animation: moveNews2 18s ease-in-out infinite;
-      /* Adjust animation duration and timing function */
-    }
+.notice-event-2 li {
+	margin-top: 20px; 
+  position: relative;
+  animation: moveNews2 16s ease-in-out infinite;
+}
+
+.notice-event-2 li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Adjust the underline height as needed */
+  background-color: #00000057; /* Adjust the underline color as needed */
+}
+
 
     .calendar-container {
       display: flex;

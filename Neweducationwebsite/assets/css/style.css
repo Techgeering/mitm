@@ -988,3 +988,100 @@ ion-icon:not([name="logo-codepen"]) {
   padding: 1rem;
 }
 
+/* ABOUT US PAGE  */
+.abt-us{
+  margin-top: 166px;
+ 
+}
+
+.abt-imgmain{
+ margin-top: 80px;
+ height: 240px;
+ max-width: 100%;
+}
+.abt-us h5{
+  font-style: inherit; /* Optional: Italic font style */
+  line-height: 2.0; /* Adjust line height for gap between lines */
+  text-align: justify;
+  margin-left: 30px;
+}
+.imp-linkbox{
+  border: 0.5px solid blue;
+  height: 40px;
+  margin-top: 2px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+  body{
+    max-width: 100%;
+  }
+  section{
+    max-width: 100%;
+  }
+
+  /* .mission-heads{
+    margin-left: 190px;
+    font-size: 18px;
+    line-height: 24px;
+    float: left;
+    padding-bottom: 19px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+  }
+  .mission-heads:after{
+    margin-left:25px;
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #00b9fb;
+    left: 0;
+    bottom: 0;
+  }
+  .abt-imgmain{
+    margin-top: 350px;
+    height: 240px;
+    max-width: 322%;
+   }
+  .abt-imgmainobj{
+    margin-top: 350px;
+    height: 240px;
+    max-width: 345px !important;
+   }
+
+   .mission-para{
+    margin-left: -106px;
+    margin-bottom: -20px;
+   }
+   .abt-visionimg{
+    height:30%;
+    width:332%;
+    margin-top: 550px;
+    margin-left: -300px;
+   }
+   .vision-para{
+    margin-bottom: -20px;
+    margin-left: 30px;
+   } */
+
+   .ug-deta {
+    width: 45% !important;
+    padding: 10px;
+    border-right: 2px solid #3bb3fb;
+}
+
+.ug-paradt{
+  text-align: justify !important;
+  max-width: 95% !important;
+}
+.containers {
+  width: 88%;
+margin-left: 30px;
+}
+
+}
+
+
