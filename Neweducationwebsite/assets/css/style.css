@@ -1021,10 +1021,9 @@ ion-icon:not([name="logo-codepen"]) {
     max-width: 100%;
   }
   .mission-heads {
-    margin-left: 289px;
     font-size: 18px;
     line-height: 24px;
-    float: left;
+    float: right;
     padding-bottom: 19px;
     margin-bottom: 20px;
     position: relative;
