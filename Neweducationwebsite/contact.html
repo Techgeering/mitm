@@ -29,11 +29,11 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"> -->
 
 	<!-- <title>MITM | About Us</title> -->
 
@@ -158,7 +158,8 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="https://www.bput.ac.in/">Admissions</a>
+								<a class="nav-link active third-menu-color "
+									href="https://www.bput.ac.in/">Admissions</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -176,7 +177,8 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a></li>
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.html">Department</a></li>
                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.html">Cell</a></li>
                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.html">Seminar & Workshop</a></li>
@@ -267,38 +269,94 @@
 		<!--third nav end for desktop view-->
 		<!--navbar start for mobile and tab view-->
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
-    		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    		  <div class="">
-    		    <a class="navbar-brand" href="#">
-    		    	<div class="row">
-    		    		<div class="col-1">
-    		    			<img src="assets/img/logos1.png" class="mob-logo" >
-    		    		</div>
-    		    	</div>
-    		    	<!-- <img src="assets/img/logo1.png" class="img-fluid">
-    		    	  <h4 >Modern Institute of Technology & Management (MITM),BHUBANESWAR</h4>
-    						<p >(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p> -->
-    		    </a>
-    		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    		      <span class="navbar-toggler-icon"></span>
-    		    </button>
-    		    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    		      <ul class="navbar-nav">
-    		        <li class="nav-item">
-    		          <a class="nav-link active" aria-current="page" href="#">Home</a>
-    		        </li>
-    		        <li class="nav-item">
-    		          <a class="nav-link" href="#">Features</a>
-    		        </li>
-    		        <li class="nav-item">
-    		          <a class="nav-link" href="#">Pricing</a>
-    		        </li>
-    		      </ul>
-    		    </div>
-    		  </div>
-    		</nav>
-      </div>
-</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="" style="width: 100%;">
+					<a class="navbar-brand" href="index.html"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation"
+						style="margin-left: 257px; margin-top: 12px;">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
+							<li class="nav-item dropdown" style="margin-left: -80px;">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Discover
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="about.html">About Us</a></li>
+									<!-- <li><hr class="dropdown-divider"></li> -->
+									<li><a class="dropdown-item" href="chairmansays.html">Chairman Speaks</a></li>
+									<li><a class="dropdown-item" href="principalsays.html">Principal Speaks</a></li>
+									<li><a class="dropdown-item" href="faculty.html">Faculties</a></li>
+									<li><a class="dropdown-item" href="accredation.html">Accredation</a></li>
+									<li><a class="dropdown-item" href="life.html">Life @ MITM</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown" style="margin-left: -80px;">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Programmes
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="ugcourse.html">UG</a></li>
+									<!-- <li><hr class="dropdown-divider"></li> -->
+									<li><a class="dropdown-item" href="pgcourse.html">PG</a></li>
+									<li><a class="dropdown-item" href="polytechnic.html">Polytechnic</a></li>
+								</ul>
+							</li>
+							<li class="nav-item" style="margin-left: -80px;">
+								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
+							</li>
+							<li class="nav-item" style="margin-left: -80px;">
+								<a class="nav-link" href="fascilites.html">Fascilities</a>
+							</li>
+							<li class="nav-item dropdown" style="margin-left: -80px;">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Examinations
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+									<!-- <li><hr class="dropdown-divider"></li> -->
+									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
+									<li><a class="dropdown-item" href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown" style="margin-left: -80px;">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Placement
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="placementoverview.html">Overview</a></li>
+									<!-- <li><hr class="dropdown-divider"></li> -->
+									<li><a class="dropdown-item" href="placementcompany.html">Company</a></li>
+								</ul>
+							</li>
+							<li class="nav-item" style="margin-left: -80px;">
+								<a class="nav-link" href="notice.html">Notice</a>
+							</li>
+							<li class="nav-item" style="margin-left: -80px;">
+								<a class="nav-link" href="contact.html">Csntact US</a>
+							</li>
+
+							<!-- <li class="nav-item" style="margin-left: -80px;">
+								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+							</li> -->
+
+						</ul>
+						<form class="d-flex" style="margin-left: -80px;">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
 	</div>
 	<!--navbar end for mobile and tab view-->
 	<!--enquiry start-->
@@ -379,73 +437,75 @@
 
 	<div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 166px; ">
 		<div class="heading-bg-color">
-		   <h1 class="heading-text-position text-uppercase">contact us</h1>
-	   </div>
+			<h1 class="heading-text-position text-uppercase">contact us</h1>
+		</div>
 	</div>
 
-  <div class="contact-form py-2" >
-    <div class="container">
-        <div class="bg-light">
-          <div class="row">
-            <div class="col-lg-8 col-md-12 bg-white rounded-3 cont-form">
-              <div class="d-flex mb-3 flex-column">
-              </div>
-              <h2 class="text-center text-uppercase" >Contact Us For The Query</h2>
-              <form class="row mb-3">
-                <div class="col-md-6 col-sm-12 p-3">
-                  <input required placeholder="first name" type="text" name="" id="" />
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                  <input required placeholder="last name" type="text" name="" id="" />
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                  <input required placeholder="E-mail" type="email" name="" id="" />
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                  <input required placeholder="phone" type="tel" name="" id="" />
-                </div>
-                <div class="col-md col-sm-12">
-                  <textarea required name="" placeholder="write your message" id="" cols="30" rows="1"></textarea>
-                </div>
-                <div class="text-end mt-4">
-                  <input class="btn px-4 py-3 btn-primary" type="submit" value="Send Message" />
-                </div>
-              </form>
-              <!-- <h6 class="text-center text-danger" >*Fill out the form and we will get back to you soon</h6> -->
-            </div>
-            <div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
-              <div class="mb-5">
-                <h1 class="h3">Contact Information</h1>
-                <p class="opacity-50">
-                  <small>
-                    <!-- Fill out the from and we will get back to you whitin 24 hours -->
-                  </small>
-                </p>
-              </div>
-              <div class="d-flex flex-column px-0">
-                <ul class="m-0 p-0">
-                  <li class="d-flex justify-content-start align-items-center mb-4">
-                    <span class="opacity-50 d-flex align-items-center me-3 fs-2">
-                      <ion-icon name="call"></ion-icon>
-                    </span>
-                    <span>+134 1234 1234</span>
-                  </li>
-                  <li class="d-flex align-items-center r mb-4">
-                    <span class="opacity-50 d-flex align-items-center me-3 fs-2">
-                      <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <span>Help@contact.com</span>
-                  </li>
-                  <li class="d-flex justify-content-start align-items-center mb-4">
-                    <span class="opacity-50 d-flex align-items-center me-3 fs-2">
-                      <ion-icon name="pin"></ion-icon>
-                    </span>
-                    <span>8P47+2JH, Bidyavihar, Kantabada, Khurdha - Chandaka Road, Bhubaneswar, Odisha 752054<br />
-                      Arkansas(AR), 72032
-                    </span>
-                  </li>
-                </ul>
-                <!-- <div class="text-muted text-center">
+	<div class="contact-form py-2">
+		<div class="container">
+			<div class="bg-light">
+				<div class="row">
+					<div class="col-lg-8 col-md-12 bg-white rounded-3 cont-form">
+						<div class="d-flex mb-3 flex-column">
+						</div>
+						<h2 class="text-center text-uppercase">Contact Us For The Query</h2>
+						<form class="row mb-3">
+							<div class="col-md-6 col-sm-12 p-3">
+								<input required placeholder="first name" type="text" name="" id="" />
+							</div>
+							<div class="col-md-6 col-sm-12 p-3">
+								<input required placeholder="last name" type="text" name="" id="" />
+							</div>
+							<div class="col-md-6 col-sm-12 p-3">
+								<input required placeholder="E-mail" type="email" name="" id="" />
+							</div>
+							<div class="col-md-6 col-sm-12 p-3">
+								<input required placeholder="phone" type="tel" name="" id="" />
+							</div>
+							<div class="col-md col-sm-12">
+								<textarea required name="" placeholder="write your message" id="" cols="30"
+									rows="1"></textarea>
+							</div>
+							<div class="text-end mt-4">
+								<input class="btn px-4 py-3 btn-primary" type="submit" value="Send Message" />
+							</div>
+						</form>
+						<!-- <h6 class="text-center text-danger" >*Fill out the form and we will get back to you soon</h6> -->
+					</div>
+					<div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
+						<div class="mb-5">
+							<h1 class="h3">Contact Information</h1>
+							<p class="opacity-50">
+								<small>
+									<!-- Fill out the from and we will get back to you whitin 24 hours -->
+								</small>
+							</p>
+						</div>
+						<div class="d-flex flex-column px-0">
+							<ul class="m-0 p-0">
+								<li class="d-flex justify-content-start align-items-center mb-4">
+									<span class="opacity-50 d-flex align-items-center me-3 fs-2">
+										<ion-icon name="call"></ion-icon>
+									</span>
+									<span>+134 1234 1234</span>
+								</li>
+								<li class="d-flex align-items-center r mb-4">
+									<span class="opacity-50 d-flex align-items-center me-3 fs-2">
+										<ion-icon name="mail"></ion-icon>
+									</span>
+									<span>Help@contact.com</span>
+								</li>
+								<li class="d-flex justify-content-start align-items-center mb-4">
+									<span class="opacity-50 d-flex align-items-center me-3 fs-2">
+										<ion-icon name="pin"></ion-icon>
+									</span>
+									<span>8P47+2JH, Bidyavihar, Kantabada, Khurdha - Chandaka Road, Bhubaneswar, Odisha
+										752054<br />
+										Arkansas(AR), 72032
+									</span>
+								</li>
+							</ul>
+							<!-- <div class="text-muted text-center">
                   <code>
                     Inspiration from :
                     <a href="https://dribbble.com/shots/14126196-Contact-Form-01/attachments/5749555?mode=media">
@@ -457,18 +517,21 @@
                       <ion-icon name="logo-codepen"></ion-icon>
                     </a></code>
                 </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-
-<div class="row maps" >
-	<div class="col-sm-12" >
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.8842521981064!2d85.71153397385332!3d20.30505761224406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19070d705d9f45%3A0x873ac9e651b338f3!2sModern%20Institute%20of%20Technology%20%26%20Management%20(MITM)!5e0!3m2!1sen!2sin!4v1704440168212!5m2!1sen!2sin" width="1270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+
+	<div class="row maps">
+		<div class="col-sm-12">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.8842521981064!2d85.71153397385332!3d20.30505761224406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19070d705d9f45%3A0x873ac9e651b338f3!2sModern%20Institute%20of%20Technology%20%26%20Management%20(MITM)!5e0!3m2!1sen!2sin!4v1704440168212!5m2!1sen!2sin"
+				width="1270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
 
 	<!-- FOOTER section START-->
 	<footer class="">
@@ -559,16 +622,17 @@
 	<!-- FOOTER section end-->
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 
-<!-- Other scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<!-- Other scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 	<script>
 		// Initialize Wow.js
