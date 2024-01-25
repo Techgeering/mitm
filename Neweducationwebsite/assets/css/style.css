@@ -1085,7 +1085,7 @@ ion-icon:not([name="logo-codepen"]) {
 
 .ug-paradt{
   text-align: justify !important;
-  max-width: 95% !important;
+  max-width: 100% !important;
 }
 .containers {
   width: 88%;
@@ -1110,6 +1110,9 @@ margin-left: 30px;
 .comp-img{
   margin-left: 70px;
 
+}
+.cs-img{
+  width: 100% !important;
 }
 }
 
