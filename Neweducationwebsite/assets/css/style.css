@@ -909,14 +909,14 @@ a{
   bottom: 0;
 }
 .mission-heads{
-  margin-left: 661px;
   font-size: 18px;
-  line-height: 24px;
-  float: left;
-  padding-bottom: 19px;
-  margin-bottom: 20px;
-  position: relative;
-  font-weight: 600;
+    line-height: 24px;
+    justify-content: left;
+    float: right;
+    padding-bottom: 19px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
 }
 .mission-heads:after{
   margin-left:25px;
@@ -927,6 +927,10 @@ a{
   background: #00b9fb;
   left: 0;
   bottom: 0;
+}
+
+.missionpara-data{
+  margin-top: 56px;
 }
 
 .mission-cont{
