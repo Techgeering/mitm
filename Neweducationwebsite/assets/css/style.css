@@ -1020,6 +1020,16 @@ ion-icon:not([name="logo-codepen"]) {
   section{
     max-width: 100%;
   }
+  .mission-heads {
+    margin-left: 289px;
+    font-size: 18px;
+    line-height: 24px;
+    float: left;
+    padding-bottom: 19px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+}
 
   /* .mission-heads{
     margin-left: 190px;
@@ -1082,8 +1092,8 @@ ion-icon:not([name="logo-codepen"]) {
 margin-left: 30px;
 }
 .pre-placement{
-  width: 88%;
-    margin-left: 30px;
+  width: 100%;
+  margin-left: -3px;
 }
 .maos{
   max-width: 100%;
@@ -1096,6 +1106,10 @@ margin-left: 30px;
 
 .top-bgcolor{
   max-width: 100% !important;
+}
+.comp-img{
+  margin-left: 70px;
+
 }
 }
 
