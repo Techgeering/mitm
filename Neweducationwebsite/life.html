@@ -38,133 +38,11 @@
 	<title>MITM | About Us</title>
 
 	<style>
-        :root {
-            --lightbox: rgb(0 0 0 / 0.75);
-            --carousel-text: #fff;
-          }
           
           body {
             margin: 1.5rem 0 3.5rem;
             background-color: white;
           }
-          
-          @keyframes zoomin {
-            0% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.05);
-            }
-            100% {
-              transform: scale(1);
-            }
-          }
-          
-          .gallery-item {
-            display: block;
-          }
-          
-          .gallery-item img {
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
-            transition: box-shadow 0.2s;
-          }
-          
-          .gallery-item:hover img {
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
-          }
-          
-          .lightbox-modal .modal-content {
-            background-color: var(--lightbox);
-          }
-          
-          .lightbox-modal .btn-close {
-            position: absolute;
-            top: 1.25rem;
-            right: 1.25rem;
-            font-size: 1.25rem;
-            z-index: 10;
-            filter: invert(1) grayscale(100);
-          }
-          
-          .lightbox-modal .modal-body {
-            display: flex;
-            align-items: center;
-            padding: 0;
-          }
-          
-          .lightbox-modal .lightbox-content {
-            width: 100%;
-          }
-          
-          .lightbox-modal .carousel-indicators {
-            margin-bottom: 0;
-          }
-          
-          .lightbox-modal .carousel-indicators [data-bs-target] {
-            background-color: var(--carousel-text) !important;
-          }
-          
-          .lightbox-modal .carousel-inner {
-            width: 75%;
-          }
-          
-          .lightbox-modal .carousel-inner img {
-            animation: zoomin 10s linear infinite;
-          }
-          
-          .lightbox-modal .carousel-item .carousel-caption {
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding-bottom: 2rem;
-            background-color: var(--lightbox);
-            color: var(--carousel-text) !important;
-          }
-          
-          .lightbox-modal .carousel-control-prev,
-          .lightbox-modal .carousel-control-next {
-            width: auto;
-          }
-          
-          .lightbox-modal .carousel-control-prev {
-            left: 1.25rem;
-          }
-          
-          .lightbox-modal .carousel-control-next {
-            right: 1.25rem;
-          }
-          
-          @media (min-width: 1400px) {
-            .lightbox-modal .carousel-inner {
-              max-width: 60%;
-            }
-          }
-          
-          [data-bs-theme = "dark"] .lightbox-modal .carousel-control-next-icon,
-          [data-bs-theme = "dark"] .lightbox-modal .carousel-control-prev-icon {
-              filter: none;
-          }
-          
-          .btn-fullscreen-enlarge,
-          .btn-fullscreen-exit {
-            position: absolute;
-            top: 1.25rem;
-            right: 3.5rem;
-            z-index: 10;
-            border: 0;
-            background: transparent;
-            opacity: .6;
-            font-size: 1.25rem;
-          }
-          
-          .bi {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.035em;
-            fill: currentcolor;
-          }
-          
     </style>
 
 </head>
@@ -476,10 +354,6 @@
 							</li> -->
 
 						</ul>
-						<form class="d-flex" style="margin-left: -80px;">
-							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success" type="submit">Search</button>
-						</form>
 					</div>
 				</div>
 			</nav>
@@ -562,7 +436,7 @@
 	</div>
 	<!--enquiry end -->
 
-	<div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 196px;">
+	<div class="heading-bg-img place-head" style="background-image: url(assets/img/headingbgimg.png);">
         <div class="heading-bg-color">
            <h1 class="heading-text-position text-uppercase">Life @ mitm</h1>
        </div>
@@ -574,71 +448,36 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
             <div class="col">
-              <a class="gallery-item" href="assets/img/college1.jpg">
-                <img src="assets/img/college1.jpg" class="img-fluid" alt="Lorem ipsum dolor sit amet">
-              </a>
+				<img src="assets/img/college1.jpg" class="img-fluid" alt="Lorem ipsum dolor sit amet">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college2.jpg">
-                <img src="assets/img/college2.jpg" class="img-fluid" alt="Ipsum lorem dolor sit amet">
-              </a>
+				<img src="assets/img/college2.jpg" class="img-fluid" alt="Ipsum lorem dolor sit amet">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college3.jpg">
-                <img src="assets/img/college3.jpg" class="img-fluid" alt="Dolor lorem ipsum sit amet">
-              </a>
+				<img src="assets/img/college3.jpg" class="img-fluid" alt="Dolor lorem ipsum sit amet">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college4.jpg">
-                <img src="assets/img/college4.jpg" class="img-fluid" alt="Sit amet lorem ipsum dolor">
-              </a>
+				<img src="assets/img/college4.jpg" class="img-fluid" alt="Sit amet lorem ipsum dolor">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college5.jpg">
-                <img src="assets/img/college5.jpg" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
-              </a>
+				<img src="assets/img/college5.jpg" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college6.jpg">
-                <img src="assets/img/college6.jpg" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
-              </a>
+				<img src="assets/img/college6.jpg" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college7.jpg">
-                <img src="assets/img/college7.jpg" class="img-fluid" alt="Nemo perspiciatis voluptatum">
-              </a>
+				<img src="assets/img/college7.jpg" class="img-fluid" alt="Nemo perspiciatis voluptatum">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college8.jpg">
-                <img src="assets/img/college8.jpg" class="img-fluid" alt="Accusantium consequuntur modi">
-              </a>
+				<img src="assets/img/college8.jpg" class="img-fluid" alt="Accusantium consequuntur modi">
             </div>
             <div class="col">
-              <a class="gallery-item" href="assets/img/college9.jpg">
-                <img src="assets/img/college9.jpg" class="img-fluid" alt="Dolore asperiores reprehenderit">
-              </a>
+				<img src="assets/img/college9.jpg" class="img-fluid" alt="Dolore asperiores reprehenderit">
             </div>
           </div>
         </div>
       </section>
-      <!-- <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-          <div class="modal-content">
-            <button type="button" class="btn-fullscreen-enlarge" aria-label="Enlarge fullscreen">
-              <svg class="bi"><use href="#enlarge"></use></svg>
-            </button>
-            <button type="button" class="btn-fullscreen-exit d-none" aria-label="Exit fullscreen">
-              <svg class="bi"><use href="#exit"></use></svg>
-            </button>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
-              <div class="lightbox-content">
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
  
 

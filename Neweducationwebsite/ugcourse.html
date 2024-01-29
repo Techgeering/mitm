@@ -49,7 +49,6 @@
     .ug-deta {
       width: 25%;
       padding: 10px;
-      border-right: 2px solid #3bb3fb;
     }
 
     .ug-deta h3 {
@@ -66,6 +65,24 @@
     }
 
     .ug-deta h3.active {
+      color: rgb(255, 255, 255);
+      background-color: #5e3bfb;
+      transform: scale(1.05);
+    }
+    .ug-detas h3 {
+      margin-left: -8px;
+      margin-right: 6px;
+      cursor: pointer;
+      margin-bottom: 0;
+      transition: color 0.3s, transform 0.3s;
+      background-color: #3bb3fb;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px rgb(0 0 0);
+    }
+
+    .ug-detas h3.active {
       color: rgb(255, 255, 255);
       background-color: #5e3bfb;
       transform: scale(1.05);
@@ -384,10 +401,6 @@
 							</li> -->
 
 						</ul>
-						<form class="d-flex" style="margin-left: -80px;">
-							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success" type="submit">Search</button>
-						</form>
 					</div>
 				</div>
 			</nav>
@@ -400,12 +413,13 @@
         aria-hidden="true"></i> Admission Enquiry</a>
   </div>
 
-  <div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 196px;">
+  <div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 135px;">
     <div class="heading-bg-color">
       <h1 class="heading-text-position text-uppercase">UG COURSES</h1>
     </div>
   </div>
 
+<div class="d-none d-lg-block" >
   <div class="container ug-box py-2">
     <div class="col-lg-4 col-sm-12 ug-deta">
       <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">Computer Science
@@ -425,16 +439,15 @@
       <h3 class="text-center" id="heading5" onclick="showContent('content5', 'heading5')">Civil Engineering</h3>
       <div class="line" style="border-right: 4px solid #ffcc33;"></div>
     </div>
-
     <div class="col-lg-8 col-sm-12 ug-cont">
       <div id="content1" style="display: block;">
         <h4 class="text-uppercase mission-head">Computer Science Engineering</h4>
-        <p class="ug-paradt" >
-        Computer science is the study of computers and computational systems. It is a broad field which includes
-        everything from the algorithms that make up software to how software interacts with hardware to how well
-        software is developed and designed.
+        <p class="ug-paradt">
+          Computer science is the study of computers and computational systems. It is a broad field which includes
+          everything from the algorithms that make up software to how software interacts with hardware to how well
+          software is developed and designed.
         </p>
-        <p class="ug-paradt" >
+        <p class="ug-paradt">
           Computer science courses can be taken as a degree or diploma. Some topics covered in computer science courses
           include:
           Database system architecture
@@ -452,9 +465,11 @@
       <div id="content2" style="display: none;">
         <h4 class="text-uppercase mission-head">mechanical engineering</h4>
         <p class="ug-paradt">
-        Tech Mechanical Engineering studies engineering concepts related to machine manufacturing, design, maintenance,
-        and analysis. Furthermore, Btech Mechanical Engineering is a four-year undergraduate degree programme that will
-        prepare you for a rewarding career that will benefit you and society.
+          Tech Mechanical Engineering studies engineering concepts related to machine manufacturing, design,
+          maintenance,
+          and analysis. Furthermore, Btech Mechanical Engineering is a four-year undergraduate degree programme that
+          will
+          prepare you for a rewarding career that will benefit you and society.
         </p>
         <p class="ug-paradt">
           Some of the top job roles after completing BTech Mechanical Engineering are mechanical engineer, assistant
@@ -469,9 +484,11 @@
       <div id="content3" style="display: none;">
         <h4 class="text-uppercase mission-head">electrical engineering</h4>
         <p class="ug-paradt">
-        B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is the
-        area of engineering that focuses on the study of applications of electronics, electricity and electromagnetism.
-        The course also covers the fundamentals of electromagnetism and electronics.
+          B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is
+          the
+          area of engineering that focuses on the study of applications of electronics, electricity and
+          electromagnetism.
+          The course also covers the fundamentals of electromagnetism and electronics.
         </p>
         <p class="ug-paradt">
           The BTech Electrical Engineering syllabus broadens the learning vision and helps students to manage various
@@ -486,9 +503,9 @@
       <div id="content4" style="display: none;">
         <h4 class="text-uppercase mission-head">Electronics and electrical engineering</h4>
         <p class="ug-paradt">
-        B. Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course
-        covers various topics about the application of electronics, electromagnetism, and the the function of various
-        electrical components to develop new and advanced electrical equipment, etc.
+          B. Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course
+          covers various topics about the application of electronics, electromagnetism, and the the function of various
+          electrical components to develop new and advanced electrical equipment, etc.
         </p>
         <p class="ug-paradt">
           B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is
@@ -503,9 +520,9 @@
       <div id="content5" style="display: none;">
         <h4 class="text-uppercase mission-head">Civil engineering</h4>
         <p class="ug-paradt">
-        Civil Engineering is a four years Undergraduate direction that specializes withinside the designing, making
-        plans and building of buildings. It consists of the examine of fabric science, structural designs, creation
-        materials & management.
+          Civil Engineering is a four years Undergraduate direction that specializes withinside the designing, making
+          plans and building of buildings. It consists of the examine of fabric science, structural designs, creation
+          materials & management.
         </p>
         <p class="ug-paradt">
           in Civil Engineering is an undergraduate engineering degree of four year duration. The course deals basically
@@ -517,6 +534,125 @@
       </div>
     </div>
   </div>
+</div>
+
+  <div class="d-lg-none d-sm-block" >
+    <div class="container py-2 ">
+      <div class="ug-detas" style="width: 90%; margin-left: 21px;" >
+        <h3 class="active text-center" id="heading12" onclick="showContents('content12', 'heading12')">Computer Science
+          Engineering</h3>
+        <div class="line" style="border-right: 4px solid #ff5733;"></div>
+  
+        <h3 class="text-center" id="heading22" onclick="showContents('content22', 'heading22')">Mechanical Engineering</h3>
+        <div class="line" style="border-right: 4px solid #33ff57;"></div>
+  
+        <h3 class="text-center" id="heading33" onclick="showContents('content33', 'heading33')">Electrical Engineering</h3>
+        <div class="line" style="border-right: 4px solid #5733ff;"></div>
+  
+        <h3 class="text-center" id="heading44" onclick="showContents('content44', 'heading44')">Electronics and Electrical
+          Engineering</h3>
+        <div class="line" style="border-right: 4px solid #ffcc33;"></div>
+  
+        <h3 class="text-center" id="heading55" onclick="showContents('content55', 'heading55')">Civil Engineering</h3>
+        <div class="line" style="border-right: 4px solid #ffcc33;"></div>
+      </div>
+      <div class="ug-conts" style="width: 99%; text-align: justify; padding: 20px; margin-left: -9px;" >
+        <div id="content12" style="display: block;">
+          <h4 class="text-uppercase mission-head">Computer Science Engineering</h4>
+          <p class="ug-paradt">
+            Computer science is the study of computers and computational systems. It is a broad field which includes
+            everything from the algorithms that make up software to how software interacts with hardware to how well
+            software is developed and designed.
+          </p>
+          <p class="ug-paradt">
+            Computer science courses can be taken as a degree or diploma. Some topics covered in computer science courses
+            include:
+            Database system architecture
+            Data models
+            Relational database design
+            Computer science is a fast-developing field with a wide range of career options. National intelligence
+            agencies
+            are always looking for graduates with the skills to create software and understand systems.
+          </p>
+          <img src="assets/img/cs-1.jpg" alt="" class="cs-img">
+          <img src="assets/img/cs-2.png" alt="" class="cs-img">
+          <img src="assets/img/cs-3.jpg" alt="" class="cs-img">
+        </div>
+  
+        <div id="content22" style="display: none;">
+          <h4 class="text-uppercase mission-head">mechanical engineering</h4>
+          <p class="ug-paradt">
+            Tech Mechanical Engineering studies engineering concepts related to machine manufacturing, design,
+            maintenance,
+            and analysis. Furthermore, Btech Mechanical Engineering is a four-year undergraduate degree programme that
+            will
+            prepare you for a rewarding career that will benefit you and society.
+          </p>
+          <p class="ug-paradt">
+            Some of the top job roles after completing BTech Mechanical Engineering are mechanical engineer, assistant
+            mechanical engineer, professor, automobile engineer, and technical sales engineer. Some of the top
+            specializations in mechanical engineering are robotics, automobile, and thermal engineering.
+          </p>
+          <img src="assets/img/me-1.png" alt="">
+          <img src="assets/img/me-2.jpg" alt="">
+          <img src="assets/img/me-3.jpg" alt="">
+        </div>
+  
+        <div id="content33" style="display: none;">
+          <h4 class="text-uppercase mission-head">electrical engineering</h4>
+          <p class="ug-paradt">
+            B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is
+            the
+            area of engineering that focuses on the study of applications of electronics, electricity and
+            electromagnetism.
+            The course also covers the fundamentals of electromagnetism and electronics.
+          </p>
+          <p class="ug-paradt">
+            The BTech Electrical Engineering syllabus broadens the learning vision and helps students to manage various
+            domains under electrical engineering. It covers a range of subtopics including electronics, power, control
+            systems, signal processing, and telecommunications.
+          </p>
+          <img src="assets/img/ee-1.jpg" alt="">
+          <img src="assets/img/ee-2.jpg" alt="">
+          <img src="assets/img/ee-3.jpg" alt="">
+        </div>
+  
+        <div id="content44" style="display: none;">
+          <h4 class="text-uppercase mission-head">Electronics and electrical engineering</h4>
+          <p class="ug-paradt">
+            B. Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course
+            covers various topics about the application of electronics, electromagnetism, and the the function of various
+            electrical components to develop new and advanced electrical equipment, etc.
+          </p>
+          <p class="ug-paradt">
+            B. Tech with a major in Electrical Engineering is an undergraduate program that lasts for four years. It is
+            the area of engineering that focuses on the study of applications of electronics, electricity and
+            electromagnetism. The course also covers the fundamentals of electromagnetism and electronics.
+          </p>
+          <img src="assets/img/eee-1.jpg" alt="">
+          <img src="assets/img/eee -2.jpg" alt="">
+          <img src="assets/img/eee-3.jpg" alt="">
+        </div>
+  
+        <div id="content55" style="display: none;">
+          <h4 class="text-uppercase mission-head">Civil engineering</h4>
+          <p class="ug-paradt">
+            Civil Engineering is a four years Undergraduate direction that specializes withinside the designing, making
+            plans and building of buildings. It consists of the examine of fabric science, structural designs, creation
+            materials & management.
+          </p>
+          <p class="ug-paradt">
+            in Civil Engineering is an undergraduate engineering degree of four year duration. The course deals basically
+            with the design and development of transportation systems, buildings, bridges, highways, flyovers etc.
+          </p>
+          <img src="assets/img/ce-1.jpg" alt="">
+          <img src="assets/img/ce-2.jpg" alt="">
+          <img src="assets/img/ce-3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- FOOTER section START-->
@@ -630,6 +766,41 @@
       document.getElementById(headingId).classList.add('active');
     }
   </script>
+
+  <script>
+    function showContents(contentId, headingId) {
+      // Hide all content divs
+      document.querySelectorAll('.ug-conts > div').forEach(function (div) {
+        div.style.display = 'none';
+      });
+
+      // Show the selected content
+      document.getElementById(contentId).style.display = 'block';
+
+      // Reset styles for all headings
+      document.querySelectorAll('.ug-detas h3').forEach(function (heading) {
+        heading.classList.remove('active');
+      });
+
+      // Set active styles for the clicked heading
+      document.getElementById(headingId).classList.add('active');
+
+      // Define custom scroll offsets for each content section
+      var scrollOffsets = {
+        'content12': 600,
+        'content22': 330,
+        'content33': 300,
+        'content44': 200,
+        'content55': 100
+      };
+
+      // Smooth scroll to the content heading section with custom scroll offset
+      var contentHeading = document.getElementById(headingId).nextElementSibling;
+      contentHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollBy(0, scrollOffsets[contentId]);
+    }
+</script>
+
 
 
 </body>

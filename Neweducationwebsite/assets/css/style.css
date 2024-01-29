@@ -546,9 +546,7 @@ body{
   color: #fff;
   margin-top: -34px;
 }
-.heading-bg-color{
-  /* background: rgb(0, 0, 0, 0.6); */
-}
+
 .about-content-img{
   border-radius: 15px;
     box-shadow: 1px 1px 1px 1px;
@@ -702,6 +700,10 @@ a{
   box-shadow: 0 0 10px 0 rgba(59, 141, 224, 0.5);
   font-family: 'Lucida Console';
   margin-bottom: 30px;
+  background-size: cover; /* Ensure the background image covers the entire box */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; 
+  
 }
 
 
@@ -941,7 +943,7 @@ a{
 
 
 .abt-uss{
-  margin-top: 107px;
+  margin-top: 166px;
  
 }
 
@@ -994,20 +996,18 @@ ion-icon:not([name="logo-codepen"]) {
 
 /* ABOUT US PAGE  */
 .abt-us{
-  margin-top: 166px;
- 
+  margin-top: 196px;
 }
 
 .abt-imgmain{
- margin-top: 80px;
  height: 240px;
  max-width: 100%;
+ margin-top: 77px;
 }
 .abt-us h5{
   font-style: inherit; /* Optional: Italic font style */
   line-height: 2.0; /* Adjust line height for gap between lines */
   text-align: justify;
-  margin-left: 30px;
 }
 .imp-linkbox{
   border: 0.5px solid blue;
@@ -1015,12 +1015,51 @@ ion-icon:not([name="logo-codepen"]) {
   margin-top: 2px;
 }
 
+.place-head{
+  margin-top: 196px;
+}
 
 @media only screen and (max-width: 900px){
 
   body{
     max-width: 100%;
   }
+
+  #cards_landscape_wrap-2 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    object-fit: contain;
+    /* display: grid; */
+    /* place-items: center; */
+    max-width: 82%;
+    margin-left: 34px;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  height: auto;
+  width: 20%;
+}
+
+.abt-uss{
+  margin-top: 56px;
+}
+
+.abt-us{
+  margin-top: 126px;
+}
+.place-head{
+  margin-top: 126px;
+}
+
+.abt-imgmain {
+  height: 240px !important;
+  max-width: 100% !important;
+  /* margin-top: 77px; */
+}
+
   section{
     max-width: 100%;
   }
@@ -1080,7 +1119,7 @@ ion-icon:not([name="logo-codepen"]) {
     margin-left: 30px;
    } */
 
-   .ug-deta {
+   /* .ug-deta {
     width: 45% !important;
     padding: 10px;
     border-right: 2px solid #3bb3fb;
@@ -1089,7 +1128,7 @@ ion-icon:not([name="logo-codepen"]) {
 .ug-paradt{
   text-align: justify !important;
   max-width: 100% !important;
-}
+} */
 .containers {
   width: 88%;
 margin-left: 30px;
@@ -1110,13 +1149,19 @@ margin-left: 30px;
 .top-bgcolor{
   max-width: 100% !important;
 }
-.comp-img{
-  margin-left: 70px;
-
-}
 .cs-img{
   width: 100% !important;
 }
 }
+.cs-imgs{
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
 
 
+.nav-toggleicon{
+  position: relative !important;
+  margin-top: 12px !important;
+  float: right !important;
+}
