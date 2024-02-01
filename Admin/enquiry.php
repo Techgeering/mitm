@@ -61,8 +61,8 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="contact.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Contact</a>
-                    <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
+                    <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
+                    <a href="enquiry.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Enquiry</a>
                 </div>
             </nav>
         </div>
@@ -87,24 +87,25 @@
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Contact</h6>
+                            <h6 class="mb-4">Enquiry</h6>
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Slno</th>
-                                        <th scope="col">Full Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Message</th>
-                                        <th scope="col">Date & Time</th>
-                                        <th scope="col">Delete</th>
+                                        <th scope="col" class="text-center">Slno</th>
+                                        <th scope="col" class="text-center">Full Name</th>
+                                        <th scope="col" class="text-center">Email</th>
+                                        <th scope="col" class="text-center">Phone</th>
+                                        <th scope="col" class="text-center">course</th>
+                                        <th scope="col" class="text-center">Message</th>
+                                        <th scope="col" class="text-center">Date & Time</th>
+                                        <th scope="col" class="text-center">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <?php include 'db.php';
 
-                                    $sql = "SELECT * FROM mitm_contact ORDER BY id DESC";
+                                    $sql = "SELECT * FROM mitm_enquiry ORDER BY id DESC";
                                     $result = $conn->query($sql);
                                     $i = 1;
                                     while ($row = $result->fetch_assoc()) {
@@ -116,19 +117,22 @@
                                             </td>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['contact_name']; ?>
+                                                <?php echo $row['enquiry_name']; ?>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['contact_email']; ?>
+                                                <?php echo $row['enquiry_email']; ?>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['contact_phone']; ?>
+                                                <?php echo $row['enquiry_mobile']; ?>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['contact_message']; ?>
+                                                <?php echo $row['enquiry_course']; ?>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['dte_tim']; ?>
+                                                <?php echo $row['enquiry_message']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['dte']; ?>
                                             </td>
                                             <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
                                                         class="fas fa-trash-alt btn btn-danger"></i></a></td>
@@ -137,13 +141,14 @@
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th scope="col">Slno</th>
-                                        <th scope="col">Full Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Message</th>
-                                        <th scope="col">Date & Time</th>
-                                        <th scope="col">Delete</th>
+                                        <th scope="col" class="text-center">Slno</th>
+                                        <th scope="col" class="text-center">Full Name</th>
+                                        <th scope="col" class="text-center">Email</th>
+                                        <th scope="col" class="text-center">Phone</th>
+                                        <th scope="col" class="text-center">course</th>
+                                        <th scope="col" class="text-center">Message</th>
+                                        <th scope="col" class="text-center">Date & Time</th>
+                                        <th scope="col" class="text-center">Delete</th>
                                     </tr>
                                     <tfoot>
                             </table>

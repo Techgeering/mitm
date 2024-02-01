@@ -34,221 +34,228 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<!--toaster alert-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 
 	<title>MITM | About Us</title>
 
-    <style>
-        
-    .abt-us{
-        margin-top: 166px;
-       
-    }
-    .abt-us h5{
-        font-style: inherit; /* Optional: Italic font style */
-        line-height: 2.0; /* Adjust line height for gap between lines */
-        text-align: justify;
-        margin-left: 30px;
-    }
-      .imp-linkbox{
-        border: 0.5px solid blue;
-        height: 40px;
-        margin-top: 2px;
-      }
-    </style>
-
-    <style>
-        .containers {
-            width: 88%;
-    		margin-left: 73px;
-        }
-        
-        .counter-box {
-            display: block;
-            background: #f6f6f6;
-            padding: 40px 20px 37px;
-            text-align: center
-        }
-        
-        .counter-box p {
-            margin: 5px 0 0;
-            padding: 0;
-            color: #909090;
-            font-size: 18px;
-            font-weight: 500
-        }
-        
-        .counter-box i {
-            font-size: 60px;
-            margin: 0 0 15px;
-            color: #d2d2d2
-        }
-        
-        .counter {
-            display: block;
-            font-size: 32px;
-            font-weight: 700;
-            color: #666;
-            line-height: 28px
-        }
-        
-        .counter-box.colored {
-            background: #3acf87
-        }
-        
-        .counter-box.colored p,
-        .counter-box.colored i,
-        .counter-box.colored .counter {
-            color: #fff
-        }
-    </style>
 	<style>
-        section {
-            padding: 60px 0;
-            overflow: hidden;
-          }
-          
-          .section-bg {
-            background-color: #f3f5fa;
-          }
-          
-          .section-title {
-            text-align: center;
-            padding-bottom: 30px;
-          }
-          
-          .section-title h2 {
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            position: relative;
-            color: #40e1fe;
-          }
-          
-          .section-title h2::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 120px;
-            height: 1px;
-            background: #ddd;
-            bottom: 1px;
-            left: calc(50% - 60px);
-          }
-          
-          .section-title h2::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 3px;
-            background: #47b2e4;
-            bottom: 0;
-            left: calc(50% - 20px);
-          }
-          
-          .section-title p {
-            margin-bottom: 0;
-          }
-          
-          .team .member {
-            position: relative;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            border-radius: 5px;
-            background: #fff;
-            transition: 0.5s;
-            height: 100%;
-          }
-          
-          .team .member .pic {
-            overflow: hidden;
-            width: 180px;
-            border-radius: 50%;
-          }
-          
-          .team .member .pic img {
-            transition: ease-in-out 0.3s;
-          }
-          
-          .team .member:hover {
-            transform: translateY(-10px);
-          }
-          
-          .team .member .member-info {
-            padding-left: 30px;
-          }
-          
-          .team .member h4 {
-            font-weight: 700;
-            margin-bottom: 5px;
-            font-size: 20px;
-            color: #37517e;
-          }
-          
-          .team .member span {
-            display: block;
-            font-size: 15px;
-            padding-bottom: 10px;
-            position: relative;
-            font-weight: 500;
-          }
-          
-          .team .member span::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 1px;
-            background: #cbd6e9;
-            bottom: 0;
-            left: 0;
-          }
-          
-          .team .member p {
-            margin: 10px 0 0 0;
-            font-size: 14px;
-          }
-          
-          .team .member .social {
-            margin-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-          }
-          
-          .team .member .social a {
-            transition: ease-in-out 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50px;
-            width: 32px;
-            height: 32px;
-            background: #eff2f8;
-          }
-          
-          .team .member .social a i {
-            color: #37517e;
-            font-size: 16px;
-            margin: 0 2px;
-          }
-          
-          .team .member .social a:hover {
-            background: #47b2e4;
-          }
-          
-          .team .member .social a:hover i {
-            color: #fff;
-          }
-          
-          .team .member .social a + a {
-            margin-left: 8px;
-          }
-          
-    </style>
+		.abt-us {
+			margin-top: 166px;
+
+		}
+
+		.abt-us h5 {
+			font-style: inherit;
+			/* Optional: Italic font style */
+			line-height: 2.0;
+			/* Adjust line height for gap between lines */
+			text-align: justify;
+			margin-left: 30px;
+		}
+
+		.imp-linkbox {
+			border: 0.5px solid blue;
+			height: 40px;
+			margin-top: 2px;
+		}
+	</style>
+
+	<style>
+		.containers {
+			width: 88%;
+			margin-left: 73px;
+		}
+
+		.counter-box {
+			display: block;
+			background: #f6f6f6;
+			padding: 40px 20px 37px;
+			text-align: center
+		}
+
+		.counter-box p {
+			margin: 5px 0 0;
+			padding: 0;
+			color: #909090;
+			font-size: 18px;
+			font-weight: 500
+		}
+
+		.counter-box i {
+			font-size: 60px;
+			margin: 0 0 15px;
+			color: #d2d2d2
+		}
+
+		.counter {
+			display: block;
+			font-size: 32px;
+			font-weight: 700;
+			color: #666;
+			line-height: 28px
+		}
+
+		.counter-box.colored {
+			background: #3acf87
+		}
+
+		.counter-box.colored p,
+		.counter-box.colored i,
+		.counter-box.colored .counter {
+			color: #fff
+		}
+	</style>
+	<style>
+		section {
+			padding: 60px 0;
+			overflow: hidden;
+		}
+
+		.section-bg {
+			background-color: #f3f5fa;
+		}
+
+		.section-title {
+			text-align: center;
+			padding-bottom: 30px;
+		}
+
+		.section-title h2 {
+			font-size: 32px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			position: relative;
+			color: #40e1fe;
+		}
+
+		.section-title h2::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 120px;
+			height: 1px;
+			background: #ddd;
+			bottom: 1px;
+			left: calc(50% - 60px);
+		}
+
+		.section-title h2::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 40px;
+			height: 3px;
+			background: #47b2e4;
+			bottom: 0;
+			left: calc(50% - 20px);
+		}
+
+		.section-title p {
+			margin-bottom: 0;
+		}
+
+		.team .member {
+			position: relative;
+			box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+			padding: 30px;
+			border-radius: 5px;
+			background: #fff;
+			transition: 0.5s;
+			height: 100%;
+		}
+
+		.team .member .pic {
+			overflow: hidden;
+			width: 180px;
+			border-radius: 50%;
+		}
+
+		.team .member .pic img {
+			transition: ease-in-out 0.3s;
+		}
+
+		.team .member:hover {
+			transform: translateY(-10px);
+		}
+
+		.team .member .member-info {
+			padding-left: 30px;
+		}
+
+		.team .member h4 {
+			font-weight: 700;
+			margin-bottom: 5px;
+			font-size: 20px;
+			color: #37517e;
+		}
+
+		.team .member span {
+			display: block;
+			font-size: 15px;
+			padding-bottom: 10px;
+			position: relative;
+			font-weight: 500;
+		}
+
+		.team .member span::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 50px;
+			height: 1px;
+			background: #cbd6e9;
+			bottom: 0;
+			left: 0;
+		}
+
+		.team .member p {
+			margin: 10px 0 0 0;
+			font-size: 14px;
+		}
+
+		.team .member .social {
+			margin-top: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.team .member .social a {
+			transition: ease-in-out 0.3s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50px;
+			width: 32px;
+			height: 32px;
+			background: #eff2f8;
+		}
+
+		.team .member .social a i {
+			color: #37517e;
+			font-size: 16px;
+			margin: 0 2px;
+		}
+
+		.team .member .social a:hover {
+			background: #47b2e4;
+		}
+
+		.team .member .social a:hover i {
+			color: #fff;
+		}
+
+		.team .member .social a+a {
+			margin-left: 8px;
+		}
+	</style>
 
 </head>
 
@@ -349,7 +356,7 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="life.php">Life @ MITM</a></li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -365,13 +372,14 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="polytechnic.php">Polytechnic</a></li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="https://www.bput.ac.in/">Admissions</a>
+								<a class="nav-link active third-menu-color "
+									href="https://www.bput.ac.in/">Admissions</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -389,57 +397,58 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a></li>
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul>
+			  <ul class="navbar-nav">
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
+						   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -454,10 +463,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
+				</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item ">
 								<a class="nav-link active third-menu-color " href="notice.php">Notice</a>
@@ -469,10 +478,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
+				</li>
+			  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -482,7 +491,8 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"
@@ -530,10 +540,14 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
+									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-									<li><a class="dropdown-item" href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
+									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: -80px;">
@@ -565,202 +579,134 @@
 	</div>
 	<!--navbar end for mobile and tab view-->
 	<!--enquiry start-->
-	<div id="myfirstcaptch" class="first-captcha">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="admission-enquiry-bg">
-			<h6><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Admission Enquiry For 2023</h6>
+	<?php include 'enquiry.php' ?>
+	<!--enquiry end -->
+
+	<div class="heading-bg-img place-head" style="background-image: url(assets/img/headingbgimg.png);">
+		<div class="heading-bg-color">
+			<h1 class="heading-text-position text-uppercase">Placement Overview</h1>
 		</div>
-		<div class="p-3">
+	</div>
+
+	<section style=" overflow: hidden; background-color: #f3f5fa;">
+		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<p class="enquiry-contact-color">Contact on +91-xxxxxxxxxx, +91-xxxxxxxxxx or Email:
-						admission@xx.com.</p>
+					<h4 class="text-uppercase mission-head">PRE-PLACEMENT TRAINING</h4>
+					<li class="py-4">
+						To enable efficiency and prosperity in the society through application of technical knowledge
+						and in collaboration with industry and other institutions.
+					</li>
+					<li class="py-4">
+						To enable efficiency and prosperity in the society through application of technical knowledge
+						and in collaboration with industry and other institutions.
+					</li>
+					<li class="py-4">
+						To enable efficiency and prosperity in the society through application of technical knowledge
+						and in collaboration with industry and other institutions.
+					</li>
+					<li class="py-4">
+						To enable efficiency and prosperity in the society through application of technical knowledge
+						and in collaboration with industry and other institutions.
+					</li>
 				</div>
-				<div class="col-12">
-					<form action="" method="POST" id="contactform" role="form">
-						<div class="form-group contact-form-space">
-							<input type="text" required="required" placeholder="Enter Full Name" class="form-control"
-								name="author" id="author">
-						</div>
-						<div class="form-group contact-form-space">
-							<input type="email" required="required" placeholder="Enter Email Id" aria-required="true"
-								class="form-control" name="email" id="email">
-						</div>
-						<div class="form-group contact-form-space">
-							<input type="tel" required="required" placeholder="Enter Mobile No" maxlength="10"
-								class="form-control" aria-required="true" name="pno" id="pno">
-						</div>
-						<div class="form-group contact-form-space">
-							<select class="form-select book-form inp" name="catego" id="catego">
-								<option value="1" class="text-primary">Select Course</option>
-								<option value="2" class="text-primary">B.Tech(CSE)</option>
-								<option value="3" class="text-primary">B.Tech(ECE)</option>
-								<option value="4" class="text-primary">B.Tech(MECH)</option>
-								<option value="5" class="text-primary">B.Tech(CIVIL)</option>
-								<option value="6" class="text-primary">B.Tech(EEE)</option>
-								<option value="7" class="text-primary">B.Tech LE(ECE)</option>
-								<option value="8" class="text-primary">B.Tech LE(CSE)</option>
-								<option value="9" class="text-primary">B.Tech LE(MECH)</option>
-							</select>
-						</div>
-						<div class="form-group contact-form-space">
-							<textarea required="required" aria-required="true" placeholder="Write Your Message"
-								class="form-control" max-length="10" rows="2" class="form-control" cols="45"
-								name="comment" id="comment"></textarea>
-						</div>
-						<div class="contact-form-space">
-							<div id="captchaBackground">
-								<!-- <div class="row">
-				      <div class="col-6">
-				        <input id="textBox2" type="text" name="text" placeholder="Verification Code" class="form-control">
-				      </div>
-				      <div class="col-6">
-				        <canvas id="captcha2">captcha text</canvas>
-				      </div>
-				    </div> -->
-								<div class="col-6 form-group contact-form-space">
-									<div id="buttons">
-										<a class="btn enquiry-btn " type="btn" id="submitButton"><i
-												class="fa fa-paper-plane" aria-hidden="true"></i>Send Enquiry</a>
-									</div>
-								</div>
-								<span id="output"></span>
-							</div>
-						</div>
+			</div>
+		</div>
+	</section>
 
-					</form>
+	<div class="container pre-placement">
+		<h4 class="text-uppercase mission-head">PRE-PLACEMENT HIGHLIGHTS</h4>
+		<div class="row py-2">
+			<div class="four col-md-4 col-sm-12">
+				<div class="counter-box colored"> <i class="fa fa-building-o"></i> <span class="counter">47</span>
+					<p>Top Companies</p>
+				</div>
+			</div>
+			<div class="four col-md-4 col-sm-12">
+				<div class="counter-box colored"> <i class="fa fa-graduation-cap"></i> <span class="counter">3275</span>
+					<p>Students Placed</p>
+				</div>
+			</div>
+			<div class="four col-md-4 col-sm-12">
+				<div class="counter-box colored"> <i class="fa fa-money"></i> <span class="counter">29</span>
+					<p>Minimum Package(Above 4LPA)</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="Enquiry-btn-position">
-		<a href="javascript:void(0)" class="btn enquiry-btn" type="btn" onclick="openNav()"><i class="fa fa-paper-plane"
-				aria-hidden="true"></i> Admission Enquiry</a>
-	</div>
-	<!--enquiry end -->
+	<section id="team" class="team section-bg">
+		<div class="container" data-aos="fade-up">
 
-      <div class="heading-bg-img place-head" style="background-image: url(assets/img/headingbgimg.png);">
-        <div class="heading-bg-color">
-           <h1 class="heading-text-position text-uppercase">Placement Overview</h1>
-       </div>
-    </div>
-      
-        <section style=" overflow: hidden; background-color: #f3f5fa;" >
-			<div class="container" >
-				<div class="row" >
-					<div class="col-12" >
-						<h4 class="text-uppercase mission-head">PRE-PLACEMENT TRAINING</h4>
-						<li class="py-4">
-							To enable efficiency and prosperity in the society through application of technical knowledge and in collaboration with industry and other institutions.
-						</li>
-						<li class="py-4">
-							To enable efficiency and prosperity in the society through application of technical knowledge and in collaboration with industry and other institutions.
-						</li>
-						<li class="py-4">
-							To enable efficiency and prosperity in the society through application of technical knowledge and in collaboration with industry and other institutions.
-						</li>
-						<li class="py-4" >
-							To enable efficiency and prosperity in the society through application of technical knowledge and in collaboration with industry and other institutions.
-						</li>
+			<div class="">
+				<h4 class="text-uppercase mission-head">PLACEMENT CELL</h4>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Akash Das</h4>
+							<span>Placement Cell Head</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Shalini Routray</h4>
+							<span>Placement Cell Enquiry</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Rashmikant Panda</h4>
+							<span>Placement Cell Management</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Sraddha Mishra</h4>
+							<span>HOD of Internship and Training</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Sraddha Mishra</h4>
+							<span>HOD of Internship and Training</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+					<div class="member d-flex align-items-start">
+						<!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+						<div class="member-info">
+							<h4>Sraddha Mishra</h4>
+							<span>HOD of Internship and Training</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
 
-      <div class="container pre-placement">
-        <h4 class="text-uppercase mission-head">PRE-PLACEMENT HIGHLIGHTS</h4>
-        <div class="row py-2">
-            <div class="four col-md-4 col-sm-12">
-                <div class="counter-box colored"> <i class="fa fa-building-o"></i> <span class="counter">47</span>
-                    <p>Top Companies</p>
-                </div>
-            </div>
-            <div class="four col-md-4 col-sm-12">
-                <div class="counter-box colored"> <i class="fa fa-graduation-cap"></i> <span class="counter">3275</span>
-                    <p>Students Placed</p>
-                </div>
-            </div>
-            <div class="four col-md-4 col-sm-12">
-                <div class="counter-box colored"> <i class="fa fa-money"></i> <span class="counter">29</span>
-                    <p>Minimum Package(Above 4LPA)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<section id="team" class="team section-bg">
-        <div class="container" data-aos="fade-up">
-      
-          <div class="">
-            <h4 class="text-uppercase mission-head">PLACEMENT CELL</h4>
-        </div>
-      
-          <div class="row">
-      
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Akash Das</h4>
-                  <span>Placement Cell Head</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Shalini Routray</h4>
-                  <span>Placement Cell Enquiry</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Rashmikant Panda</h4>
-                  <span>Placement Cell Management</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Sraddha Mishra</h4>
-                  <span>HOD of Internship and Training</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Sraddha Mishra</h4>
-                  <span>HOD of Internship and Training</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
-                <div class="member-info">
-                  <h4>Sraddha Mishra</h4>
-                  <span>HOD of Internship and Training</span>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section><!-- End Team Section -->
+		</div>
+	</section><!-- End Team Section -->
 
 	<!-- FOOTER section START-->
 	<footer class="">
@@ -786,11 +732,11 @@
 							<div><a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a></div>
 							<div><a href="javascript:void(0)" class="link-decoration">Principal's Message</a></div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
-						      <p>We will send out weekly newest article and some great offers</p>
-						      <form class="" action="" method="POST" id="newsletterform" role="form">
-						             <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
-						             <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
-						        </form> -->
+							  <p>We will send out weekly newest article and some great offers</p>
+							  <form class="" action="" method="POST" id="newsletterform" role="form">
+									 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
+									 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
+								</form> -->
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
@@ -857,28 +803,111 @@
 	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<!-- Toastr JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 	<script>
 		// Initialize Wow.js
 		new WOW().init();
 	</script>
-    <script>
-        $(document).ready(function() {
+	<script>
+		$(document).ready(function () {
 
-            $('.counter').each(function () {
-            $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-            }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-            $(this).text(Math.ceil(now));
-            }
-            });
-            });
-            
-            });
-    </script>
+			$('.counter').each(function () {
+				$(this).prop('Counter', 0).animate({
+					Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+			});
+
+		});
+	</script>
+
+	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->.
+	<script>
+		$(document).ready(function () {
+			$("#mitmenquiry").submit(function (e) {
+				e.preventDefault();
+
+				var fullname = document.getElementById("enquiryname").value;
+				var emailid = document.getElementById("enquiryemail").value;
+				var mobile = document.getElementById("enquiryphone").value;
+				var course = document.getElementById("enquirycourse").value;
+				var message = document.getElementById("enquirymessage").value;
+
+				var errorstatus = document.getElementById("error-status");
+				var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+				var phonepat = /^[0-9]{10}$/;
+				var fnamecon = /[A-Za-z\s]{1,50}/;
+				var error = false;
+
+				if (
+					fullname === "" ||
+					emailid === "" ||
+					mobile === "" ||
+					course === "" ||
+					message === ""
+				) {
+					errorstatus.innerText = "Please fill all the feilds";
+				} else if (!fullname.match(fnamecon)) {
+					errorstatus.innerText = "Enter a valid name";
+				} else if (!emailid.match(emailRegex)) {
+					errorstatus.innerText = "Enter a valid email";
+				} else if (!mobile.match(phonepat)) {
+					errorstatus.innerText = "Enter a valid phone number";
+				} else {
+					errorstatus.innerText = "";
+					$.ajax({
+						type: "POST",
+						url: "enquiry-forminsert.php",
+						data: {
+							name: fullname,
+							email: emailid,
+							phone: mobile,
+							course: course,
+							message: message,
+						},
+						dataType: "json", // Specify the expected data type
+						success: function (data) {
+							console.log(data); // Log the response for debugging
+							if (data.status === "success") {
+								// Show success message using ToastAlert
+								toastr.success(data.message, "Success");
+
+								document.getElementById("enquiryname").value = "";
+								document.getElementById("enquiryemail").value = "";
+								document.getElementById("enquiryphone").value = "";
+								document.getElementById("enquirycourse").value = "";
+								document.getElementById("enquirymessage").value = "";
+							} else {
+								// Show error message using SweetAlert
+								Swal.fire({
+									icon: "error",
+									title: "Error!",
+									text: data.message,
+								});
+							}
+						},
+						error: function (xhr, status, error) {
+							// Handle other AJAX errors if needed
+							console.error("AJAX Error:", xhr, status, error);
+						},
+						complete: function () {
+							$(".loading").hide(); // Hide loading message on completion
+						},
+					});
+				}
+			});
+		});
+
+	</script>
+
 </body>
 
 </html>

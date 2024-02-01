@@ -35,6 +35,11 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
 
+	<!--toaster alert-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 	<title>MITM | About Us</title>
 
 	<style>
@@ -361,79 +366,7 @@
 	</div>
 	<!--navbar end for mobile and tab view-->
 	<!--enquiry start-->
-	<div id="myfirstcaptch" class="first-captcha">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="admission-enquiry-bg">
-			<h6><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Admission Enquiry For 2023</h6>
-		</div>
-		<div class="p-3">
-			<div class="row">
-				<div class="col-12">
-					<p class="enquiry-contact-color">Contact on +91-xxxxxxxxxx, +91-xxxxxxxxxx or Email:
-						admission@xx.com.</p>
-				</div>
-				<div class="col-12">
-					<form action="" method="POST" id="contactform" role="form">
-						<div class="form-group contact-form-space">
-							<input type="text" required="required" placeholder="Enter Full Name" class="form-control"
-								name="author" id="author">
-						</div>
-						<div class="form-group contact-form-space">
-							<input type="email" required="required" placeholder="Enter Email Id" aria-required="true"
-								class="form-control" name="email" id="email">
-						</div>
-						<div class="form-group contact-form-space">
-							<input type="tel" required="required" placeholder="Enter Mobile No" maxlength="10"
-								class="form-control" aria-required="true" name="pno" id="pno">
-						</div>
-						<div class="form-group contact-form-space">
-							<select class="form-select book-form inp" name="catego" id="catego">
-								<option value="1" class="text-primary">Select Course</option>
-								<option value="2" class="text-primary">B.Tech(CSE)</option>
-								<option value="3" class="text-primary">B.Tech(ECE)</option>
-								<option value="4" class="text-primary">B.Tech(MECH)</option>
-								<option value="5" class="text-primary">B.Tech(CIVIL)</option>
-								<option value="6" class="text-primary">B.Tech(EEE)</option>
-								<option value="7" class="text-primary">B.Tech LE(ECE)</option>
-								<option value="8" class="text-primary">B.Tech LE(CSE)</option>
-								<option value="9" class="text-primary">B.Tech LE(MECH)</option>
-							</select>
-						</div>
-						<div class="form-group contact-form-space">
-							<textarea required="required" aria-required="true" placeholder="Write Your Message"
-								class="form-control" max-length="10" rows="2" class="form-control" cols="45"
-								name="comment" id="comment"></textarea>
-						</div>
-						<div class="contact-form-space">
-							<div id="captchaBackground">
-								<!-- <div class="row">
-				      <div class="col-6">
-				        <input id="textBox2" type="text" name="text" placeholder="Verification Code" class="form-control">
-				      </div>
-				      <div class="col-6">
-				        <canvas id="captcha2">captcha text</canvas>
-				      </div>
-				    </div> -->
-								<div class="col-6 form-group contact-form-space">
-									<div id="buttons">
-										<a class="btn enquiry-btn " type="btn" id="submitButton"><i
-												class="fa fa-paper-plane" aria-hidden="true"></i>Send Enquiry</a>
-									</div>
-								</div>
-								<span id="output"></span>
-							</div>
-						</div>
-
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="Enquiry-btn-position">
-		<a href="javascript:void(0)" class="btn enquiry-btn" type="btn" onclick="openNav()"><i class="fa fa-paper-plane"
-				aria-hidden="true"></i> Admission Enquiry</a>
-	</div>
+	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
 
 	<div class="heading-bg-img place-head" style="background-image: url(assets/img/headingbgimg.png);">
@@ -579,9 +512,90 @@
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script> -->
+	<!-- Toastr JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 	<script>
 		// Initialize Wow.js
 		new WOW().init();
+	</script>
+	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->.
+	<script>
+		$(document).ready(function () {
+			$("#mitmenquiry").submit(function (e) {
+				e.preventDefault();
+
+				var fullname = document.getElementById("enquiryname").value;
+				var emailid = document.getElementById("enquiryemail").value;
+				var mobile = document.getElementById("enquiryphone").value;
+				var course = document.getElementById("enquirycourse").value;
+				var message = document.getElementById("enquirymessage").value;
+
+				var errorstatus = document.getElementById("error-status");
+				var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+				var phonepat = /^[0-9]{10}$/;
+				var fnamecon = /[A-Za-z\s]{1,50}/;
+				var error = false;
+
+				if (
+					fullname === "" ||
+					emailid === "" ||
+					mobile === "" ||
+					course === "" ||
+					message === ""
+				) {
+					errorstatus.innerText = "Please fill all the feilds";
+				} else if (!fullname.match(fnamecon)) {
+					errorstatus.innerText = "Enter a valid name";
+				} else if (!emailid.match(emailRegex)) {
+					errorstatus.innerText = "Enter a valid email";
+				} else if (!mobile.match(phonepat)) {
+					errorstatus.innerText = "Enter a valid phone number";
+				} else {
+					errorstatus.innerText = "";
+					$.ajax({
+						type: "POST",
+						url: "enquiry-forminsert.php",
+						data: {
+							name: fullname,
+							email: emailid,
+							phone: mobile,
+							course: course,
+							message: message,
+						},
+						dataType: "json", // Specify the expected data type
+						success: function (data) {
+							console.log(data); // Log the response for debugging
+							if (data.status === "success") {
+								// Show success message using ToastAlert
+								toastr.success(data.message, "Success");
+
+								document.getElementById("enquiryname").value = "";
+								document.getElementById("enquiryemail").value = "";
+								document.getElementById("enquiryphone").value = "";
+								document.getElementById("enquirycourse").value = "";
+								document.getElementById("enquirymessage").value = "";
+							} else {
+								// Show error message using SweetAlert
+								Swal.fire({
+									icon: "error",
+									title: "Error!",
+									text: data.message,
+								});
+							}
+						},
+						error: function (xhr, status, error) {
+							// Handle other AJAX errors if needed
+							console.error("AJAX Error:", xhr, status, error);
+						},
+						complete: function () {
+							$(".loading").hide(); // Hide loading message on completion
+						},
+					});
+				}
+			});
+		});
+
 	</script>
 	
 </body>
