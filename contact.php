@@ -473,8 +473,7 @@
 							</div>
 
 							<div class="col-md col-sm-12">
-								<textarea  placeholder="write your message" id="cmessage" cols="30"
-									rows="1"></textarea>
+								<textarea placeholder="write your message" id="cmessage" cols="30" rows="1"></textarea>
 							</div>
 
 							<div class="text-end mt-4">
@@ -660,6 +659,8 @@
 		new WOW().init();
 	</script>
 
+	<script src="assets/js/allpage.js"></script>
+
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
@@ -705,7 +706,7 @@
 						url: "contact-forminsert.php",
 						data: {
 							fname: fname,
-							lname:lname,
+							lname: lname,
 							email: email,
 							phone: phone,
 							message: message
@@ -744,9 +745,6 @@
 			});
 		});
 	</script>
-
-
-
 </body>
 
 </html>

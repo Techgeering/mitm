@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DASHMIN - Bootstrap Admin Template</title>
+    <title>MITM | Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -80,42 +80,71 @@
 
             </nav>
             <!-- Navbar End -->
-            
+
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Hoverable Table</h6>
+                            <h6 class="mb-4">Contact</h6>
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Slno</th>
+                                        <th scope="col">Full Name</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Message</th>
+                                        <th scope="col">Date & Time</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>jhon@email.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>mark@email.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>jacob@email.com</td>
-                                    </tr>
+
+                                    <?php include 'db.php';
+
+                                    $sql = "SELECT * FROM mitm_contact ORDER BY id DESC";
+                                    $result = $conn->query($sql);
+                                    $i = 1;
+                                    while ($row = $result->fetch_assoc()) {
+                                        ?>
+                                        <tr>
+                                            <td class="text-center">
+                                                <?php echo $i;
+                                                $i++; ?>
+                                            </td>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['contact_name']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['contact_email']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['contact_phone']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['contact_message']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['dte_tim']; ?>
+                                            </td>
+                                            <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
+                                                        class="fas fa-trash-alt btn btn-danger"></i></a></td>
+                                        </tr>
+                                    <?php } ?>
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="col">Slno</th>
+                                        <th scope="col">Full Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Message</th>
+                                        <th scope="col">Date & Time</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                    <tfoot>
                             </table>
                         </div>
                     </div>

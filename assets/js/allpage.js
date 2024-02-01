@@ -1,4 +1,3 @@
-
 /* ----------------------------------------------------------- */
 /*  GO TO TOP BUTTON JS
 /* ----------------------------------------------------------- */
@@ -7,7 +6,9 @@
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -25,7 +26,7 @@ function topFunction() {
 /*=================================*/
 /* get footer copy write year js
 /*=================================*/
-  document.getElementById("year").innerHTML = new Date().getFullYear();
+document.getElementById("year").innerHTML = new Date().getFullYear();
 /* ----------------------------------------------------------- */
 /*  ENQUIRY BUTTON JS
 /* ----------------------------------------------------------- */
@@ -54,7 +55,7 @@ function topFunction() {
 //  if (userText.value === c) {
 //  output.classList.add("correctCaptcha");
 //  output.innerHTML = "Correct!";
- 
+
 //  } else {
 //  output.classList.add("incorrectCaptcha");
 //  output.innerHTML = "Incorrect, please try again";
@@ -74,7 +75,7 @@ function topFunction() {
 
 /*ENQUIRY BUTTON OPEN & CLOSE*/
 
- function openNav() {
+function openNav() {
   document.getElementById("myfirstcaptch").style.width = "370px";
 }
 
@@ -84,47 +85,46 @@ function closeNav() {
 /* ----------------------------------------------------------- */
 /*  SINGLE COURSE SLIDE JS
 /* ----------------------------------------------------------- */
-$(document).ready(function(){
-  $('.owl-service').owlCarousel({
-loop:true,
-margin:10,
-nav:true,
-responsive:{
-    0:{
-        items:1
+$(document).ready(function () {
+  $(".owl-service").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
     },
-    600:{
-        items:2
-    },
-    1000:{
-        items:4
-    }
-}
-})
+  });
 });
 /* ----------------------------------------------------------- */
 /*  COUNTER JS
 /* ----------------------------------------------------------- */
-let count = document.querySelectorAll(".count")
-let arr = Array.from(count)
+let count = document.querySelectorAll(".count");
+let arr = Array.from(count);
 
-arr.map(function(item){
-  let startnumber = 0
+arr.map(function (item) {
+  let startnumber = 0;
 
-  function counterup(){
-  startnumber++
-  item.innerHTML= startnumber
-   
-  if(startnumber == item.dataset.number){
-      clearInterval(stop)
+  function counterup() {
+    startnumber++;
+    item.innerHTML = startnumber;
+
+    if (startnumber == item.dataset.number) {
+      clearInterval(stop);
+    }
   }
-}
 
-let stop =setInterval(function(){
-  counterup()
-},2)
-
-})
+  let stop = setInterval(function () {
+    counterup();
+  }, 2);
+});
 /* ----------------------------------------------------------- */
 /*  apply captch JS
 /* ----------------------------------------------------------- */
@@ -132,76 +132,155 @@ let stop =setInterval(function(){
 /* ----------------------------------------------------------- */
 /*  carousel text animation captch JS
 /* ----------------------------------------------------------- */
- var spanText = function spanText(text) {
+var spanText = function spanText(text) {
   var string = text.innerText;
-  var spaned = '';
+  var spaned = "";
   for (var i = 0; i < string.length; i++) {
-     if(string.substring(i, i + 1) === ' ') spaned += string.substring(i, i + 1);
-    else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
+    if (string.substring(i, i + 1) === " ")
+      spaned += string.substring(i, i + 1);
+    else spaned += "<span>" + string.substring(i, i + 1) + "</span>";
   }
   text.innerHTML = spaned;
- }
+};
 
- var headline = document.querySelector(".animation");
+var headline = document.querySelector(".animation");
 //console.log(headline);
 spanText(headline);
 
- let animations = document.querySelectorAll('.animation');
+let animations = document.querySelectorAll(".animation");
 
- animations.forEach(animation => {
-   let letters = animation.querySelectorAll('span');
-   letters.forEach((letter, i) => {
-   letter.style.animationDelay = (i * 0.1) + 's';
-  })
- })
+animations.forEach((animation) => {
+  let letters = animation.querySelectorAll("span");
+  letters.forEach((letter, i) => {
+    letter.style.animationDelay = i * 0.1 + "s";
+  });
+});
 
 /* 2nd animation */
- var headline2 = document.querySelector(".animation2");
+var headline2 = document.querySelector(".animation2");
 // console.log(headline2);
- spanText(headline2);
+spanText(headline2);
 
- let animations2 = document.querySelectorAll('.animation2');
+let animations2 = document.querySelectorAll(".animation2");
 
- animations2.forEach(animation => {
-   let letters = animation.querySelectorAll('span');
+animations2.forEach((animation) => {
+  let letters = animation.querySelectorAll("span");
   letters.forEach((letter, i) => {
-  letter.style.animationDelay = (i * 0.1) + 's';
-   })
- })
+    letter.style.animationDelay = i * 0.1 + "s";
+  });
+});
 
 /* 3rd animation */
- var headline3 = document.querySelector(".animation3");
+var headline3 = document.querySelector(".animation3");
 // console.log(headline3);
 spanText(headline3);
 
- let animations3 = document.querySelectorAll('.animation3');
+let animations3 = document.querySelectorAll(".animation3");
 
-animations3.forEach(animation => {
-  let letters = animation.querySelectorAll('span');
+animations3.forEach((animation) => {
+  let letters = animation.querySelectorAll("span");
   letters.forEach((letter, i) => {
- letter.style.animationDelay = (i * 0.1) + 's';
-  })
- })
+    letter.style.animationDelay = i * 0.1 + "s";
+  });
+});
 
 /*==========================================*/
 /*testimonial section js
 /*==========================================*/
-$(document).ready(function(){
-  $('.owl-testimonial').owlCarousel({
-loop:true,
-margin:10,
-autoplay: true,
-nav:true,
-responsive:{
-    0:{
-        items:1
+$(document).ready(function () {
+  $(".owl-testimonial").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
     },
-    600:{
-        items:1
-    },
-    1000:{
-        items:1
+  });
+});
+
+//for Admission Enquiry Form not Refreshed after send blank abd error input fields.
+$(document).ready(function () {
+  $("#mitmenquiry").submit(function (e) {
+    e.preventDefault();
+
+    var fullname = document.getElementById("enquiryname").value;
+    var emailid = document.getElementById("enquiryemail").value;
+    var mobile = document.getElementById("enquiryphone").value;
+    var course = document.getElementById("enquirycourse").value;
+    var message = document.getElementById("enquirymessage").value;
+
+    var errorstatus = document.getElementById("error-status");
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+    var phonepat = /^[0-9]{10}$/;
+    var fnamecon = /[A-Za-z\s]{1,50}/;
+    var error = false;
+
+    if (
+      fullname === "" ||
+      emailid === "" ||
+      mobile === "" ||
+      course === "" ||
+      message === ""
+    ) {
+      errorstatus.innerText = "Please fill all the feilds";
+    } else if (!fullname.match(fnamecon)) {
+      errorstatus.innerText = "Enter a valid name";
+    } else if (!emailid.match(emailRegex)) {
+      errorstatus.innerText = "Enter a valid email";
+    } else if (!mobile.match(phonepat)) {
+      errorstatus.innerText = "Enter a valid phone number";
+    } else if (!phone.match(phonepat)) {
+      errorstatus.innerText = "please enter valid phone number ";
+    } else {
+      errorstatus.innerText = "";
+      $.ajax({
+        type: "POST",
+        url: "enquiry-forminsert.php",
+        data: {
+          name: fullname,
+          email: emailid,
+          phone: mobile,
+          course: course,
+          message: message,
+        },
+        dataType: "json", // Specify the expected data type
+        success: function (data) {
+          console.log(data); // Log the response for debugging
+          if (data.status === "success") {
+            // Show success message using ToastAlert
+            toastr.success(data.message, "Success");
+
+            document.getElementById("enquiryname").value = "";
+            document.getElementById("enquiryemail").value = "";
+            document.getElementById("enquiryphone").value = "";
+            document.getElementById("enquirycourse").value = "";
+            document.getElementById("enquirymessage").value = "";
+          } else {
+            // Show error message using SweetAlert
+            Swal.fire({
+              icon: "error",
+              title: "Error!",
+              text: data.message,
+            });
+          }
+        },
+        error: function (xhr, status, error) {
+          // Handle other AJAX errors if needed
+          console.error("AJAX Error:", xhr, status, error);
+        },
+        complete: function () {
+          $(".loading").hide(); // Hide loading message on completion
+        },
+      });
     }
-}
-})
+  });
 });
