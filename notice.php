@@ -40,82 +40,83 @@
 
 	<title>MITM | About Us</title>
 
-  <style>
-    .notice-event {
-      background: linear-gradient(to left, #2e48f259 0%, #40dfff45 100%);
-      animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
-      overflow-y: auto;
-      /* Add overflow-y property to enable vertical scrolling */
-      height: 354px;
-      margin-top: -10px;
-    }
+	<style>
+		.notice-event {
+			background: linear-gradient(to left, #2e48f259 0%, #40dfff45 100%);
+			animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
+			overflow-y: auto;
+			/* Add overflow-y property to enable vertical scrolling */
+			height: 354px;
+			margin-top: -10px;
+		}
 
-    .notice-event p {
-      animation: moveNews 10s linear infinite;
-    }
+		.notice-event p {
+			animation: moveNews 10s linear infinite;
+		}
 
-    /* Second Animation */
-.notice-event-2 {
-  overflow: hidden;
-  margin-top: -8px;
-  position: relative;
-  height: 360px;
-  background-color: #f22e2e17;
-}
+		/* Second Animation */
+		.notice-event-2 {
+			overflow: hidden;
+			margin-top: -8px;
+			position: relative;
+			height: 360px;
+			background-color: #f22e2e17;
+		}
 
-@keyframes moveNews2 {
-  0% {
-    transform: translateY(830%);
-  }
+		@keyframes moveNews2 {
+			0% {
+				transform: translateY(830%);
+			}
 
-  100% {
-    transform: translateY(-460%);
-  }
-}
+			100% {
+				transform: translateY(-460%);
+			}
+		}
 
-.notice-event-2 li {
-	margin-top: 20px; 
-  position: relative;
-  animation: moveNews2 16s ease-in-out infinite;
-}
+		.notice-event-2 li {
+			margin-top: 20px;
+			position: relative;
+			animation: moveNews2 16s ease-in-out infinite;
+		}
 
-.notice-event-2 li::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px; /* Adjust the underline height as needed */
-  background-color: #00000057; /* Adjust the underline color as needed */
-}
+		.notice-event-2 li::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			/* Adjust the underline height as needed */
+			background-color: #00000057;
+			/* Adjust the underline color as needed */
+		}
 
 
-    .calendar-container {
-      display: flex;
-      align-items: center;
-    }
+		.calendar-container {
+			display: flex;
+			align-items: center;
+		}
 
-    .calendar-img {
-      width: 34px;
-      /* Adjust the size as needed */
-      height: auto;
-      margin-right: 5px;
-      /* Adjust spacing as needed */
-    }
+		.calendar-img {
+			width: 34px;
+			/* Adjust the size as needed */
+			height: auto;
+			margin-right: 5px;
+			/* Adjust spacing as needed */
+		}
 
-    .date-and-day {
-      font-size: 15px;
-    }
+		.date-and-day {
+			font-size: 15px;
+		}
 
-    .notice-event p {
-      border-bottom: 0.5px solid rgba(0, 0, 0, 0.189);
-      padding-bottom: 10px;
-      /* Add a black line under every news item except the last one */
-    }
-    
-  </style>
+		.notice-event p {
+			border-bottom: 0.5px solid rgba(0, 0, 0, 0.189);
+			padding-bottom: 10px;
+			/* Add a black line under every news item except the last one */
+		}
+	</style>
 
-    
+
 
 </head>
 
@@ -216,7 +217,7 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="life.php">Life @ MITM</a></li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -232,13 +233,14 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="polytechnic.php">Polytechnic</a></li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="https://www.bput.ac.in/">Admissions</a>
+								<a class="nav-link active third-menu-color "
+									href="https://www.bput.ac.in/">Admissions</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -256,57 +258,58 @@
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a></li>
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul>
+			  <ul class="navbar-nav">
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
+						   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -321,10 +324,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
+				</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item ">
 								<a class="nav-link active third-menu-color " href="notice.php">Notice</a>
@@ -336,10 +339,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
+				</li>
+			  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -349,7 +352,8 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"
@@ -397,10 +401,14 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
+									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-									<li><a class="dropdown-item" href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
+									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: -80px;">
@@ -437,242 +445,92 @@
 	<!--enquiry end -->
 
 
-  <div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 166px; ">
-    <div class="heading-bg-color">
-       <h1 class="heading-text-position text-uppercase">NOTICE</h1>
-   </div>
-</div>
+	<div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 166px; ">
+		<div class="heading-bg-color">
+			<h1 class="heading-text-position text-uppercase">NOTICE</h1>
+		</div>
+	</div>
 
 
 
 
-<section class="container notice-section py-2">
-  <div class="row">
-    <div class="col-lg-8 col-md-12 col-sm-12 col-12 notice-1">
-      <h2 class="text-center text-white text-uppercase notice-head1">
-        <i class="fa fa-bell mt-2" aria-hidden="true"></i><span class="m-3">News & Events</span>
-        <!-- <button class="btn btn-light my-1" onclick="toggleAnimation()" id="toggleBtn" title="Toggle Animation">
-                <i class="fa fa-pause" aria-hidden="true"></i>
-            </button> -->
-      </h2>
-      <div class="notice-event py-2">
-        <section>
-          <p>
-            <span class="calendar-container">
-              <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-              <span class="date-and-day text-danger">
-                <span>01/01/2024</span>
-              </span>
-            </span>
-            <span class="news-data" >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-newspaper-o"
-                aria-hidden="true"></i></a>
-            </span>
-          </p>
-        </section>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-download"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-        <p>
-          <span class="calendar-container">
-            <img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-            <span class="date-and-day text-danger">
-              <span>01/01/2024</span>
-            </span>
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-              aria-hidden="true"></i></a>
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-12">
-      <h2 class="text-center text-white text-uppercase notice-head2">
-        <i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="m-3">Notices</span>
-        <button class="btn btn-light my-2" onclick="toggleAnimationSecond()" id="toggleBtns" title="Toggle Animation">
-          <i class="fa fa-pause text-danger" aria-hidden="true"></i>
-        </button>
-      </h2>
-      <div class="notice-event-2 px-2 py-2">
-        <li>
-          1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </li>
-        <li>
-          2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </li>
-        <li>
-          3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </li>
-      </div>
-    </div>
-  </div>
-</section>
+	<section class="container notice-section py-2">
+		<div class="row">
+			<div class="col-lg-8 col-md-12 col-sm-12 col-12 notice-1">
+				<h2 class="text-center text-white text-uppercase notice-head1">
+					<i class="fa fa-bell mt-2" aria-hidden="true"></i><span class="m-3">News & Events</span>
+					<!-- <button class="btn btn-light my-1" onclick="toggleAnimation()" id="toggleBtn" title="Toggle Animation">
+				<i class="fa fa-pause" aria-hidden="true"></i>
+			</button> -->
+				</h2>
+				<div class="notice-event py-2">
+					<section>
+						<?php include 'Admin/db.php';
+						$sql = "SELECT * FROM `mitm_news`where status = 1";
+						$Sql_query = mysqli_query($conn, $sql);
+						$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+						foreach ($All_fname as $row) {
+							?>
+							<p>
+								<span class="calendar-container">
+									<img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
+									<span class="date-and-day text-danger">
+										<span>
+											<?php echo $row['date_of_upload']; ?>
+										</span>
+									</span>
+								</span>
+								<span class="news-data">
+									<?php echo $row['link']; ?><a href=""><i class="fa fa-newspaper-o"
+											aria-hidden="true"></i></a>
+								</span>
+							</p>
+						<?php } ?>
+					</section>
+					<!-- <p>
+						<span class="calendar-container">
+							<img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
+							<span class="date-and-day text-danger">
+								<span>01/01/2024</span>
+							</span>
+						</span>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-download"
+								aria-hidden="true"></i></a>
+					</p>
+					<p>
+						<span class="calendar-container">
+							<img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
+							<span class="date-and-day text-danger">
+								<span>01/01/2024</span>
+							</span>
+						</span>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
+								aria-hidden="true"></i></a>
+					</p>-->
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-12">
+				<h2 class="text-center text-white text-uppercase notice-head2">
+					<i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="m-3">Notices</span>
+					<button class="btn btn-light my-2" onclick="toggleAnimationSecond()" id="toggleBtns"
+						title="Toggle Animation">
+						<i class="fa fa-pause text-danger" aria-hidden="true"></i>
+					</button>
+				</h2>
+				<div class="notice-event-2 px-2 py-2">
+					<li>
+						1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					</li>
+					<li>
+						2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					</li>
+					<li>
+						3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</li>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -701,11 +559,11 @@
 							<div><a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a></div>
 							<div><a href="javascript:void(0)" class="link-decoration">Principal's Message</a></div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
-						      <p>We will send out weekly newest article and some great offers</p>
-						      <form class="" action="" method="POST" id="newsletterform" role="form">
-						             <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
-						             <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
-						        </form> -->
+							  <p>We will send out weekly newest article and some great offers</p>
+							  <form class="" action="" method="POST" id="newsletterform" role="form">
+									 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
+									 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
+								</form> -->
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
@@ -780,68 +638,68 @@
 		// Initialize Wow.js
 		new WOW().init();
 	</script>
-  <script>
-    // Second Section
-    var animationPausedSecond = false;
-    var noticeEventItemsSecond = document.querySelectorAll(".notice-event-2 li");
-  
-    function toggleAnimationSecond() {
-      if (animationPausedSecond) {
-        // Play animation
-        noticeEventItemsSecond.forEach(function (item) {
-          item.style.animationPlayState = "running";
-        });
-        document.getElementById("toggleBtns").innerHTML =
-          '<i class="fa fa-pause text-danger" aria-hidden="true"></i>';
-      } else {
-        // Pause animation
-        noticeEventItemsSecond.forEach(function (item) {
-          item.style.animationPlayState = "paused";
-        });
-        document.getElementById("toggleBtns").innerHTML =
-          '<i class="fa fa-play text-danger" aria-hidden="true"></i>';
-      }
-  
-      // Toggle the state
-      animationPausedSecond = !animationPausedSecond;
-    }
-  
-    // Add hover event listeners to pause animation on news item hover
-    noticeEventItemsSecond.forEach(function (item) {
-      item.addEventListener("mouseenter", function () {
-        noticeEventItemsSecond.forEach(function (newsItem) {
-          newsItem.style.animationPlayState = "paused";
-        });
-      });
-  
-      item.addEventListener("mouseleave", function () {
-        if (!animationPausedSecond) {
-          noticeEventItemsSecond.forEach(function (newsItem) {
-            newsItem.style.animationPlayState = "running";
-          });
-        }
-      });
-    });
-  
-    // Add hover event listener to pause animation on container hover
-    var noticeEventContainerSecond = document.querySelector(".notice-event-2");
-    noticeEventContainerSecond.addEventListener("mouseenter", function () {
-      noticeEventItemsSecond.forEach(function (newsItem) {
-        newsItem.style.animationPlayState = "paused";
-      });
-    });
-  
-    // Add mouseout event listener to resume animation on container mouseout
-    noticeEventContainerSecond.addEventListener("mouseleave", function () {
-      if (!animationPausedSecond) {
-        noticeEventItemsSecond.forEach(function (newsItem) {
-          newsItem.style.animationPlayState = "running";
-        });
-      }
-    });
-  </script>
+	<script>
+		// Second Section
+		var animationPausedSecond = false;
+		var noticeEventItemsSecond = document.querySelectorAll(".notice-event-2 li");
 
-  <!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->
+		function toggleAnimationSecond() {
+			if (animationPausedSecond) {
+				// Play animation
+				noticeEventItemsSecond.forEach(function (item) {
+					item.style.animationPlayState = "running";
+				});
+				document.getElementById("toggleBtns").innerHTML =
+					'<i class="fa fa-pause text-danger" aria-hidden="true"></i>';
+			} else {
+				// Pause animation
+				noticeEventItemsSecond.forEach(function (item) {
+					item.style.animationPlayState = "paused";
+				});
+				document.getElementById("toggleBtns").innerHTML =
+					'<i class="fa fa-play text-danger" aria-hidden="true"></i>';
+			}
+
+			// Toggle the state
+			animationPausedSecond = !animationPausedSecond;
+		}
+
+		// Add hover event listeners to pause animation on news item hover
+		noticeEventItemsSecond.forEach(function (item) {
+			item.addEventListener("mouseenter", function () {
+				noticeEventItemsSecond.forEach(function (newsItem) {
+					newsItem.style.animationPlayState = "paused";
+				});
+			});
+
+			item.addEventListener("mouseleave", function () {
+				if (!animationPausedSecond) {
+					noticeEventItemsSecond.forEach(function (newsItem) {
+						newsItem.style.animationPlayState = "running";
+					});
+				}
+			});
+		});
+
+		// Add hover event listener to pause animation on container hover
+		var noticeEventContainerSecond = document.querySelector(".notice-event-2");
+		noticeEventContainerSecond.addEventListener("mouseenter", function () {
+			noticeEventItemsSecond.forEach(function (newsItem) {
+				newsItem.style.animationPlayState = "paused";
+			});
+		});
+
+		// Add mouseout event listener to resume animation on container mouseout
+		noticeEventContainerSecond.addEventListener("mouseleave", function () {
+			if (!animationPausedSecond) {
+				noticeEventItemsSecond.forEach(function (newsItem) {
+					newsItem.style.animationPlayState = "running";
+				});
+			}
+		});
+	</script>
+
+	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->
 	<script>
 		$(document).ready(function () {
 			$("#mitmenquiry").submit(function (e) {

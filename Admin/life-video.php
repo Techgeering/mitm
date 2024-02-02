@@ -71,6 +71,7 @@
                             <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
                     </div>
+                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
                 </div>
             </nav>
         </div>

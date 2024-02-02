@@ -64,14 +64,15 @@
                     <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-table me-2"></i>Life</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="life-image.php" class="dropdown-item">Image</a>
-                             <a href="life-video.php" class="dropdown-item">Video</a>
+                            <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
                     </div>
-                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
+                    <a href="news-event.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>News and
+                        Event</a>
                 </div>
             </nav>
         </div>
@@ -96,7 +97,7 @@
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Life-Image</h6>
+                            <h6 class="mb-4">News & Event</h6>
                             <div class="col-sm-12 mb-2">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#modal-bs-primary">
@@ -107,7 +108,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Image</th>
+                                        <th scope="col" class="text-center">link</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
                                         <th scope="col" class="text-center">manage</th>
                                     </tr>
@@ -115,28 +116,34 @@
                                 <tbody>
 
                                     <?php include 'db.php';
-                                    $sql = "SELECT * FROM mitm_life_image ORDER BY id DESC";
+
+                                    $sql = "SELECT * FROM mitm_news ORDER BY id DESC";
                                     $result = $conn->query($sql);
                                     $i = 1;
-                                    while ($row = $result->fetch_assoc()) { ?>
+                                    while ($row = $result->fetch_assoc()) {
+                                        ?>
                                         <tr>
-                                            <td class=text-center><?php echo $i;
-                                            $i++; ?></td>
-                                            <td class=text-center><img src="upload/<?php echo $row['image']; ?>" width="50"
-                                                    height="50">
+                                            <td class="text-center">
+                                                <?php echo $i;
+                                                $i++; ?>
                                             </td>
-                                            <td class=text-center><?php echo $row['date_of_upload']; ?></td>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['link']; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <?php echo $row['date_of_upload']; ?>
+                                            </td>
                                             <td class=text-center><?php $status = $row['status'];
                                             $idm = $row['id'];
                                             if ($status == 1) {
-                                                echo "<a href='active.php?status=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
+                                                echo "<a href='active.php?status=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
                                             } else {
-                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
+                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
                                             }
                                             ?>
-                                                <a class="btn btn-danger m-2"
-                                                    onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
-                                                        class="fas fa-trash-alt"></i></a>
+                                                <a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
+                                                        class="fas fa-trash-alt btn btn-danger"></i></a>
                                             </td>
                                         </tr>
                                     <?php } ?>
@@ -144,7 +151,7 @@
                                 <tfoot>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Image</th>
+                                        <th scope="col" class="text-center">link</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
                                         <th scope="col" class="text-center">manage</th>
                                     </tr>
@@ -154,46 +161,25 @@
                     </div>
                 </div>
             </div>
-
-
             <?php
 
-            if (isset($_POST['addgallery'])) {
+            if (isset($_POST['adddetails'])) {
 
-                $image_name = $_FILES['image']['name'];
-                $image_size = $_FILES['image']['size'];
-                $image_tmp = $_FILES['image']['tmp_name'];
-                $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
-                $new_file_name = uniqid() . '.' . $file_type;
+                $link = $_POST["link"];
+                $date = $_POST["date"];
 
-                $upload_dir = "upload/";
-                if (!is_dir($upload_dir)) {
-                    mkdir($upload_dir);
-                } else {
-                    $conn->error;
-                }
-                $target_file = $upload_dir . $new_file_name;
-                if (move_uploaded_file($image_tmp, $target_file)) {
-                    // echo "<script>
-                    //     alert('image uploaded successfuly');
-                    //     </script>";
-                } else {
-                    // echo "<script>
-                    //     alert('image not uploaded');
-                    //     </script>";
-                }
-                $sql = "INSERT INTO mitm_life_image(image,status) 
-             VALUES('$new_file_name','1')";
+                $sql = "INSERT INTO mitm_news(link,date_of_upload,status) 
+             VALUES('$link','$date','1')";
                 if ($conn->query($sql) === true) {
-                    echo '<script>window.location.href = "life-image.php";</script>';
+                    echo '<script>window.location.href = "news-event.php";</script>';
                 } else {
                     $conn->error;
                 }
-                $conn->close();
             }
-
+            $conn->close();
             ?>
 
+            <!--modal for add video-->
             <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
                 <div class="modal-dialog">
                     <div class="modal-content bg-primary">
@@ -201,24 +187,31 @@
                             <h4 class="modal-title">Upload Image</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
+                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
                             <div class="modal-body">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputimage">Select Image</label>
-                                        <input type="file" id="exampleInputimage" name="image" required>
+                                        <label for="exampleInputtext">Link</label>
+                                        <input type="text" id="link" class="form-control" name="link" required />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputtext">Date of Upload</label>
+                                        <input type="date" id="date" class="form-control" name="date" required />
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-between">
                                     <button type="button" class="btn btn-outline-light"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" name="addgallery" value="Submit"
+                                    <button type="Submit" name="adddetails" value="Submit"
                                         class="btn btn-outline-light">Upload</button>
                                 </div>
                             </div>
                         </form>
                     </div>
+                    <!-- /.modal-content -->
                 </div>
+                <!-- /.modal-dialog -->
             </div>
 
             <!-- Table End -->
