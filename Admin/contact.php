@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
+                    <a href="contact.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
@@ -71,7 +71,8 @@
                             <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
                     </div>
-                    <a href="news-event.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>News and Event</a>
+                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
+                    <a href="notice.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Notice</a>
                 </div>
             </nav>
         </div>

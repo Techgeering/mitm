@@ -62,7 +62,7 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
-                    <a href="enquiry.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Enquiry</a>
+                    <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-table me-2"></i>Life</a>
@@ -71,8 +71,9 @@
                             <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
                     </div>
-                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
-                    <a href="notice.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Notice</a>
+                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and
+                        Event</a>
+                    <a href="notice.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Notice</a>
                 </div>
             </nav>
         </div>
@@ -97,25 +98,27 @@
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Enquiry</h6>
+                            <h6 class="mb-4">Notice</h6>
+                            <div class="col-sm-12 mb-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modal-bs-primary">
+                                    <i class="fas fa-plus"></i>Add
+                                </button>
+                            </div>
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Full Name</th>
-                                        <th scope="col" class="text-center">Email</th>
-                                        <th scope="col" class="text-center">Phone</th>
-                                        <th scope="col" class="text-center">course</th>
-                                        <th scope="col" class="text-center">Message</th>
-                                        <th scope="col" class="text-center">Date & Time</th>
-                                        <th scope="col" class="text-center">Delete</th>
+                                        <th scope="col" class="text-center">Notice</th>
+                                        <th scope="col" class="text-center">Date Of Upload</th>
+                                        <th scope="col" class="text-center">manage</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <?php include 'db.php';
 
-                                    $sql = "SELECT * FROM mitm_enquiry ORDER BY id DESC";
+                                    $sql = "SELECT * FROM mitm_notice ORDER BY id DESC";
                                     $result = $conn->query($sql);
                                     $i = 1;
                                     while ($row = $result->fetch_assoc()) {
@@ -127,38 +130,31 @@
                                             </td>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['enquiry_name']; ?>
+                                                <?php echo $row['notice']; ?>
                                             </td>
                                             <td class="text-center">
-                                                <?php echo $row['enquiry_email']; ?>
+                                                <?php echo $row['date_of_upload']; ?>
                                             </td>
-                                            <td class="text-center">
-                                                <?php echo $row['enquiry_mobile']; ?>
+                                            <td class=text-center><?php $status = $row['status'];
+                                            $idm = $row['id'];
+                                            if ($status == 1) {
+                                                echo "<a href='active.php?status=$idm&&tb=mitm_notice&&returnpage=life-video.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
+                                            } else {
+                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_notice&&returnpage=life-video.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
+                                            }
+                                            ?>
+                                                <a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
+                                                        class="fas fa-trash-alt btn btn-danger"></i></a>
                                             </td>
-                                            <td class="text-center">
-                                                <?php echo $row['enquiry_course']; ?>
-                                            </td>
-                                            <td class="text-center">
-                                                <?php echo $row['enquiry_message']; ?>
-                                            </td>
-                                            <td class="text-center">
-                                                <?php echo $row['dte']; ?>
-                                            </td>
-                                            <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
-                                                        class="fas fa-trash-alt btn btn-danger"></i></a></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Full Name</th>
-                                        <th scope="col" class="text-center">Email</th>
-                                        <th scope="col" class="text-center">Phone</th>
-                                        <th scope="col" class="text-center">course</th>
-                                        <th scope="col" class="text-center">Message</th>
-                                        <th scope="col" class="text-center">Date & Time</th>
-                                        <th scope="col" class="text-center">Delete</th>
+                                        <th scope="col" class="text-center">Notice</th>
+                                        <th scope="col" class="text-center">Date Of Upload</th>
+                                        <th scope="col" class="text-center">manage</th>
                                     </tr>
                                     <tfoot>
                             </table>
@@ -166,5 +162,52 @@
                     </div>
                 </div>
             </div>
+            <?php
+
+            if (isset($_POST['add'])) {
+
+                $notice = $_POST["notice"];
+
+                $sql = "INSERT INTO mitm_notice(notice,status) 
+             VALUES('$notice','1')";
+                if ($conn->query($sql) === true) {
+                    echo '<script>window.location.href = "notice.php";</script>';
+                } else {
+                    $conn->error;
+                }
+            }
+            $conn->close();
+            ?>
+
+            <!--modal for add notice-->
+            <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-primary">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Upload Image</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="exampleInputtext">notice</label>
+                                        <textarea id="notice" class="form-control" name="notice" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-outline-light"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="Submit" name="add" value="Submit"
+                                        class="btn btn-outline-light">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
             <!-- Table End -->
             <?php include "common/footer.php" ?>

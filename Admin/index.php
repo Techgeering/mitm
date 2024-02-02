@@ -74,6 +74,7 @@
                         </div>
                     </div>
                     <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
+                    <a href="notice.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Notice</a>
                 </div>
             </nav>
         </div>

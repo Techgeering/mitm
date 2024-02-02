@@ -518,15 +518,22 @@
 					</button>
 				</h2>
 				<div class="notice-event-2 px-2 py-2">
-					<li>
-						1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					</li>
-					<li>
-						2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					</li>
-					<li>
+					<?php include 'Admin/db.php';
+					$sql = "SELECT * FROM `mitm_notice`where status = 1";
+					$Sql_query = mysqli_query($conn, $sql);
+					$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+					foreach ($All_fname as $row) {
+						?>
+						<li>
+						<?php echo $row['notice']; ?>
+						</li>
+						<!-- <li>
+							2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						</li> -->
+						<!-- <li>
 						3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					</li>
+					</li> -->
+					<?php } ?>
 				</div>
 			</div>
 		</div>
