@@ -395,41 +395,23 @@
 	<section class="photo-gallery py-2" id="imageSection">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="gallery">
-				<div class="col">
-					<img src="assets/img/college1.jpg" class="img-fluid" alt="Lorem ipsum dolor sit amet">
-				</div>
-				<div class="col">
-					<img src="assets/img/college2.jpg" class="img-fluid" alt="Ipsum lorem dolor sit amet">
-				</div>
-				<div class="col">
-					<img src="assets/img/college3.jpg" class="img-fluid" alt="Dolor lorem ipsum sit amet">
-				</div>
-				<div class="col">
-					<img src="assets/img/college4.jpg" class="img-fluid" alt="Sit amet lorem ipsum dolor">
-				</div>
-				<div class="col">
-					<img src="assets/img/college5.jpg" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
-				</div>
-				<div class="col">
-					<img src="assets/img/college6.jpg" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
-				</div>
-				<div class="col">
-					<img src="assets/img/college7.jpg" class="img-fluid" alt="Nemo perspiciatis voluptatum">
-				</div>
-				<div class="col">
-					<img src="assets/img/college8.jpg" class="img-fluid" alt="Accusantium consequuntur modi">
-				</div>
-				<div class="col">
-					<img src="assets/img/college9.jpg" class="img-fluid" alt="Dolore asperiores reprehenderit">
-				</div>
+				<?php include 'Admin/db.php';
+				$sql = "SELECT * FROM `mitm_life_image`where status = 1";
+				$Sql_query = mysqli_query($conn, $sql);
+				$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+				foreach ($All_fname as $row) {
+					?>
+					<div class="col">
+					<img src="Admin/upload/<?php echo $row['image']; ?>" class="img-fluid" alt="">
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 	</section>
 	<section class="photo-gallery py-2" id="videoSection" style="display:none;">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="videoGallery">
-				<iframe width="350" height="300"
-					src="https://www.youtube.com/embed/ElW-8NcjcRQ?si=E79o4W_2X29Br8lM"
+				<iframe width="350" height="300" src="https://www.youtube.com/embed/ElW-8NcjcRQ?si=E79o4W_2X29Br8lM"
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					frameborder="0" allowfullscreen></iframe>
@@ -479,9 +461,6 @@
 			modal.style.display = 'none';
 		});
 	</script>
-
-
-
 
 
 	<!-- FOOTER section START-->
@@ -585,16 +564,11 @@
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script> -->
-
 	<script>
 		// Initialize Wow.js
 		new WOW().init();
 	</script>
-	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->.
+
 	<script>
 		$(document).ready(function () {
 			$("#mitmenquiry").submit(function (e) {

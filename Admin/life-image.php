@@ -63,7 +63,14 @@
                 <div class="navbar-nav w-100">
                     <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
-                    <a href="life.php" class="nav-item nav-link active"><i class="fa fa-table me-2"></i>Life</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
+                                class="fa fa-table me-2"></i>Life</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="life-image.php" class="dropdown-item">Image</a>
+                             <a href="life-video.php" class="dropdown-item">Video</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -88,15 +95,20 @@
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Enquiry</h6>
+                            <h6 class="mb-4">Life</h6>
+                            <div class="col-sm-12 mb-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modal-bs-primary">
+                                    <i class="fas fa-plus"></i>Add
+                                </button>
+                            </div>
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
                                         <th scope="col" class="text-center">Image</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
-                                        <th scope="col" class="text-center">Status</th>
-                                        <th scope="col" class="text-center">Delete</th>
+                                        <th scope="col" class="text-center">manage</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -116,9 +128,9 @@
                                             <td class=text-center><?php $status = $row['status'];
                                             $idm = $row['id'];
                                             if ($status == 1) {
-                                                echo "<a href='active.php?status=$idm&&tb=construction_gallery_image&&returnpage=gallery_image.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
+                                                echo "<a href='active.php?status=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
                                             } else {
-                                                echo "<a href='inactive.php?status0=$idm&&tb=construction_gallery_image&&returnpage=gallery_image.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
+                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
                                             }
                                             ?>
                                                 <a class="btn btn-danger m-2"
@@ -133,8 +145,7 @@
                                         <th scope="col" class="text-center">Slno</th>
                                         <th scope="col" class="text-center">Image</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
-                                        <th scope="col" class="text-center">Status</th>
-                                        <th scope="col" class="text-center">Delete</th>
+                                        <th scope="col" class="text-center">manage</th>
                                     </tr>
                                     <tfoot>
                             </table>
@@ -154,7 +165,7 @@
                 $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                 $new_file_name = uniqid() . '.' . $file_type;
 
-                $upload_dir = "upload/img/";
+                $upload_dir = "upload/";
                 if (!is_dir($upload_dir)) {
                     mkdir($upload_dir);
                 } else {
@@ -170,10 +181,10 @@
                     //     alert('image not uploaded');
                     //     </script>";
                 }
-                $sql = "INSERT INTO construction_gallery_image(image,status) 
+                $sql = "INSERT INTO mitm_life_image(image,status) 
              VALUES('$new_file_name','1')";
                 if ($conn->query($sql) === true) {
-                    echo '<script>window.location.href = "gallery_image.php";</script>';
+                    echo '<script>window.location.href = "life-image.php";</script>';
                 } else {
                     $conn->error;
                 }
@@ -182,18 +193,15 @@
 
             ?>
 
-            <div class="modal fade" data-backdrop="static" id="modal-primary">
+            <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
                 <div class="modal-dialog">
                     <div class="modal-content bg-primary">
                         <div class="modal-header">
                             <h4 class="modal-title">Upload Image</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
+                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
                             <div class="modal-body">
-
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputimage">Select Image</label>
@@ -202,15 +210,15 @@
                                 </div>
                                 <div class="modal-footer justify-content-between">
                                     <button type="button" class="btn btn-outline-light"
-                                        data-dismiss="modal">Close</button>
-                                    <button type="Submit" name="addgallery" value="Submit"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" name="addgallery" value="Submit"
                                         class="btn btn-outline-light">Upload</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <!-- /.modal-content -->
                 </div>
             </div>
+
             <!-- Table End -->
             <?php include "common/footer.php" ?>

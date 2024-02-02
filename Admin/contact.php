@@ -63,7 +63,7 @@
                 <div class="navbar-nav w-100">
                     <a href="contact.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
-                    <a href="life.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Life</a>
+                    <a href="life-image.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Life</a>
                 </div>
             </nav>
         </div>
