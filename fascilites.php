@@ -33,7 +33,7 @@
         integrity="sha384-e1PXRdejUjQEa7ihLAEgv1J87OaOu8sm4gkZoYTI+Tw8tcCZaxqWw8+35a8DOVX2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
 
     <!--toaster alert-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">

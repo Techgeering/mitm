@@ -41,7 +41,7 @@
 		new WOW().init();
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6" />
 
 	<style type="text/css">
 		body {
@@ -1372,7 +1372,7 @@
 		);
 		myModal.show();
 	</script>
-	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->.
+	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->
 	<script>
 		$(document).ready(function () {
 			$("#mitmenquiry").submit(function (e) {
