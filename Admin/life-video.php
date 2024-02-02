@@ -68,7 +68,7 @@
                                 class="fa fa-table me-2"></i>Life</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="life-image.php" class="dropdown-item">Image</a>
-                             <a href="life-video.php" class="dropdown-item">Video</a>
+                            <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                 <div class="row g-4">
                     <div class="">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Life-Image</h6>
+                            <h6 class="mb-4">Life-Video</h6>
                             <div class="col-sm-12 mb-2">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#modal-bs-primary">
@@ -106,7 +106,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Image</th>
+                                        <th scope="col" class="text-center">Video</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
                                         <th scope="col" class="text-center">manage</th>
                                     </tr>
@@ -114,27 +114,34 @@
                                 <tbody>
 
                                     <?php include 'db.php';
-                                    $sql = "SELECT * FROM mitm_life_image ORDER BY id DESC";
+                                    $sql = "SELECT * FROM mitm_life_video ORDER BY id DESC";
                                     $result = $conn->query($sql);
                                     $i = 1;
                                     while ($row = $result->fetch_assoc()) { ?>
                                         <tr>
                                             <td class=text-center><?php echo $i;
                                             $i++; ?></td>
-                                            <td class=text-center><img src="upload/<?php echo $row['image']; ?>" width="50"
-                                                    height="50">
+                                            <td class=text-center>
+
+                                                <iframe width="80" height="80"
+                                                    src="https://www.youtube.com/embed/<?php echo $row['video']; ?>?si=I9Vs24CvigX2GVxE"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    frameborder="0" allowfullscreen></iframe>
+
                                             </td>
+
                                             <td class=text-center><?php echo $row['date_of_upload']; ?></td>
                                             <td class=text-center><?php $status = $row['status'];
                                             $idm = $row['id'];
                                             if ($status == 1) {
-                                                echo "<a href='active.php?status=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
+                                                echo "<a href='active.php?status=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
                                             } else {
-                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_image&&returnpage=life-image.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
+                                                echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
                                             }
                                             ?>
                                                 <a class="btn btn-danger m-2"
-                                                    onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
+                                                    onclick="confirmDelete5(<?php echo $row['id']; ?>)"><i
                                                         class="fas fa-trash-alt"></i></a>
                                             </td>
                                         </tr>
@@ -143,7 +150,7 @@
                                 <tfoot>
                                     <tr>
                                         <th scope="col" class="text-center">Slno</th>
-                                        <th scope="col" class="text-center">Image</th>
+                                        <th scope="col" class="text-center">Video</th>
                                         <th scope="col" class="text-center">Date Of Upload</th>
                                         <th scope="col" class="text-center">manage</th>
                                     </tr>
@@ -157,42 +164,32 @@
 
             <?php
 
-            if (isset($_POST['addgallery'])) {
+            if (isset($_POST['adddetails'])) {
 
-                $image_name = $_FILES['image']['name'];
-                $image_size = $_FILES['image']['size'];
-                $image_tmp = $_FILES['image']['tmp_name'];
-                $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
-                $new_file_name = uniqid() . '.' . $file_type;
+                $video = $_POST["video"];
 
-                $upload_dir = "upload/";
-                if (!is_dir($upload_dir)) {
-                    mkdir($upload_dir);
+                // Extract video ID from YouTube link using regular expression for embed store.
+                $pattern = '/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/';
+                preg_match($pattern, $video, $matches);
+
+                if (isset($matches[1])) {
+                    $video = $matches[1];
+
+                    $sql = "INSERT INTO mitm_life_video(video,status) 
+             VALUES('$video','1')";
+                    if ($conn->query($sql) === true) {
+                        echo '<script>window.location.href = "life-video.php";</script>';
+                    } else {
+                        $conn->error;
+                    }
                 } else {
-                    $conn->error;
-                }
-                $target_file = $upload_dir . $new_file_name;
-                if (move_uploaded_file($image_tmp, $target_file)) {
-                    // echo "<script>
-                    //     alert('image uploaded successfuly');
-                    //     </script>";
-                } else {
-                    // echo "<script>
-                    //     alert('image not uploaded');
-                    //     </script>";
-                }
-                $sql = "INSERT INTO mitm_life_image(image,status) 
-             VALUES('$new_file_name','1')";
-                if ($conn->query($sql) === true) {
-                    echo '<script>window.location.href = "life-image.php";</script>';
-                } else {
-                    $conn->error;
+                    // echo "Invalid YouTube link. Please provide a valid YouTube video URL.";
                 }
                 $conn->close();
             }
-
             ?>
 
+            <!--modal for add video-->
             <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
                 <div class="modal-dialog">
                     <div class="modal-content bg-primary">
@@ -200,25 +197,29 @@
                             <h4 class="modal-title">Upload Image</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
+                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
                             <div class="modal-body">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputimage">Select Image</label>
-                                        <input type="file" id="exampleInputimage" name="image" required>
+                                        <label for="exampleInputtext">Video</label>
+                                        <input type="text" id="path" class="form-control" placeholder="YouTube link"
+                                            name="video" required />
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-between">
                                     <button type="button" class="btn btn-outline-light"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" name="addgallery" value="Submit"
+                                    <button type="Submit" name="adddetails" value="Submit"
                                         class="btn btn-outline-light">Upload</button>
                                 </div>
                             </div>
                         </form>
                     </div>
+                    <!-- /.modal-content -->
                 </div>
+                <!-- /.modal-dialog -->
             </div>
+
 
             <!-- Table End -->
             <?php include "common/footer.php" ?>

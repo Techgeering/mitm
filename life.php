@@ -402,7 +402,7 @@
 				foreach ($All_fname as $row) {
 					?>
 					<div class="col">
-					<img src="Admin/upload/<?php echo $row['image']; ?>" class="img-fluid" alt="">
+						<img src="Admin/upload/<?php echo $row['image']; ?>" class="img-fluid" alt="">
 					</div>
 				<?php } ?>
 			</div>
@@ -411,10 +411,17 @@
 	<section class="photo-gallery py-2" id="videoSection" style="display:none;">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="videoGallery">
-				<iframe width="350" height="300" src="https://www.youtube.com/embed/ElW-8NcjcRQ?si=E79o4W_2X29Br8lM"
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					frameborder="0" allowfullscreen></iframe>
+				<?php include 'Admin/db.php';
+				$sql = "SELECT * FROM `mitm_life_video`where status = 1";
+				$Sql_query = mysqli_query($conn, $sql);
+				$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+				foreach ($All_fname as $row) {
+					?>
+					<iframe width="350" height="300" src="https://www.youtube.com/embed/<?php echo $row['video']; ?>?si=E79o4W_2X29Br8lM"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						frameborder="0" allowfullscreen></iframe>
+				<?php } ?>
 			</div>
 		</div>
 	</section>

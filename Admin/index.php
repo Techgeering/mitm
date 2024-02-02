@@ -65,18 +65,14 @@
 
                     <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
-                    <a href="life-image.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Life</a>
-                    <!--<a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->
-                    <!-- <div class="nav-item dropdown">
+                    <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="far fa-file-alt me-2"></i>Pages</a>
+                                class="fa fa-table me-2"></i>Life</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Sign In</a>
-                            <a href="signup.html" class="dropdown-item">Sign Up</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item">Blank Page</a>
+                            <a href="life-image.php" class="dropdown-item">Image</a>
+                            <a href="life-video.php" class="dropdown-item">Video</a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </nav>
         </div>

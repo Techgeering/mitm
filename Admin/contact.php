@@ -63,7 +63,14 @@
                 <div class="navbar-nav w-100">
                     <a href="contact.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Contact</a>
                     <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
-                    <a href="life-image.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Life</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-table me-2"></i>Life</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="life-image.php" class="dropdown-item">Image</a>
+                            <a href="life-video.php" class="dropdown-item">Video</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
