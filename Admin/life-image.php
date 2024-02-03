@@ -1,3 +1,11 @@
+<?php
+session_start();
+$form = $_SESSION["mitm_user_username"];
+if ($form === NULL) {
+    header("location:login.php");
+} else {
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,6 +81,7 @@
                     </div>
                     <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
                     <a href="notice.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Notice</a>
+                    <a href="logout.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Logout</a>
                 </div>
             </nav>
         </div>
@@ -224,3 +233,4 @@
 
             <!-- Table End -->
             <?php include "common/footer.php" ?>
+            <?php }?>
