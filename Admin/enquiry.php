@@ -37,6 +37,8 @@ if ($form === NULL) {
 
         <!-- Template Stylesheet -->
         <link href="assets/css/style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- Include SweetAlert library -->
     </head>
 
     <body>
@@ -153,8 +155,12 @@ if ($form === NULL) {
                                                 <td class="text-center">
                                                     <?php echo $row['dte']; ?>
                                                 </td>
-                                                <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
-                                                            class="fas fa-trash-alt btn btn-danger"></i></a></td>
+                                                <td class="text-center">
+                                                        <a
+                                                            onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_enquiry', tbc='id', returnpage='enquiry.php');">
+                                                            <i class="fas fa-trash-alt btn btn-danger"></i>
+                                                        </a>
+                                                </td>
                                             </tr>
                                         <?php } ?>
                                     </tbody>

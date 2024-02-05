@@ -37,6 +37,7 @@ if ($form === NULL) {
 
         <!-- Template Stylesheet -->
         <link href="assets/css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- Include SweetAlert library -->
     </head>
 
     <body>
@@ -152,8 +153,10 @@ if ($form === NULL) {
                                                     echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
                                                 }
                                                 ?>
-                                                    <a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
-                                                            class="fas fa-trash-alt btn btn-danger"></i></a>
+                                                    <a
+                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_news', tbc='id', returnpage='news-event.php');">
+                                                        <i class="fas fa-trash-alt btn btn-danger"></i>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         <?php } ?>
