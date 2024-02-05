@@ -222,3 +222,28 @@ function confirmDelete(id, tb, tbc, returnpage) {
   });
 }
 
+/* for gallery image active/inactive */
+function confirmAction(action, id, tb, tbc, tbc1, returnpage) {
+  var actionText = (action === "active") ? "Are you sure you want to set this to inactive?" : "Are you sure you want to set this to active?";
+
+  Swal.fire({
+    title: 'Confirmation',
+    text: actionText,
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, proceed!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // If confirmed, redirect to the respective page
+      if (action === "active") {
+        window.location.href = "active.php?status=" + id + "&tb=" + tb + "&tbc=" + tbc + "&tbc1=" + tbc1 + "&returnpage=" + returnpage;
+      } else {
+        window.location.href = "inactive.php?status0=" + id + "&tb=" + tb + "&tbc=" + tbc + "&tbc1=" + tbc1 + "&returnpage=" + returnpage;
+      }
+    }
+  });
+
+  return false; // Prevent the default link action
+}

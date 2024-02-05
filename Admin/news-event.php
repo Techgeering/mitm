@@ -146,11 +146,19 @@ if ($form === NULL) {
                                                     <?php echo $row['date_of_upload']; ?>
                                                 </td>
                                                 <td class=text-center><?php $status = $row['status'];
+                                                $status = $row['status'];
                                                 $idm = $row['id'];
+                                                $tb = 'mitm_news';
+                                                $tbc = 'id';
+                                                $tbc1 = 'status';
+                                                $returnpage = 'news-event.php';
+
                                                 if ($status == 1) {
-                                                    echo "<a href='active.php?status=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-success'onclick='return confirmAction(\"active\", $idm)'><i class='fas fa-unlock'></i></a>";
+                                                    echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
+                                                    <i class='fas fa-unlock'></i></a>";
                                                 } else {
-                                                    echo "<a href='inactive.php?status0=$idm&&tb=mitm_life_video&&returnpage=life-video.php' class='btn btn-danger'onclick='return confirmAction(\"inactive\", $idm)'><i class='fas fa-lock'></i></a>";
+                                                    echo "<a href='inactive.php?status0=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-danger' onclick='return confirmAction(\"inactive\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
+                                                    <i class='fas fa-lock'></i></a>";
                                                 }
                                                 ?>
                                                     <a
