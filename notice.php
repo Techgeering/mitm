@@ -40,6 +40,7 @@
 
 	<title>MITM | About Us</title>
 
+
 	<style>
 		.notice-event {
 			background: linear-gradient(to left, #2e48f259 0%, #40dfff45 100%);
