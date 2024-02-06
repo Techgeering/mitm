@@ -258,7 +258,7 @@
 											href="life.php">Life @ MITM</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -280,7 +280,7 @@
 											href="polytechnic.php">Polytechnic</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -313,55 +313,55 @@
 											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-                        <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-                           <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
-                          <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
-                      </ul>
-                    </li>
-              </ul> -->
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul>
+			  <ul class="navbar-nav">
+				<li class="nav-item dropdown">
+						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
+						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
+						   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
+					  </ul>
+					</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -380,10 +380,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
+				</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link active third-menu-color" href="notice.php">Notice</a>
@@ -395,10 +395,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-                <li class="nav-item ">
-                   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
-                </li>
-              </ul> -->
+				<li class="nav-item ">
+				   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
+				</li>
+			  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -408,7 +408,8 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"
@@ -456,10 +457,14 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
+									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-									<li><a class="dropdown-item" href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
+									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: -80px;">
@@ -515,7 +520,8 @@
 	</script>
 
 	<!-- home page start-->
-	<div id="carouselExampleCaptions" class="carousel slide carousel-position" data-bs-ride="carousel" style="margin-top: -54px;" >
+	<div id="carouselExampleCaptions" class="carousel slide carousel-position" data-bs-ride="carousel"
+		style="margin-top: -54px;">
 		<div class="carousel-indicators indicator-z-index">
 			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
 				aria-current="true" aria-label="Slide 1"></button>
@@ -733,25 +739,32 @@
 				</div>
 				<div class="col-md-5">
 					<h2 class="text-center text-uppercase" style="color: #3498db">
-						News and Events
+						Latest News
 					</h2>
 					<div class="news-events-container">
 						<div class="scrolling-news-box">
-							<div class="news-item">
-								<a href="#" style="color: #41deff">News 1: This is the first news item</a>
-							</div>
-							<div class="news-item">
-								<a href="#" style="color: #ef2009">News 2: Another important news item here</a>
-							</div>
-							<div class="news-item">
-								<a href="#" style="color: #ef0101">News 3: Breaking news just in!</a>
-							</div>
-							<div class="news-item">
-								<a href="#" style="color: #41deff">News 4: Don't miss this update</a>
-							</div>
-							<div class="news-item">
-								<a href="#" style="color: #41deff">News 5: Final news for today</a>
-							</div>
+							<?php include 'Admin/db.php';
+							$sql = "SELECT * FROM `mitm_notice`where status = 1";
+							$Sql_query = mysqli_query($conn, $sql);
+							$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+							foreach ($All_fname as $row) {
+								?>
+								<div class="news-item">
+									<a href="#" style="color: #41deff"><?php echo $row['notice']; ?></a>
+								</div>
+								<!-- <div class="news-item">
+									<a href="#" style="color: #ef2009">News 2: Another important news item here</a>
+								</div>
+								<div class="news-item">
+									<a href="#" style="color: #ef0101">News 3: Breaking news just in!</a>
+								</div>
+								<div class="news-item">
+									<a href="#" style="color: #41deff">News 4: Don't miss this update</a>
+								</div>
+								<div class="news-item">
+									<a href="#" style="color: #41deff">News 5: Final news for today</a>
+								</div> -->
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -1026,27 +1039,27 @@
 
 	<!-- <div class="py-5" >
 	
-    <section class="centered-heading">
-        <h1 class="fw-bold text-uppercase">Placement</h1>
-    </section>
+	<section class="centered-heading">
+		<h1 class="fw-bold text-uppercase">Placement</h1>
+	</section>
 
-    <section class="count-section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h4 class="" >Recruiters</h4>
-                    <p id="recruitersCount" class="fw-bold">0</p>
-                </div>
-                <div class="col">
-                    <h4 class="" >Students Placed</h4>
-                    <p id="studentsPlacedCount" class="fw-bold">0</p>
-                </div>
-                <div class="col">
-                    <h4 class="" >Alumni</h4>
-                    <p id="alumniCount" class="fw-bold">0</p>
-                </div>
-            </div>
-        </div>
+	<section class="count-section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h4 class="" >Recruiters</h4>
+					<p id="recruitersCount" class="fw-bold">0</p>
+				</div>
+				<div class="col">
+					<h4 class="" >Students Placed</h4>
+					<p id="studentsPlacedCount" class="fw-bold">0</p>
+				</div>
+				<div class="col">
+					<h4 class="" >Alumni</h4>
+					<p id="alumniCount" class="fw-bold">0</p>
+				</div>
+			</div>
+		</div>
 		<div class="container-fluid pt-2">
 			<div class="row marquee-border">
 			  <div class="marquee-position">
@@ -1091,22 +1104,29 @@
 			  </div>
 			</div>
 		  </div>
-    </section>
+	</section>
 </div> -->
 	<div class="container py-5">
 		<h2 class="text-uppercase text-center">Placement</h2>
 		<div class="row">
-			<div class="col-12 col-md-4 py-5 placement-data" style="background-image: url('assets/img/placementbanner.png');" >
-				<h2 class="text-center text-primary text-uppercase" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;" >Recruiters</h2>
-				<p id="recruitersCount" class="fw-bold text-center text-white" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
-				<h2 class="text-center text-primary text-uppercase" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
+			<div class="col-12 col-md-4 py-5 placement-data"
+				style="background-image: url('assets/img/placementbanner.png');">
+				<h2 class="text-center text-primary text-uppercase"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">Recruiters</h2>
+				<p id="recruitersCount" class="fw-bold text-center text-white"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
+				<h2 class="text-center text-primary text-uppercase"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
 					Students Placed
 				</h2>
-				<p id="studentsPlacedCount" class="fw-bold text-center text-white" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
+				<p id="studentsPlacedCount" class="fw-bold text-center text-white"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
 					0
 				</p>
-				<h2 class="text-center text-primary text-uppercase" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">Alumni</h2>
-				<p id="alumniCount" class="fw-bold text-center text-white" style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
+				<h2 class="text-center text-primary text-uppercase"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">Alumni</h2>
+				<p id="alumniCount" class="fw-bold text-center text-white"
+					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
 			</div>
 			<div class="col-12 col-md-7 placement-data py-2">
 				<img src="assets/img/comp.jpg" alt="" class="img-fluid" />
@@ -1235,11 +1255,11 @@
 								<a href="javascript:void(0)" class="link-decoration">Principal's Message</a>
 							</div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
-						      <p>We will send out weekly newest article and some great offers</p>
-						      <form class="" action="" method="POST" id="newsletterform" role="form">
-						             <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
-						             <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
-						        </form> -->
+							  <p>We will send out weekly newest article and some great offers</p>
+							  <form class="" action="" method="POST" id="newsletterform" role="form">
+									 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
+									 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
+								</form> -->
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>

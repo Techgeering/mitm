@@ -43,7 +43,6 @@
     });
 </script>
 <!-- End pagination -->
-
 </body>
 
 </html>
