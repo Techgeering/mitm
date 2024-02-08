@@ -196,7 +196,7 @@ if ($form === NULL) {
                     $sql = "INSERT INTO mitm_news(link,date_of_upload,status) 
              VALUES('$link','$date','1')";
                     if ($conn->query($sql) === true) {
-                        echo '<script>window.location.href = "news-event.php";</script>';
+                        echo "<script>window.location.href='news-event.php';</script>";
                     } else {
                         $conn->error;
                     }

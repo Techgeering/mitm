@@ -194,7 +194,7 @@ if ($form === NULL) {
                     $sql = "INSERT INTO mitm_notice(notice,status) 
              VALUES('$notice','1')";
                     if ($conn->query($sql) === true) {
-                        echo '<script>window.location.href = "notice.php";</script>';
+                        echo "<script>window.location.href='notice.php';</script>";
                     } else {
                         $conn->error;
                     }

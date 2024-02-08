@@ -208,7 +208,7 @@ if ($form === NULL) {
                     $sql = "INSERT INTO mitm_life_image(image,status) 
              VALUES('$new_file_name','1')";
                     if ($conn->query($sql) === true) {
-                        echo '<script>window.location.href = "life-image.php";</script>';
+                        echo "<script>window.location.href='life-image.php';</script>";
                     } else {
                         $conn->error;
                     }
