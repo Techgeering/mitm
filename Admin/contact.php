@@ -113,7 +113,7 @@ if ($form === NULL) {
                         <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
-                        <a href="placement.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Placement</a>
+                        <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -141,6 +141,7 @@ if ($form === NULL) {
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
                                 <h6 class="mb-4">Contact</h6>
+                                <!-- <button onclick="downloadCSV()">CSV</button> -->
                                 <table id="example1" class="table table-hover">
                                     <thead>
                                         <tr>
@@ -214,3 +215,35 @@ if ($form === NULL) {
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>
             <?php } ?>
+            <!-- <script>
+                function downloadCSV() {
+                    // Create a new CSV file
+                    var csv = '';
+
+                    // Add column headers
+                    csv += 'Slno,Full Name,Email,Phone,Message,Date & Time\n';
+
+                    // Iterate through the table rows and add data
+                    <?php
+                    $result = $conn->query($sql);
+                    while ($row = $result->fetch_assoc()) {
+                        ?>
+                        csv += '<?php echo $i; ?>,<?php echo $row['contact_name']; ?>,<?php echo $row['contact_email']; ?>,<?php echo $row['contact_phone']; ?>,<?php echo $row['contact_message']; ?>,<?php echo $row['dte_tim']; ?>\n';
+                        <?php
+                        $i++;
+                    }
+                    ?>
+
+                    // Create a Blob containing the CSV data
+                    var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+
+                    // Create a link element and trigger the download
+                    var link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = 'mitm_contact_data.csv';
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script> -->

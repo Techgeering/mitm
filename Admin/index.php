@@ -61,20 +61,20 @@
                 </a>
                 <div class="navbar-nav w-100">
 
-                    <a href="contact.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Contact</a>
-                    <a href="enquiry.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Enquiry</a>
+                    <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
+                    <a href="enquiry.php" class="nav-item nav-link"><i class="bi bi-file-earmark-text me-2"></i>Admission Enquiry</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-table me-2"></i>Life</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-object-group nav-icon"></i>Life</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="life-image.php" class="dropdown-item">Image</a>
-                            <a href="life-video.php" class="dropdown-item">Video</a>
+                            <a href="life-image.php" class="dropdown-item"><i class="bi bi-image me-2"></i>Image</a>
+                            <a href="life-video.php" class="dropdown-item"><i class="bi bi-play-circle me-2"></i>Video</a>
                         </div>
                     </div>
-                    <a href="news-event.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>News and Event</a>
-                    <a href="notice.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Notice</a>
-                    <a href="placement.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Placement</a>
-                    <a href="logout.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Logout</a>
+                    <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and Event</a>
+                    <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
+                    <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
+                    <a href="logout.php" class="nav-item nav-link"><i
+                                class="far fa-share-square nav-icon"></i>Logout</a>
                 </div>
             </nav>
         </div>

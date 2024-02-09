@@ -86,7 +86,7 @@ if ($form === NULL) {
                             and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i> Notice</a>
-                        <a href="placement.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Placement</a>
+                        <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -208,7 +208,7 @@ if ($form === NULL) {
                 <!--modal for add video-->
                 <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
                     <div class="modal-dialog">
-                        <div class="modal-content bg-primary">
+                        <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Upload Image</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -227,10 +227,10 @@ if ($form === NULL) {
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-outline-light"
+                                        <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
                                         <button type="Submit" name="adddetails" value="Submit"
-                                            class="btn btn-outline-light">Upload</button>
+                                            class="btn btn-primary">Upload</button>
                                     </div>
                                 </div>
                             </form>

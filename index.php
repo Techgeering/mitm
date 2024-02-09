@@ -750,7 +750,9 @@
 							foreach ($All_fname as $row) {
 								?>
 								<div class="news-item">
+									<li>
 									<a href="#" style="color: #41deff"><?php echo $row['notice']; ?></a>
+									</li>
 								</div>
 								<!-- <div class="news-item">
 									<a href="#" style="color: #ef2009">News 2: Another important news item here</a>

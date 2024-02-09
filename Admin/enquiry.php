@@ -90,7 +90,7 @@ if ($form === NULL) {
                         <a href="notice.php" class="nav-item nav-link">
                             <i class="bi bi-bell me-2"></i> Notice
                         </a>
-                        <a href="placement.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Placement</a>
+                        <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>

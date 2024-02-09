@@ -482,8 +482,7 @@
 									</span>
 								</span>
 								<span class="news-data">
-									<?php echo $row['link']; ?><a href=""><i class="fa fa-newspaper-o"
-											aria-hidden="true"></i></a>
+									<?php echo $row['link']; ?><a href=""></a>
 								</span>
 							</p>
 						<?php } ?>

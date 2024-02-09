@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
-	<link href="assets/css/style.css?v=1.4" rel="stylesheet">
+	<link href="assets/css/style.css?v=1.5" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 

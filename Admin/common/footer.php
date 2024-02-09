@@ -3,7 +3,9 @@
     <div class="bg-light rounded-top p-4">
         <div class="row">
             <div class="col-12 col-sm-6 text-center text-sm-start">
-                &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                &copy; <a href="#"></a>All Right Reserved | Powered by
+                <a class="techgeering-decoration" href="https://www.techgeering.com/" target="_blank">T<span
+                        class="e-color">e</span>chgeering</a>
             </div>
         </div>
     </div>

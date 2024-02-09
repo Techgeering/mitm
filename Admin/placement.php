@@ -70,7 +70,7 @@ if ($form === NULL) {
                         <a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enquiry</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                     class="fa fa-object-group nav-icon"></i>Life</a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -84,7 +84,7 @@ if ($form === NULL) {
                         <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
-                        <a href="placement.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Placement</a>
+                        <a href="placement.php" class="nav-item nav-link active"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -220,9 +220,9 @@ if ($form === NULL) {
 
                 <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
                     <div class="modal-dialog">
-                        <div class="modal-content bg-primary">
+                        <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Upload Image</h4>
+                                <h4 class="modal-title">Upload placement</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
@@ -234,10 +234,10 @@ if ($form === NULL) {
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-outline-light"
+                                        <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
                                         <button type="submit" name="addgallery" value="Submit"
-                                            class="btn btn-outline-light">Upload</button>
+                                            class="btn btn-primary">Upload</button>
                                     </div>
                                 </div>
                             </form>
