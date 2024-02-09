@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link href="assets/css/style.css?v=1.4" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -400,13 +401,20 @@
 	<!--Desktop view-->
 	<div class="d-none d-lg-block">
 		<div class="container">
-			<div class="logos">
-				<h4 class="text-uppercase mission-head">Placemnt Companies</h4>
-				<div class="row">
-					<div class="col-lg-3 comp-img ">
-						<img src="assets/img/comp1.png" alt="">
+			<h4 class="text-uppercase mission-head">Placemnt Companies</h4>
+			<div class="row">
+				<div class="logos">
+					<div class="comp-img ">
+						<?php include 'Admin/db.php';
+						$sql = "SELECT * FROM `mitm_placement`where status = 1";
+						$Sql_query = mysqli_query($conn, $sql);
+						$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+						foreach ($All_fname as $row) {
+							?>
+							<img src="Admin/upload/<?php echo $row['image']; ?>" alt="">
+						<?php } ?>
 					</div>
-					<div class="col-lg-3 comp-img ">
+					<!-- <div class="col-lg-3 comp-img ">
 						<img src="assets/img/comp2.jpeg" alt="">
 					</div>
 					<div class="col-lg-3 comp-img ">
@@ -424,9 +432,9 @@
 					<div class="col-lg-3 comp-img ">
 						<img src="assets/img/comp7.jpeg" alt="">
 					</div>
-					<div class="col-lg-3 comp-img ">
-						<img src="assets/img/comp8.png" alt="">
-					</div>
+					<div class="col-lg-3 comp-img">
+						<img src="assets/img/comp8.1.png" alt="">
+					</div> -->
 				</div>
 			</div>
 		</div>

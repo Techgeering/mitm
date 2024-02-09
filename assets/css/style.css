@@ -1200,7 +1200,10 @@ margin-left: 30px;
 /* ----------------------------------------------------------- */
 /*  placement
 /* ----------------------------------------------------------- */
-.logos{
+.logos img{
+  width: 20% !important;
   aspect-ratio: 3/2;
-
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+  padding: 30px;
 }

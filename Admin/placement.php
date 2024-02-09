@@ -111,7 +111,7 @@ if ($form === NULL) {
                     <div class="row g-4">
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">Life-Image</h6>
+                                <h6 class="mb-4">Placement</h6>
                                 <div class="col-sm-12 mb-2">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modal-bs-primary">
@@ -122,7 +122,7 @@ if ($form === NULL) {
                                     <thead>
                                         <tr>
                                             <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Image</th>
+                                            <th scope="col" class="text-center">placement</th>
                                             <th scope="col" class="text-center">Date Of Upload</th>
                                             <th scope="col" class="text-center">manage</th>
                                         </tr>
@@ -130,7 +130,7 @@ if ($form === NULL) {
                                     <tbody>
 
                                         <?php include 'db.php';
-                                        $sql = "SELECT * FROM mitm_life_image ORDER BY id DESC";
+                                        $sql = "SELECT * FROM mitm_placement ORDER BY id DESC";
                                         $result = $conn->query($sql);
                                         $i = 1;
                                         while ($row = $result->fetch_assoc()) { ?>
@@ -144,10 +144,10 @@ if ($form === NULL) {
                                                 <td class=text-center><?php $status = $row['status'];
                                                 $status = $row['status'];
                                                 $idm = $row['id'];
-                                                $tb = 'mitm_life_image';
+                                                $tb = 'mitm_placement';
                                                 $tbc = 'id';
                                                 $tbc1 = 'status';
-                                                $returnpage = 'life-image.php';
+                                                $returnpage = 'placement.php';
 
                                                 if ($status == 1) {
                                                     echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
@@ -158,7 +158,7 @@ if ($form === NULL) {
                                                 }
                                                 ?>
                                                     <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_life_image', tbc='id', returnpage='life-image.php');">
+                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_placement', tbc='id', returnpage='placement.php');">
                                                         <i class="fas fa-trash-alt btn btn-danger"></i>
                                                     </a>
                                                 </td>
@@ -168,7 +168,7 @@ if ($form === NULL) {
                                     <tfoot>
                                         <tr>
                                             <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Image</th>
+                                            <th scope="col" class="text-center">placement</th>
                                             <th scope="col" class="text-center">Date Of Upload</th>
                                             <th scope="col" class="text-center">manage</th>
                                         </tr>
@@ -206,10 +206,10 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_life_image(image,status) 
+                    $sql = "INSERT INTO mitm_placement(image,status) 
              VALUES('$new_file_name','1')";
                     if ($conn->query($sql) === true) {
-                        echo "<script>window.location.href='life-image.php';</script>";
+                        echo "<script>window.location.href='placement.php';</script>";
                     } else {
                         $conn->error;
                     }
@@ -229,7 +229,7 @@ if ($form === NULL) {
                                 <div class="modal-body">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputimage">Select Image</label>
+                                            <label for="exampleInputimage">Placement</label>
                                             <input type="file" id="exampleInputimage" name="image" required>
                                         </div>
                                     </div>
