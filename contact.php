@@ -427,13 +427,13 @@
 									<span class="opacity-50 d-flex align-items-center me-3 fs-2">
 										<ion-icon name="call"></ion-icon>
 									</span>
-									<span>+134 1234 1234</span>
+									<span>094398 97178</span>
 								</li>
 								<li class="d-flex align-items-center r mb-4">
 									<span class="opacity-50 d-flex align-items-center me-3 fs-2">
 										<ion-icon name="mail"></ion-icon>
 									</span>
-									<span>Help@contact.com</span>
+									<span>info@mitm.com</span>
 								</li>
 								<li class="d-flex justify-content-start align-items-center mb-4">
 									<span class="opacity-50 d-flex align-items-center me-3 fs-2">

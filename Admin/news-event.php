@@ -166,6 +166,12 @@ if ($form === NULL) {
                                                     <i class='fas fa-lock'></i></a>";
                                                 }
                                                 ?>
+                                                    <button type="button" name="update1"
+                                                        onclick="myfcn2('<?php echo $row['id']; ?>','<?php echo $row['link']; ?>','<?php echo $row['date_of_upload']; ?>')"
+                                                        class="btn btn-primary m-2" data-bs-toggle="modal"
+                                                        data-bs-target="#modal-primary-up">
+                                                        <i class='fas fa-edit'></i>
+                                                    </button>
                                                     <a
                                                         onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_news', tbc='id', returnpage='news-event.php');">
                                                         <i class="fas fa-trash-alt btn btn-danger"></i>
@@ -240,6 +246,45 @@ if ($form === NULL) {
                     <!-- /.modal-dialog -->
                 </div>
 
+                <div class="modal fade" data-bs-backdrop="static" id="modal-primary-up">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Update News</h4>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form action="event-update-submit.php" method='post' enctype="multipart/form-data">
+                                <div class="modal-body">
+
+                                    <div class="card-body">
+                                        <input type="hidden" name="id3" id="updateid">
+
+                                        <div class="form-group">
+                                            <label for="exampleInputimage">Link</label>
+                                            <input type="text" class="form-control" name="link" id="updatelink">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Date of Upload</label>
+                                            <input type="date" id="updatedate" class="form-control" name="date" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="Submit" name="update" value="updte"
+                                        class="btn btn-primary">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                
+
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>
             <?php } ?>
+            <script src="assets/js/main1.js"></script>
