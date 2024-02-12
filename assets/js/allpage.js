@@ -73,6 +73,156 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 //  }
 // });
 
+$("#mitmcontact").submit(function (e) {
+  e.preventDefault();
+
+  var fname = document.getElementById('fname').value;
+  var lname = document.getElementById('lname').value;
+  var email = document.getElementById('cmail').value;
+  var phone = document.getElementById('cphone').value;
+  var message = document.getElementById('cmessage').value;
+
+  var errorMessage = document.getElementById('error-message');
+  var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+  var phonepat = /^[0-9]{10}$/
+  var fnamecon = /[A-Za-z\s]{1,50}/
+  var lnamecon = /[A-Za-z\s]{1,50}/
+  var error = false
+
+  if (fname === "" || lname === "" || email === "" || phone === "" || message === "") {
+    errorMessage.innerText = "Please fill all the feilds"
+  }
+  else if (!fname.match(fnamecon)) {
+    errorMessage.innerText = "Enter a valid name"
+  }
+  else if (!lname.match(lnamecon)) {
+    errorMessage.innerText = "Enter a valid name"
+  }
+  else if (!email.match(emailRegex)) {
+    errorMessage.innerText = "Enter a valid email"
+  }
+  else if (!phone.match(phonepat)) {
+    errorMessage.innerText = "please enter valid phone number "
+  }
+  else {
+    errorMessage.innerText = "";
+    $.ajax({
+      type: "POST",
+      url: "contact-forminsert.php",
+      data: {
+        fname: fname,
+        lname: lname,
+        email: email,
+        phone: phone,
+        message: message
+      },
+      dataType: "json",  // Specify the expected data type
+      success: function (data) {
+        console.log(data); // Log the response for debugging
+        if (data.status === "success") {
+          // Show success message using ToastAlert
+          toastr.success(data.message, 'Success');
+
+          document.getElementById('fname').value = "";
+          document.getElementById('lname').value = "";
+          document.getElementById('cmail').value = "";
+          document.getElementById('cphone').value = "";
+          document.getElementById('cmessage').value = "";
+        } else {
+          // Show error message using SweetAlert
+          Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: data.message,
+          });
+        }
+      },
+      error: function (xhr, status, error) {
+        // Handle other AJAX errors if needed
+        console.error("AJAX Error:", xhr, status, error);
+      },
+      complete: function () {
+        $(".loading").hide(); // Hide loading message on completion
+      }
+    });
+  }
+
+});
+
+/*for Admission Enquiry Form not Refreshed after send blank abd error input fields*/
+			$("#mitmenquiry").submit(function (e) {
+				e.preventDefault();
+
+				var fullname = document.getElementById("enquiryname").value;
+				var emailid = document.getElementById("enquiryemail").value;
+				var mobile = document.getElementById("enquiryphone").value;
+				var course = document.getElementById("enquirycourse").value;
+				var message = document.getElementById("enquirymessage").value;
+
+				var errorstatus = document.getElementById("error-status");
+				var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+				var phonepat = /^[0-9]{10}$/;
+				var fnamecon = /[A-Za-z\s]{1,50}/;
+				var error = false;
+
+				if (
+					fullname === "" ||
+					emailid === "" ||
+					mobile === "" ||
+					course === "" ||
+					message === ""
+				) {
+					errorstatus.innerText = "Please fill all the feilds";
+				} else if (!fullname.match(fnamecon)) {
+					errorstatus.innerText = "Enter a valid name";
+				} else if (!emailid.match(emailRegex)) {
+					errorstatus.innerText = "Enter a valid email";
+				} else if (!mobile.match(phonepat)) {
+					errorstatus.innerText = "Enter a valid phone number";
+				} else {
+					errorstatus.innerText = "";
+					$.ajax({
+						type: "POST",
+						url: "enquiry-forminsert.php",
+						data: {
+							name: fullname,
+							email: emailid,
+							phone: mobile,
+							course: course,
+							message: message,
+						},
+						dataType: "json", // Specify the expected data type
+						success: function (data) {
+							console.log(data); // Log the response for debugging
+							if (data.status === "success") {
+								// Show success message using ToastAlert
+								toastr.success(data.message, "Success");
+
+								document.getElementById("enquiryname").value = "";
+								document.getElementById("enquiryemail").value = "";
+								document.getElementById("enquiryphone").value = "";
+								document.getElementById("enquirycourse").value = "";
+								document.getElementById("enquirymessage").value = "";
+							} else {
+								// Show error message using SweetAlert
+								Swal.fire({
+									icon: "error",
+									title: "Error!",
+									text: data.message,
+								});
+							}
+						},
+						error: function (xhr, status, error) {
+							// Handle other AJAX errors if needed
+							console.error("AJAX Error:", xhr, status, error);
+						},
+						complete: function () {
+							$(".loading").hide(); // Hide loading message on completion
+						},
+					});
+				}
+			});
+
 /*ENQUIRY BUTTON OPEN & CLOSE*/
 
 function openNav() {
@@ -106,7 +256,7 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /*  COUNTER JS
 /* ----------------------------------------------------------- */
-let count = document.querySelectorAll(".count");
+ count = document.querySelectorAll(".count");
 let arr = Array.from(count);
 
 arr.map(function (item) {
@@ -207,83 +357,8 @@ $(document).ready(function () {
   });
 });
 
-
 		//for CONTACT Form not Refreshed after send blank abd error input fields.
 
-		// $(document).ready(function () {
-		// 	$("#mitmcontact").submit(function (e) {
-		// 		e.preventDefault();
 
-		// 		var fname = document.getElementById('fname').value;
-		// 		var lname = document.getElementById('lname').value;
-		// 		var email = document.getElementById('cmail').value;
-		// 		var phone = document.getElementById('cphone').value;
-		// 		var message = document.getElementById('cmessage').value;
-
-		// 		var errorMessage = document.getElementById('error-message');
-		// 		var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
-		// 		var phonepat = /^[0-9]{10}$/
-		// 		var fnamecon = /[A-Za-z\s]{1,50}/
-		// 		var lnamecon = /[A-Za-z\s]{1,50}/
-		// 		var error = false
-
-		// 		if (fname === "" || lname === "" || email === "" || phone === "" || message === "") {
-		// 			errorMessage.innerText = "Please fill all the feilds"
-		// 		}
-		// 		else if (!fname.match(fnamecon)) {
-		// 			errorMessage.innerText = "Enter a valid name"
-		// 		}
-		// 		else if (!lname.match(lnamecon)) {
-		// 			errorMessage.innerText = "Enter a valid name"
-		// 		}
-		// 		else if (!email.match(emailRegex)) {
-		// 			errorMessage.innerText = "Enter a valid email"
-		// 		}
-		// 		else if (!phone.match(phonepat)) {
-		// 			errorMessage.innerText = "please enter valid phone number "
-		// 		}
-		// 		else {
-		// 			errorMessage.innerText = "";
-		// 			$.ajax({
-		// 				type: "POST",
-		// 				url: "contact-forminsert.php",
-		// 				data: {
-		// 					fname: fname,
-		// 					lname: lname,
-		// 					email: email,
-		// 					phone: phone,
-		// 					message: message
-		// 				},
-		// 				dataType: "json",  // Specify the expected data type
-		// 				success: function (data) {
-		// 					console.log(data); // Log the response for debugging
-		// 					if (data.status === "success") {
-		// 						// Show success message using ToastAlert
-		// 						toastr.success(data.message, 'Success');
-
-		// 						document.getElementById('fname').value = "";
-		// 						document.getElementById('lname').value = "";
-		// 						document.getElementById('cmail').value = "";
-		// 						document.getElementById('cphone').value = "";
-		// 						document.getElementById('cmessage').value = "";
-		// 					} else {
-		// 						// Show error message using SweetAlert
-		// 						Swal.fire({
-		// 							icon: 'error',
-		// 							title: 'Error!',
-		// 							text: data.message,
-		// 						});
-		// 					}
-		// 				},
-		// 				error: function (xhr, status, error) {
-		// 					// Handle other AJAX errors if needed
-		// 					console.error("AJAX Error:", xhr, status, error);
-		// 				},
-		// 				complete: function () {
-		// 					$(".loading").hide(); // Hide loading message on completion
-		// 				}
-		// 			});
-		// 		}
-
-		// 	});
-		// });
+			
+		

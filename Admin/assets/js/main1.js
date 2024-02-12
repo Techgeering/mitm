@@ -6,4 +6,5 @@ function myfcn2(idx, link, date) {
     document.getElementById("updatelink").value = link;
     document.getElementById("updatedate").value = date;
   }
+
   

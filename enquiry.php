@@ -5,11 +5,12 @@
 	</div>
 	<div class="p-3">
 		<div class="row">
-			<div class="col-12">
+			<!-- <div class="col-12">
 				<p class="enquiry-contact-color">Contact on +91-xxxxxxxxxx, +91-xxxxxxxxxx or Email:
 					admission@xx.com.</p>
-				<label id="error-status" class="text-danger"></label>
-			</div>
+			</div> -->
+			<label id="error-status" class="text-danger"></label>
+
 			<div class="col-12">
 				<form id="mitmenquiry" name="form">
 					<label for="name">Your Name:</label>

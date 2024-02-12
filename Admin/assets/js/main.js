@@ -249,4 +249,12 @@ function confirmAction(action, id, tb, tbc, tbc1, returnpage) {
 }
 
 
+function myfcn3(idy, notice, date) {
+  console.log(notice+"  "+date);
+  
+  document.getElementById("updatenotice1").value = idy;
+  document.getElementById("updatenotice").value = notice;
+  document.getElementById("updatedate1").value = date;
+}
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

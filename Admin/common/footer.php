@@ -28,7 +28,7 @@
 
 <!-- Template Javascript -->
 <script src="assets/js/main.js?v=1.8"></script>
-<script src="assets/js/main1.js"></script>
+<!-- <script src="assets/js/main1.js"></script> -->
 
 <!-- pagination -->
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>

@@ -1451,7 +1451,7 @@
         })
     </script>
     <!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $("#mitmenquiry").submit(function (e) {
                 e.preventDefault();
@@ -1527,7 +1527,7 @@
             });
         });
 
-    </script>
+    </script> -->
 </body>
 
 </html>
