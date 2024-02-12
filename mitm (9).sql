@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2024 at 02:00 PM
+-- Generation Time: Feb 12, 2024 at 06:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -44,7 +44,8 @@ INSERT INTO `mitm_contact` (`id`, `contact_name`, `contact_email`, `contact_phon
 (21, 'sushree das', 'sarmisthadas065@gmail.com', '1111111111', 'ertr5yt6uh', '2024-01-30 17:58:45'),
 (22, 'sushree das', 'sarmisthadas065@gmail.com', '1111111111', 'tyuhjn', '2024-01-30 18:04:11'),
 (23, 'sushree das', 'sarmisthadas065@gmail.com', '1111111111', 'heloooo', '2024-01-30 18:06:49'),
-(29, 'sushree das', 'sarmisthadas065@gmail.com', '1111111111', 'asdfg', '2024-02-08 09:51:48');
+(29, 'sushree das', 'sarmisthadas065@gmail.com', '1111111111', 'asdfg', '2024-02-08 09:51:48'),
+(30, 'jkhyjvghbj jnhbmknjjkjnnj', 'manasbariha@gmail.com', '2222222222', 'thank you', '2024-02-10 18:11:18');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,11 @@ INSERT INTO `mitm_enquiry` (`id`, `enquiry_name`, `enquiry_email`, `enquiry_mobi
 (6, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(CSE)', 'hrr', '2024-02-01 08:59:08'),
 (7, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(CSE)', 'hrr', '2024-02-01 08:59:09'),
 (8, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(CSE)', 'grg', '2024-02-01 09:00:11'),
-(9, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(CSE)', 'wdfgb', '2024-02-01 09:01:31');
+(9, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(CSE)', 'wdfgb', '2024-02-01 09:01:31'),
+(12, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(MECH)', 'fghbnj', '2024-02-10 18:27:45'),
+(13, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(MECH)', 'aswderty', '2024-02-11 14:58:17'),
+(14, 'sushree', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(MECH)', 'hyyyyy', '2024-02-11 15:11:35'),
+(15, '34546tygh', 'sarmisthadas065@gmail.com', '1233345678', 'B.Tech(EEE)', 'edtrfyguihjok', '2024-02-12 01:08:09');
 
 -- --------------------------------------------------------
 
@@ -149,7 +154,8 @@ CREATE TABLE `mitm_news` (
 INSERT INTO `mitm_news` (`id`, `link`, `date_of_upload`, `status`) VALUES
 (6, 'ros time stamps of multi hosts', '2024-01-15', 1),
 (7, 'ros time stamps of multi hosts', '2023-12-02', 0),
-(9, 'ros time stamps of multi hosts', '2024-02-10', 1);
+(9, 'ros time stamps', '2024-02-17', 1),
+(10, 'ros time stamp', '2024-02-06', 1);
 
 -- --------------------------------------------------------
 
@@ -169,11 +175,10 @@ CREATE TABLE `mitm_notice` (
 --
 
 INSERT INTO `mitm_notice` (`id`, `notice`, `date_of_upload`, `status`) VALUES
-(7, 'Breaking news just in!', '2024-02-06 04:44:35', 1),
+(7, 'Breaking news', '2024-02-21 18:30:00', 1),
 (8, 'Another important news item here', '2024-02-09 09:52:21', 1),
 (9, 'Another important news item here\r\n', '2024-02-09 09:53:30', 1),
-(10, 'Another important news item here\r\n', '2024-02-09 09:53:48', 1),
-(12, 'Another important news item here	Another important news item here	', '2024-02-09 10:32:16', 1);
+(10, 'Another important news item here\r\n', '2024-02-09 09:53:48', 1);
 
 -- --------------------------------------------------------
 
@@ -278,13 +283,13 @@ ALTER TABLE `mitm_user`
 -- AUTO_INCREMENT for table `mitm_contact`
 --
 ALTER TABLE `mitm_contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `mitm_enquiry`
 --
 ALTER TABLE `mitm_enquiry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `mitm_life_image`
@@ -302,7 +307,7 @@ ALTER TABLE `mitm_life_video`
 -- AUTO_INCREMENT for table `mitm_news`
 --
 ALTER TABLE `mitm_news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `mitm_notice`
