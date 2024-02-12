@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2024 at 06:15 AM
+-- Generation Time: Feb 12, 2024 at 12:12 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -166,7 +166,7 @@ INSERT INTO `mitm_news` (`id`, `link`, `date_of_upload`, `status`) VALUES
 CREATE TABLE `mitm_notice` (
   `id` int(11) NOT NULL,
   `notice` longtext NOT NULL,
-  `date_of_upload` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `date_of_upload` date NOT NULL,
   `status` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -175,10 +175,9 @@ CREATE TABLE `mitm_notice` (
 --
 
 INSERT INTO `mitm_notice` (`id`, `notice`, `date_of_upload`, `status`) VALUES
-(7, 'Breaking news', '2024-02-21 18:30:00', 1),
-(8, 'Another important news item here', '2024-02-09 09:52:21', 1),
-(9, 'Another important news item here\r\n', '2024-02-09 09:53:30', 1),
-(10, 'Another important news item here\r\n', '2024-02-09 09:53:48', 1);
+(7, 'Breaking news', '2024-02-22', 1),
+(8, 'Another important news item here', '2024-02-09', 1),
+(13, 'Another important news item', '2024-02-29', 1);
 
 -- --------------------------------------------------------
 
@@ -313,7 +312,7 @@ ALTER TABLE `mitm_news`
 -- AUTO_INCREMENT for table `mitm_notice`
 --
 ALTER TABLE `mitm_notice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `mitm_placement`

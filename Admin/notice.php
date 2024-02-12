@@ -252,9 +252,8 @@ if ($form === NULL) {
                             </div>
                             <form action="notice-update.php" method='post' enctype="multipart/form-data">
                                 <div class="modal-body">
-
                                     <div class="card-body">
-                                        <input type="hidden" name="id2" id="updatenotice1">
+                                        <input type="hidden" name="id2" id="update1id">
 
                                         <div class="form-group">
                                             <label for="exampleInputimage">Notice</label>
@@ -262,13 +261,13 @@ if ($form === NULL) {
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputtext">Date of Upload</label>
-                                            <input type="date" id="updatedate1" class="form-control" name="date" />
+                                            <input type="date" id="dateid2" class="form-control" name="date2" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-between">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="Submit" name="updatenotice" value="updte"
+                                    <button type="submit" name="updatenotice" value="update"
                                         class="btn btn-primary">Update</button>
                                 </div>
                             </form>
@@ -280,4 +279,3 @@ if ($form === NULL) {
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>
             <?php } ?>
-            <script src="assets/js/main.js?v=1.2"></script>

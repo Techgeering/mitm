@@ -1,3 +1,4 @@
+
 (function ($) {
   "use strict";
 
@@ -248,13 +249,13 @@ function confirmAction(action, id, tb, tbc, tbc1, returnpage) {
   return false; // Prevent the default link action
 }
 
-
-function myfcn3(idy, notice, date) {
-  console.log(notice+"  "+date);
+function myfcn3(idx, notice, date1) {
+  console.log(notice+"  "+date1);
   
-  document.getElementById("updatenotice1").value = idy;
+  document.getElementById("update1id").value = idx;
   document.getElementById("updatenotice").value = notice;
-  document.getElementById("updatedate1").value = date;
+  document.getElementById("dateid2").value = date1;
 }
+
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
