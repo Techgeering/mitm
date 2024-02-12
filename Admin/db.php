@@ -1,8 +1,8 @@
 <?php
     $servername="localhost";
-    $username="root";
-    $password="";
-    $databasename="mitm";
+    $username="u728233529_mitm";
+    $password="e^M0RFB[r";
+    $databasename="u728233529_mitm";
     $base_url="https://localhost/mitm/";
     $conn=new mysqli($servername,$username,$password,$databasename);
     if($conn->connect_error){
