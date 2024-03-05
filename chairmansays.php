@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.7">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -43,172 +43,6 @@
 	<title>MITM | About Us</title>
 
 	<style>
-		section {
-			padding: 60px 0;
-			overflow: hidden;
-		}
-
-		.section-bg {
-			background-color: #f3f5fa;
-		}
-
-		.section-title {
-			text-align: center;
-			padding-bottom: 18px;
-		}
-
-		.section-title h2 {
-			font-size: 32px;
-			font-weight: bold;
-			text-transform: uppercase;
-			margin-bottom: 20px;
-			padding-bottom: 20px;
-			position: relative;
-			color: #37517e;
-		}
-
-		.section-title h2::before {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 120px;
-			height: 1px;
-			background: #ddd;
-			bottom: 1px;
-			left: calc(50% - 60px);
-		}
-
-		.section-title h2::after {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 40px;
-			height: 3px;
-			background: #47b2e4;
-			bottom: 0;
-			left: calc(50% - 20px);
-		}
-
-		.section-title p {
-			margin-bottom: 0;
-		}
-
-		.team .member {
-			position: relative;
-			box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-			padding: 30px;
-			border-radius: 5px;
-			background: #fff;
-			transition: 0.5s;
-			height: 116%;
-			margin-bottom: 71px;
-		}
-
-		.team .member .pic {
-			overflow: hidden;
-			width: 180px;
-			border-radius: 50%;
-		}
-
-		.team .member .pic img {
-			transition: ease-in-out 0.3s;
-		}
-
-		.team .member:hover {
-			transform: translateY(-10px);
-		}
-
-		.team .member .member-info {
-			padding-left: 30px;
-		}
-
-		.team .member h4 {
-			font-weight: 700;
-			margin-bottom: 5px;
-			font-size: 20px;
-			color: #37517e;
-		}
-
-		.team .member span {
-			display: block;
-			font-size: 15px;
-			padding-bottom: 10px;
-			position: relative;
-			font-weight: 500;
-		}
-
-		.team .member span::after {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 50px;
-			height: 1px;
-			background: #cbd6e9;
-			bottom: 0;
-			left: 0;
-		}
-
-		.team .member p {
-			margin: 10px 0 0 0;
-			font-size: 14px;
-		}
-
-		.team .member .social {
-			margin-top: 12px;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-		}
-
-		.team .member .social a {
-			transition: ease-in-out 0.3s;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border-radius: 50px;
-			width: 32px;
-			height: 32px;
-			background: #eff2f8;
-		}
-
-		.team .member .social a i {
-			color: #37517e;
-			font-size: 16px;
-			margin: 0 2px;
-		}
-
-		.team .member .social a:hover {
-			background: #47b2e4;
-		}
-
-		.team .member .social a:hover i {
-			color: #fff;
-		}
-
-		.team .member .social a+a {
-			margin-left: 8px;
-		}
-
-		.chairman-head {
-			font-size: 18px;
-			line-height: 24px;
-			width: 100%;
-			float: left;
-			padding-bottom: 19px;
-			margin-bottom: 20px;
-			top: 389px;
-			font-weight: 600;
-		}
-
-		.chairman-head:after {
-			position: absolute;
-			content: "";
-			width: 50px;
-			height: 4px;
-			background: #00b9fb;
-			left: 0;
-			bottom: 0;
-		}
 	</style>
 </head>
 
@@ -550,8 +384,8 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<img src="assets/img/chair1.jpg" alt="" class="img-fluid">
-							<h4 class="text-uppercase chairman-head">Dr. Himadri Tanaya Lenka</h4>
-							<h5 class="text-uppercase fw-bold chairman-desig">Chairman</h5>
+							<h4 class="text-uppercase chairman-head text-center">Himadri Tanaya Lenka</h4>
+							<h5 class="text-uppercase fw-bold chairman-desig text-center">Chairman</h5>
 						</div>
 						<div class="col-lg-8 col-sm-12">
 

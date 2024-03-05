@@ -166,7 +166,7 @@
 					</div>
 					<div class="col-9">
 						<div class="top-email-no-position">
-							<a href="javascript:void(0)" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
+							<a href="tel:+919861917673" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
 								094398 97178</a>
 
 							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">

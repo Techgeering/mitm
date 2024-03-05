@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.7">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 	<!--toaster alert-->
@@ -42,192 +42,10 @@
 	<title>MITM | About Us</title>
 
 	<style>
-		section {
-			padding: 20px 0;
-			overflow: hidden;
-		}
 
-		.section-bg {
-			background-color: #f3f5fa;
-		}
+		
 
-		.section-title {
-			text-align: center;
-			padding-bottom: 18px;
-		}
-
-		.section-title h2 {
-			font-size: 32px;
-			font-weight: bold;
-			text-transform: uppercase;
-			margin-bottom: 20px;
-			padding-bottom: 20px;
-			position: relative;
-			color: #37517e;
-		}
-
-		.section-title h2::before {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 120px;
-			height: 1px;
-			background: #ddd;
-			bottom: 1px;
-			left: calc(50% - 60px);
-		}
-
-		.section-title h2::after {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 40px;
-			height: 3px;
-			background: #47b2e4;
-			bottom: 0;
-			left: calc(50% - 20px);
-		}
-
-		.section-title p {
-			margin-bottom: 0;
-		}
-
-		.team .member {
-			position: relative;
-			box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-			padding: 30px;
-			border-radius: 5px;
-			background: #fff;
-			transition: 0.5s;
-			height: 116%;
-			margin-bottom: 71px;
-		}
-
-		.team .member .pic {
-			overflow: hidden;
-			width: 180px;
-			border-radius: 50%;
-		}
-
-		.team .member .pic img {
-			transition: ease-in-out 0.3s;
-		}
-
-		.team .member:hover {
-			transform: translateY(-10px);
-		}
-
-		.team .member .member-info {
-			padding-left: 30px;
-		}
-
-		.team .member h4 {
-			font-weight: 700;
-			margin-bottom: 5px;
-			font-size: 20px;
-			color: #37517e;
-			margin-top: -10px;
-		}
-
-		.team .member span {
-			display: block;
-			font-size: 15px;
-			padding-bottom: 10px;
-			position: relative;
-			font-weight: 500;
-		}
-
-		.team .member span::after {
-			content: "";
-			position: absolute;
-			display: block;
-			width: 50px;
-			height: 1px;
-			background: #cbd6e9;
-			bottom: 0;
-			left: 0;
-		}
-
-		.team .member p {
-			margin: 10px 0 0 0;
-			font-size: 14px;
-		}
-
-		.team .member .social {
-			margin-top: 12px;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-		}
-
-		.team .member .social a {
-			transition: ease-in-out 0.3s;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border-radius: 50px;
-			width: 32px;
-			height: 32px;
-			background: #eff2f8;
-		}
-
-		.team .member .social a i {
-			color: #37517e;
-			font-size: 16px;
-			margin: 0 2px;
-		}
-
-		.team .member .social a:hover {
-			background: #47b2e4;
-		}
-
-		.team .member .social a:hover i {
-			color: #fff;
-		}
-
-		.team .member .social a+a {
-			margin-left: 8px;
-		}
-
-		.principal-head {
-			font-size: 18px;
-			line-height: 24px;
-			width: 100%;
-			float: left;
-			padding-bottom: 19px;
-			margin-bottom: 20px;
-			top: 460px;
-			position: absolute;
-			margin-left: -320px;
-			font-weight: 600;
-		}
-
-		.principal-head:after {
-			position: absolute;
-			content: "";
-			width: 50px;
-			height: 4px;
-			background: #00b9fb;
-			left: 0;
-			bottom: 0;
-		}
-
-		.principal-desig {
-			margin-top: 503px;
-			position: absolute;
-			margin-left: -251px;
-		}
-
-		.principal_para {
-			margin-top: -16px
-		}
-
-		.pricipal-para1 {
-			text-align: justify;
-			font-size: 16px;
-			line-height: 35px;
-			margin-top: 51px;
-		}
+		
 	</style>
 
 </head>
@@ -242,23 +60,24 @@
 		<div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
 			<div class="container">
 				<div class="row">
-					<div class="col-3 ">
-						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-facebook top-fa-icon"
-								aria-hidden="true"></i></a>
+				<div class="col-3">
+						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
 								aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i
 								class="fa fa-linkedin top-fa-icon linkdin-color" aria-hidden="true"></i></a>
-						<a href="javascript:void(0)" class="top-icon"><i
+						<a href="https://www.instagram.com/mitmbhubaneswar?igsh=aDl5M2F4MnBhbTNo" class="top-icon"><i
 								class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
 					</div>
 					<div class="col-9">
 						<div class="top-email-no-position">
-							<a href="javascript:void(0)" class="top-nav-text no-border-line"><i
-									class="fa fa-phone "></i> 094398 97178</a>
+							<a href="javascript:void(0)" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
+								094398 97178</a>
 
-							<a href="javascript:void(0)" class="top-nav-text email-spacing"><i
-									class="fa fa-envelope "></i> info@mitm.com</a>
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">
+								<i class="fa fa-envelope"></i> info@mitm.edu.in
+							</a>
 						</div>
 					</div>
 				</div>
@@ -570,10 +389,10 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<img src="assets/img/principalmitm.jpg" alt="" width="100%">
+							<h4 class="text-uppercase principal-head text-center">Dr. Dillip Kumar Sahoo</h4>
+							<h5 class="text-uppercase fw-bold principal-desig text-center">Principal</h5>
 						</div>
 						<div class="col-lg-8 col-sm-12">
-							<h4 class="text-uppercase principal-head">Dr. Dillip Kumar Sahoo</h4>
-							<h5 class="text-uppercase fw-bold principal-desig">Principal</h5>
 							<h4 class="pricipal-para">Education is a process of humanization to promote independent
 								thinking, analytical ability and to understand clearly the society and globe. The basic
 								purpose of education is to make people competent; skilled who will be the active
