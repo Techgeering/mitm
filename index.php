@@ -155,13 +155,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-3">
-						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-facebook top-fa-icon"
-								aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
 								aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i
 								class="fa fa-linkedin top-fa-icon linkdin-color" aria-hidden="true"></i></a>
-						<a href="javascript:void(0)" class="top-icon"><i
+						<a href="https://www.instagram.com/mitmbhubaneswar?igsh=aDl5M2F4MnBhbTNo" class="top-icon"><i
 								class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
 					</div>
 					<div class="col-9">
@@ -169,8 +169,9 @@
 							<a href="javascript:void(0)" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
 								094398 97178</a>
 
-							<a href="javascript:void(0)" class="top-nav-text email-spacing"><i
-									class="fa fa-envelope"></i> info@mitm.com</a>
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">
+								<i class="fa fa-envelope"></i> info@mitm.edu.in
+							</a>
 						</div>
 					</div>
 				</div>
@@ -751,7 +752,9 @@
 								?>
 								<div class="news-item">
 									<li>
-									<a href="#" style="color: #41deff"><?php echo $row['notice']; ?></a>
+										<a href="#" style="color: #41deff">
+											<?php echo $row['notice']; ?>
+										</a>
 									</li>
 								</div>
 								<!-- <div class="news-item">

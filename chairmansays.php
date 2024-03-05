@@ -197,8 +197,6 @@
 			padding-bottom: 19px;
 			margin-bottom: 20px;
 			top: 389px;
-			position: absolute;
-			margin-left: -291px;
 			font-weight: 600;
 		}
 
@@ -210,12 +208,6 @@
 			background: #00b9fb;
 			left: 0;
 			bottom: 0;
-		}
-
-		.chairman-desig {
-			margin-top: 433px;
-			position: absolute;
-			margin-left: -225px;
 		}
 	</style>
 </head>
@@ -231,13 +223,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-3 ">
-						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-facebook top-fa-icon"
-								aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
 								aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i
 								class="fa fa-linkedin top-fa-icon linkdin-color" aria-hidden="true"></i></a>
-						<a href="javascript:void(0)" class="top-icon"><i
+						<a href="https://www.instagram.com/mitmbhubaneswar?igsh=aDl5M2F4MnBhbTNo" class="top-icon"><i
 								class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
 					</div>
 					<div class="col-9">
@@ -557,11 +549,12 @@
 				<div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
-							<img src="assets/img/chairman.jpg" alt="" height="90%" width="100%">
+							<img src="assets/img/chair1.jpg" alt="" class="img-fluid">
+							<h4 class="text-uppercase chairman-head">Dr. Himadri Tanaya Lenka</h4>
+							<h5 class="text-uppercase fw-bold chairman-desig">Chairman</h5>
 						</div>
 						<div class="col-lg-8 col-sm-12">
-							<h4 class="text-uppercase chairman-head">Dr. Mahendra Das</h4>
-							<h5 class="text-uppercase fw-bold chairman-desig">Chairman</h5>
+
 							<h4 class="pricipal-para">Do always believe in subtracting the obvious in life and always
 								concentrate on adding meaningful propositions to both personal and professional front to
 								the successful. Always give importance to the existence of great delight and happiness
