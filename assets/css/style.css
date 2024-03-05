@@ -950,7 +950,8 @@ a{
 .pricipal-para{
   text-align: justify;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 33px;
+  margin-top: -9px;
 }
 
 

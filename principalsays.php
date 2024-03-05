@@ -196,7 +196,7 @@
 			float: left;
 			padding-bottom: 19px;
 			margin-bottom: 20px;
-			top: 300px;
+			top: 460px;
 			position: absolute;
 			margin-left: -320px;
 			font-weight: 600;
@@ -213,12 +213,20 @@
 		}
 
 		.principal-desig {
-			margin-top: 343px;
+			margin-top: 503px;
 			position: absolute;
 			margin-left: -251px;
 		}
-	    .principal_para{
-			margin-top: -16px 
+
+		.principal_para {
+			margin-top: -16px
+		}
+
+		.pricipal-para1 {
+			text-align: justify;
+			font-size: 16px;
+			line-height: 35px;
+			margin-top: 51px;
 		}
 	</style>
 
@@ -561,7 +569,7 @@
 				<div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
-							<img src="assets/img/principalmitm.jpg" alt="" height="65%" width="100%">
+							<img src="assets/img/principalmitm.jpg" alt="" width="100%">
 						</div>
 						<div class="col-lg-8 col-sm-12">
 							<h4 class="text-uppercase principal-head">Dr. Dillip Kumar Sahoo</h4>
@@ -589,13 +597,8 @@
 							</h4>
 						</div>
 						<!-- <div class="col-lg-12">
-							<h4 class="pricipal-para">
-								MITM, on account of its qualified, motivated and committed faculty members, regular and
-								meticulous conducting of examinations, dynamic globe environment through its pedagogical
-								teaching approach which not only provides “ student-teacher” face to face interaction
-								but also facilitates practical exposure, constructive learning , job counselling, soft
-								skill training and placement.
-								 MITM also offers strong student support system by a special team of faculty formed in
+							<h4 class="pricipal-para1">
+								MITM also offers strong student support system by a special team of faculty formed in
 								the close proximately of principal for which student grievances and their requirements
 								are fully taken care off in time.
 								Being a part of MITM family, i warmly invite participation to make it a knowledge
