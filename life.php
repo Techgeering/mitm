@@ -417,7 +417,8 @@
 				$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 				foreach ($All_fname as $row) {
 					?>
-					<iframe width="350" height="300" src="https://www.youtube.com/embed/<?php echo $row['video']; ?>?si=E79o4W_2X29Br8lM"
+					<iframe width="350" height="300"
+						src="https://www.youtube.com/embed/<?php echo $row['video']; ?>?si=E79o4W_2X29Br8lM"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						frameborder="0" allowfullscreen></iframe>
@@ -562,12 +563,7 @@
 	<script type="text/javascript"
 		src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script> -->
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
