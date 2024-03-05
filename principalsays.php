@@ -126,6 +126,7 @@
 			margin-bottom: 5px;
 			font-size: 20px;
 			color: #37517e;
+			margin-top: -10px;
 		}
 
 		.team .member span {
@@ -195,9 +196,9 @@
 			float: left;
 			padding-bottom: 19px;
 			margin-bottom: 20px;
-			margin-top: 290px;
+			top: 300px;
 			position: absolute;
-			margin-left: -291px;
+			margin-left: -320px;
 			font-weight: 600;
 		}
 
@@ -212,9 +213,12 @@
 		}
 
 		.principal-desig {
-			margin-top: 323px;
+			margin-top: 343px;
 			position: absolute;
-			margin-left: -225px;
+			margin-left: -251px;
+		}
+	    .principal_para{
+			margin-top: -16px 
 		}
 	</style>
 
@@ -562,32 +566,42 @@
 						<div class="col-lg-8 col-sm-12">
 							<h4 class="text-uppercase principal-head">Dr. Dillip Kumar Sahoo</h4>
 							<h5 class="text-uppercase fw-bold principal-desig">Principal</h5>
-							<h4 class="pricipal-para">“A life of Joy and Happiness is Possible only on the basis of
-								Knowledge and Science” says Dr. Sarvepalli Radhakrishna. Education is important for
-								every individual in a Nation. Technical Education plays a vital role in the Development
-								of any Country.
-								Modern Institute of Technology and Management was established in the year of 2008. MITM
-								is providing an excellent quality of education and mentoring for the students aspiring
-								to be competent professionals in Engineering and Technology. The college has well
-								qualified, experienced and dedicated faculty members and supporting staff, state of the
-								Art-Laboratory and Workshop facilities, Computer facilities, Library, Air-Conditioned
-								Seminar Hall, Cafeteria and Hostel facilities.
-								The college has a separate Training and Placement cell called Campus to Corporate. This
-								cell Organizes several training programs related to development of Life Skill Such as
-								Language Communication Skills and Technical skills to our students. Our efforts are
-								directed to accommodate the expectations of every student by the way of enabling them to
-								participate in Seminar, Workshops, Conferences, Value added courses in plant training
-								and industrial project works.
-								We believe that discipline, honesty and hard work together Structures the ladder of
-								success. With this vision, we inculcate these attributes in our students to make them
-								successful in their lives.
-								Dr.Dillip Kumar Sahoo,Ph.D. ,VSSUT.
-								Principal
-								MITM
-								Bhubaneswar
-
+							<h4 class="pricipal-para">Education is a process of humanization to promote independent
+								thinking, analytical ability and to understand clearly the society and globe. The basic
+								purpose of education is to make people competent; skilled who will be the active
+								participants for national development. To gain knowledge and technical skills as per the
+								changing globe techno era for employability and liability, one can prefer
+								professionalism in professional and technical field. Engineering and technology is now
+								the part of life and has major effects on the everyday life of citizen. More involvement
+								of technology means more demands for innovation and design of technical systems of
+								unprecedented complexity. The evaluation mode of knowledge discrimination and education
+								are for the building of self and society in general.
+								MITM, on account of its qualified, motivated and committed faculty members, regular and
+								meticulous conducting of examinations, dynamic globe environment through its pedagogical
+								teaching approach which not only provides “ student-teacher” face to face interaction
+								but also facilitates practical exposure, constructive learning , job counselling, soft
+								skill training and placement.
+								MITM also offers strong student support system by a special team of faculty formed in
+								the close proximately of principal for which student grievances and their requirements
+								are fully taken care off in time.
+								Being a part of MITM family, i warmly invite participation to make it a knowledge
+								intensive base in the whole globe and translate yours dreams in reality.
 							</h4>
 						</div>
+						<!-- <div class="col-lg-12">
+							<h4 class="pricipal-para">
+								MITM, on account of its qualified, motivated and committed faculty members, regular and
+								meticulous conducting of examinations, dynamic globe environment through its pedagogical
+								teaching approach which not only provides “ student-teacher” face to face interaction
+								but also facilitates practical exposure, constructive learning , job counselling, soft
+								skill training and placement.
+								 MITM also offers strong student support system by a special team of faculty formed in
+								the close proximately of principal for which student grievances and their requirements
+								are fully taken care off in time.
+								Being a part of MITM family, i warmly invite participation to make it a knowledge
+								intensive base in the whole globe and translate yours dreams in reality.
+							</h4>
+						</div> -->
 					</div>
 				</div>
 

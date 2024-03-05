@@ -196,7 +196,7 @@
 			float: left;
 			padding-bottom: 19px;
 			margin-bottom: 20px;
-			margin-top: 263px;
+			top: 430px;
 			position: absolute;
 			margin-left: -291px;
 			font-weight: 600;
@@ -213,12 +213,11 @@
 		}
 
 		.principal-desig {
-			margin-top: 294px;
+			margin-top: 473px;
 			position: absolute;
 			margin-left: -225px;
 		}
 	</style>
-
 </head>
 
 <body>
@@ -580,7 +579,6 @@
 								Committed human resources are competitive advantage and we stood by competencies in
 								every walk of life.
 								Learn anytime..............
-								Chairperson MITM
 							</h4>
 						</div>
 					</div>

@@ -177,7 +177,7 @@ body{
         width: 100%;
     }
     .admission-enquiry-bg{
-      background-color: #6251ac;
+      background: linear-gradient(rgb(64, 223, 255) 0%, rgb(46, 72, 242) 100%);
         padding: 8px 5px 1px 15px;
         color: #fff;
     }
@@ -956,7 +956,7 @@ a{
 
 /* CONTACT PAGE */
     
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
@@ -967,7 +967,7 @@ textarea {
   width: 100%;
   text-transform: capitalize;
   padding: 1rem 0.4rem;
-}
+} */
 .aside {
     background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
   animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
