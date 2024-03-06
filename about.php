@@ -435,7 +435,6 @@
 						student as a dedicated professional and a better citizen. Owing to this, in addition to our
 						normal teaching schedule, we conduct extracurricular activity for their intellectual,
 						professional and social development.
-
 				</div>
 			</div>
 		</div>
