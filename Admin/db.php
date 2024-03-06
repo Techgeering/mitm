@@ -1,7 +1,7 @@
 <?php
     $servername="localhost";
-    $username="u728233529_mitm";
-    $password="e^M0RFB[r";
+    $username="u728233529_mitmp";
+    $password="#p6XJ|[vI";
     $databasename="u728233529_mitmp";
     $base_url="https://mitm.edu.in/";
 
