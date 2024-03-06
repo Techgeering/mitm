@@ -68,10 +68,10 @@
 					</div>
 					<div class="col-9">
 						<div class="top-email-no-position">
-							<a href="javascript:void(0)" class="top-nav-text no-border-line"><i
+							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i
 									class="fa fa-phone "></i> 094398 97178</a>
 
-							<a href="javascript:void(0)" class="top-nav-text email-spacing"><i
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i
 									class="fa fa-envelope "></i> info@mitm.com</a>
 						</div>
 					</div>
@@ -84,10 +84,10 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-lg-6">
-						<a href="javascript:void(0)" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
+						<a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
 					</div>
 					<div class="col-lg-6">
-						<a href="javascript:void(0)" class="top-nav-text "><i class="fa fa-envelope "></i>
+						<a href="mailto:info@mitm.edu.in" class="top-nav-text "><i class="fa fa-envelope "></i>
 							info@mitm.com</a>
 					</div>
 				</div>
@@ -104,7 +104,7 @@
 								<img src="assets/img/logos1.png" class="img-fluid">
 							</a>
 						</div>
-						<div class="col-8 text-center head-name">
+						<div class="col-9 text-center head-name">
 							<h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
 							<p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
 						</div>
@@ -114,9 +114,9 @@
 						<div class="col-1 second-nav-position">
 							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
 						</div>
-						<div class="col-1 second-nav-position">
+						<!-- <div class="col-1 second-nav-position">
 							<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

@@ -38,7 +38,7 @@
     <!--toaster alert-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <title>MITM | About Us</title>
 
@@ -105,21 +105,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3 ">
-                        <a href="javascript:void(0)" class="top-icon"><i class="fa fa-facebook top-fa-icon"
-                                aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+                                class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
                         <a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
                                 aria-hidden="true"></i></a>
                         <a href="javascript:void(0)" class="top-icon"><i
                                 class="fa fa-linkedin top-fa-icon linkdin-color" aria-hidden="true"></i></a>
-                        <a href="javascript:void(0)" class="top-icon"><i
+                        <a href="https://www.instagram.com/mitmbhubaneswar?igsh=aDl5M2F4MnBhbTNo" class="top-icon"><i
                                 class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-9">
                         <div class="top-email-no-position">
-                            <a href="javascript:void(0)" class="top-nav-text no-border-line"><i
+                            <a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i
                                     class="fa fa-phone "></i> 094398 97178</a>
 
-                            <a href="javascript:void(0)" class="top-nav-text email-spacing"><i
+                            <a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i
                                     class="fa fa-envelope "></i> info@mitm.com</a>
                         </div>
                     </div>
@@ -132,10 +132,10 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-6">
-                        <a href="javascript:void(0)" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
+                        <a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
                     </div>
                     <div class="col-lg-6">
-                        <a href="javascript:void(0)" class="top-nav-text "><i class="fa fa-envelope "></i>
+                        <a href="mailto:info@mitm.edu.in" class="top-nav-text "><i class="fa fa-envelope "></i>
                             info@mitm.com</a>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                                 <img src="assets/img/logos1.png" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-8 text-center head-name">
+                        <div class="col-9 text-center head-name">
                             <h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
                             <p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
                         </div>
@@ -162,9 +162,9 @@
                         <div class="col-1 second-nav-position">
                             <img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
                         </div>
-                        <div class="col-1 second-nav-position">
+                        <!-- <div class="col-1 second-nav-position">
                             <img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1266,67 +1266,76 @@
             </div>
 
 
-           <div class="d-none d-lg-block" >
-            <div class="fascility-2 py-5" style="background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);">
-                <div class=" p-5 align-items-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <div class="">
-                                <img src="assets/img/banking-1.jpg" class="img-fluid" alt="Image 1">
-                                <!-- <p>Hostel Room</p> -->
-                            </div>
-                            <!-- <div class="image-container">
+            <div class="d-none d-lg-block">
+                <div class="fascility-2 py-5" style="background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);">
+                    <div class=" p-5 align-items-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="">
+                                    <img src="assets/img/banking-1.jpg" class="img-fluid" alt="Image 1">
+                                    <!-- <p>Hostel Room</p> -->
+                                </div>
+                                <!-- <div class="image-container">
                         <img src="assets/img/bus-2.jpeg" class="img-fluid rounded-circle" alt="Image 2">
                         <p>Hostel Building</p>
                     </div> -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="text-uppercase text-white">Banking Services</h1>
-                        <p class="fascility-para text-white">Banking services include:
-                            Accepting deposits
-                            Lending money
-                            Facilitating transactions
-                            Offering financial products
-                            Providing related services
-                            Banks also provide services such as:
-                            Individual retirement accounts (IRAs)
-                            Certificates of deposit (CDs)
-                            Currency exchange
-                            Safe deposit boxes
-                            Some of the most important banking services include:
-                            Checking and savings accounts
-                            Loan and mortgage services
-                            Wealth management
-                            Providing credit and debit cards
-                            Overdraft services
-                            Banking plays a crucial role in the economy by facilitating the flow of money and enabling
-                            economic activities.</p>
+                        <div class="col-lg-6">
+                            <h1 class="text-uppercase text-white">Banking Services</h1>
+                            <p class="fascility-para text-white">Banking services include:
+                                Accepting deposits
+                                Lending money
+                                Facilitating transactions
+                                Offering financial products
+                                Providing related services
+                                Banks also provide services such as:
+                                Individual retirement accounts (IRAs)
+                                Certificates of deposit (CDs)
+                                Currency exchange
+                                Safe deposit boxes
+                                Some of the most important banking services include:
+                                Checking and savings accounts
+                                Loan and mortgage services
+                                Wealth management
+                                Providing credit and debit cards
+                                Overdraft services
+                                Banking plays a crucial role in the economy by facilitating the flow of money and
+                                enabling
+                                economic activities.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-           </div>
 
-           <div class="d-lg-none d-sm-block" >
-            <div class="container">
-                <div class="fascility-2 py-3 py-sm-5" style="background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);">
-                    <div class="p-3 p-sm-5 align-items-center">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 text-center mb-3 mb-lg-0 order-2">
-                                <div class="d-flex justify-content-around align-items-center">
-                                    <img src="assets/img/banking-1.jpg" class="img-fluid" alt="Image 1">
+            <div class="d-lg-none d-sm-block">
+                <div class="container">
+                    <div class="fascility-2 py-3 py-sm-5"
+                        style="background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);">
+                        <div class="p-3 p-sm-5 align-items-center">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6 text-center mb-3 mb-lg-0 order-2">
+                                    <div class="d-flex justify-content-around align-items-center">
+                                        <img src="assets/img/banking-1.jpg" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-6 text-white order-1">
+                                    <h1 class="text-uppercase">Banking Services</h1>
+                                    <p class="fascility-para">Banking services include: Accepting deposits, Lending
+                                        money, Facilitating transactions, Offering financial products, Providing related
+                                        services. Banks also provide services such as: Individual retirement accounts
+                                        (IRAs), Certificates of deposit (CDs), Currency exchange, Safe deposit boxes.
+                                        Some of the most important banking services include: Checking and savings
+                                        accounts, Loan and mortgage services, Wealth management, Providing credit and
+                                        debit cards, Overdraft services. Banking plays a crucial role in the economy by
+                                        facilitating the flow of money and enabling economic activities.</p>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-lg-6 text-white order-1">
-                                <h1 class="text-uppercase">Banking Services</h1>
-                                <p class="fascility-para">Banking services include: Accepting deposits, Lending money, Facilitating transactions, Offering financial products, Providing related services. Banks also provide services such as: Individual retirement accounts (IRAs), Certificates of deposit (CDs), Currency exchange, Safe deposit boxes. Some of the most important banking services include: Checking and savings accounts, Loan and mortgage services, Wealth management, Providing credit and debit cards, Overdraft services. Banking plays a crucial role in the economy by facilitating the flow of money and enabling economic activities.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-           </div>
-        
+
         </div>
     </section>
 

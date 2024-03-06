@@ -48,18 +48,16 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
 
   <style>
+    .ug-box {
+      display: flex;
+    }
 
-  
-    .ug-box{
-        display: flex;
-      }
-  
     .ug-deta {
       width: 25%;
       padding: 10px;
       border-right: 2px solid #3bb3fb;
     }
-  
+
     .ug-deta h3 {
       margin-left: -8px;
       margin-right: 6px;
@@ -72,12 +70,13 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgb(0 0 0);
     }
-  
+
     .ug-deta h3.active {
       color: rgb(255, 255, 255);
       background-color: #5e3bfb;
       transform: scale(1.05);
     }
+
     .ug-detas h3 {
       margin-left: -8px;
       margin-right: 6px;
@@ -90,20 +89,20 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgb(0 0 0);
     }
-  
+
     .ug-detas h3.active {
       color: rgb(255, 255, 255);
       background-color: #5e3bfb;
       transform: scale(1.05);
     }
-  
+
     .ug-cont {
       width: 75%;
       padding: 20px;
     }
   </style>
   <title>MITM | UG </title>
- 
+
 </head>
 
 <body>
@@ -111,147 +110,144 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
       aria-hidden="true"></i></button>
 
- <!--top nav start for desktop view-->
- <div class="fixed-top top-z-index">
-  <div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
-    <div class="container">
-      <div class="row">
-        <div class="col-3 ">
-          <a href="javascript:void(0)" class="top-icon"><i class="fa fa-facebook top-fa-icon"
-              aria-hidden="true"></i></a>
-          <a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
-              aria-hidden="true"></i></a>
-          <a href="javascript:void(0)" class="top-icon"><i
-              class="fa fa-linkedin top-fa-icon linkdin-color" aria-hidden="true"></i></a>
-          <a href="javascript:void(0)" class="top-icon"><i
-              class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
-        </div>
-        <div class="col-9">
-          <div class="top-email-no-position">
-            <a href="javascript:void(0)" class="top-nav-text no-border-line"><i
-                class="fa fa-phone "></i> 094398 97178</a>
-
-            <a href="javascript:void(0)" class="top-nav-text email-spacing"><i
-                class="fa fa-envelope "></i> info@mitm.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--top nav end for desktop view-->
-  <!--top nav start for mobile view-->
-  <div class="top-bgcolor d-block d-lg-none d-md-none d-sm-block">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-6">
-          <a href="javascript:void(0)" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
-        </div>
-        <div class="col-lg-6">
-          <a href="javascript:void(0)" class="top-nav-text "><i class="fa fa-envelope "></i>
-            info@mitm.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--top nav end for mobile view-->
-  <!--second nav start for desktop view-->
-  <div class="d-none d-lg-block d-md-none d-sm-none">
-    <div class="second-nav-bg">
+  <!--top nav start for desktop view-->
+  <div class="fixed-top top-z-index">
+    <div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
       <div class="container">
         <div class="row">
-          <div class="col-1 second-nav-position">
-            <a href="index.php">
-              <img src="assets/img/logos1.png" class="img-fluid">
-            </a>
+          <div class="col-3 ">
+            <a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+                class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
+            <a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
+                aria-hidden="true"></i></a>
+            <a href="javascript:void(0)" class="top-icon"><i class="fa fa-linkedin top-fa-icon linkdin-color"
+                aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/mitmbhubaneswar?igsh=aDl5M2F4MnBhbTNo" class="top-icon"><i
+                class="fa fa-instagram top-fa-icon instagram-color" aria-hidden="true"></i></a>
           </div>
-          <div class="col-8 text-center head-name">
-            <h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
-            <p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
-          </div>
-          <div class="col-1 second-nav-position">
-            <img src="assets/img/logo2.png" class="img-fluid" alt="logoimg">
-          </div>
-          <div class="col-1 second-nav-position">
-            <img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
-          </div>
-          <div class="col-1 second-nav-position">
-            <img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
+          <div class="col-9">
+            <div class="top-email-no-position">
+              <a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i class="fa fa-phone "></i> 094398
+                97178</a>
+
+              <a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i class="fa fa-envelope "></i>
+                info@mitm.com</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--second nav end for desktop view-->
-    <!--third nav start for desktop view-->
-    <div class="third-bg-color">
+    <!--top nav end for desktop view-->
+    <!--top nav start for mobile view-->
+    <div class="top-bgcolor d-block d-lg-none d-md-none d-sm-block">
       <div class="container">
-        <div class="navbar-nav menu-position justify-content-center text-white">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu1"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">Discover</a>
-              <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="about.php">About Us</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="chairmansays.php">Chairman Speaks</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="principalsays.php">Principal Speaks</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="faculty.php">Faculties</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="accredation.php">Accredation</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="life.php">Life @ MITM</a></li>
-                <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
+        <div class="row text-center">
+          <div class="col-lg-6">
+            <a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
+          </div>
+          <div class="col-lg-6">
+            <a href="mailto:info@mitm.edu.in" class="top-nav-text "><i class="fa fa-envelope "></i>
+              info@mitm.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--top nav end for mobile view-->
+    <!--second nav start for desktop view-->
+    <div class="d-none d-lg-block d-md-none d-sm-none">
+      <div class="second-nav-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-1 second-nav-position">
+              <a href="index.php">
+                <img src="assets/img/logos1.png" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-9 text-center head-name">
+              <h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
+              <p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
+            </div>
+            <div class="col-1 second-nav-position">
+              <img src="assets/img/logo2.png" class="img-fluid" alt="logoimg">
+            </div>
+            <div class="col-1 second-nav-position">
+              <img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
+            </div>
+            <!-- <div class="col-1 second-nav-position">
+              <img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!--second nav end for desktop view-->
+      <!--third nav start for desktop view-->
+      <div class="third-bg-color">
+        <div class="container">
+          <div class="navbar-nav menu-position justify-content-center text-white">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Discover</a>
+                <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="about.php">About Us</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="chairmansays.php">Chairman
+                      Speaks</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="principalsays.php">Principal
+                      Speaks</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="faculty.php">Faculties</a>
+                  </li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="accredation.php">Accredation</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life.php">Life @ MITM</a>
+                  </li>
+                  <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
                         <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
-              <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="ugcourse.php">UG</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="pgcourse.php">PG</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="polytechnic.php">Polytechnic</a></li>
-                <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
+                <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="ugcourse.php">UG</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="pgcourse.php">PG</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="polytechnic.php">Polytechnic</a></li>
+                  <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
                         <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link active third-menu-color " href="https://www.bput.ac.in/">Admissions</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link active third-menu-color " href="fascilites.php">Fascilities</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu3"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">Examination</a>
-              <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a></li>
-                <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active third-menu-color " href="https://www.bput.ac.in/">Admissions</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active third-menu-color " href="fascilites.php">Fascilities</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Examination</a>
+                <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="http://bputexam.in/schedule.aspx">Schedule</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a></li>
+                  <!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
                         <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
                         <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
                         <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
-              </ul>
-            </li>
-          </ul>
-          <!-- <ul class="navbar-nav">
+                </ul>
+              </li>
+            </ul>
+            <!-- <ul class="navbar-nav">
               <li class="nav-item dropdown">
                       <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
                       <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
@@ -266,7 +262,7 @@
                     </ul>
                   </li>
             </ul> -->
-          <!-- <ul class="navbar-nav">
+            <!-- <ul class="navbar-nav">
               <li class="nav-item dropdown">
                       <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
                       <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
@@ -294,131 +290,131 @@
                     </ul>
                   </li>
             </ul> -->
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-              <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="placementoverview.php">Overview</a></li>
-                <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-                    href="placementcompany.php">Company</a></li>
-                <!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities.php">Activities of T&P Cell</a></li> -->
-              </ul>
-            </li>
-          </ul>
-          <!-- <ul class="navbar-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+                <ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="placementoverview.php">Overview</a></li>
+                  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+                      href="placementcompany.php">Company</a></li>
+                  <!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities.php">Activities of T&P Cell</a></li> -->
+                </ul>
+              </li>
+            </ul>
+            <!-- <ul class="navbar-nav">
               <li class="nav-item ">
                 <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
               </li>
             </ul> -->
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link active third-menu-color " href="notice.php">Notice</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link active third-menu-color " href="contact.php">Contact Us</a>
-            </li>
-          </ul>
-          <!-- <ul class="navbar-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active third-menu-color " href="notice.php">Notice</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active third-menu-color " href="contact.php">Contact Us</a>
+              </li>
+            </ul>
+            <!-- <ul class="navbar-nav">
               <li class="nav-item ">
                  <a class="nav-link active third-menu-color " href="career.php" >Career</a>
               </li>
             </ul> -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--third nav end for desktop view-->
-  <!--navbar start for mobile and tab view-->
-  <div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="" style="width: 100%;">
-        <a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation"
-          style="margin-left: 200px; margin-top: 12px;">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
-            <li class="nav-item dropdown" style="margin-left: -80px;">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Discover
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="about.php">About Us</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
-                <li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
-                <li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
-                <li><a class="dropdown-item" href="accredation.php">Accredation</a></li>
-                <li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-left: -80px;">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Programmes
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
-                <li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
-              </ul>
-            </li>
-            <li class="nav-item" style="margin-left: -80px;">
-              <a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
-            </li>
-            <li class="nav-item" style="margin-left: -80px;">
-              <a class="nav-link" href="fascilites.php">Fascilities</a>
-            </li>
-            <li class="nav-item dropdown" style="margin-left: -80px;">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Examinations
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-                <li><a class="dropdown-item" href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-left: -80px;">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Placement
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
-              </ul>
-            </li>
-            <li class="nav-item" style="margin-left: -80px;">
-              <a class="nav-link" href="notice.php">Notice</a>
-            </li>
-            <li class="nav-item" style="margin-left: -80px;">
-              <a class="nav-link" href="contact.php">Contact Us</a>
-            </li>
+    <!--third nav end for desktop view-->
+    <!--navbar start for mobile and tab view-->
+    <div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="" style="width: 100%;">
+          <a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" style="margin-left: 200px; margin-top: 12px;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
+              <li class="nav-item dropdown" style="margin-left: -80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Discover
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.php">About Us</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
+                  <li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
+                  <li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
+                  <li><a class="dropdown-item" href="accredation.php">Accredation</a></li>
+                  <li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-left: -80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Programmes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
+                  <li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin-left: -80px;">
+                <a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
+              </li>
+              <li class="nav-item" style="margin-left: -80px;">
+                <a class="nav-link" href="fascilites.php">Fascilities</a>
+              </li>
+              <li class="nav-item dropdown" style="margin-left: -80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Examinations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a></li>
+                  <li><a class="dropdown-item"
+                      href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Results</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-left: -80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Placement
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin-left: -80px;">
+                <a class="nav-link" href="notice.php">Notice</a>
+              </li>
+              <li class="nav-item" style="margin-left: -80px;">
+                <a class="nav-link" href="contact.php">Contact Us</a>
+              </li>
 
-            <!-- <li class="nav-item" style="margin-left: -80px;">
+              <!-- <li class="nav-item" style="margin-left: -80px;">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li> -->
 
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
-</div>
-<!--navbar end for mobile and tab view-->
+  <!--navbar end for mobile and tab view-->
 
   <div class="Enquiry-btn-position">
     <a href="javascript:void(0)" class="btn enquiry-btn" type="btn" onclick="openNav()"><i class="fa fa-paper-plane"
@@ -427,82 +423,104 @@
 
   <div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 135px;">
     <div class="heading-bg-color">
-       <h1 class="heading-text-position text-uppercase">PG COURSES</h1>
-   </div>
-</div>
-
-<div class="d-none d-lg-block" >
-  <div class="container ug-box py-2">
-    <div class="col-4 ug-deta">
-      <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">Master of Computer Application</h3>
-      <div class="line" style="border-right: 4px solid #ff5733;"></div>
-
-      <h3 class="text-center" id="heading2" onclick="showContent('content2', 'heading2')">Master in Business Adminstartion</h3>
-      <div class="line" style="border-right: 4px solid #33ff57;"></div>
+      <h1 class="heading-text-position text-uppercase">PG COURSES</h1>
+    </div>
   </div>
 
-    <div class="col-8 ug-cont">
+  <div class="d-none d-lg-block">
+    <div class="container ug-box py-2">
+      <div class="col-4 ug-deta">
+        <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">Master of Computer
+          Application</h3>
+        <div class="line" style="border-right: 4px solid #ff5733;"></div>
+
+        <h3 class="text-center" id="heading2" onclick="showContent('content2', 'heading2')">Master in Business
+          Adminstartion</h3>
+        <div class="line" style="border-right: 4px solid #33ff57;"></div>
+      </div>
+
+      <div class="col-8 ug-cont">
         <div id="content1" style="display: block;">
           <h4 class="text-uppercase mission-head">Master of Computer Application(MCA)</h4>
-            <p class="ug-paradt" >
-              The Master of Computer Applications (MCA) program is a two-year professional post-graduate program. This program is for candidates who want to dive further into computer application development by learning modern programming languages. The program combines practical and theoretical knowledge.
-            </p>
-            <p class="ug-paradt" >
-              MCA stands for Master of Computer Applications which is a two-year post-graduate degree exclusively dealing with subjects related to computer programming, software programming, application development, system engineering, troubleshooting, quality assurance, cloud computing, etc.
-            </p>
-            <img src="assets/img/cs-1.jpg" alt="" class="cs-img" >
-            <img src="assets/img/cs-2.png" alt="" class="cs-img" >
-            <img src="assets/img/cs-3.jpg" alt="" class="cs-img" >
+          <p class="ug-paradt">
+            The Master of Computer Applications (MCA) program is a two-year professional post-graduate program. This
+            program is for candidates who want to dive further into computer application development by learning modern
+            programming languages. The program combines practical and theoretical knowledge.
+          </p>
+          <p class="ug-paradt">
+            MCA stands for Master of Computer Applications which is a two-year post-graduate degree exclusively dealing
+            with subjects related to computer programming, software programming, application development, system
+            engineering, troubleshooting, quality assurance, cloud computing, etc.
+          </p>
+          <img src="assets/img/cs-1.jpg" alt="" class="cs-img">
+          <img src="assets/img/cs-2.png" alt="" class="cs-img">
+          <img src="assets/img/cs-3.jpg" alt="" class="cs-img">
         </div>
 
         <div id="content2" style="display: none;">
           <h4 class="text-uppercase mission-head">Master in Business Adminstartion(MBA)</h4>
-            <p class="ug-paradt" >
-              MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates aspiring for senior leadership and managerial roles. The knowledge gained in areas such as finance, marketing, and operations management can make professionals more competitive in the job market. 
-            </p>
-            <p class="ug-paradt" >
-              As a generalist degree, the MBA gives you fundamental management knowledge, meaning you'll get a holistic view of business across areas like marketing, finance, and accounting, all while developing those vital soft skills and leadership skills.</p>
-            <img src="assets/img/me-1.png" alt="">
-    <img src="assets/img/me-2.jpg" alt="" class="cs-img">
-    <img src="assets/img/me-3.jpg" alt="" class="cs-img">
+          <p class="ug-paradt">
+            MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on
+            developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates
+            aspiring for senior leadership and managerial roles. The knowledge gained in areas such as finance,
+            marketing, and operations management can make professionals more competitive in the job market.
+          </p>
+          <p class="ug-paradt">
+            As a generalist degree, the MBA gives you fundamental management knowledge, meaning you'll get a holistic
+            view of business across areas like marketing, finance, and accounting, all while developing those vital soft
+            skills and leadership skills.</p>
+          <img src="assets/img/me-1.png" alt="">
+          <img src="assets/img/me-2.jpg" alt="" class="cs-img">
+          <img src="assets/img/me-3.jpg" alt="" class="cs-img">
         </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
-<div class="d-lg-none d-sm-block" >
-  <div class="container py-2 ">
-    <div class="ug-detas" style="width: 90%; margin-left: 21px;" >
-      <h3 class="active text-center" id="heading12" onclick="showContents('content12', 'heading12')">Master of Computer Application</h3>
-      <div class="line" style="border-right: 4px solid #ff5733;"></div>
+  <div class="d-lg-none d-sm-block">
+    <div class="container py-2 ">
+      <div class="ug-detas" style="width: 90%; margin-left: 21px;">
+        <h3 class="active text-center" id="heading12" onclick="showContents('content12', 'heading12')">Master of
+          Computer Application</h3>
+        <div class="line" style="border-right: 4px solid #ff5733;"></div>
 
-      <h3 class="text-center" id="heading22" onclick="showContents('content22', 'heading22')">Master in Business Adminstartion</h3>
-      <div class="line" style="border-right: 4px solid #33ff57;"></div>
-    </div>
-    <div class="ug-conts" style="width: 99%; text-align: justify; padding: 20px;"">
-      <div id="content12" style="display: block;">
+        <h3 class="text-center" id="heading22" onclick="showContents('content22', 'heading22')">Master in Business
+          Adminstartion</h3>
+        <div class="line" style="border-right: 4px solid #33ff57;"></div>
+      </div>
+      <div class="ug-conts" style="width: 99%; text-align: justify; padding: 20px;"">
+      <div id=" content12" style="display: block;">
         <h4 class="text-uppercase mission-head">Computer Science Engineering</h4>
         <p class="ug-paradt">
-          The Master of Computer Applications (MCA) program is a two-year professional post-graduate program. This program is for candidates who want to dive further into computer application development by learning modern programming languages. The program combines practical and theoretical knowledge.
-           
+          The Master of Computer Applications (MCA) program is a two-year professional post-graduate program. This
+          program is for candidates who want to dive further into computer application development by learning modern
+          programming languages. The program combines practical and theoretical knowledge.
+
         </p>
         <p class="ug-paradt">
-          MCA stands for Master of Computer Applications which is a two-year post-graduate degree exclusively dealing with subjects related to computer programming, software programming, application development, system engineering, troubleshooting, quality assurance, cloud computing, etc.
-           
-        <img src="assets/img/cs-1.jpg" alt="" class="cs-img">
-        <img src="assets/img/cs-2.png" alt="" class="cs-img">
-        <img src="assets/img/cs-3.jpg" alt="" class="cs-img">
+          MCA stands for Master of Computer Applications which is a two-year post-graduate degree exclusively dealing
+          with subjects related to computer programming, software programming, application development, system
+          engineering, troubleshooting, quality assurance, cloud computing, etc.
+
+          <img src="assets/img/cs-1.jpg" alt="" class="cs-img">
+          <img src="assets/img/cs-2.png" alt="" class="cs-img">
+          <img src="assets/img/cs-3.jpg" alt="" class="cs-img">
       </div>
 
       <div id="content22" style="display: none;">
         <h4 class="text-uppercase mission-head">mechanical engineering</h4>
         <p class="ug-paradt">
-          MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates aspiring for senior leadership and managerial roles. The knowledge gained in areas such as finance, marketing, and operations management can make professionals more competitive in the job market. 
-           
+          MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on
+          developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates
+          aspiring for senior leadership and managerial roles. The knowledge gained in areas such as finance, marketing,
+          and operations management can make professionals more competitive in the job market.
+
         </p>
         <p class="ug-paradt">
-          As a generalist degree, the MBA gives you fundamental management knowledge, meaning you'll get a holistic view of business across areas like marketing, finance, and accounting, all while developing those vital soft skills and leadership skills.</p>
-            
+          As a generalist degree, the MBA gives you fundamental management knowledge, meaning you'll get a holistic view
+          of business across areas like marketing, finance, and accounting, all while developing those vital soft skills
+          and leadership skills.</p>
+
         </p>
         <img src="assets/img/me-1.png" alt="">
         <img src="assets/img/me-2.jpg" alt="">
@@ -510,7 +528,7 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 
   <!-- FOOTER section START-->
@@ -537,11 +555,11 @@
               <div><a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a></div>
               <div><a href="javascript:void(0)" class="link-decoration">Principal's Message</a></div>
               <!-- <h6 class="fw-bold">NEWSLETTER : </h6>
-						      <p>We will send out weekly newest article and some great offers</p>
-						      <form class="" action="" method="POST" id="newsletterform" role="form">
-						             <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
-						             <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
-						        </form> -->
+                  <p>We will send out weekly newest article and some great offers</p>
+                  <form class="" action="" method="POST" id="newsletterform" role="form">
+                         <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
+                         <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
+                    </form> -->
             </div>
             <div class="col-lg-3">
               <h4 class="footer-heading-color">DEPARTMENTS</h4>
@@ -607,21 +625,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
     function showContent(contentId, headingId) {
-        // Hide all content divs
-        document.querySelectorAll('.ug-cont > div').forEach(function(div) {
-            div.style.display = 'none';
-        });
+      // Hide all content divs
+      document.querySelectorAll('.ug-cont > div').forEach(function (div) {
+        div.style.display = 'none';
+      });
 
-        // Show the selected content
-        document.getElementById(contentId).style.display = 'block';
+      // Show the selected content
+      document.getElementById(contentId).style.display = 'block';
 
-        // Reset styles for all headings
-        document.querySelectorAll('.ug-deta h3').forEach(function(heading) {
-            heading.classList.remove('active');
-        });
+      // Reset styles for all headings
+      document.querySelectorAll('.ug-deta h3').forEach(function (heading) {
+        heading.classList.remove('active');
+      });
 
-        // Set active styles for the clicked heading
-        document.getElementById(headingId).classList.add('active');
+      // Set active styles for the clicked heading
+      document.getElementById(headingId).classList.add('active');
     }
   </script>
   <script>
