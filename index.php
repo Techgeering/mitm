@@ -718,24 +718,28 @@
 						About Us
 					</h2>
 					<p class="abt-uspara">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-						deserunt corporis nulla accusantium expedita a ut quo delectus,
-						velit officiis? Reprehenderit cum ipsum eum praesentium quasi
-						velit vero dolorum incidunt? Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Aliquam saepe, accusamus tempora
-						magni, pariatur reiciendis expedita sunt repellat suscipit
-						perspiciatis culpa similique temporibus! Quos tempora voluptatem,
-						omnis ipsam tenetur perspiciatis.
+						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
+						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
+						under privileged at an affordable cost and means. The Academic value is given and utmost
+						importance with an aim to provide a comprehensive and contemporary Engineering education.
 					</p>
 					<p class="abt-uspara">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-						minima delectus quod temporibus eligendi recusandae laboriosam
-						aliquam alias sit aut cumque reiciendis placeat, optio quas
-						molestias quidem omnis eaque qui. Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Numquam ad repellendus nam? Eos
-						necessitatibus quae, quod quam et, repellat alias numquam, dolor
-						vero molestias temporibus deserunt pariatur. Molestiae, sit.
-						Atque!
+						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
+						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
+						under privileged at an affordable cost and means. The Academic value is given and utmost
+						importance with an aim to provide a comprehensive and contemporary Engineering education.
+					</p>
+					<p class="abt-uspara">
+						aspirations is an exciting experience during one's academic life. The Institute is recognized by
+						Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to Biju Pattnaik
+					</p>
+					<p class="abt-uspara">
+						University of Technology, Rourkela, Odisha. The Institute has also got certification of ISO
+						9001:2008 for its Quality Management System.The Institute maintains principled academically
+						atmosphere with all round development activities, so that the institute can groom the incoming
+						student as a dedicated professional and a better citizen. Owing to this, in addition to our
+						normal teaching schedule, we conduct extracurricular activity for their intellectual,
+						professional and social development.
 					</p>
 				</div>
 				<div class="col-md-5">
