@@ -383,7 +383,7 @@
 				<div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
-							<img src="assets/img/chair1.jpg" alt="" class="img-fluid">
+							<img src="assets/img/mitmchairman.jpg" alt="" class="img-fluid">
 							<h4 class="text-uppercase chairman-head text-center">Himadri Tanaya Lenka</h4>
 							<h5 class="text-uppercase fw-bold chairman-desig text-center">Chairman</h5>
 						</div>
