@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.7">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -383,7 +383,7 @@
 				<div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
-							<img src="assets/img/mitmchairman.jpg" alt="" class="img-fluid">
+							<img src="assets/img/mitmchairman.jpg" alt="" class="img-fluid elevate-img">
 							<h4 class="text-uppercase chairman-head text-center">Himadri Tanaya Lenka</h4>
 							<h5 class="text-uppercase fw-bold chairman-desig text-center">Chairman</h5>
 						</div>
@@ -507,7 +507,7 @@
 		src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
+	<script type="text/javascript" src="assets/js/allpage.js?v=<?php echo time(); ?>"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

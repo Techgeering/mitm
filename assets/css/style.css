@@ -1319,6 +1319,11 @@ top: 96%;
   line-height: 35px;
   margin-top: 51px;
 }
+
+.elevate-img{
+    border: 2px solid #56575748; /* Add border */
+    box-shadow: 0px 6px 12px rgba(0.4, 0.2, 0.2, 0.4); /* Increased elevation */
+}
 @media only screen and (max-width: 600px) {
   .principal-head {
   font-size: 18px;
