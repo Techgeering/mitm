@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2024 at 12:12 PM
+-- Generation Time: Mar 06, 2024 at 08:45 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -176,8 +176,8 @@ CREATE TABLE `mitm_notice` (
 
 INSERT INTO `mitm_notice` (`id`, `notice`, `date_of_upload`, `status`) VALUES
 (7, 'Breaking news', '2024-02-22', 1),
-(8, 'Another important news item here', '2024-02-09', 1),
-(13, 'Another important news item', '2024-02-29', 1);
+(8, 'Another important news item', '2024-02-09', 1),
+(13, 'Another important news item', '2024-02-15', 1);
 
 -- --------------------------------------------------------
 
