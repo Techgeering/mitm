@@ -226,8 +226,20 @@ $("#mitmcontact").submit(function (e) {
 /*ENQUIRY BUTTON OPEN & CLOSE*/
 
 function openNav() {
-  document.getElementById("myfirstcaptch").style.width = "600px";
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var width;
+
+  if (screenWidth >= 1200) {
+      width = "600px"; // Set width to 600px for large screens
+  } else if (screenWidth >= 601 && screenWidth < 1200) {
+      width = "500px"; // Set width to 500px for medium screens
+  } else {
+      width = "436px"; // Set width to 400px for small screens
+  }
+
+  document.getElementById("myfirstcaptch").style.width = width;
 }
+
 
 function closeNav() {
   document.getElementById("myfirstcaptch").style.width = "0";

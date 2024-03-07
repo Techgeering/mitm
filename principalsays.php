@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.7">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>"/>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 	<!--toaster alert-->
@@ -337,7 +337,7 @@
 				<div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
-							<img src="assets/img/principalmitm.jpg" alt="" width="100%">
+							<img class="elevate-img" src="assets/img/principalmitm.jpg" alt="" width="100%">
 							<h4 class="text-uppercase principal-head text-center">Dr. Dillip Kumar Sahoo</h4>
 							<h5 class="text-uppercase fw-bold principal-desig text-center">Principal</h5>
 						</div>
