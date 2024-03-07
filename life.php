@@ -549,7 +549,7 @@
 	<script type="text/javascript"
 		src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
+	<script type="text/javascript" src="assets/js/allpage.js?v=<?php echo time(); ?>"></script>
 	<!-- Toastr JS -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
 
