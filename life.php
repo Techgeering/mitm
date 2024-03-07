@@ -12,10 +12,6 @@
 	<meta name="keywords" content="HTML5, CSS3, JavaScript, bootstrap-5">
 	<meta name="author" content="Techgeering">
 
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
-
-	<!-- <meta http-equiv="refresh" content="30"> -->
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/css/bootstrap.min.css">
 
@@ -37,23 +33,16 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>">
 
 	<link href="assets/css/style.css" rel="stylesheet">
 
 	<!--toaster alert-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"> -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script> -->
 
 	<title>MITM | About Us</title>
-
-	<style>
-		body {
-			margin: 1.5rem 0 3.5rem;
-			background-color: white;
-		}
-	</style>
 
 </head>
 
@@ -426,9 +415,6 @@
 			</div>
 		</div>
 	</section>
-	<div class="modal" id="myModal">
-		<div class="modal-content" id="modalContent"></div>
-	</div>
 	<script>
 		const gallery = document.getElementById('gallery');
 		const videoGallery = document.getElementById('videoGallery');
@@ -565,7 +551,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
 	<!-- Toastr JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
 
 	<script>
 		// Initialize Wow.js

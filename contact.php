@@ -31,7 +31,7 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>">
 
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"> -->
 
@@ -587,7 +587,7 @@
 		new WOW().init();
 	</script>
 
-	<script src="assets/js/allpage.js?<?php echo time(); ?>"></script>
+	<script src="assets/js/allpage.js?=<?php echo time(); ?>"></script>
 
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
