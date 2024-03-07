@@ -153,18 +153,18 @@ body{
       width: 0;
       position: fixed;
       z-index: 99;
-      top: 0;
-      left: 0;
+      top: 50px;
+      left: 340px;
       background-color: #fff;
       overflow-x: hidden;
-      transition: 0.5s;
+      transition: top 0.5s ease-in;
       /* padding-top: 60px; */
       /*border: 1px solid brown;*/
     }
     .first-captcha a {
       text-decoration: none;
       display: block;
-      transition: 0.3s;
+      transition: all 0.3s ease-in-out;
     }
     .first-captcha .closebtn {
       position: absolute;
@@ -957,7 +957,7 @@ a{
 
 /* CONTACT PAGE */
     
-/* input[type="text"],
+input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
@@ -968,7 +968,7 @@ textarea {
   width: 100%;
   text-transform: capitalize;
   padding: 1rem 0.4rem;
-} */
+}
 .aside {
     background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
   animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
@@ -1168,9 +1168,9 @@ margin-left: 30px;
 
 
 /*image and video button*/
-.gallery-grid {
+/* .gallery-grid {
   cursor: pointer;
-}
+} */
 .modal {
   display: none;
   position: fixed;

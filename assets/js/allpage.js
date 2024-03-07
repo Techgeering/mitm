@@ -226,7 +226,7 @@ $("#mitmcontact").submit(function (e) {
 /*ENQUIRY BUTTON OPEN & CLOSE*/
 
 function openNav() {
-  document.getElementById("myfirstcaptch").style.width = "370px";
+  document.getElementById("myfirstcaptch").style.width = "600px";
 }
 
 function closeNav() {
