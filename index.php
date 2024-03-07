@@ -199,7 +199,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
-							<a href="index.php">
+							<a href="index">
 								<img src="assets/img/logos1.png" class="img-fluid" />
 							</a>
 						</div>
@@ -236,30 +236,30 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="about.php">About Us</a>
+											href="about">About Us</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="chairmansays.php">Chairman Speaks</a>
+											href="chairmansays">Chairman Speaks</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="principalsays.php">Principal Speaks</a>
+											href="principalsays">Principal Speaks</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="faculty.php">Faculties</a>
+											href="faculty">Faculties</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation.php">Accredation</a>
+											href="accredation">Accredation</a>
 									</li>
 									<li>
-										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="life.php">Life @ MITM</a>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
+											@ MITM</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -270,18 +270,18 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="ugcourse.php">UG</a>
+											href="ugcourse">UG</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="pgcourse.php">PG</a>
+											href="pgcourse">PG</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="polytechnic.php">Polytechnic</a>
+											href="polytechnic">Polytechnic</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective">Prospective</a></li>
+						  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -293,7 +293,7 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="fascilites.php">Fascilities</a>
+								<a class="nav-link active third-menu-color" href="fascilites">Fascilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -303,7 +303,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info.php">Notice</a>
+											href="https://www.bput.ac.in/exam-info">Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -313,56 +313,9 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
-						<!-- <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
-					  </ul>
-					</li>
-			  </ul> -->
-						<!-- <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
-					  </ul>
-					</li>
-			  </ul>
-			  <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-						   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
-					  </ul>
-					</li>
-			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -370,29 +323,29 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview.php">Overview</a>
+											href="placementoverview">Overview</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementcompany.php">Company</a>
+											href="placementcompany">Company</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities.php">Activities of T&P Cell</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
 				<li class="nav-item ">
-				  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
+				  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
 				</li>
 			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="notice.php">Notice</a>
+								<a class="nav-link active third-menu-color" href="notice">Notice</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="contact.php">Contact Us</a>
+								<a class="nav-link active third-menu-color" href="contact">Contact Us</a>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
@@ -500,17 +453,6 @@
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
-
-	<!-- Modal -->
-	<!-- <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-body" style="background-image: url('assets/img/ban1.jpg'); background-size: cover; height: 100vh;">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-		</div>
-	</div>
-</div> -->
 
 	<!-- Trigger the modal on page load -->
 	<script>
@@ -782,94 +724,6 @@
 	</section>
 
 	<div class="courses-color">
-		<!-- <div class="container py-4">
-		<div class="courses-position">
-			<h1 class="fw-bold text-white text-uppercase">Courses</h1>
-			<p class="text-white" >Choose from 130,000 online video courses with new additions published every month</p>
-		</div>
-		<div class="row row-cols-1 row-cols-md-5 g-2">
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mtech.png" class="card-img-top" alt="M.Tech">
-					<div class="card-body">
-						<h5 class="card-title text-center">M.Tech</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/btech.png" class="card-img-top" alt="B.Tech">
-					<div class="card-body">
-						<h5 class="card-title text-center">B.Tech</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MBA</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MCA</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mtech.png" class="card-img-top" alt="M.Tech">
-					<div class="card-body">
-						<h5 class="card-title text-center">M.Tech</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/btech.png" class="card-img-top" alt="B.Tech">
-					<div class="card-body">
-						<h5 class="card-title text-center">B.Tech</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MBA</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MCA</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mba.jpeg" class="card-img-top" alt="MBA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MBA</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 zoom-on-hover">
-					<img src="assets/img/mca.jpg" class="card-img-top" alt="MCA">
-					<div class="card-body">
-						<h5 class="card-title text-center">MCA</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
 		<div class="courses-position">
 			<h1 class="fw-bold text-white text-uppercase wow bounceInLeft">
 				Courses
@@ -1046,75 +900,6 @@
 	</div>
 	<!-- total count section end-->
 
-	<!-- <div class="py-5" >
-	
-	<section class="centered-heading">
-		<h1 class="fw-bold text-uppercase">Placement</h1>
-	</section>
-
-	<section class="count-section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4 class="" >Recruiters</h4>
-					<p id="recruitersCount" class="fw-bold">0</p>
-				</div>
-				<div class="col">
-					<h4 class="" >Students Placed</h4>
-					<p id="studentsPlacedCount" class="fw-bold">0</p>
-				</div>
-				<div class="col">
-					<h4 class="" >Alumni</h4>
-					<p id="alumniCount" class="fw-bold">0</p>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid pt-2">
-			<div class="row marquee-border">
-			  <div class="marquee-position">
-				<div class="marquee-container">
-				  <div class="marquee-item">
-					<img src="assets/img/comp1.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp2.jpeg" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp3.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp4.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp5.jpeg" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp6.jpeg" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp7.jpeg" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp8.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp9.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp10.jpeg" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp11.png" alt="" class="" height="100" width="120">
-				  </div>
-				  <div class="marquee-item">
-					<img src="assets/img/comp12.jpeg" alt="" class="" c>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	</section>
-</div> -->
 	<div class="container py-5">
 		<h2 class="text-uppercase text-center">Placement</h2>
 		<div class="row">

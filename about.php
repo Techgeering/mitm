@@ -102,7 +102,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
-							<a href="index.php">
+							<a href="index">
 								<img src="assets/img/logos1.png" class="img-fluid" />
 							</a>
 						</div>
@@ -139,30 +139,30 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="about.php">About Us</a>
+											href="about">About Us</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="chairmansays.php">Chairman Speaks</a>
+											href="chairmansays">Chairman Speaks</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="principalsays.php">Principal Speaks</a>
+											href="principalsays">Principal Speaks</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="faculty.php">Faculties</a>
+											href="faculty">Faculties</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation.php">Accredation</a>
+											href="accredation">Accredation</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="life.php">Life @ MITM</a>
+											href="life">Life @ MITM</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission.php">Vission & Mission</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="infra.php">Infrastructure</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
+							  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -173,18 +173,18 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="ugcourse.php">UG</a>
+											href="ugcourse">UG</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="pgcourse.php">PG</a>
+											href="pgcourse">PG</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="polytechnic.php">Polytechnic</a>
+											href="polytechnic">Polytechnic</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective.php">Prospective</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="fees.php">fees</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective">Prospective</a></li>
+							  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -196,7 +196,7 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="fascilites.php">Fascilities</a>
+								<a class="nav-link active third-menu-color" href="fascilites">Fascilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -206,7 +206,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info.php">Notice</a>
+											href="https://www.bput.ac.in/exam-info">Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -216,56 +216,9 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department.php">Department</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell.php">Cell</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar.php">Seminar & Workshop</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="award.php">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
-						<!-- <ul class="navbar-nav">
-					<li class="nav-item dropdown">
-							<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-							<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories.php">Laboratories</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary.php">Libraary</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical.php">Medical Facility</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel.php">Hostel</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport.php">Transport</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural.php">Cultural Events & Sports</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen.php">Canteen</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="wifi.php">Wifi Campus</a></li>
-						  </ul>
-						</li>
-				  </ul> -->
-						<!-- <ul class="navbar-nav">
-					<li class="nav-item dropdown">
-							<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-							<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote.php">B.Tech 1st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote.php">B.Tech 2st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote.php">B.Tech 3st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote.php">B.Tech 4st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote.php">B.Tech 5st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote.php">B.Tech 6st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote.php">B.Tech 7st Semester</a></li>
-						  </ul>
-						</li>
-				  </ul>
-				  <ul class="navbar-nav">
-					<li class="nav-item dropdown">
-							<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-							<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-							   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo.php">B.Tech 1st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo.php">B.Tech 2st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo.php">B.Tech 3st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo.php">B.Tech 4st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo.php">B.Tech 5st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo.php">B.Tech 6st Semester</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo.php">B.Tech 7st Semester</a></li>
-						  </ul>
-						</li>
-				  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -273,36 +226,31 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview.php">Overview</a>
+											href="placementoverview">Overview</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementcompany.php">Company</a>
+											href="placementcompany">Company</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities.php">Activities of T&P Cell</a></li> -->
+									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
 					<li class="nav-item ">
-					  <a class="nav-link active third-menu-color " href="diploma.php">Diploma</a>
+					  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
 					</li>
 				  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="notice.php">Notice</a>
+								<a class="nav-link active third-menu-color" href="notice">Notice</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="contact.php">Contact Us</a>
+								<a class="nav-link active third-menu-color" href="contact">Contact Us</a>
 							</li>
 						</ul>
-						<!-- <ul class="navbar-nav">
-					<li class="nav-item ">
-					   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
-					</li>
-				  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -312,7 +260,7 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt=""
 							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -328,13 +276,13 @@
 									Discover
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="about.php">About Us</a></li>
+									<li><a class="dropdown-item" href="about">About Us</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
-									<li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
-									<li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
-									<li><a class="dropdown-item" href="accredation.php">Accredation</a></li>
-									<li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
+									<li><a class="dropdown-item" href="chairmansays">Chairman Speaks</a></li>
+									<li><a class="dropdown-item" href="principalsays">Principal Speaks</a></li>
+									<li><a class="dropdown-item" href="faculty">Faculties</a></li>
+									<li><a class="dropdown-item" href="accredation">Accredation</a></li>
+									<li><a class="dropdown-item" href="life">Life @ MITM</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: -80px;">
@@ -343,17 +291,17 @@
 									Programmes
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
+									<li><a class="dropdown-item" href="ugcourse">UG</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
-									<li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
+									<li><a class="dropdown-item" href="pgcourse">PG</a></li>
+									<li><a class="dropdown-item" href="polytechnic">Polytechnic</a></li>
 								</ul>
 							</li>
 							<li class="nav-item" style="margin-left: -80px;">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
 							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="fascilites.php">Fascilities</a>
+								<a class="nav-link" href="fascilites">Fascilities</a>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: -80px;">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -361,7 +309,7 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info">Notice</a>
 									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>
@@ -377,16 +325,16 @@
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
+									<li><a class="dropdown-item" href="placementoverview">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
+									<li><a class="dropdown-item" href="placementcompany">Company</a></li>
 								</ul>
 							</li>
 							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="notice.php">Notice</a>
+								<a class="nav-link" href="notice">Notice</a>
 							</li>
 							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="contact.php">Contact Us</a>
+								<a class="nav-link" href="contact">Contact Us</a>
 							</li>
 
 							<!-- <li class="nav-item" style="margin-left: -80px;">
@@ -634,84 +582,6 @@
 		// Initialize Wow.js
 		new WOW().init();
 	</script>
-	<!--for Admission Enquiry Form not Refreshed after send blank abd error input fields-->
-	<!-- <script>
-		$(document).ready(function () {
-			$("#mitmenquiry").submit(function (e) {
-				e.preventDefault();
-
-				var fullname = document.getElementById("enquiryname").value;
-				var emailid = document.getElementById("enquiryemail").value;
-				var mobile = document.getElementById("enquiryphone").value;
-				var course = document.getElementById("enquirycourse").value;
-				var message = document.getElementById("enquirymessage").value;
-
-				var errorstatus = document.getElementById("error-status");
-				var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
-				var phonepat = /^[0-9]{10}$/;
-				var fnamecon = /[A-Za-z\s]{1,50}/;
-				var error = false;
-
-				if (
-					fullname === "" ||
-					emailid === "" ||
-					mobile === "" ||
-					course === "" ||
-					message === ""
-				) {
-					errorstatus.innerText = "Please fill all the feilds";
-				} else if (!fullname.match(fnamecon)) {
-					errorstatus.innerText = "Enter a valid name";
-				} else if (!emailid.match(emailRegex)) {
-					errorstatus.innerText = "Enter a valid email";
-				} else if (!mobile.match(phonepat)) {
-					errorstatus.innerText = "Enter a valid phone number";
-				} else {
-					errorstatus.innerText = "";
-					$.ajax({
-						type: "POST",
-						url: "enquiry-forminsert.php",
-						data: {
-							name: fullname,
-							email: emailid,
-							phone: mobile,
-							course: course,
-							message: message,
-						},
-						dataType: "json", // Specify the expected data type
-						success: function (data) {
-							console.log(data); // Log the response for debugging
-							if (data.status === "success") {
-								// Show success message using ToastAlert
-								toastr.success(data.message, "Success");
-
-								document.getElementById("enquiryname").value = "";
-								document.getElementById("enquiryemail").value = "";
-								document.getElementById("enquiryphone").value = "";
-								document.getElementById("enquirycourse").value = "";
-								document.getElementById("enquirymessage").value = "";
-							} else {
-								// Show error message using SweetAlert
-								Swal.fire({
-									icon: "error",
-									title: "Error!",
-									text: data.message,
-								});
-							}
-						},
-						error: function (xhr, status, error) {
-							// Handle other AJAX errors if needed
-							console.error("AJAX Error:", xhr, status, error);
-						},
-						complete: function () {
-							$(".loading").hide(); // Hide loading message on completion
-						},
-					});
-				}
-			});
-		});
-
-	</script> -->
 </body>
 
 </html>
