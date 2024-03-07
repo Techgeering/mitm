@@ -684,6 +684,9 @@ tr:nth-child(even) {
 
 .abt-uspara{
   text-align: justify;
+  /* font-style: inherit; 
+  line-height: 2.0; 
+  margin-top: -5px; */
 }
 
 a{
@@ -1009,6 +1012,7 @@ ion-icon:not([name="logo-codepen"]) {
   font-style: inherit; /* Optional: Italic font style */
   line-height: 2.0; /* Adjust line height for gap between lines */
   text-align: justify;
+  margin-top: -5px;
 }
 .imp-linkbox{
   border: 0.5px solid blue;
@@ -1420,3 +1424,7 @@ top: 96%;
   margin-bottom: 0;
 }
 }
+
+/* .order-1 h5{
+  line-height: 1;
+} */

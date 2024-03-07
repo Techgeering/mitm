@@ -31,7 +31,7 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>">
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -158,8 +158,8 @@
 											href="accredation">Accredation</a>
 									</li>
 									<li>
-										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="life">Life @ MITM</a>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
+											@ MITM</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
 							  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
@@ -206,7 +206,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info">Notice</a>
+											href="https://www.bput.ac.in/.php">Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -260,8 +260,7 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt=""
-							class="mob-logo"></a>
+					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"
@@ -309,7 +308,7 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info">Notice</a>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
 									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>
@@ -357,34 +356,36 @@
 		<div class="container abt-us">
 			<h3 class="text-uppercase text-primary text-center about-texthead">About us</h3>
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-6 order-md-1 order-2">
+				<div class="col-12 col-sm-6 col-md-6 order-md-1 order-1">
 					<img src="assets/img/birla.jpg" alt="Birla Image" class="img-fluid"
 						style="margin-top: 3px; margin-bottom: 9px;">
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 order-md-2 order-1">
+				<div class="col-12 col-sm-6 col-md-6 order-md-2 order-2">
 					<h5>
 						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
 						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
 						under privileged at an affordable cost and means. The Academic value is given and utmost
 						importance with an aim to provide a comprehensive and contemporary Engineering education.
+
 						MITM creates an environmental based on knowledge, truth, wisdom and enlighten, that inspires
 						young minds today to become the worthy citizens of tomorrow. This Institution is exclusively
 						designed for providing quality education. The environment is highly conductive for building a
 						solid foundation of knowledge, development of personality, confidence building, Pursuit of
 						excellence and self-discipline and enhancement of creativity. Living in such environment with
-						people having similar goals and
-
-						aspirations is an exciting experience during one's academic life. The Institute is recognized by
-						Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to Biju Pattnaik
-
-						University of Technology, Rourkela, Odisha. The Institute has also got certification of ISO
-						9001:2008 for its Quality Management System.The Institute maintains principled academically
-						atmosphere with all round development activities, so that the institute can groom the incoming
-						student as a dedicated professional and a better citizen. Owing to this, in addition to our
-						normal teaching schedule, we conduct extracurricular activity for their intellectual,
-						professional and social development.
-
+						people having similar goals and aspirations is an exciting experience during one's academic
+						life.
 				</div>
+			</div>
+			<div>
+				<h5>
+					The Institute is recognized by Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to
+					Biju Pattnaik
+					University of Technology, Rourkela, Odisha. The Institute has also got certification of ISO
+					9001:2008 for its Quality Management System.The Institute maintains principled academically
+					atmosphere with all round development activities, so that the institute can groom the incoming
+					student as a dedicated professional and a better citizen. Owing to this, in addition to our
+					normal teaching schedule, we conduct extracurricular activity for their intellectual,
+					professional and social development.
 			</div>
 		</div>
 	</section>

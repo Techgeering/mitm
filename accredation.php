@@ -196,7 +196,7 @@
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Examination</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info">Notice</a></li>
+											href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
 									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -296,7 +296,7 @@
 									Examinations
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info">Notice</a>
+									<li><a class="dropdown-item" href="https://www.bput.ac.in/exam-info.php">Notice</a>
 									</li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="http://bputexam.in/schedule.aspx">Schedule</a>

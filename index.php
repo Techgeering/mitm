@@ -666,16 +666,17 @@
 						importance with an aim to provide a comprehensive and contemporary Engineering education.
 					</p>
 					<p class="abt-uspara">
-						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
-						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
-						under privileged at an affordable cost and means. The Academic value is given and utmost
-						importance with an aim to provide a comprehensive and contemporary Engineering education.
+						MITM creates an environmental based on knowledge, truth, wisdom and enlighten, that inspires
+						young minds today to become the worthy citizens of tomorrow. This Institution is exclusively
+						designed for providing quality education. The environment is highly conductive for building a
+						solid foundation of knowledge, development of personality, confidence building, Pursuit of
+						excellence and self-discipline and enhancement of creativity. Living in such environment with
+						people having similar goals and aspirations is an exciting experience during one's academic
+						life.
 					</p>
 					<p class="abt-uspara">
-						aspirations is an exciting experience during one's academic life. The Institute is recognized by
+						The Institute is recognized by
 						Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to Biju Pattnaik
-					</p>
-					<p class="abt-uspara">
 						University of Technology, Rourkela, Odisha. The Institute has also got certification of ISO
 						9001:2008 for its Quality Management System.The Institute maintains principled academically
 						atmosphere with all round development activities, so that the institute can groom the incoming
