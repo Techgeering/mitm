@@ -41,22 +41,7 @@
 		new WOW().init();
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6" />
-
-	<style type="text/css">
-		body {
-			overflow-x: hidden;
-		}
-
-
-
-		.carousel-caption {
-			z-index: 1 !important;
-		}
-	</style>
-	<style>
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php  echo time() ?>" />
 </head>
 
 <body>
@@ -111,7 +96,7 @@
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
 			<div class="second-nav-bg">
-				<div class="container">
+				<!-- <div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
 							<a href="index">
@@ -133,11 +118,12 @@
 						<div class="col-1 second-nav-position">
 							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg" />
 						</div>
-						<!-- <div class="col-1 second-nav-position">
-							<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg" />
-						</div> -->
 					</div>
-				</div>
+				</div> -->
+				
+			<div class="" >
+				<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
+			</div>
 			</div>
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
@@ -167,7 +153,7 @@
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation">Accredation</a>
+											href="accredation">Accreditation</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
@@ -208,7 +194,7 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="fascilites">Fascilities</a>
+								<a class="nav-link active third-menu-color" href="fascilites">Facilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -276,7 +262,7 @@
 		<!--navbar start for mobile and tab view-->
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="" style="width: 100%;">
+				<div class="">
 					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
 							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -287,7 +273,7 @@
 					</button>
 					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Discover
@@ -298,11 +284,11 @@
 									<li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
 									<li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
 									<li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
-									<li><a class="dropdown-item" href="accredation.php">Accredation</a></li>
+									<li><a class="dropdown-item" href="accredation.php">Accreditation</a></li>
 									<li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Programmes
@@ -314,13 +300,13 @@
 									<li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="fascilites.php">Fascilities</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="fascilites.php">Facilities</a>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Examinations
@@ -336,7 +322,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Placement
@@ -347,17 +333,12 @@
 									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="notice.php">Notice</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="contact.php">Contact Us</a>
 							</li>
-
-							<!-- <li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-							</li> -->
-
 						</ul>
 					</div>
 				</div>
@@ -619,18 +600,6 @@
 										</a>
 									</li>
 								</div>
-								<!-- <div class="news-item">
-									<a href="#" style="color: #ef2009">News 2: Another important news item here</a>
-								</div>
-								<div class="news-item">
-									<a href="#" style="color: #ef0101">News 3: Breaking news just in!</a>
-								</div>
-								<div class="news-item">
-									<a href="#" style="color: #41deff">News 4: Don't miss this update</a>
-								</div>
-								<div class="news-item">
-									<a href="#" style="color: #41deff">News 5: Final news for today</a>
-								</div> -->
 							<?php } ?>
 						</div>
 					</div>
@@ -821,22 +790,16 @@
 		<div class="row">
 			<div class="col-12 col-md-4 py-5 placement-data"
 				style="background-image: url('assets/img/placementbanner.png');">
-				<h2 class="text-center text-primary text-uppercase"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">Recruiters</h2>
-				<p id="recruitersCount" class="fw-bold text-center text-white"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
-				<h2 class="text-center text-primary text-uppercase"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
+				<h2 class="text-center text-primary text-uppercase placement-count">Recruiters</h2>
+				<p id="recruitersCount" class="fw-bold text-center text-white placement-count">0</p>
+				<h2 class="text-center text-primary text-uppercase placement-count">
 					Students Placed
 				</h2>
-				<p id="studentsPlacedCount" class="fw-bold text-center text-white"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">
+				<p id="studentsPlacedCount" class="fw-bold text-center text-white placement-count">
 					0
 				</p>
-				<h2 class="text-center text-primary text-uppercase"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">Alumni</h2>
-				<p id="alumniCount" class="fw-bold text-center text-white"
-					style="text-shadow: 0px 0px 4px #000000, 0 0 7px #000000;">0</p>
+				<h2 class="text-center text-primary text-uppercase placement-count">Alumni</h2>
+				<p id="alumniCount" class="fw-bold text-center text-white placement-count">0</p>
 			</div>
 			<div class="col-12 col-md-7 placement-data py-2">
 				<img src="assets/img/comp.jpg" alt="" class="img-fluid" />

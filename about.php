@@ -45,11 +45,6 @@
 
 	<title>MITM | About Us</title>
 
-	<style>
-
-
-	</style>
-
 </head>
 
 <body>
@@ -63,8 +58,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-3">
-						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg(0)"
-							class="top-icon"><i class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
+								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
 								aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i
@@ -77,8 +72,9 @@
 							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
 								094398 97178</a>
 
-							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i
-									class="fa fa-envelope"></i> info@mitm.com</a>
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">
+								<i class="fa fa-envelope"></i> info@mitm.edu.in
+							</a>
 						</div>
 					</div>
 				</div>
@@ -125,9 +121,6 @@
 						<div class="col-1 second-nav-position">
 							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg" />
 						</div>
-						<!-- <div class="col-1 second-nav-position">
-								<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg" />
-							</div> -->
 					</div>
 				</div>
 			</div>
@@ -159,14 +152,14 @@
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation">Accredation</a>
+											href="accredation">Accreditation</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
 											@ MITM</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -188,7 +181,7 @@
 											href="polytechnic">Polytechnic</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective">Prospective</a></li>
-							  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
+						  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -200,7 +193,7 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="fascilites">Fascilities</a>
+								<a class="nav-link active third-menu-color" href="fascilites">Facilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -210,7 +203,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/.php">Notice</a>
+											href="https://www.bput.ac.in/exam-info">Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -241,10 +234,10 @@
 							</li>
 						</ul>
 						<!-- <ul class="navbar-nav">
-					<li class="nav-item ">
-					  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
-					</li>
-				  </ul> -->
+				<li class="nav-item ">
+				  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
+				</li>
+			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link active third-menu-color" href="notice">Notice</a>
@@ -255,6 +248,11 @@
 								<a class="nav-link active third-menu-color" href="contact">Contact Us</a>
 							</li>
 						</ul>
+						<!-- <ul class="navbar-nav">
+				<li class="nav-item ">
+				   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
+				</li>
+			  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -263,8 +261,9 @@
 		<!--navbar start for mobile and tab view-->
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt="" class="mob-logo"></a>
+				<div class="">
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"
@@ -273,40 +272,40 @@
 					</button>
 					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Discover
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="about">About Us</a></li>
+									<li><a class="dropdown-item" href="about.php">About Us</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="chairmansays">Chairman Speaks</a></li>
-									<li><a class="dropdown-item" href="principalsays">Principal Speaks</a></li>
-									<li><a class="dropdown-item" href="faculty">Faculties</a></li>
-									<li><a class="dropdown-item" href="accredation">Accredation</a></li>
-									<li><a class="dropdown-item" href="life">Life @ MITM</a></li>
+									<li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
+									<li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
+									<li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
+									<li><a class="dropdown-item" href="accredation.php">Accreditation</a></li>
+									<li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Programmes
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="ugcourse">UG</a></li>
+									<li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="pgcourse">PG</a></li>
-									<li><a class="dropdown-item" href="polytechnic">Polytechnic</a></li>
+									<li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
+									<li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="fascilites">Fascilities</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="fascilites.php">Facilities</a>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Examinations
@@ -322,34 +321,28 @@
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview">Overview</a></li>
+									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="placementcompany">Company</a></li>
+									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="notice">Notice</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="notice.php">Notice</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="contact">Contact Us</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="contact.php">Contact Us</a>
 							</li>
-
-							<!-- <li class="nav-item" style="margin-left: -80px;">
-									<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-								</li> -->
-
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-
 	</div>
 	<!--navbar end for mobile and tab view-->
 	<!--enquiry start-->
@@ -395,11 +388,11 @@
 	</section>
 
 
-	<section style="background: linear-gradient(to bottom, #2e48f261 0%, #40dfff80 100%);">
+	<section class="abt-sec-col">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 ">
-					<img src="assets/img/mission.jpeg" alt="" class="abt-imgmain">
+					<img src="assets/img/mission.jpg" alt="" class="abt-imgmain">
 				</div>
 				<div class="col-lg-8 col-sm-12 ">
 					<h4 class="text-uppercase mission-heads">Mission</h4>
@@ -447,7 +440,7 @@
 		</div>
 	</section>
 
-	<section style="background: linear-gradient(to bottom, #2e48f261 0%, #40dfff80 100%);">
+	<section class="abt-sec-col">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 py-2">

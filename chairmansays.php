@@ -17,9 +17,9 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+	<link rel="sty://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+lesheet"
+		href="https
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,9 +41,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 	<title>MITM | About Us</title>
-
-	<style>
-	</style>
 </head>
 
 <body>
@@ -56,7 +53,7 @@
 		<div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
 			<div class="container">
 				<div class="row">
-					<div class="col-3 ">
+					<div class="col-3">
 						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
 								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
@@ -68,11 +65,12 @@
 					</div>
 					<div class="col-9">
 						<div class="top-email-no-position">
-							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i
-									class="fa fa-phone "></i> 094398 97178</a>
+							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
+								094398 97178</a>
 
-							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i
-									class="fa fa-envelope "></i> info@mitm.com</a>
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">
+								<i class="fa fa-envelope"></i> info@mitm.edu.in
+							</a>
 						</div>
 					</div>
 				</div>
@@ -84,10 +82,10 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-lg-6">
-						<a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
+						<a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone"></i> 094398 97178</a>
 					</div>
 					<div class="col-lg-6">
-						<a href="mailto:info@mitm.edu.in" class="top-nav-text "><i class="fa fa-envelope "></i>
+						<a href="mailto:info@mitm.edu.in" class="top-nav-text"><i class="fa fa-envelope"></i>
 							info@mitm.com</a>
 					</div>
 				</div>
@@ -101,21 +99,26 @@
 					<div class="row">
 						<div class="col-1 second-nav-position">
 							<a href="index">
-								<img src="assets/img/logos1.png" class="img-fluid">
+								<img src="assets/img/logos1.png" class="img-fluid" />
 							</a>
 						</div>
 						<div class="col-9 text-center head-name">
-							<h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
-							<p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
+							<h3>
+								Modern Institute of Technology & Management (MITM),BHUBANESWAR
+							</h3>
+							<p>
+								(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE &
+								VT,ODISHA)
+							</p>
 						</div>
 						<div class="col-1 second-nav-position">
-							<img src="assets/img/logo2.png" class="img-fluid" alt="logoimg">
+							<img src="assets/img/logo2.png" class="img-fluid" alt="logoimg" />
 						</div>
 						<div class="col-1 second-nav-position">
-							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
+							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg" />
 						</div>
 						<!-- <div class="col-1 second-nav-position">
-							<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
+							<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg" />
 						</div> -->
 					</div>
 				</div>
@@ -130,18 +133,30 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu1"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Discover</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="about">About Us</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="chairmansays">Chairman Speaks</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="principalsays">Principal Speaks</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="faculty">Faculties</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation">Accredation</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="life">Life @ MITM</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="about">About Us</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="chairmansays">Chairman Speaks</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="principalsays">Principal Speaks</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="faculty">Faculties</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="accredation">Accreditation</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
+											@ MITM</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
 						  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
 								</ul>
@@ -152,26 +167,32 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="ugcourse">UG</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="pgcourse">PG</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="polytechnic">Polytechnic</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="ugcourse">UG</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="pgcourse">PG</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="polytechnic">Polytechnic</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective">Prospective</a></li>
 						  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color "
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color"
 									href="https://www.bput.ac.in/">Admissions</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="fascilites">Fascilities</a>
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="fascilites">Facilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -179,11 +200,16 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu3"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Examination</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="https://www.bput.ac.in/exam-info">Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="http://bputexam.in/schedule.aspx">Schedule</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
 									</li>
 								</ul>
@@ -194,10 +220,14 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview">Overview</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementcompany">Company</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="placementoverview">Overview</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="placementcompany">Company</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
 							</li>
@@ -208,15 +238,20 @@
 				</li>
 			  </ul> -->
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="notice">Notice</a>
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="notice">Notice</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="contact">Contact Us</a>
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="contact">Contact Us</a>
 							</li>
 						</ul>
+						<!-- <ul class="navbar-nav">
+				<li class="nav-item ">
+				   <a class="nav-link active third-menu-color " href="career.php" >Career</a>
+				</li>
+			  </ul> -->
 					</div>
 				</div>
 			</div>
@@ -225,8 +260,8 @@
 		<!--navbar start for mobile and tab view-->
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt=""
+				<div class="">
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
 							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -236,40 +271,40 @@
 					</button>
 					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Discover
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="about">About Us</a></li>
+									<li><a class="dropdown-item" href="about.php">About Us</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="chairmansays">Chairman Speaks</a></li>
-									<li><a class="dropdown-item" href="principalsays">Principal Speaks</a></li>
-									<li><a class="dropdown-item" href="faculty">Faculties</a></li>
-									<li><a class="dropdown-item" href="accredation">Accredation</a></li>
-									<li><a class="dropdown-item" href="life">Life @ MITM</a></li>
+									<li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
+									<li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
+									<li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
+									<li><a class="dropdown-item" href="accredation.php">Accreditation</a></li>
+									<li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Programmes
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="ugcourse">UG</a></li>
+									<li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="pgcourse">PG</a></li>
-									<li><a class="dropdown-item" href="polytechnic">Polytechnic</a></li>
+									<li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
+									<li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="fascilites">Fascilities</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="fascilites.php">Facilities</a>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Examinations
@@ -285,28 +320,23 @@
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview">Overview</a></li>
+									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="placementcompany">Company</a></li>
+									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="notice">Notice</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="notice.php">Notice</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="contact">Contact Us</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="contact.php">Contact Us</a>
 							</li>
-
-							<!-- <li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-							</li> -->
-
 						</ul>
 					</div>
 				</div>
@@ -358,7 +388,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 	</section><!-- End Team Section -->
 
