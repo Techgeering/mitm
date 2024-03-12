@@ -349,7 +349,7 @@
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
 
-	<section>
+	<section class="abt">
 		<div class="container abt-us">
 			<h3 class="text-uppercase text-primary text-center about-texthead">About us</h3>
 			<div class="row">
@@ -415,7 +415,7 @@
 		</div>
 	</section>
 
-	<section>
+	<section class="abt">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-sm-12 order-lg-1">
