@@ -1003,9 +1003,12 @@ ion-icon:not([name="logo-codepen"]) {
 }
 
 /* ABOUT US PAGE  */
-.abt-us{
-  margin-top: 196px;
+.abt{
   background-image: repeating-linear-gradient(135deg, #2b398400 /*0px*/, #2b328408 100px, #bc814114 100px, #41afbc05 105px, #2b328414 105px, #2b328403 130px, #4153bc00 130px, #4177bc1f 260px, #ffffff05 260px, #ffffff59 265px, #4158bc1f 265px, #417ebc03 270px, #ffffffab 270px, #fffffffc 330px );
+
+}
+.abt-us{
+  margin-top: 148px;
 }
 
 .abt-imgmain{
@@ -1489,7 +1492,7 @@ top: 96%;
   background: linear-gradient(to left,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.8)),
-    url("assets/img/campus.jpg") center/cover no-repeat;
+    url("../img/campus.jpg") center/cover no-repeat;
   /* Replace with your image path */
   border-radius: 10px;
   /* Match the border-radius of the container */

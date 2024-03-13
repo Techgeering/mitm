@@ -561,7 +561,7 @@
 						under privileged at an affordable cost and means. The Academic value is given and utmost
 						importance with an aim to provide a comprehensive and contemporary Engineering education.
 					</p>
-					<p class="abt-uspara">
+					<!-- <p class="abt-uspara">
 						MITM creates an environmental based on knowledge, truth, wisdom and enlighten, that inspires
 						young minds today to become the worthy citizens of tomorrow. This Institution is exclusively
 						designed for providing quality education. The environment is highly conductive for building a
@@ -569,7 +569,7 @@
 						excellence and self-discipline and enhancement of creativity. Living in such environment with
 						people having similar goals and aspirations is an exciting experience during one's academic
 						life.
-					</p>
+					</p> -->
 					<p class="abt-uspara">
 						The Institute is recognized by
 						Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to Biju Pattnaik
