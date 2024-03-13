@@ -45,28 +45,6 @@
 
 	<title>MITM | About Us</title>
 
-	<style>
-		.abt-us {
-			margin-top: 166px;
-
-		}
-
-		.abt-us h5 {
-			font-style: inherit;
-			/* Optional: Italic font style */
-			line-height: 2.0;
-			/* Adjust line height for gap between lines */
-			text-align: justify;
-			margin-left: 30px;
-		}
-
-		.imp-linkbox {
-			border: 0.5px solid blue;
-			height: 40px;
-			margin-top: 2px;
-		}
-	</style>
-
 </head>
 
 <body>

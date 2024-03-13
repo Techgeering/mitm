@@ -47,60 +47,6 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.5" />
 
-  <style>
-    .ug-box {
-      display: flex;
-    }
-
-    .ug-deta {
-      width: 25%;
-      padding: 10px;
-      border-right: 2px solid #3bb3fb;
-    }
-
-    .ug-deta h3 {
-      margin-left: -8px;
-      margin-right: 6px;
-      cursor: pointer;
-      margin-bottom: 0;
-      transition: color 0.3s, transform 0.3s;
-      background-color: #3bb3fb;
-      color: #fff;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgb(0 0 0);
-    }
-
-    .ug-deta h3.active {
-      color: rgb(255, 255, 255);
-      background-color: #5e3bfb;
-      transform: scale(1.05);
-    }
-
-    .ug-detas h3 {
-      margin-left: -8px;
-      margin-right: 6px;
-      cursor: pointer;
-      margin-bottom: 0;
-      transition: color 0.3s, transform 0.3s;
-      background-color: #3bb3fb;
-      color: #fff;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgb(0 0 0);
-    }
-
-    .ug-detas h3.active {
-      color: rgb(255, 255, 255);
-      background-color: #5e3bfb;
-      transform: scale(1.05);
-    }
-
-    .ug-cont {
-      width: 75%;
-      padding: 20px;
-    }
-  </style>
   <title>MITM | UG</title>
 </head>
 

@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.7">
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -42,79 +42,7 @@
 
 
 	<style>
-		.notice-event {
-			background: linear-gradient(to left, #2e48f259 0%, #40dfff45 100%);
-			animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
-			overflow-y: auto;
-			/* Add overflow-y property to enable vertical scrolling */
-			height: 354px;
-			margin-top: -10px;
-		}
-
-		.notice-event p {
-			animation: moveNews 10s linear infinite;
-		}
-
-		/* Second Animation */
-		.notice-event-2 {
-			overflow: hidden;
-			margin-top: -8px;
-			position: relative;
-			height: 360px;
-			background-color: #f22e2e17;
-		}
-
-		@keyframes moveNews2 {
-			0% {
-				transform: translateY(830%);
-			}
-
-			100% {
-				transform: translateY(-460%);
-			}
-		}
-
-		.notice-event-2 li {
-			margin-top: 20px;
-			position: relative;
-			animation: moveNews2 16s ease-in-out infinite;
-		}
-
-		.notice-event-2 li::before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 1px;
-			/* Adjust the underline height as needed */
-			background-color: #00000057;
-			/* Adjust the underline color as needed */
-		}
-
-
-		.calendar-container {
-			display: flex;
-			align-items: center;
-		}
-
-		.calendar-img {
-			width: 34px;
-			/* Adjust the size as needed */
-			height: auto;
-			margin-right: 5px;
-			/* Adjust spacing as needed */
-		}
-
-		.date-and-day {
-			font-size: 15px;
-		}
-
-		.notice-event p {
-			border-bottom: 0.5px solid rgba(0, 0, 0, 0.189);
-			padding-bottom: 10px;
-			/* Add a black line under every news item except the last one */
-		}
+		
 	</style>
 
 

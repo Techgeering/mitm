@@ -58,22 +58,6 @@
             background: linear-gradient(to left, #2e48f2 0%, #40dfff 100%);
         }
 
-        .image-container {
-            text-align: center;
-        }
-
-        .image-container img {
-            width: 185px;
-            /* Adjust the width of the images */
-            height: 185px;
-            /* Adjust the height of the images */
-            margin-bottom: 10px;
-            border: 2px solid #000;
-            /* Add a border around the images */
-            border-radius: 50%;
-            /* Make the images circular */
-        }
-
 
 
         /* Add styles for carousel indicators */

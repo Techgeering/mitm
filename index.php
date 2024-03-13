@@ -121,9 +121,9 @@
 					</div>
 				</div> -->
 				
-			<div class="" >
-				<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
-			</div>
+				<div class="" >
+					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
+				</div>
 			</div>
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
