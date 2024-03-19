@@ -95,12 +95,13 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
+			
 			<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
 							<a href="index">
-								<img src="assets/img/logos1.png" class="img-fluid" />
+								<img src="assets/img/logos1.png" class="img-fluid ms-4" />
 							</a>
 						</div>
 						<div class="col-9 text-center head-name">
@@ -121,10 +122,11 @@
 					</div>
 				</div>
 				
-				<!-- <div class="" >
+				<!-- <div>
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
 			</div>
+			
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
 			<div class="third-bg-color">
@@ -449,7 +451,7 @@
 
 	<!-- home page start-->
 	<div id="carouselExampleCaptions" class="carousel slide carousel-position" data-bs-ride="carousel"
-		style="margin-top: -54px;">
+		style="margin-top: 11px;">
 		<div class="carousel-indicators indicator-z-index">
 			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
 				aria-current="true" aria-label="Slide 1"></button>

@@ -95,12 +95,13 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
-			<div class="second-nav-bg">
+			
+		<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
 							<a href="index">
-								<img src="assets/img/logos1.png" class="img-fluid" />
+								<img src="assets/img/logos1.png" class="img-fluid ms-4" />
 							</a>
 						</div>
 						<div class="col-9 text-center head-name">
@@ -121,7 +122,7 @@
 					</div>
 				</div>
 				
-				<!-- <div class="" >
+				<!-- <div>
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
 			</div>

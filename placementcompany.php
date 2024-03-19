@@ -97,29 +97,36 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
-			<div class="second-nav-bg">
+			
+		<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
 							<a href="index">
-								<img src="assets/img/logos1.png" class="img-fluid">
+								<img src="assets/img/logos1.png" class="img-fluid ms-4" />
 							</a>
 						</div>
 						<div class="col-9 text-center head-name">
-							<h3>Modern Institute of Technology & Management (MITM),BHUBANESWAR</h3>
-							<p>(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE & VT,ODISHA)</p>
+							<h3>
+								Modern Institute of Technology & Management (MITM),BHUBANESWAR
+							</h3>
+							<p>
+								(APPROVED BY AICTE,NEW DELHI,AFFILIATED TO BPUT,SCTE &
+								VT,ODISHA)
+							</p>
 						</div>
 						<div class="col-1 second-nav-position">
-							<img src="assets/img/logo2.png" class="img-fluid" alt="logoimg">
+							<img src="assets/img/logo2.png" class="img-fluid" alt="logoimg" />
 						</div>
 						<div class="col-1 second-nav-position">
-							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg">
+							<img src="assets/img/logo31.png" class="img-fluid" alt="logoimg" />
 						</div>
-						<!-- <div class="col-1 second-nav-position">
-							<img src="assets/img/logo4.png" class="img-fluid" alt="logoimg">
-						</div> -->
 					</div>
 				</div>
+				
+				<!-- <div>
+					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
+				</div> -->
 			</div>
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
@@ -129,20 +136,36 @@
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu1"
-									role="button" data-bs-toggle="dropdown" aria-expanded="false">Discover</a>
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu1">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="about">About Us</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="chairmansays">Chairman Speaks</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="principalsays">Principal Speaks</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="faculty">Faculties</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="accredation">Accredation</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="life">Life @ MITM</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="about">About MITM</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="chairmansays">Chairperson Message</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="principalsays">Principal Message</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Vision & Mission</a>
+									</li>
+									<!-- <li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="faculty">Faculties</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="accredation">Accreditation</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="life">Life
+											@ MITM</a>
+									</li> -->
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="mission">Vission & Mission</a></li>
 						  <li><a class="dropdown-item dropdown-menu-hover" href="infra">Infrastructure</a></li> -->
 								</ul>
@@ -153,26 +176,68 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="ugcourse">UG</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="pgcourse">PG</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="polytechnic">Polytechnic</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="ugcourse">UG</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="pgcourse">PG</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="polytechnic">Polytechnic</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="prospective">Prospective</a></li>
 						  <li><a class="dropdown-item dropdown-menu-hover" href="fees">fees</a></li> -->
 								</ul>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color "
+							<li class="nav-item dropdown">
+								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="faculty">Faculty</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">All Department</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- <ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color"
 									href="https://www.bput.ac.in/">Admissions</a>
+							</li>
+						</ul> -->
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu2"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Eligibility</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Fee Structure</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Scholarship</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="fascilites">Fascilities</a>
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="fascilites">Facilities</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav">
@@ -180,73 +245,68 @@
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu3"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Examination</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu3">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="https://www.bput.ac.in/exam-info.php">Notice</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="http://bputexam.in/schedule.aspx">Schedule</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="https://www.bput.ac.in/exam-info">Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="http://bputexam.in/schedule.aspx">Schedule</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="http://www.bputexam.in/StudentSection/ResultPublished/StudentResult.aspx">Result</a>
 									</li>
-									<!-- <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="department">Department</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cell">Cell</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="seminar">Seminar & Workshop</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="award">Award & Certificate</a></li> -->
 								</ul>
 							</li>
 						</ul>
-						<!-- <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu4">
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="laboratories">Laboratories</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="libraary">Libraary</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="medical">Medical Facility</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="hostel">Hostel</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="transport">Transport</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="cultural">Cultural Events & Sports</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="canteen">Canteen</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="wifi">Wifi Campus</a></li>
-					  </ul>
-					</li>
-			  </ul> -->
-						<!-- <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Note(s)</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu6">
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stnote">B.Tech 1st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndnote">B.Tech 2st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdnote">B.Tech 3st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thnote">B.Tech 4st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thnote">B.Tech 5st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thnote">B.Tech 6st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thnote">B.Tech 7st Semester</a></li>
-					  </ul>
-					</li>
-			  </ul>
-			  <ul class="navbar-nav">
-				<li class="nav-item dropdown">
-						<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lecture Video(s)</a>
-						<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu7">
-						   <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech1stvideo">B.Tech 1st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech2ndvideo">B.Tech 2st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech3rdvideo">B.Tech 3st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech4thvideo">B.Tech 4st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech5thvideo">B.Tech 5st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover" href="btech6thvideo">B.Tech 6st Semester</a></li>
-						  <li><a class="dropdown-item dropdown-menu-hover" href="btech7thvideo">B.Tech 7st Semester</a></li>
-					  </ul>
-					</li>
-			  </ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview">Overview</a></li>
-									<li><a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementcompany">Company</a></li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="placementoverview">Overview</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="placementcompany">Company</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
+								</ul>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">Life @ MITM</a>
+								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Infrastructure</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Hostel</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Canteen</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Transportation</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Surrounding</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Sports Complex</a>
+									</li>
+									
 								</ul>
 							</li>
 						</ul>
@@ -255,21 +315,37 @@
 				  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
 				</li>
 			  </ul> -->
-						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="notice">Notice</a>
-							</li>
-						</ul>
-						<ul class="navbar-nav">
-							<li class="nav-item ">
-								<a class="nav-link active third-menu-color " href="contact">Contact Us</a>
-							</li>
-						</ul>
 						<!-- <ul class="navbar-nav">
-				<li class="nav-item ">
-				   <a class="nav-link active third-menu-color " href="career" >Career</a>
-				</li>
-			  </ul> -->
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="notice">Notice</a>
+							</li>
+						</ul> -->
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">Notice</a>
+								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">BPUT Real Time Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">College Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="javascript:void(0)">Exam Notice</a>
+									</li>
+									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
+								</ul>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active third-menu-color" href="contact">Contact Us</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

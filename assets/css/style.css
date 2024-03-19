@@ -50,10 +50,10 @@ body{
 }
 .dropdown-menu-box-position{
     padding: 0px 0px;
-    margin-top: -6px !important;
+    margin-top: 0px !important;
 }
 .dropdown-menu-hover:hover{
-    background-color: #6251ac !important;
+    background: linear-gradient(to top, #40dfff 0%, #2e48f2 100%) !important;
     color: #fff ;
 }
 .dropdown-content {
@@ -878,6 +878,10 @@ a{
   font-style: unset;
 }
 
+.head-name h3{
+  font-size: 27px !important;
+}
+
 .abt-sec{
   margin-top: 175px;
 }
@@ -946,7 +950,7 @@ a{
 
 
 .abt-uss{
-  margin-top: 166px;
+  margin-top: 149px;
   /* background: linear-gradient(261deg, #00000005 18.75%, #3d46601c 0 31.25%, #0000 0), repeating-linear-gradient(45deg, #888fca08 -6.25% 6.25%, #ebe1c25e 0 18.75%); */
   /* background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.05) 100%);  */
   /* background: repeating-linear-gradient(39deg, #6165bd0f, #444cf72b 5px, #25197c1a 5px, #0b04880d 25px); */
