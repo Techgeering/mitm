@@ -453,62 +453,152 @@
 
 	<!-- FOOTER section START-->
 	<footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png);">
+		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
 			<div class="footer-bg-color">
-				<div class="container ">
+				<div class="container">
 					<div class="row text-position">
 						<div class="col-lg-2">
-							<h4 class="footer-heading-color">QUICK LINKS</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">NPTEL</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Swayam</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">DELNET</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Placement Overview</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">NDL</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">E-SHODHSINDHU</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">ERP</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Feedback</a></div>
+							<h4 class="footer-heading-color text-uppercase">Activities & Events</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Festivals</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Sports</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Workshops</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Industry Tours</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Seminars & Conference</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Annual Function</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Tech. Fest</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase">Students</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Rules & Regulation</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Student Affairs</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Alumni Network</a>
+							</div>
 						</div>
 						<div class="col-lg-2">
 							<h4 class="footer-heading-color">ABOUT US</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Mission & Vision</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Chairman's Message</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Principal's Message</a></div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">About MITM</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Chairman's Message</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Principal's Message</a>
+							</div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
 							  <p>We will send out weekly newest article and some great offers</p>
 							  <form class="" action="" method="POST" id="newsletterform" role="form">
 									 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
 									 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
 								</form> -->
+							<h4 class="footer-heading-color text-uppercase ">Gallery</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Photo Collection</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Video Collection</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase ">Library</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Photos</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement & Photo</a>
+							</div>
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Computer Science & Engineering</a>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Computer Science & Engineering</a>
 							</div>
-							<div><a href="javascript:void(0)" class="link-decoration">Electronics & Comm.
-									Engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Electrical & Electronics
-									Engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Mechanical Engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Civil Engineering</a></div>
-							<h4 class="footer-heading-color">DIPLOMA</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Civil Engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Mechanical engineering</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a></div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Electronics & Comm. Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Electrical & Electronics
+									Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Mechanical Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase">research and publications</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Publication Details of Teachers</a>
+							</div>
+							<!-- <h4 class="footer-heading-color">DIPLOMA</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Mechanical engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+							</div> -->
 						</div>
 						<div class="col-lg-2">
-							<h4 class="footer-heading-color">ADMISSIONS</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Our Career Advisor</a></div>
-							<h4 class="footer-heading-color">DIPLOMA</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a></div>
-							<h4 class="footer-heading-color">PLACEMENTS</h4>
-							<div><a href="javascript:void(0)" class="link-decoration">Placement Overview</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Placement Track Record</a></div>
-							<div><a href="javascript:void(0)" class="link-decoration">Our Recruiters</a></div>
+							<h4 class="footer-heading-color text-uppercase">Cell Committee</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Grievance Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Admission Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Help Desk</a>
+							</div>
+							<!-- <h4 class="footer-heading-color">DIPLOMA</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a>
+							</div> -->
+							<h4 class="footer-heading-color text-uppercase">training and PLACEMENTS</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Placement Track Record</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Our Recruiters</a>
+							</div>
 						</div>
 
 						<div class="col-lg-3">
@@ -516,15 +606,21 @@
 								<h4 class="footer-heading-color">CONTACT US</h4>
 								<div class="fw-bold">Corporate Office:</div>
 								<div>HIG-44 ,</div>
-								<div>Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar</div>
+								<div>
+									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
+								</div>
 								<div>Dist: Khurda, Odisha, Pin: 751142</div>
 								<div>Email Id : info@mitm.com</div>
 								<div>Phone No : 094398 97178</div>
-								<div class="fw-bold">Campus : </div>
-								<div>Modern Institute of Technology & Management (MITM),Bhubaneswar</div>
+								<div class="fw-bold">Campus :</div>
+								<div>
+									Modern Institute of Technology & Management
+									(MITM),Bhubaneswar
+								</div>
 								<div>Santi Niketan, Ghangapatana</div>
-								<div>PO: Kantabada, Bhubaneswar
-									Dist: Khurda, Odisha, Pin: 752054</div>
+								<div>
+									PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+								</div>
 							</div>
 						</div>
 					</div>
@@ -532,9 +628,11 @@
 			</div>
 		</div>
 		<div class="bg-dark text-white">
-			<p class="mb-0 text-center">&copy;<span id="year"></span> All Right Reserved | Powered by <a
-					class="techgeering-decoration" href="https://www.techgeering.com/" target="_blank">T<span
-						class="e-color">e</span>chgeering</a></p>
+			<p class="mb-0 text-center">
+				&copy;<span id="year"></span> All Right Reserved | Powered by
+				<a class="techgeering-decoration" href="https://www.techgeering.com/" target="_blank">T<span
+						class="e-color">e</span>chgeering</a>
+			</p>
 		</div>
 	</footer>
 	<!-- FOOTER section end-->
