@@ -481,7 +481,7 @@
 	</section>
 
 
-	<section class="abt-sec-col">
+	<!-- <section class="abt-sec-col">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 ">
@@ -558,7 +558,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- FOOTER section START-->
 	<footer class="">
