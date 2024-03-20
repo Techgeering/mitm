@@ -674,7 +674,7 @@
 				</div>
 				<div class="col-md-5">
 					<h2 class="text-center text-uppercase" style="color: #3498db">
-						Latest News
+						NOTICE
 					</h2>
 					<div class="news-events-container">
 						<div class="scrolling-news-box">
