@@ -266,7 +266,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview">Overview</a>
+											href="placementcamp">Overview</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -419,7 +419,7 @@
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
+									<li><a class="dropdown-item" href="placementcamp.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
