@@ -27,7 +27,7 @@
 <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
 <!-- Template Javascript -->
- <script src="assets/js/main.js?v=1.9"></script>
+ <script src="assets/js/main.js?v=2.2"></script>
 <!-- <script src="assets/js/main1.js"></script> -->
 
 <!-- pagination -->

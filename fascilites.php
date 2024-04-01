@@ -504,7 +504,7 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="assets/img/hostel-1.jpg" class="img-fluid">
+                                                <img src="assets/img/home13.jpg" class="img-fluid">
                                             </div>
                                             <div class="card-img-overlay text-uppercase fascility-carousel">Hostel Room
                                             </div>
@@ -515,7 +515,7 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="assets/img/hostel-2.jpg" class="img-fluid">
+                                                <img src="assets/img/home14.jpg" class="img-fluid">
                                             </div>
                                             <div class="card-img-overlay text-uppercase fascility-carousel">hostel</div>
                                         </div>
@@ -525,7 +525,7 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img src="assets/img/hostel-3.jpg" class="img-fluid">
+                                                <img src="assets/img/home15.jpg" class="img-fluid">
                                             </div>
                                             <div class="card-img-overlay text-uppercase fascility-carousel">Hostel
                                                 canteen
