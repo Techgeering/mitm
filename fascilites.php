@@ -691,7 +691,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/smart-1.jpg" class="img-fluid">
+                                                    <img src="assets/img/home16.jpg" class="img-fluid">
                                                 </div>
                                                 <!-- <div class="card-img-overlay text-uppercase fascility-carousel">Hostel Room</div> -->
                                             </div>
@@ -701,7 +701,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/smart-2.jpg" class="img-fluid">
+                                                    <img src="assets/img/home17.jpg" class="img-fluid">
                                                 </div>
                                                 <!-- <div class="card-img-overlay text-uppercase fascility-carousel">hostel</div> -->
                                             </div>
@@ -711,7 +711,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/smart-3.jpg" class="img-fluid">
+                                                    <img src="assets/img/home18.jpg" class="img-fluid">
                                                 </div>
                                                 <!-- <div class="card-img-overlay text-uppercase fascility-carousel">Hostel canteen</div> -->
                                             </div>
@@ -1067,7 +1067,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/canteen-1.jpg" class="img-fluid">
+                                                    <img src="assets/img/canteen18.jpg" class="img-fluid">
                                                 </div>
                                                 <div class="card-img-overlay text-uppercase fascility-carousel">canteen
                                                     Room
@@ -1079,7 +1079,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/canteen-2.jpg" class="img-fluid">
+                                                    <img src="assets/img/canteen17.jpg" class="img-fluid">
                                                 </div>
                                                 <div class="card-img-overlay text-uppercase fascility-carousel">canteen
                                                     food
@@ -1091,7 +1091,7 @@
                                         <div class="col-md-12">
                                             <div class="card">
                                                 <div class="card-img">
-                                                    <img src="assets/img/canteen-3.jpg" class="img-fluid">
+                                                    <img src="assets/img/canteen19.jpg" class="img-fluid">
                                                 </div>
                                                 <div class="card-img-overlay text-uppercase fascility-carousel">
                                                     cafeteria
