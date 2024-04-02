@@ -840,7 +840,7 @@
 	</div>
 	<!-- TEACHING APPROACH section end-->
 	<!-- total count section start-->
-	<div class="total-no-color" style="background-image: url('assets/img/home7.jpg')">
+	<div class="total-no-color" style="background-image: url('assets/img/home7.JPG')">
 		<div class="total-no-color-shadow">
 			<div class="container">
 				<h1 class="facility pt-3 text-uppercase">Facilities</h1>
