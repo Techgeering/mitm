@@ -462,7 +462,7 @@
 		</div>
 		<div class="carousel-inner" style="height: 437px">
 			<div class="carousel-item active img-carousel">
-				<img src="assets/img/home4.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home4.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation">education</h1>
@@ -520,7 +520,7 @@
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/home7.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home7.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation2 animation">education2</h1>
@@ -578,7 +578,7 @@
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/home.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation animation3">education3</h1>
@@ -973,7 +973,7 @@
 	<!-- testimonial section end-->
 	<!-- FOOTER section START-->
 	<footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/home6.jpg)">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
 			<div class="footer-bg-color">
 				<div class="container">
 					<div class="row text-position">
