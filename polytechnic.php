@@ -270,7 +270,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview">Overview</a>
+											href="placementcamp">Overview</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -423,7 +423,7 @@
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
+									<li><a class="dropdown-item" href="placementcamp.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
@@ -462,6 +462,9 @@
       <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">
         Polytechnic
       </h3>
+	  <h3 class="text-center" id="heading2" onclick="showContent('content2', 'heading2')">
+        Polytechnic
+      </h3>
       <div class="line" style="border-right: 4px solid #ff5733"></div>
     </div>
 
@@ -488,6 +491,28 @@
         <img src="assets/img/cs-2.png" alt="" class="cs-img" />
         <img src="assets/img/cs-3.jpg" alt="" class="cs-img" />
       </div>
+	  <!-- <div id="content2" style="display: block">
+        <h4 class="text-uppercase mission-head">polytechnic</h4>
+        <p class="ug-paradt">
+          Polytechnic is a diploma or vocational course in which an institute
+          focuses on delivering technical education. Generally, polytechnic
+          courses are a three year programme after completion of which
+          candidates obtain a certificate. Polytechnic is basically an
+          educational institution that offers hands-on practical education and
+          training in technical fields such as engineering, computer sciences,
+          and applied sciences.
+        </p>
+        <p>
+          Polytechnic is a professional qualification. Polytechnic provides a
+          better foothold, than a B.Sc degree as it emphasises on practical
+          learning. For a good career growth, students should opt for science
+          or engineering stream. This decision should be based on the interest
+          and the aptitude of the individual.
+        </p>
+        <img src="assets/img/cs-1.jpg" alt="" class="cs-img" />
+        <img src="assets/img/cs-2.png" alt="" class="cs-img" />
+        <img src="assets/img/cs-3.jpg" alt="" class="cs-img" />
+      </div> -->
     </div>
   </div>
  </div>

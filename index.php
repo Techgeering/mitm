@@ -266,7 +266,7 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="placementoverview">Overview</a>
+											href="placementcamp">Overview</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -419,7 +419,7 @@
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementoverview.php">Overview</a></li>
+									<li><a class="dropdown-item" href="placementcamp.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
 									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
@@ -462,7 +462,7 @@
 		</div>
 		<div class="carousel-inner" style="height: 437px">
 			<div class="carousel-item active img-carousel">
-				<img src="assets/img/carousel1.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home4.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation">education</h1>
@@ -520,7 +520,7 @@
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/carousel2.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home7.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation2 animation">education2</h1>
@@ -578,7 +578,7 @@
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/carousel3.jpg" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/home.JPG" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
 						<h1 class="animation animation3">education3</h1>
@@ -840,7 +840,7 @@
 	</div>
 	<!-- TEACHING APPROACH section end-->
 	<!-- total count section start-->
-	<div class="total-no-color" style="background-image: url('assets/img/totalbg.jpg')">
+	<div class="total-no-color" style="background-image: url('assets/img/home7.JPG')">
 		<div class="total-no-color-shadow">
 			<div class="container">
 				<h1 class="facility pt-3 text-uppercase">Facilities</h1>
@@ -973,7 +973,7 @@
 	<!-- testimonial section end-->
 	<!-- FOOTER section START-->
 	<footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
 			<div class="footer-bg-color">
 				<div class="container">
 					<div class="row text-position">

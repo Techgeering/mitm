@@ -286,3 +286,5 @@ function myfcn3(idx, notice, date1) {
   document.getElementById("updatenotice").value = notice;
   document.getElementById("dateid2").value = date1;
 }
+
+
