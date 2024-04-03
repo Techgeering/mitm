@@ -103,15 +103,18 @@
             height: 100%;
           }
           
-          .team .member .pic {
-            overflow: hidden;
-            width: 180px;
-            border-radius: 50%;
-          }
-          
-          .team .member .pic img {
-            transition: ease-in-out 0.3s;
-          }
+		  .team .member .pic {
+    overflow: hidden;
+    width: 180px; /* Adjust this value as needed */
+    height: 180px; /* Adjust this value as needed to make it square */
+    border-radius: 50%;
+}
+
+.team .member .pic img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
           
           .team .member:hover {
             transform: translateY(-10px);
@@ -601,79 +604,86 @@
       
           <div class="row">
       
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/mechanical.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Akash Das</h4>
-                  <span>HOD of Computer Science & Master of Computer Application(MCA)</span>
+                  <h4>Mr. Ajit Kumar Dhal</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>HOD of Mechanical Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/cse.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Shalini Routray</h4>
-                  <span>Hod of Civil Department</span>
+                  <h4>Mr. Binayak Sahoo</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>Hod of Computer Science & Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/civil.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Rashmikant Panda</h4>
-                  <span>HOD of Mechanical Department</span>
+                  <h4>Mr. Suryapratap Biswajit Puhan</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>HOD of Civil Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/ece.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Sraddha Mishra</h4>
-                  <span>HOD of Electrical Engineering</span>
+                  <h4>Mrs. Shradhanjali Panda<h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>HOD of Electronics and Communication Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/eee.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Sagar Sethy</h4>
-                  <span>HOD of Electrical and Electronics Department</span>
+                  <h4>Mr. Debasish Hota</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>HOD of Electrical and Electronics Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/ee.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Anuja Barik</h4>
-                  <span>Hod Of Master of Bussiness Adminstration(MBA)</span>
+                  <h4>Mr. Girija Sankar Panigrahi</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>Hod Of Electrical Engineering</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="assets/img/member/mba.jpg" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4>Paresh Das</h4>
-                  <span>HOD of Polytechnic</span>
+                  <h4>Mr. Naresh Kumar Ojha</h4>
+				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
+                  <span>HOD of MBA</span>
                 </div>
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <!-- <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
                 <div class="member-info">
                   <h4>Amanda Jepson</h4>
                   <span>Accountant</span>
@@ -681,15 +691,15 @@
               </div>
             </div>
       
-            <div class="col-lg-4 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <!-- <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div> -->
+                <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
                 <div class="member-info">
                   <h4>Amanda Jepson</h4>
                   <span>Accountant</span>
                 </div>
               </div>
-            </div>
+            </div> -->
       
           </div>
       

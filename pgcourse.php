@@ -512,17 +512,19 @@
   <div class="d-none d-lg-block">
     <div class="container ug-box py-2">
       <div class="col-4 ug-deta">
-        <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">Master of Computer
-          Application</h3>
+        <!-- <h3 class="active text-center" id="heading1" onclick="showContent('content1', 'heading1')">Master of Computer
+          Application</h3> -->
         <div class="line" style="border-right: 4px solid #ff5733;"></div>
 
-        <h3 class="text-center" id="heading2" onclick="showContent('content2', 'heading2')">Master in Business
+        <h3 class="active text-center" id="heading2">Master in Business
           Adminstartion</h3>
+        <!-- <h3 class="active text-center" id="heading2" onclick="showContent('content2', 'heading2')">Master in Business
+          Adminstartion</h3> -->
         <div class="line" style="border-right: 4px solid #33ff57;"></div>
       </div>
 
       <div class="col-8 ug-cont">
-        <div id="content1" style="display: block;">
+        <!-- <div id="content1" style="display: block;">
           <h4 class="text-uppercase mission-head">Master of Computer Application(MCA)</h4>
           <p class="ug-paradt">
             The Master of Computer Applications (MCA) program is a two-year professional post-graduate program. This
@@ -537,10 +539,12 @@
           <img src="assets/img/cs-1.jpg" alt="" class="cs-img">
           <img src="assets/img/cs-2.png" alt="" class="cs-img">
           <img src="assets/img/cs-3.jpg" alt="" class="cs-img">
-        </div>
+        </div> -->
 
-        <div id="content2" style="display: none;">
+        <div id="content2" style="display: block;">
           <h4 class="text-uppercase mission-head">Master in Business Adminstartion(MBA)</h4>
+		  <h4><strong>Seat Available:</strong>180</h4>
+		  <h4><strong>Courses:</strong>HR , Finance , Marketing , OPeration Management & IT</h4>
           <p class="ug-paradt">
             MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on
             developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates
