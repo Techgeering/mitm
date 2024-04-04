@@ -153,7 +153,7 @@ body{
       width: 0;
       position: fixed;
       z-index: 99;
-      top: 50px;
+      top: 0px;
       left: 340px;
       background-color: #fff;
       overflow-x: hidden;

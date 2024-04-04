@@ -52,6 +52,7 @@
 		.h1,
 		h1 {
 			font-size: 1.5rem;
+			color: #42defb;
 		}
 
 		.container-fluid {
@@ -75,12 +76,10 @@
 			margin-top: 20px;
 			padding: 1px;
 			transition: transform .5s;
-			filter: grayscale(100%);
 		}
 
 
 		.img-hover-zoom--colorize:hover img {
-			filter: grayscale(0);
 			transform: scale(1.05);
 		}
 
@@ -225,6 +224,7 @@
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
 			</div>
+
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
 			<div class="third-bg-color">
@@ -299,10 +299,10 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="faculty">Faculty</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">All Department</a>
-									</li>
+									</li> -->
 								</ul>
 							</li>
 						</ul>
@@ -433,6 +433,10 @@
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Exam Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="committee.html">Committee Members</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
@@ -703,7 +707,7 @@
 
 	<!-- FOOTER section START-->
 	<footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
 			<div class="footer-bg-color">
 				<div class="container">
 					<div class="row text-position">
@@ -744,19 +748,19 @@
 						<div class="col-lg-2">
 							<h4 class="footer-heading-color">ABOUT US</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">About MITM</a>
+								<a href="about" class="link-decoration">About MITM</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Chairman's Message</a>
+								<a href="chairmansays" class="link-decoration">Chairperson's Message</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Principal's Message</a>
+								<a href="principalsays" class="link-decoration">Principal's Message</a>
 							</div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
 							  <p>We will send out weekly newest article and some great offers</p>
@@ -783,23 +787,23 @@
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Computer Science & Engineering</a>
+								<a href="ugcourse" class="link-decoration">Computer Science & Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electronics & Comm. Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electronics & Comm. Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical & Electronics
+								<a href="ugcourse" class="link-decoration">Electrical & Electronics
 									Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Mechanical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Mechanical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electrical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+								<a href="ugcourse" class="link-decoration">Civil Engineering</a>
 							</div>
 							<h4 class="footer-heading-color text-uppercase">research and publications</h4>
 							<div>
@@ -822,7 +826,7 @@
 								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Grievance Cell</a>
+								<a href="grievance.html" class="link-decoration">Grievance Cell</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
@@ -845,10 +849,10 @@
 								<a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Placement Track Record</a>
+								<a href="placementcamp" class="link-decoration">Placement Track Record</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Our Recruiters</a>
+								<a href="placementcompany" class="link-decoration">Our Recruiters</a>
 							</div>
 						</div>
 
@@ -861,16 +865,207 @@
 									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
 								</div>
 								<div>Dist: Khurda, Odisha, Pin: 751142</div>
-								<div>Email Id : info@mitm.com</div>
-								<div>Phone No : 094398 97178</div>
+								<div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
+								</div>
+								<div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
+
 								<div class="fw-bold">Campus :</div>
 								<div>
-									Modern Institute of Technology & Management
-									(MITM),Bhubaneswar
+									<div>
+										Modern Institute of Technology & Management
+										(MITM),Bhubaneswar
+									</div>
+									<div>Santi Niketan, Ghangapatana</div>
+									<div>
+										PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									</div>
 								</div>
-								<div>Santi Niketan, Ghangapatana</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-dark text-white">
+			<p class="mb-0 text-center">
+				&copy;<span id="year"></span> All Right Reserved | Powered by
+				<a class="techgeering-decoration" href="https://www.techgeering.com/" target="_blank">T<span
+						class="e-color">e</span>chgeering</a>
+			</p>
+		</div>
+	</footer><footer class="">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
+			<div class="footer-bg-color">
+				<div class="container">
+					<div class="row text-position">
+						<div class="col-lg-2">
+							<h4 class="footer-heading-color text-uppercase">Activities & Events</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Festivals</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Sports</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Workshops</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Industry Tours</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Seminars & Conference</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Annual Function</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Tech. Fest</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase">Students</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Rules & Regulation</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Student Affairs</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Alumni Network</a>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<h4 class="footer-heading-color">ABOUT US</h4>
+							<div>
+								<a href="about" class="link-decoration">About MITM</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
+							</div>
+							<div>
+								<a href="chairmansays" class="link-decoration">Chairperson's Message</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
+							</div>
+							<div>
+								<a href="principalsays" class="link-decoration">Principal's Message</a>
+							</div>
+							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
+							  <p>We will send out weekly newest article and some great offers</p>
+							  <form class="" action="" method="POST" id="newsletterform" role="form">
+									 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
+									 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
+								</form> -->
+							<h4 class="footer-heading-color text-uppercase ">Gallery</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Photo Collection</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Video Collection</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase ">Library</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Photos</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement &
+									Photo</a>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<h4 class="footer-heading-color">DEPARTMENTS</h4>
+							<div>
+								<a href="ugcourse" class="link-decoration">Computer Science & Engineering</a>
+							</div>
+							<div>
+								<a href="ugcourse" class="link-decoration">Electronics & Comm. Engineering</a>
+							</div>
+							<div>
+								<a href="ugcourse" class="link-decoration">Electrical & Electronics
+									Engineering</a>
+							</div>
+							<div>
+								<a href="ugcourse" class="link-decoration">Mechanical Engineering</a>
+							</div>
+							<div>
+								<a href="ugcourse" class="link-decoration">Electrical Engineering</a>
+							</div>
+							<div>
+								<a href="ugcourse" class="link-decoration">Civil Engineering</a>
+							</div>
+							<h4 class="footer-heading-color text-uppercase">research and publications</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Publication Details of Teachers</a>
+							</div>
+							<!-- <h4 class="footer-heading-color">DIPLOMA</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Mechanical engineering</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+							</div> -->
+						</div>
+						<div class="col-lg-2">
+							<h4 class="footer-heading-color text-uppercase">Cell Committee</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
+							</div>
+							<div>
+								<a href="grievance.html" class="link-decoration">Grievance Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Admission Cell</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Help Desk</a>
+							</div>
+							<!-- <h4 class="footer-heading-color">DIPLOMA</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a>
+							</div> -->
+							<h4 class="footer-heading-color text-uppercase">training and PLACEMENTS</h4>
+							<div>
+								<a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
+							</div>
+							<div>
+								<a href="placementcamp" class="link-decoration">Placement Track Record</a>
+							</div>
+							<div>
+								<a href="placementcompany" class="link-decoration">Our Recruiters</a>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="text-size">
+								<h4 class="footer-heading-color">CONTACT US</h4>
+								<div class="fw-bold">Corporate Office:</div>
+								<div>HIG-44 ,</div>
 								<div>
-									PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
+								</div>
+								<div>Dist: Khurda, Odisha, Pin: 751142</div>
+								<div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
+								</div>
+								<div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
+
+								<div class="fw-bold">Campus :</div>
+								<div>
+									<div>
+										Modern Institute of Technology & Management
+										(MITM),Bhubaneswar
+									</div>
+									<div>Santi Niketan, Ghangapatana</div>
+									<div>
+										PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									</div>
 								</div>
 							</div>
 						</div>

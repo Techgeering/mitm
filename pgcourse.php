@@ -156,8 +156,8 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
-			
-    <div class="second-nav-bg">
+
+			<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
@@ -182,11 +182,12 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- <div>
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
 			</div>
+
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
 			<div class="third-bg-color">
@@ -261,10 +262,10 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="faculty">Faculty</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">All Department</a>
-									</li>
+									</li> -->
 								</ul>
 							</li>
 						</ul>
@@ -365,7 +366,7 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Sports Complex</a>
 									</li>
-									
+
 								</ul>
 							</li>
 						</ul>
@@ -395,6 +396,10 @@
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Exam Notice</a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="committee.html">Committee Members</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
@@ -544,7 +549,7 @@
         <div id="content2" style="display: block;">
           <h4 class="text-uppercase mission-head">Master in Business Adminstartion(MBA)</h4>
 		  <h4><strong>Seat Available:</strong>180</h4>
-		  <h4><strong>Courses:</strong>HR , Finance , Marketing , OPeration Management & IT</h4>
+		  <h4><strong>Streams:</strong>HR , Finance , Marketing , Operation Management , IT</h4>
           <p class="ug-paradt">
             MBA stands for Master of Business Administration. It's a two-year postgraduate program that focuses on
             developing skills and knowledge in the fields of business and management. MBAs are ideal for candidates
@@ -619,7 +624,7 @@
 
  <!-- FOOTER section START-->
  <footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
 			<div class="footer-bg-color">
 				<div class="container">
 					<div class="row text-position">
@@ -660,19 +665,19 @@
 						<div class="col-lg-2">
 							<h4 class="footer-heading-color">ABOUT US</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">About MITM</a>
+								<a href="about" class="link-decoration">About MITM</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Chairman's Message</a>
+								<a href="chairmansays" class="link-decoration">Chairperson's Message</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Principal's Message</a>
+								<a href="principalsays" class="link-decoration">Principal's Message</a>
 							</div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
 							  <p>We will send out weekly newest article and some great offers</p>
@@ -692,29 +697,30 @@
 								<a href="javascript:void(0)" class="link-decoration">Photos</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement & Photo</a>
+								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement &
+									Photo</a>
 							</div>
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Computer Science & Engineering</a>
+								<a href="ugcourse" class="link-decoration">Computer Science & Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electronics & Comm. Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electronics & Comm. Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical & Electronics
+								<a href="ugcourse" class="link-decoration">Electrical & Electronics
 									Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Mechanical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Mechanical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electrical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+								<a href="ugcourse" class="link-decoration">Civil Engineering</a>
 							</div>
 							<h4 class="footer-heading-color text-uppercase">research and publications</h4>
 							<div>
@@ -737,7 +743,7 @@
 								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Grievance Cell</a>
+								<a href="grievance.html" class="link-decoration">Grievance Cell</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
@@ -760,10 +766,10 @@
 								<a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Placement Track Record</a>
+								<a href="placementcamp" class="link-decoration">Placement Track Record</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Our Recruiters</a>
+								<a href="placementcompany" class="link-decoration">Our Recruiters</a>
 							</div>
 						</div>
 
@@ -776,16 +782,20 @@
 									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
 								</div>
 								<div>Dist: Khurda, Odisha, Pin: 751142</div>
-								<div>Email Id : info@mitm.com</div>
-								<div>Phone No : 094398 97178</div>
+								<div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
+								</div>
+								<div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
+
 								<div class="fw-bold">Campus :</div>
 								<div>
-									Modern Institute of Technology & Management
-									(MITM),Bhubaneswar
-								</div>
-								<div>Santi Niketan, Ghangapatana</div>
-								<div>
-									PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									<div>
+										Modern Institute of Technology & Management
+										(MITM),Bhubaneswar
+									</div>
+									<div>Santi Niketan, Ghangapatana</div>
+									<div>
+										PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									</div>
 								</div>
 							</div>
 						</div>

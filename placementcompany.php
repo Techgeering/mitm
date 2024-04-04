@@ -57,7 +57,7 @@
 		<div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
 			<div class="container">
 				<div class="row">
-					<div class="col-3 ">
+					<div class="col-3">
 						<a href="https://www.facebook.com/share/cEx3aUwFEbeQ4EUQ/?mibextid=qi2Omg" class="top-icon"><i
 								class="fa fa-facebook top-fa-icon" aria-hidden="true"></i></a>
 						<a href="javascript:void(0)" class="top-icon"><i class="fa fa-twitter top-fa-icon twitter-color"
@@ -69,11 +69,12 @@
 					</div>
 					<div class="col-9">
 						<div class="top-email-no-position">
-							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i
-									class="fa fa-phone "></i> 094398 97178</a>
+							<a href="tel:+9194398 97178" class="top-nav-text no-border-line"><i class="fa fa-phone"></i>
+								094398 97178</a>
 
-							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing"><i
-									class="fa fa-envelope "></i> info@mitm.com</a>
+							<a href="mailto:info@mitm.edu.in" class="top-nav-text email-spacing">
+								<i class="fa fa-envelope"></i> info@mitm.edu.in
+							</a>
 						</div>
 					</div>
 				</div>
@@ -85,10 +86,10 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-lg-6">
-						<a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone "></i> 094398 97178</a>
+						<a href="tel:+9194398 97178" class="top-nav-text"><i class="fa fa-phone"></i> 094398 97178</a>
 					</div>
 					<div class="col-lg-6">
-						<a href="mailto:info@mitm.edu.in" class="top-nav-text "><i class="fa fa-envelope "></i>
+						<a href="mailto:info@mitm.edu.in" class="top-nav-text"><i class="fa fa-envelope"></i>
 							info@mitm.com</a>
 					</div>
 				</div>
@@ -97,8 +98,8 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
-			
-		<div class="second-nav-bg">
+
+			<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
@@ -123,11 +124,12 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- <div>
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
 			</div>
+
 			<!--second nav end for desktop view-->
 			<!--third nav start for desktop view-->
 			<div class="third-bg-color">
@@ -202,10 +204,10 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="faculty">Faculty</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">All Department</a>
-									</li>
+									</li> -->
 								</ul>
 							</li>
 						</ul>
@@ -306,7 +308,7 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Sports Complex</a>
 									</li>
-									
+
 								</ul>
 							</li>
 						</ul>
@@ -337,6 +339,10 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Exam Notice</a>
 									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="committee.html">Committee Members</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
 							</li>
@@ -354,8 +360,8 @@
 		<!--navbar start for mobile and tab view-->
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="" style="width: 100%;">
-					<a class="navbar-brand" href="index"><img src="assets/img/logos1.png" alt=""
+				<div class="">
+					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
 							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -365,40 +371,40 @@
 					</button>
 					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="margin-left: -3px;">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: -53px;">
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Discover
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="about">About Us</a></li>
+									<li><a class="dropdown-item" href="about.php">About Us</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="chairmansays">Chairman Speaks</a></li>
-									<li><a class="dropdown-item" href="principalsays">Principal Speaks</a></li>
-									<li><a class="dropdown-item" href="faculty">Faculties</a></li>
-									<li><a class="dropdown-item" href="accredation">Accredation</a></li>
-									<li><a class="dropdown-item" href="life">Life @ MITM</a></li>
+									<li><a class="dropdown-item" href="chairmansays.php">Chairman Speaks</a></li>
+									<li><a class="dropdown-item" href="principalsays.php">Principal Speaks</a></li>
+									<li><a class="dropdown-item" href="faculty.php">Faculties</a></li>
+									<li><a class="dropdown-item" href="accredation.php">Accreditation</a></li>
+									<li><a class="dropdown-item" href="life.php">Life @ MITM</a></li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Programmes
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="ugcourse">UG</a></li>
+									<li><a class="dropdown-item" href="ugcourse.php">UG</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="pgcourse">PG</a></li>
-									<li><a class="dropdown-item" href="polytechnic">Polytechnic</a></li>
+									<li><a class="dropdown-item" href="pgcourse.php">PG</a></li>
+									<li><a class="dropdown-item" href="polytechnic.php">Polytechnic</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
+							<li class="nav-item nav-side">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="fascilites">Fascilities</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="fascilites.php">Facilities</a>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Examinations
@@ -414,27 +420,23 @@
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item dropdown" style="margin-left: -80px;">
+							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">
 									Placement
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="placementcamp">Overview</a></li>
+									<li><a class="dropdown-item" href="placementcamp.php">Overview</a></li>
 									<!-- <li><hr class="dropdown-divider"></li> -->
-									<li><a class="dropdown-item" href="placementcompany">Company</a></li>
+									<li><a class="dropdown-item" href="placementcompany.php">Company</a></li>
 								</ul>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="notice">Notice</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="notice.php">Notice</a>
 							</li>
-							<li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link" href="contact">Contact Us</a>
+							<li class="nav-item nav-side">
+								<a class="nav-link" href="contact.php">Contact Us</a>
 							</li>
-
-							<!-- <li class="nav-item" style="margin-left: -80px;">
-								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -529,7 +531,7 @@
 
 	<!-- FOOTER section START-->
 	<footer class="">
-		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
+		<div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
 			<div class="footer-bg-color">
 				<div class="container">
 					<div class="row text-position">
@@ -570,19 +572,19 @@
 						<div class="col-lg-2">
 							<h4 class="footer-heading-color">ABOUT US</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">About MITM</a>
+								<a href="about" class="link-decoration">About MITM</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Chairman's Message</a>
+								<a href="chairmansays" class="link-decoration">Chairperson's Message</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Principal's Message</a>
+								<a href="principalsays" class="link-decoration">Principal's Message</a>
 							</div>
 							<!-- <h6 class="fw-bold">NEWSLETTER : </h6>
 							  <p>We will send out weekly newest article and some great offers</p>
@@ -602,29 +604,30 @@
 								<a href="javascript:void(0)" class="link-decoration">Photos</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement & Photo</a>
+								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement &
+									Photo</a>
 							</div>
 						</div>
 						<div class="col-lg-3">
 							<h4 class="footer-heading-color">DEPARTMENTS</h4>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Computer Science & Engineering</a>
+								<a href="ugcourse" class="link-decoration">Computer Science & Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electronics & Comm. Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electronics & Comm. Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical & Electronics
+								<a href="ugcourse" class="link-decoration">Electrical & Electronics
 									Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Mechanical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Mechanical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
+								<a href="ugcourse" class="link-decoration">Electrical Engineering</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
+								<a href="ugcourse" class="link-decoration">Civil Engineering</a>
 							</div>
 							<h4 class="footer-heading-color text-uppercase">research and publications</h4>
 							<div>
@@ -647,7 +650,7 @@
 								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Grievance Cell</a>
+								<a href="grievance.html" class="link-decoration">Grievance Cell</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
@@ -670,10 +673,10 @@
 								<a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Placement Track Record</a>
+								<a href="placementcamp" class="link-decoration">Placement Track Record</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Our Recruiters</a>
+								<a href="placementcompany" class="link-decoration">Our Recruiters</a>
 							</div>
 						</div>
 
@@ -686,16 +689,20 @@
 									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
 								</div>
 								<div>Dist: Khurda, Odisha, Pin: 751142</div>
-								<div>Email Id : info@mitm.com</div>
-								<div>Phone No : 094398 97178</div>
+								<div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
+								</div>
+								<div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
+
 								<div class="fw-bold">Campus :</div>
 								<div>
-									Modern Institute of Technology & Management
-									(MITM),Bhubaneswar
-								</div>
-								<div>Santi Niketan, Ghangapatana</div>
-								<div>
-									PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									<div>
+										Modern Institute of Technology & Management
+										(MITM),Bhubaneswar
+									</div>
+									<div>Santi Niketan, Ghangapatana</div>
+									<div>
+										PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+									</div>
 								</div>
 							</div>
 						</div>
