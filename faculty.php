@@ -33,7 +33,7 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -41,157 +41,104 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 	<title>MITM | About Us</title>
-    <style>
-        section {
-			margin-top: 130px;
-            padding: 60px 0;
-            overflow: hidden;
-          }
-          
-          .section-bg {
-            background-color: #f3f5fa;
-          }
-          
-          .section-title {
-            text-align: center;
-            padding-bottom: 30px;
-          }
-          
-          .section-title h2 {
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            position: relative;
-            color: #40e1fe;
-          }
-          
-          .section-title h2::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 120px;
-            height: 1px;
-            background: #ddd;
-            bottom: 1px;
-            left: calc(50% - 60px);
-          }
-          
-          .section-title h2::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 3px;
-            background: #47b2e4;
-            bottom: 0;
-            left: calc(50% - 20px);
-          }
-          
-          .section-title p {
-            margin-bottom: 0;
-          }
-          
-          .team .member {
-            position: relative;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            border-radius: 5px;
-            background: #fff;
-            transition: 0.5s;
-            height: 100%;
-          }
-          
-		  .team .member .pic {
-    overflow: hidden;
-    width: 180px; /* Adjust this value as needed */
-    height: 180px; /* Adjust this value as needed to make it square */
-    border-radius: 50%;
-}
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+		@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
-.team .member .pic img {
-    width: 100%; /* Ensures the image fills the container */
-    height: auto; /* Maintains aspect ratio */
-}
+		:root {
+			--font3: 'Roboto', sans-serif;
+		}
 
-          
-          .team .member:hover {
-            transform: translateY(-10px);
-          }
-          
-          .team .member .member-info {
-            padding-left: 30px;
-          }
-          
-          .team .member h4 {
-            font-weight: 700;
-            margin-bottom: 5px;
-            font-size: 20px;
-            color: #37517e;
-          }
-          
-          .team .member span {
-            display: block;
-            font-size: 15px;
-            padding-bottom: 10px;
-            position: relative;
-            font-weight: 500;
-          }
-          
-          .team .member span::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 1px;
-            background: #cbd6e9;
-            bottom: 0;
-            left: 0;
-          }
-          
-          .team .member p {
-            margin: 10px 0 0 0;
-            font-size: 14px;
-          }
-          
-          .team .member .social {
-            margin-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-          }
-          
-          .team .member .social a {
-            transition: ease-in-out 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50px;
-            width: 32px;
-            height: 32px;
-            background: #eff2f8;
-          }
-          
-          .team .member .social a i {
-            color: #37517e;
-            font-size: 16px;
-            margin: 0 2px;
-          }
-          
-          .team .member .social a:hover {
-            background: #47b2e4;
-          }
-          
-          .team .member .social a:hover i {
-            color: #fff;
-          }
-          
-          .team .member .social a + a {
-            margin-left: 8px;
-          }
-          
-    </style>
+		.h1,
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		.container-fluid {
+			max-width: 1400px;
+		}
+
+		.card {
+			background: #fff;
+			box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+			border: 1;
+			border-radius: 1rem;
+			max-width: 300px !important;
+		}
+
+		.img-hover-zoom--colorize img {
+			border-radius: 50%;
+			width: 150px;
+			/* Change this to your desired width */
+			height: 200px;
+			/* Change this to your desired height */
+			margin-top: 20px;
+			padding: 1px;
+			transition: transform .5s;
+			filter: grayscale(100%);
+		}
+
+
+		.img-hover-zoom--colorize:hover img {
+			filter: grayscale(0);
+			transform: scale(1.05);
+		}
+
+		.card h5 {
+			overflow: hidden;
+			height: 80px;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+
+		.card h5 a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.role {
+			color: black;
+			font-size: 12px !important;
+		}
+
+		.box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.fab {
+			font-size: 1.5rem;
+			color: darkgray;
+			transition: transform .5s;
+		}
+
+		.fab:hover {
+			color: black;
+			transform: scale(1.1);
+		}
+
+		.card h2 {
+			font-size: 1rem;
+		}
+
+
+		/* MEDIA */
+
+		@media only screen and (min-width: 1200px) {
+			.img-hover-zoom--colorize img {
+				width: 200px;
+			}
+		}
+
+		@media only screen and (min-width: 1200px) {
+
+			.h1,
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	</style>
 
 
 </head>
@@ -247,8 +194,8 @@
 		<!--top nav end for mobile view-->
 		<!--second nav start for desktop view-->
 		<div class="d-none d-lg-block d-md-none d-sm-none">
-			
-		<div class="second-nav-bg">
+
+			<div class="second-nav-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
@@ -273,7 +220,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- <div>
 					<img class="w-100" src="assets/img/Modern Institute of Technology & Management (MITM) BHUBANESWAR (1).jpg" alt="">
 				</div> -->
@@ -456,7 +403,7 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Sports Complex</a>
 									</li>
-									
+
 								</ul>
 							</li>
 						</ul>
@@ -595,120 +542,165 @@
 
 
 
-    <section id="team" class="team section-bg">
-        <div class="container" data-aos="fade-up">
-      
-          <div class="section-title">
-            <h2 class="text-uppercase" >faculties</h2>
-        </div>
-      
-          <div class="row">
-      
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/mechanical.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Ajit Kumar Dhal</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>HOD of Mechanical Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/cse.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Binayak Sahoo</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>Hod of Computer Science & Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/civil.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Suryapratap Biswajit Puhan</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>HOD of Civil Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/ece.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mrs. Shradhanjali Panda<h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>HOD of Electronics and Communication Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/eee.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Debasish Hota</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>HOD of Electrical and Electronics Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/ee.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Girija Sankar Panigrahi</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>Hod Of Electrical Engineering</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/member/mba.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Mr. Naresh Kumar Ojha</h4>
-				  <h5 class="fs-3" ><strong>Associate Professor</strong></h5>
-                  <span>HOD of MBA</span>
-                </div>
-              </div>
-            </div>
-      
-            <!-- <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-              <div class="member d-flex align-items-start">
-                <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div> -->
-      
-          </div>
-      
-        </div>
-      </section><!-- End Team Section -->
+	<div class="container p-5" style="margin-top: 175px;">
+		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/mechanical.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Ajit Kumar Dhal</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">HOD of Mechanical Engineering</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/cse.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Binayak Sahoo</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">Hod of Computer Science & Engineering</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/civil.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Suryapratap Biswajit Puhan</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">HOD of Civil Engineering</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/ece.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mrs. Shradhanjali Panda</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">HOD of Electronics and Communication Engineering
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/eee.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Debasish Hota</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">HOD of Electrical and Electronics Engineering
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/ee.jpg" alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Girija Sankar Panigrahi</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">Hod Of Electrical Engineering</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 shadow-sm">
+					<div class="text-center">
+						<div class="img-hover-zoom img-hover-zoom--colorize">
+							<img class="shadow" src="assets/img/member/mba.jpg"
+								alt="Another Image zoom-on-hover effect">
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="clearfix mb-3">
+						</div>
+						<div class="my-2 text-center">
+							<h1>Mr. Naresh Kumar Ojha</h1>
+							<h4>Associate Professor</h4>
+						</div>
+						<div class="mb-3">
+							<h2 class="text-uppercase text-center role">HOD of MBA</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-    
+	</div>
+
+
+
 	<!-- FOOTER section START-->
 	<footer class="">
 		<div class="footer-bg-img" style="background-image: url(assets/img/footerimg.png)">
@@ -784,7 +776,8 @@
 								<a href="javascript:void(0)" class="link-decoration">Photos</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement & Photo</a>
+								<a href="javascript:void(0)" class="link-decoration">Library In Charge Statement &
+									Photo</a>
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -902,13 +895,13 @@
 	<script type="text/javascript" src="assets/js/allpage.js?v=1.3"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	<script>
 		// Initialize Wow.js
 		new WOW().init();
-	</script>	
+	</script>
 </body>
 
 </html>
