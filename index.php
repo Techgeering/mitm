@@ -336,6 +336,10 @@
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
 											href="javascript:void(0)">Exam Notice</a>
 									</li>
+									<li>
+										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
+											href="committee.html">Committee Members</a>
+									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>
 							</li>
@@ -1091,7 +1095,7 @@
 								<a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
 							</div>
 							<div>
-								<a href="javascript:void(0)" class="link-decoration">Grievance Cell</a>
+								<a href="grievance.html" class="link-decoration">Grievance Cell</a>
 							</div>
 							<div>
 								<a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>

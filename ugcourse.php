@@ -510,23 +510,10 @@
 						Machine Learning)</h4>
 					<h4><strong>Seat Available:</strong>60</h4>
 					<p class="ug-paradt">
-						Computer science is the study of computers and computational systems. It is a broad field which
-						includes
-						everything from the algorithms that make up software to how software interacts with hardware to
-						how well
-						software is developed and designed.
+					Computer Science and Engineering (CSE) with a specialization in Artificial Intelligence and Machine Learning (AI&ML) is a four-year program that teaches students how to design and develop computer-based applications in AI&ML. The program aims to produce engineers who can contribute to the field of AI, and graduates will learn how to apply their knowledge of analytics, algorithms, and data to solve real-world problems. Students will also learn basic AI-related terms like Deep Learning, Machine Learning, and Expert Systems.
 					</p>
 					<p class="ug-paradt">
-						Computer science courses can be taken as a degree or diploma. Some topics covered in computer
-						science courses
-						include:
-						Database system architecture
-						Data models
-						Relational database design
-						Computer science is a fast-developing field with a wide range of career options. National
-						intelligence
-						agencies
-						are always looking for graduates with the skills to create software and understand systems.
+					AI&ML is a fast-growing discipline that consists of a set of tools and techniques used to extract useful information from data. It is among the most sought-after courses in India, and multiple prominent companies provide job opportunities for professionals with AI skills.
 					</p>
 					<img src="assets/img/cs-1.jpg" alt="" class="cs-img">
 					<img src="assets/img/cs-2.png" alt="" class="cs-img">
@@ -634,6 +621,11 @@
 					Engineering</h3>
 				<div class="line"></div>
 
+				<h3 class="text-center" id="heading66" onclick="showContents('content66', 'heading66')">Computer
+					Science
+					Engineering</h3>
+				<div class="line"></div>
+
 				<h3 class="text-center" id="heading22" onclick="showContents('content22', 'heading22')">Mechanical
 					Engineering</h3>
 				<div class="line"></div>
@@ -654,6 +646,31 @@
 			<div class="ug-conts">
 				<div id="content12" style="display: block;">
 					<h4 class="text-uppercase mission-head">Computer Science Engineering</h4>
+					<p class="ug-paradt">
+						Computer science is the study of computers and computational systems. It is a broad field which
+						includes
+						everything from the algorithms that make up software to how software interacts with hardware to
+						how well
+						software is developed and designed.
+					</p>
+					<p class="ug-paradt">
+						Computer science courses can be taken as a degree or diploma. Some topics covered in computer
+						science courses
+						include:
+						Database system architecture
+						Data models
+						Relational database design
+						Computer science is a fast-developing field with a wide range of career options. National
+						intelligence
+						agencies
+						are always looking for graduates with the skills to create software and understand systems.
+					</p>
+					<img src="assets/img/cs-1.jpg" alt="" class="cs-img">
+					<img src="assets/img/cs-2.png" alt="" class="cs-img">
+					<img src="assets/img/cs-3.jpg" alt="" class="cs-img">
+				</div>
+				<div id="content66" style="display: block;">
+					<h4 class="text-uppercase mission-head">Computer Science Engineering(Artificial Intelligence & Machine Learning)</h4>
 					<p class="ug-paradt">
 						Computer science is the study of computers and computational systems. It is a broad field which
 						includes
