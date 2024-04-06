@@ -155,15 +155,19 @@
 						<div class="col-lg-3">
 							<div class="text-size">
 								<h4 class="footer-heading-color">CONTACT US</h4>
-								<div class="fw-bold">Corporate Office:</div>
-								<div>HIG-44 ,</div>
+								<div class="fw-bold">City Office:</div>
+								<div>Plot No : A/14,  ,</div>
 								<div>
-									Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
+									HIG Colony , Baramunda ,
 								</div>
-								<div>Dist: Khurda, Odisha, Pin: 751142</div>
+								<div>
+									 Bhubaneswar , Odisha
+								</div>
+								<div>Pin: 751003</div>
 								<div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
 								</div>
-								<div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
+								<div>Phone No : <a style="color: white;" href="tel:0674235988">0674-235988</a></div>
+								<div>Phone No : <a style="color: white;" href="tel:06742355277">0674-2355277</a></div>
 
 								<div class="fw-bold">Campus :</div>
 								<div>
@@ -171,10 +175,11 @@
 										Modern Institute of Technology & Management
 										(MITM),Bhubaneswar
 									</div>
-									<div>Santi Niketan, Ghangapatana</div>
+									<div>Bidyavihar , Bhagabatipur</div>
 									<div>
-										PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
+										PO: Kantabada , Bhubaneswar , Odisha, Pin: 752054
 									</div>
+                                    <div>Phone No : <a style="color: white;" href="tel:06743267643">0674-3267643</a></div>
 								</div>
 							</div>
 						</div>
