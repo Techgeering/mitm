@@ -85,8 +85,9 @@ if ($form === NULL) {
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
                         <a href="placement.php" class="nav-item nav-link active"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                        <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>
+                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
