@@ -87,7 +87,7 @@ if ($form === NULL) {
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>
-                        <a href="faculty.php" class="nav-item nav-link active"><i class="fas fa-briefcase"></i>Faculty</a>
+                        <a href="faculty.php" class="nav-item nav-link active"><i class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -141,7 +141,7 @@ if ($form === NULL) {
                                             <tr>
                                                 <td class=text-center><?php echo $i;
                                                 $i++; ?></td>
-                                                <td class=text-center><img src="upload/<?php echo $row['image']; ?>" width="50"
+                                                <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>" width="50"
                                                         height="50">
                                                 </td>
                                                 <td class=text-center><?php echo $row['faculty_name']; ?></td>
@@ -202,7 +202,7 @@ if ($form === NULL) {
                     $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                     $new_file_name = uniqid() . '.' . $file_type;
 
-                    $upload_dir = "upload/";
+                    $upload_dir = "upload/member/";
                     if (!is_dir($upload_dir)) {
                         mkdir($upload_dir);
                     } else {
@@ -279,7 +279,7 @@ if ($form === NULL) {
                         $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                         $new_file_name = uniqid() . '.' . $file_type;
 
-                        $upload_dir = "upload/";
+                        $upload_dir = "upload/member/";
                         $target_file = $upload_dir . $new_file_name;
 
                         if (move_uploaded_file($image_tmp, $target_file)) {
@@ -327,7 +327,7 @@ if ($form === NULL) {
                                         <label for="image">image</label>
                                         <input type="file" class="form-control" id="zxy22" name="image">
                                         <img id="preimage" src="#" alt="pic" width="50" height="50" />
-                                        <img src="upload/<?php echo $row['image']; ?>" id="image11" alt="profile image"
+                                        <img src="upload/member/<?php echo $row['image']; ?>" id="image11" alt="profile image"
                                             width="50" height="50">
                                     </div>
                                     <div class="form-group">
@@ -358,7 +358,7 @@ if ($form === NULL) {
                 //id get for update Members.-->
                 function myfcn4(id1, image, name, designation) {
                     document.getElementById("zxy11").value = id1;
-                    document.getElementById("image11").src = "upload/" + image;
+                    document.getElementById("image11").src = "upload/member/" + image;
                     document.getElementById("name1").value = name;
                     document.getElementById("designation1").value = designation;
                 }
