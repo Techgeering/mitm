@@ -75,6 +75,26 @@
         }
     </style>
 
+	<style>
+		@keyframes popup {
+			0% {
+			  transform: scale(1);
+			}
+			50% {
+			  transform: scale(1.05);
+			}
+			100% {
+			  transform: scale(1);
+			}
+		  }
+		  
+		  .popup {
+			animation: popup 1s infinite;
+		  }
+		  
+		  
+	</style>
+
 </head>
 
 <body>
@@ -526,7 +546,8 @@
 
       <div class="container">
         <div class="container-box">
-            <h1 class="text-center mb-4">Grievance Cell</h1>
+			<p class="text-center text-danger mb-3 fw-bold popup" >To review our grievance cell, <a href="assets/pdf/grievanceredressal.pdf" target="_blank" >Click here</a>.</p>
+            <h1 class="text-center mb-4">Grievance Form</h1>
             <form action="#" method="POST">
                 <div class="row mb-3">
                     <div class="col-md-6">

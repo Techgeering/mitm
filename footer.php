@@ -120,7 +120,7 @@
                                 Ragging Policy</a>
                         </div>
                         <div>
-                            <a href="assets/pdf/grievanceredressal.pdf" target="_blank"
+                            <a href="grievance.html"
                                 class="link-decoration">Grievance Cell</a>
                         </div>
                         <div>
