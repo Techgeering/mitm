@@ -85,7 +85,8 @@ if ($form === NULL) {
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student.php" class="nav-item nav-link active"><i class="fas fa-briefcase"></i>Placement Student</a>
+                        <a href="placement-student.php" class="nav-item nav-link active"><i
+                                class="fas fa-briefcase"></i>Placement Student</a>
                         <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
@@ -312,6 +313,26 @@ if ($form === NULL) {
                         $new_file_name = uniqid() . '.' . $file_type;
 
                         $upload_dir = "upload/";
+
+                        // Retrieve the previous file name from the database
+                        $sql_previous_image = "SELECT image FROM mitm_campus_placement WHERE id='$id'";
+                        $result = $conn->query($sql_previous_image);
+
+                        if ($result->num_rows > 0) {
+                            $row = $result->fetch_assoc();
+                            $previous_image = $upload_dir . $row['image'];
+
+                            // Delete previous photo from the upload folder
+                            if (file_exists($previous_image)) {
+                                if (unlink($previous_image)) {
+                                    // Previous image deleted successfully
+                                } else {
+                                    echo "Error deleting previous image: $previous_image";
+                                }
+                            }
+                        }
+
+
                         $target_file = $upload_dir . $new_file_name;
 
                         if (move_uploaded_file($image_tmp, $target_file)) {

@@ -87,7 +87,8 @@ if ($form === NULL) {
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>
-                        <a href="faculty.php" class="nav-item nav-link active"><i class="fas fa-user-graduate"></i>Faculty</a>
+                        <a href="faculty.php" class="nav-item nav-link active"><i
+                                class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -141,8 +142,8 @@ if ($form === NULL) {
                                             <tr>
                                                 <td class=text-center><?php echo $i;
                                                 $i++; ?></td>
-                                                <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>" width="50"
-                                                        height="50">
+                                                <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>"
+                                                        width="50" height="50">
                                                 </td>
                                                 <td class=text-center><?php echo $row['faculty_name']; ?></td>
                                                 <td class=text-center><?php echo $row['designation']; ?></td>
@@ -280,6 +281,26 @@ if ($form === NULL) {
                         $new_file_name = uniqid() . '.' . $file_type;
 
                         $upload_dir = "upload/member/";
+
+                        // Retrieve the previous file name from the database
+                        $sql_previous_image = "SELECT image FROM mitm_faculty WHERE id='$id'";
+                        $result = $conn->query($sql_previous_image);
+
+                        if ($result->num_rows > 0) {
+                            $row = $result->fetch_assoc();
+                            $previous_image = $upload_dir . $row['image'];
+
+                            // Delete previous photo from the upload folder
+                            if (file_exists($previous_image)) {
+                                if (unlink($previous_image)) {
+                                    // Previous image deleted successfully
+                                } else {
+                                    echo "Error deleting previous image: $previous_image";
+                                }
+                            }
+                        }
+
+
                         $target_file = $upload_dir . $new_file_name;
 
                         if (move_uploaded_file($image_tmp, $target_file)) {
@@ -327,8 +348,8 @@ if ($form === NULL) {
                                         <label for="image">image</label>
                                         <input type="file" class="form-control" id="zxy22" name="image">
                                         <img id="preimage" src="#" alt="pic" width="50" height="50" />
-                                        <img src="upload/member/<?php echo $row['image']; ?>" id="image11" alt="profile image"
-                                            width="50" height="50">
+                                        <img src="upload/member/<?php echo $row['image']; ?>" id="image11"
+                                            alt="profile image" width="50" height="50">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Faculty Name</label>
