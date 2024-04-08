@@ -133,7 +133,7 @@
                             <a href="javascript:void(0)" class="link-decoration">Help Desk</a>
                         </div>
                         <div>
-                            <a href="feedback.html" class="link-decoration">Feedback</a>
+                            <a href="feedback" class="link-decoration">Feedback</a>
                         </div>
                         <!-- <h4 class="footer-heading-color">DIPLOMA</h4>
                             <div>
