@@ -144,7 +144,7 @@
 
 <body>
 
-<?php include 'navbar.php' ?>
+	<?php include 'navbar.php' ?>
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
@@ -154,154 +154,39 @@
 
 	<div class="container p-5" style="margin-top: 175px;">
 		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/mechanical.jpg"
-								alt="Another Image zoom-on-hover effect">
+
+			<?php include 'Admin/db.php';
+			$sql = "SELECT * FROM `mitm_faculty`where status = 1";
+			$Sql_query = mysqli_query($conn, $sql);
+			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+			foreach ($All_fname as $row) {
+				?>
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<div class="text-center">
+							<div class="img-hover-zoom img-hover-zoom--colorize">
+								<img class="shadow" src="Admin/upload/member/<?php echo $row['image']; ?>"
+									alt="Another Image zoom-on-hover effect">
+							</div>
 						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Ajit Kumar Dhal</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">HOD of Mechanical Engineering</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/cse.jpg"
-								alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Binayak Sahoo</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">Hod of Computer Science & Engineering</h2>
+						<div class="card-body">
+							<div class="clearfix mb-3">
+							</div>
+							<div class="my-2 text-center">
+								<h1>
+									<?php echo $row['faculty_name']; ?>
+								</h1>
+								<h4>Associate Professor</h4>
+							</div>
+							<div class="mb-3">
+								<h2 class="text-uppercase text-center role">
+									<?php echo $row['designation']; ?>
+								</h2>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/civil.jpg"
-								alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Suryapratap Biswajit Puhan</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">HOD of Civil Engineering</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/ece.jpg"
-								alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mrs. Shradhanjali Panda</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">HOD of Electronics and Communication Engineering
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/eee.jpg"
-								alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Debasish Hota</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">HOD of Electrical and Electronics Engineering
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/ee.jpg" alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Girija Sankar Panigrahi</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">Hod Of Electrical Engineering</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="text-center">
-						<div class="img-hover-zoom img-hover-zoom--colorize">
-							<img class="shadow" src="assets/img/member/mba.jpg"
-								alt="Another Image zoom-on-hover effect">
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="clearfix mb-3">
-						</div>
-						<div class="my-2 text-center">
-							<h1>Mr. Naresh Kumar Ojha</h1>
-							<h4>Associate Professor</h4>
-						</div>
-						<div class="mb-3">
-							<h2 class="text-uppercase text-center role">HOD of MBA</h2>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php } ?>
 		</div>
 	</div>
 

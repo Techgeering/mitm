@@ -85,9 +85,10 @@ if ($form === NULL) {
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student.php" class="nav-item nav-link active"><i
-                                class="fas fa-briefcase"></i>Placement Student</a>
-                        <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
+                        <a href="placement-student.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                            Student</a>
+                        <a href="faculty.php" class="nav-item nav-link active"><i
+                                class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -114,7 +115,7 @@ if ($form === NULL) {
                     <div class="row g-4">
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">Placement Student</h6>
+                                <h6 class="mb-4">Faculty</h6>
                                 <div class="col-sm-12 mb-2">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modal-bs-primary">
@@ -126,39 +127,33 @@ if ($form === NULL) {
                                         <tr>
                                             <th scope="col" class="text-center">Slno</th>
                                             <th scope="col" class="text-center">Image</th>
-                                            <th scope="col" class="text-center">Year</th>
-                                            <th scope="col" class="text-center">Branch</th>
-                                            <th scope="col" class="text-center">Student</th>
-                                            <th scope="col" class="text-center">Company Name</th>
-                                            <th scope="col" class="text-center">Date Of Upload</th>
+                                            <th scope="col" class="text-center">Name</th>
+                                            <th scope="col" class="text-center">Designation</th>
                                             <th scope="col" class="text-center">Manage</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         <?php include 'db.php';
-                                        $sql = "SELECT * FROM mitm_campus_placement ORDER BY id DESC";
+                                        $sql = "SELECT * FROM mitm_faculty ORDER BY id DESC";
                                         $result = $conn->query($sql);
                                         $i = 1;
                                         while ($row = $result->fetch_assoc()) { ?>
                                             <tr>
                                                 <td class=text-center><?php echo $i;
                                                 $i++; ?></td>
-                                                <td class=text-center><img src="upload/<?php echo $row['image']; ?>" width="50"
-                                                        height="50">
+                                                <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>"
+                                                        width="50" height="50">
                                                 </td>
-                                                <td class=text-center><?php echo $row['year']; ?></td>
-                                                <td class=text-center><?php echo $row['branch']; ?></td>
-                                                <td class=text-center><?php echo $row['student_name']; ?></td>
-                                                <td class=text-center><?php echo $row['company_name']; ?></td>
-                                                <td class=text-center><?php echo $row['date_of_upload']; ?></td>
+                                                <td class=text-center><?php echo $row['faculty_name']; ?></td>
+                                                <td class=text-center><?php echo $row['designation']; ?></td>
                                                 <td class=text-center><?php $status = $row['status'];
                                                 $status = $row['status'];
                                                 $idm = $row['id'];
-                                                $tb = 'mitm_campus_placement';
+                                                $tb = 'mitm_faculty';
                                                 $tbc = 'id';
                                                 $tbc1 = 'status';
-                                                $returnpage = 'placement-student1.php';
+                                                $returnpage = 'faculty.php';
 
                                                 if ($status == 1) {
                                                     echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
@@ -169,13 +164,13 @@ if ($form === NULL) {
                                                 }
                                                 ?>
                                                     <button type="button" name="update1"
-                                                        onclick="myfcn3(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['year']; ?>','<?php echo $row['branch']; ?>','<?php echo $row['student_name']; ?>','<?php echo $row['company_name']; ?>')"
+                                                        onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>')"
                                                         class="btn btn-primary m-2" data-bs-toggle="modal"
-                                                        data-bs-target="#updateplacement">
+                                                        data-bs-target="#updatefaculty">
                                                         <i class='fas fa-edit'></i>
                                                     </button>
                                                     <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_campus_placement', tbc='id', returnpage='placement-student1.php');">
+                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_faculty', tbc='id', returnpage='faculty.php');">
                                                         <i class="fas fa-trash-alt btn btn-danger"></i>
                                                     </a>
                                                 </td>
@@ -186,11 +181,8 @@ if ($form === NULL) {
                                         <tr>
                                             <th scope="col" class="text-center">Slno</th>
                                             <th scope="col" class="text-center">Image</th>
-                                            <th scope="col" class="text-center">Year</th>
-                                            <th scope="col" class="text-center">Branch</th>
-                                            <th scope="col" class="text-center">Student</th>
-                                            <th scope="col" class="text-center">Company Name</th>
-                                            <th scope="col" class="text-center">Date Of Upload</th>
+                                            <th scope="col" class="text-center">Name</th>
+                                            <th scope="col" class="text-center">Designation</th>
                                             <th scope="col" class="text-center">Manage</th>
                                         </tr>
                                         <tfoot>
@@ -200,12 +192,10 @@ if ($form === NULL) {
                     </div>
                 </div>
                 <?php
-                if (isset($_POST['addplacement'])) {
+                if (isset($_POST['addfaculty'])) {
 
-                    $year = $_POST['year'];
-                    $branch = $_POST['branch'];
-                    $studentname = $_POST['student'];
-                    $companyname = $_POST['company'];
+                    $name = $_POST['name'];
+                    $designation = $_POST['designation'];
 
                     $image_name = $_FILES['image']['name'];
                     $image_size = $_FILES['image']['size'];
@@ -213,7 +203,7 @@ if ($form === NULL) {
                     $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                     $new_file_name = uniqid() . '.' . $file_type;
 
-                    $upload_dir = "upload/";
+                    $upload_dir = "upload/member/";
                     if (!is_dir($upload_dir)) {
                         mkdir($upload_dir);
                     } else {
@@ -229,10 +219,10 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_campus_placement(image,year,branch,student_name,company_name ,status) 
-             VALUES('$new_file_name','$year','$branch','$studentname','$companyname','1')";
+                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, status) 
+             VALUES('$new_file_name','$name','$designation','1')";
                     if ($conn->query($sql) === true) {
-                        echo '<script>window.location.href = "placement-student1.php";</script>';
+                        echo '<script>window.location.href = "faculty.php";</script>';
                     } else {
                         $conn->error;
                     }
@@ -255,39 +245,19 @@ if ($form === NULL) {
                                             <input type="file" id="exampleInputimage" name="image" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputtext">Year</label>
-                                            <select name="year" id="year" class="form-control">
-                                                <option value="2022-23">2022-23</option>
-                                                <option value="2023-24">2023-24</option>
-                                            </select>
+                                            <label for="exampleInputtext">Faculty Name</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputtext">Branch</label>
-                                            <select name="branch" id="branch" class="form-control">
-                                                <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING
-                                                </option>
-                                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
-                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND
-                                                    COMMUNICATION ENGINEERING</option>
-                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS
-                                                    ADMINISTRATIVE</option>
-                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
-                                                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputtext">Student Name</label>
-                                            <input type="text" class="form-control" id="student" name="student" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputtext">Company Name</label>
-                                            <input type="text" class="form-control" id="company" name="company" required>
+                                            <label for="exampleInputtext">Designation</label>
+                                            <input type="text" class="form-control" id="designation" name="designation"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" name="addplacement" value="Submit"
+                                        <button type="submit" name="addfaculty" value="Submit"
                                             class="btn btn-primary">Upload</button>
                                     </div>
                                 </div>
@@ -297,12 +267,10 @@ if ($form === NULL) {
                 </div>
                 <!--End Add modal-->
                 <?php
-                if (isset($_POST['updateplacement'])) {
+                if (isset($_POST['updatefaculty'])) {
                     $id = $_POST["id1"];
-                    $year = $_POST['year'];
-                    $branch = $_POST['branch'];
-                    $studentname = $_POST['student'];
-                    $companyname = $_POST['company'];
+                    $name = $_POST['name'];
+                    $designation = $_POST['designation'];
 
                     // Check if a new image is uploaded
                     if (!empty($_FILES['image']['name'])) {
@@ -312,10 +280,10 @@ if ($form === NULL) {
                         $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                         $new_file_name = uniqid() . '.' . $file_type;
 
-                        $upload_dir = "upload/";
+                        $upload_dir = "upload/member/";
 
                         // Retrieve the previous file name from the database
-                        $sql_previous_image = "SELECT image FROM mitm_campus_placement WHERE id='$id'";
+                        $sql_previous_image = "SELECT image FROM mitm_faculty WHERE id='$id'";
                         $result = $conn->query($sql_previous_image);
 
                         if ($result->num_rows > 0) {
@@ -338,9 +306,9 @@ if ($form === NULL) {
                         if (move_uploaded_file($image_tmp, $target_file)) {
                             // Image uploaded successfully
                             // Update the database with the new image
-                            $sql = "UPDATE mitm_campus_placement SET image='$new_file_name', year='$year', branch='$branch', student_name='$studentname', company_name='$companyname' WHERE id='$id'";
+                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' WHERE id='$id'";
                             if ($conn->query($sql) === true) {
-                                echo '<script>window.location.href = "placement-student1.php";</script>';
+                                echo '<script>window.location.href = "faculty.php";</script>';
                             } else {
                                 echo $conn->error;
                             }
@@ -350,9 +318,9 @@ if ($form === NULL) {
                         }
                     } else {
                         // No new image uploaded, update other fields only
-                        $sql = "UPDATE mitm_campus_placement SET year='$year', branch='$branch', student_name='$studentname',company_name='$companyname' WHERE id='$id'";
+                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation' WHERE id='$id'";
                         if ($conn->query($sql) === true) {
-                            echo '<script>window.location.href = "placement-student1.php";</script>';
+                            echo '<script>window.location.href = "faculty.php";</script>';
                         } else {
                             echo $conn->error;
                         }
@@ -362,61 +330,39 @@ if ($form === NULL) {
                 ?>
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>
-                <!--Modal for Update members-->
-                <div class="modal fade" data-bs-backdrop="static" id="updateplacement">
+
+                <!--Modal for Update Faculty-->
+                <div class="modal fade" data-bs-backdrop="static" id="updatefaculty">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">placement</h4>
+                                <h4 class="modal-title">Faculty</h4>
                                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
                                 <div class="modal-body">
-                                    <input type="hidden" name="id1" id="zxy1">
+                                    <input type="hidden" name="id1" id="zxy11">
                                     <div class="form-group">
                                         <label for="image">image</label>
-                                        <input type="file" class="form-control" id="zxy2" name="image">
-                                        <img id="zxy" src="#" alt="pic" width="50" height="50" />
-                                        <img src="upload/<?php echo $row['image']; ?>" id="image" alt="profile image"
-                                            width="50" height="50">
+                                        <input type="file" class="form-control" id="zxy22" name="image">
+                                        <img id="preimage" src="#" alt="pic" width="50" height="50" />
+                                        <img src="upload/member/<?php echo $row['image']; ?>" id="image11"
+                                            alt="profile image" width="50" height="50">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputpassword1">Year</label>
-                                        <select class="form-control" id="year" name="year">
-                                            <option value="2022-23">2022-23</option>
-                                            <option value="2023-24">2023-24</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
+                                        <label for="text">Faculty Name</label>
+                                        <input type="text" class="form-control" id="name1" name="name">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputpassword1">Branch</label>
-                                        <select class="form-control" id="branch" name="branch">
-                                            <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING
-                                            </option>
-                                            <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
-                                            <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND
-                                                COMMUNICATION ENGINEERING</option>
-                                            <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS
-                                                ADMINISTRATIVE</option>
-                                            <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
-                                            <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="text">Student Name</label>
-                                        <input type="text" class="form-control" id="student1" name="student">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="text">Campany Name</label>
-                                        <input type="text" class="form-control" id="company1" name="company">
+                                        <label for="text">Designation</label>
+                                        <input type="text" class="form-control" id="designation1" name="designation">
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-outline-dark"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="Submit" name="updateplacement" value="Submit"
+                                        <button type="Submit" name="updatefaculty" value="Submit"
                                             class="btn btn-outline-dark">UPDATE</button>
                                     </div>
                             </form>
@@ -425,30 +371,29 @@ if ($form === NULL) {
                         <!-- /.modal-dialog -->
                     </div>
                 </div>
-                <!-- End Modal for Update Carousel-->
-                <script>
-                    //id get for update Members.-->
-                    function myfcn3(id1, image, year, branch, student, company) {
-                        document.getElementById("zxy1").value = id1;
-                        document.getElementById("image").src = "upload/" + image;
-                        document.getElementById("year").value = year;
-                        document.getElementById("branch").value = branch;
-                        document.getElementById("student1").value = student;
-                        document.getElementById("company1").value = company;
-                    }
-                </script>
-                <script>
-                    //member image
-                    $("#zxy2").change(function () {
-                        const file3 = this.files[0];
-                        if (file3) {
-                            let reader3 = new FileReader();
-                            reader3.onload = function (event) {
-                                $("#zxy").attr("src", event.target.result);
-                            };
-                            reader3.readAsDataURL(file3);
-                        }
-                    });
-                </script>
+                <!-- End Modal for Update Faculty-->
 
             <?php } ?>
+
+            <script>
+                //id get for update Members.-->
+                function myfcn4(id1, image, name, designation) {
+                    document.getElementById("zxy11").value = id1;
+                    document.getElementById("image11").src = "upload/member/" + image;
+                    document.getElementById("name1").value = name;
+                    document.getElementById("designation1").value = designation;
+                }
+            </script>
+            <script>
+                //member image
+                $("#zxy22").change(function () {
+                    const file3 = this.files[0];
+                    if (file3) {
+                        let reader3 = new FileReader();
+                        reader3.onload = function (event) {
+                            $("#preimage").attr("src", event.target.result);
+                        };
+                        reader3.readAsDataURL(file3);
+                    }
+                });
+            </script>
