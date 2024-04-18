@@ -88,7 +88,8 @@
         }
 
         .card {
-            max-width: 200px;
+            max-width: 255px;
+            height: 220px !important;
             margin: 12px auto;
         }
 
@@ -144,7 +145,6 @@
                 </h4>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
                         <div class="card rounded bg-primary shadow-sm border-0 pb-4">
                             <div class="card-body m-2">
                                 <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
@@ -156,7 +156,6 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
                         <div class="card rounded bg-success shadow-sm border-0 pb-4">
                             <div class="card-body m-2">
                                 <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
@@ -169,7 +168,6 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
                         <div class="card rounded bg-info shadow-sm border-0 pb-4">
                             <div class="card-body m-2">
                                 <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
@@ -182,7 +180,6 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
                         <div class="card rounded bg-warning shadow-sm border-0 pb-4">
                             <div class="card-body m-2">
                                 <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."

@@ -148,11 +148,13 @@
 	</div>
 
 	<div class="maps d-none d-lg-block">
-		<div class="">
-			<iframe
+		<div class="p-3">
+		<iframe class="ms-1"
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69171.17726727438!2d85.66650561172942!3d20.304965323842012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19070d705d9f45%3A0x873ac9e651b338f3!2sModern%20Institute%20of%20Technology%20%26%20Management%20(MITM)!5e0!3m2!1sen!2sin!4v1706508997962!5m2!1sen!2sin"
-				width="1268" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+				 style="border:0; width: 51%; height: 300px;" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.357815541144!2d85.795574!3d20.2854513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909eff52275c3%3A0x74f6557747ebb021!2sMITM%20Office!5e0!3m2!1sen!2sin!4v1713343971092!5m2!1sen!2sin" style="border:0; width: 48%; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 	<div class="maps d-lg-none d-sm-block">
