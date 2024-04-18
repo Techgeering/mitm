@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                             <div>Pin: 751003</div>
-                            <div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
+                            <div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.edu.in</a>
                             </div>
                             <div>Phone No : <a style="color: white;" href="tel:0674235988">0674-235988</a></div>
                             <div>Phone No : <a style="color: white;" href="tel:06742355277">0674-2355277</a></div>

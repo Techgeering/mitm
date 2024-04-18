@@ -91,7 +91,8 @@ lesheet"
 					</div>
 				</div>
 			</div>
-	</section><!-- End Team Section -->
+	</section>
+	<!-- End Team Section -->
 
 
 	<?php include 'footer.php' ?>
