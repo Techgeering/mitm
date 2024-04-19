@@ -104,7 +104,7 @@
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Vision & Mission</a>
+											href="missionvision">Vision & Mission</a>
 									</li>
 									<!-- <li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
@@ -174,24 +174,24 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu2">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Eligibility</a>
+											href="eligibility">Eligibility</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Fee Structure</a>
+											href="feestructure">Fee Structure</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Scholarship</a>
+											href="scholarships">Scholarship</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
-						<ul class="navbar-nav">
+						<!-- <ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link active third-menu-color" href="fascilites">Facilities</a>
 							</li>
-						</ul>
+						</ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu3"
@@ -351,9 +351,9 @@
 							<li class="nav-item nav-side">
 								<a class="nav-link" href="https://www.bput.ac.in/">Admissions</a>
 							</li>
-							<li class="nav-item nav-side">
+							<!-- <li class="nav-item nav-side">
 								<a class="nav-link" href="fascilites.php">Facilities</a>
-							</li>
+							</li> -->
 							<li class="nav-item dropdown nav-side">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">

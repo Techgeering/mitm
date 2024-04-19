@@ -115,7 +115,6 @@ body{
   color: #000000; /* Set the text color for better contrast */
 }
 
-
 /* ----------------------------------------------------------- */
 /*  THIRD NAV CSS
 /* ----------------------------------------------------------- */
@@ -358,7 +357,7 @@ body{
  .teaching-img-size {
   border-radius: 15px;
   box-shadow: 2px 2px 2px 2px #fff;
-  filter: grayscale(20%) brightness(60%);
+  /* filter: grayscale(20%) brightness(60%); */
 }
 
 /* ----------------------------------------------------------- */
@@ -671,8 +670,6 @@ tr:nth-child(even) {
   }
 }
 
-
-
 .courses-color{
   background: linear-gradient(to right, #2e48f2 0%, #40dfff 100%);
 }
@@ -708,7 +705,6 @@ a{
   background-position: center; 
   
 }
-
 
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
@@ -797,9 +793,6 @@ a{
   text-align: justify;
 }
 
-
-
-
 /* SIDE BAR SCROLL DESIGN */
 /* width */
 ::-webkit-scrollbar {
@@ -886,7 +879,6 @@ a{
   margin-top: 175px;
 }
 
-
 .imp-link{
   text-decoration: underline;
   font-style: inherit;
@@ -948,7 +940,6 @@ a{
   padding-left: 45px;
 }
 
-
 .abt-uss{
   margin-top: 149px;
   /* background: linear-gradient(261deg, #00000005 18.75%, #3d46601c 0 31.25%, #0000 0), repeating-linear-gradient(45deg, #888fca08 -6.25% 6.25%, #ebe1c25e 0 18.75%); */
@@ -964,7 +955,6 @@ a{
   line-height: 33px;
   margin-top: -9px;
 }
-
 
 /* CONTACT PAGE */
     
@@ -1182,7 +1172,6 @@ margin-left: 30px;
   float: right !important;
 }
 
-
 /*image and video button*/
 /* .gallery-grid {
   cursor: pointer;
@@ -1213,7 +1202,6 @@ margin-left: 30px;
   margin: 0 10px;
 }
 
-
 /* ----------------------------------------------------------- */
 /*  placement
 /* ----------------------------------------------------------- */
@@ -1224,7 +1212,6 @@ margin-left: 30px;
   /* mix-blend-mode: color-burn; */
   padding: 5px;
 }
-
 
 .section-bg {
   background-color: #f3f5fa;
@@ -1275,7 +1262,6 @@ margin-left: 30px;
   margin-bottom: 0;
 }
 
-
 .chairman-head {
   font-size: 18px;
   line-height: 24px;
@@ -1298,7 +1284,6 @@ top: 96%;
 .chairman-desig{
   font-size: 16px;
 }
-
 
 .principal-head {
   font-size: 18px;
@@ -1374,7 +1359,6 @@ top: 96%;
     font-size: 16px; 
   }
 
-
   .chairman-head {
     font-size: 18px;
     line-height: 24px;
@@ -1398,7 +1382,6 @@ top: 96%;
     font-size: 16px;
   }
 
-  
 .section-bg {
   background-color: #f3f5fa;
 }
@@ -1565,6 +1548,7 @@ top: 96%;
 
 .abt-sec-col{
   background: linear-gradient(to bottom, #2e48f261 0%, #40dfff80 100%);
+  margin-top: 148px;
 }
 
 .three-column-images {
@@ -1822,7 +1806,6 @@ top: 96%;
   background-color: #00000057;
   /* Adjust the underline color as needed */
 }
-
 
 .calendar-container {
   display: flex;
