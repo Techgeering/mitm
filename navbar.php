@@ -236,27 +236,27 @@
 								<ul class="dropdown-content dropdown-menu-box-position" aria-labelledby="DropdownMenu9">
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Infrastructure</a>
+											href="infrastructure">Infrastructure</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Hostel</a>
+											href="hostels">Hostel</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Canteen</a>
+											href="canteens">Canteen</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Transportation</a>
+											href="transportation">Transportation</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Surrounding</a>
+											href="surrounding">Surrounding</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Sports Complex</a>
+											href="sportscomplex">Sports Complex</a>
 									</li>
 
 								</ul>
