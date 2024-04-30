@@ -466,7 +466,7 @@
 				</h2>
 				<div class="notice-event py-2">
 					<section>
-						<?php include 'Admin/db.php';
+						<?php include 'admin/db.php';
 						$sql = "SELECT * FROM `mitm_news`where status = 1";
 						$Sql_query = mysqli_query($conn, $sql);
 						$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
@@ -518,7 +518,7 @@
 					</button>
 				</h2>
 				<div class="notice-event-2 px-2 py-2">
-					<?php include 'Admin/db.php';
+					<?php include 'admin/db.php';
 					$sql = "SELECT * FROM `mitm_notice`where status = 1";
 					$Sql_query = mysqli_query($conn, $sql);
 					$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);

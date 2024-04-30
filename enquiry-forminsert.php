@@ -1,5 +1,5 @@
 <?php
-include 'Admin/db.php';
+include 'admin/db.php';
 $response = array();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $ename = $_POST["name"];

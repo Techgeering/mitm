@@ -351,14 +351,14 @@
 	<section class="photo-gallery py-2" id="imageSection">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="gallery">
-				<?php include 'Admin/db.php';
+				<?php include 'admin/db.php';
 				$sql = "SELECT * FROM `mitm_life_image`where status = 1";
 				$Sql_query = mysqli_query($conn, $sql);
 				$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 				foreach ($All_fname as $row) {
 					?>
 					<div class="col">
-						<img src="Admin/upload/<?php echo $row['image']; ?>" class="img-fluid" alt="">
+						<img src="admin/upload/<?php echo $row['image']; ?>" class="img-fluid" alt="">
 					</div>
 				<?php } ?>
 			</div>
@@ -367,7 +367,7 @@
 	<section class="photo-gallery py-2" id="videoSection" style="display:none;">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="videoGallery">
-				<?php include 'Admin/db.php';
+				<?php include 'admin/db.php';
 				$sql = "SELECT * FROM `mitm_life_video`where status = 1";
 				$Sql_query = mysqli_query($conn, $sql);
 				$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);

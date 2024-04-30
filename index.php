@@ -290,7 +290,7 @@
 					</h2>
 					<div class="news-events-container">
 						<div class="scrolling-news-box">
-							<?php include 'Admin/db.php';
+							<?php include 'admin/db.php';
 							$sql = "SELECT * FROM `mitm_notice`where status = 1";
 							$Sql_query = mysqli_query($conn, $sql);
 							$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);

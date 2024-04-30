@@ -67,13 +67,13 @@
 			<div class="row">
 				<div class="logos">
 					<div class="comp-img ">
-						<?php include 'Admin/db.php';
+						<?php include 'admin/db.php';
 						$sql = "SELECT * FROM `mitm_placement`where status = 1";
 						$Sql_query = mysqli_query($conn, $sql);
 						$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 						foreach ($All_fname as $row) {
 							?>
-							<img src="Admin/upload/<?php echo $row['image']; ?>" alt="">
+							<img src="admin/upload/<?php echo $row['image']; ?>" alt="">
 						<?php } ?>
 					</div>
 					<!-- <div class="col-lg-3 comp-img ">

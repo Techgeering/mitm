@@ -155,7 +155,7 @@
     <div class="container p-5" style="margin-top: 175px;">
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
 
-            <?php include 'Admin/db.php';
+            <?php include 'admin/db.php';
             $sql = "SELECT * FROM `mitm_faculty`where status = 1";
             $Sql_query = mysqli_query($conn, $sql);
             $All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
@@ -165,7 +165,7 @@
                     <div class="card h-100 shadow-sm">
                         <div class="text-center">
                             <div class="img-hover-zoom img-hover-zoom--colorize">
-                                <img class="shadow" src="Admin/upload/member/<?php echo $row['image']; ?>"
+                                <img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
                                     alt="Another Image zoom-on-hover effect">
                             </div>
                         </div>
