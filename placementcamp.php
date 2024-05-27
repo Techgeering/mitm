@@ -46,39 +46,6 @@
     <title>MITM | About Us</title>
 
     <style>
-        /* body {
-            font-family: Arial;
-        } */
-
-        /* Style the tab */
-        /* .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        } */
-
-        /* Style the buttons inside the tab */
-        /* .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        } */
-
-        /* Change background color of buttons on hover */
-        /* .tab button:hover {
-            background-color: #ddd;
-        } */
-
-        /* Create an active/current tablink class */
-        /* .tab button.active {
-            background-color: #ccc;
-        } */
-
         /* Style the tab content */
         .tabcontent {
             display: none;
@@ -96,662 +63,76 @@
         .tab .tablinks {
             text-align: center;
         }
-
-        /* .tabcontent .card{
-            margin: 12px auto;
-        } */
-
-        /* @media screen and (min-width: 768px) {
-
-            //For Laptops
-            .container .tab {
-                width: 738px;
-            }
-        }
-        @media screen and (min-width: 992px) {
-
-            //For Large Laptops
-            .container .tab {
-                width: 962px;
-            }
-        } */
     </style>
 
 </head>
 
 <body>
 
-<?php include 'navbar.php' ?>
+    <?php include 'navbar.php' ?>
     <!--enquiry start-->
     <?php include 'enquiry.php' ?>
     <!--enquiry end -->
-
-
     <div class="heading-bg-img place-head" style="background-image: url(assets/img/headingbgimg.png);">
         <div class="heading-bg-color">
             <h1 class="heading-text-position text-uppercase">Campus @ 2024</h1>
         </div>
     </div>
-
     <div class="container">
         <div class="tab">
             <div class="tab d-flex justify-content-center mb-4">
-                <button  class="tablinks btn btn-secondary" onclick="openCity(event, 'London')">2022-23</button>
-                <button id="defaultOpen" class="tablinks btn btn-success mx-2" onclick="openCity(event, 'Paris')">2023-24</button>
+                <?php include 'admin/db.php';
+                $sql2 = "SELECT distinct year from mitm_campus_placement where college_type= '1' order by year desc";
+                $result = $conn->query($sql2);
+                while ($rr = $result->fetch_assoc()) {
+                    ?>
+                    <button class="tablinks btn btn-secondary" id="defaultOpen"
+                        onclick="openCity(event, '<?php echo $rr['year']; ?>')"><?php echo $rr['year']; ?></button>
+                    <?php
+                }
+                ?>
                 <!-- <button class="tablinks ml-2" onclick="openCity(event, 'Tokyo')">2024-2025</button> -->
             </div>
-            <div id="London" class="tabcontent py-5">
-                <h4 class="text-uppercase mission-head">COMPUTER SCIENCE ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
+            <?php
+            $sql2 = "SELECT distinct year from mitm_campus_placement";
+            $result = $conn->query($sql2);
+            while ($rr = $result->fetch_assoc()) {
+                $year = $rr['year'];
+                ?>
+                <div id="<?php echo $year; ?>" class="tabcontent py-5">
+                    <?php
+                    $sql = "SELECT distinct branch FROM mitm_campus_placement where year = '$year'";
+                    $Sql_query = mysqli_query($conn, $sql);
+                    $All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+                    foreach ($All_fname as $row) {
+                        ?>
+                        <div class="row">
+                            <h4 class="text-uppercase mission-head"><?php echo $row['branch']; ?>
+                            </h4>
+                            <?php
+                            $branch = $row['branch'];
+                            $sql1 = "select * from mitm_campus_placement where branch= '$branch' and year= '$year'";
+                            $res = $conn->query($sql1);
+                            while ($std = $res->fetch_assoc()) {
+                                ?>
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <!-- Card-->
+                                    <div class="card rounded bg-primary shadow-sm border-0 pb-4">
+                                        <div class="card-body m-2">
+                                            <div class="p-4 text-center card-img-top"><img
+                                                    src="admin/upload/studentplacement/<?php echo $std['image']; ?>" alt="..."
+                                                    width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+                                                <h5 class="text-white mb-0"><?php echo $std['student_name']; ?></h5>
+                                                <p class="small text-white mb-0"><?php echo $std['company_name']; ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php } ?>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
-
-                <h4 class="text-uppercase mission-head">MECHANICAL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">ELECTRONICS AND COMMUNICATION ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">MASTERS IN BUSINESS ADMINISTRATIVE
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">ELECTRICAL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">CIVIL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-warning shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture3.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Ashok Kumar Jena</h5>
-                                    <p class="small text-white mb-0">Sindler India LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Paris" class="tabcontent py-5">
-                <h4 class="text-uppercase mission-head">COMPUTER SCIENCE ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="text-uppercase mission-head">MECHANICAL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">ELECTRONICS AND COMMUNICATION ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">MASTERS IN BUSINESS ADMINISTRATIVE
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">ELECTRICAL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="text-uppercase mission-head">CIVIL ENGINEERING
-                </h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- Card-->
-                        <div class="card rounded bg-info shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture2.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Iswari Bag</h5>
-                                    <p class="small text-white mb-0">F.B Power LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div id="Tokyo" class="tabcontent py-5">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-primary shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picture1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Pramod Mandal</h5>
-                                    <p class="small text-white mb-0">Rounak PVT.LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card rounded bg-success shadow-sm border-0 pb-4">
-                            <div class="card-body m-2">
-                                <div class="p-4 text-center card-img-top"><img src="assets\img\Picturee1.png" alt="..."
-                                        width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-                                    <h5 class="text-white mb-0">Priyanka Panigrahi</h5>
-                                    <p class="small text-white mb-0">Aditya Birla Hindalco Industries LTD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            <?php } ?>
         </div>
     </div>
 

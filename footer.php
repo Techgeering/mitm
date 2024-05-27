@@ -63,10 +63,10 @@
                                 </form> -->
                         <h4 class="footer-heading-color text-uppercase ">Gallery</h4>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Photo Collection</a>
+                            <a href="life.php" class="link-decoration">Photo Collection</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Video Collection</a>
+                            <a href="life.php" class="link-decoration">Video Collection</a>
                         </div>
                         <h4 class="footer-heading-color text-uppercase ">Library</h4>
                         <div>

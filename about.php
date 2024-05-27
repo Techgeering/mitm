@@ -183,6 +183,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<!-- Toastr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+	<script src="assets/js/allpage.js"></script>
+
 	<script>
 		// Initialize Wow.js
 		new WOW().init();

@@ -1,6 +1,7 @@
 <?php
 session_start();
 $form = $_SESSION["mitm_user_username"];
+$collage = $_SESSION["college_type"];
 if ($form === NULL) {
     header("location:login.php");
 } else {
@@ -49,8 +50,6 @@ if ($form === NULL) {
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- End pagination -->
 
-
-
         <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
         <!-- DataTables Buttons CSS -->
@@ -78,26 +77,20 @@ if ($form === NULL) {
             <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
                     <a href="index.html" class="navbar-brand mx-4 mb-3">
-                        <h3 class="text-primary">MITM</h3>
+                        <?php if ($collage == 1) { ?>
+                            <h3 class="text-primary">MITM</h3>
+                        <?php } elseif ($collage == 2) { ?>
+                            <h3 class="text-primary">NAUMI</h3>
+                        <?php } ?>
                     </a>
-                    <!--<div class="d-flex align-items-center ms-4 mb-4">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <div
-                                class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
-                            </div>
-                        </div>
-                        <div class="ms-3">
-                            <h6 class="mb-0">Jhon Doe</h6>
-                            <span>Admin</span>
-                        </div>
-                    </div> -->
                     <div class="navbar-nav w-100">
-                        <a href="contact.php" class="nav-item nav-link active"><i
-                                class="far fa-comments nav-icon"></i>Contact</a>
-                        <a href="enquiry.php" class="nav-item nav-link"><i
-                                class="bi bi-file-earmark-text me-2"></i>Admission Enquiry</a>
-                        <div class="nav-item dropdown">
+                        <?php
+                        if ($collage === '1') {
+                            echo '<a href="contact.php" class="nav-item nav-link active"><i
+                                class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="enquiry.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
+                            echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Life
                             </a>
@@ -109,16 +102,48 @@ if ($form === NULL) {
                                     <i class="bi bi-play-circle me-2"></i> Video
                                 </a>
                             </div>
-                        </div>
-                        <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
-                            Event</a>
-                        <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
-                        <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                            Student</a>
-                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
-                        <a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>
+                        </div>';
+                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
+                            Event</a>';
+                            echo '<a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
+                            echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>';
+                            echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>';
+                            echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                            Std</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="logout.php" class="nav-item nav-link"><i
+                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                        } else {
+                            echo '<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-object-group nav-icon"></i> Life
+                            </a>
+                            <div class="dropdown-menu bg-transparent border-0">
+                                <a href="life-image.php" class="dropdown-item">
+                                    <i class="bi bi-image me-2"></i> Image
+                                </a>
+                                <a href="life-video.php" class="dropdown-item">
+                                    <i class="bi bi-play-circle me-2"></i> Video
+                                </a>
+                            </div>
+                        </div>';
+                            echo '<a href="contact.php" class="nav-item nav-link active"><i
+                                class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>';
+                            echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>';
+                            echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                            Student</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="logout.php" class="nav-item nav-link"><i
+                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                        }
+                        ?>
                     </div>
                 </nav>
             </div>
@@ -161,7 +186,7 @@ if ($form === NULL) {
 
                                         <?php include 'db.php';
 
-                                        $sql = "SELECT * FROM mitm_contact ORDER BY id DESC";
+                                        $sql = "SELECT * FROM mitm_contact where college_type='$collage' ORDER BY id DESC";
                                         $result = $conn->query($sql);
                                         $i = 1;
                                         while ($row = $result->fetch_assoc()) {
@@ -187,9 +212,9 @@ if ($form === NULL) {
                                                 <td class="text-center">
                                                     <?php echo $row['dte_tim']; ?>
                                                 </td>
-                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>)"><i
+                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php //echo $row['id']; ?>)"><i
                                                         class="fas fa-trash-alt btn btn-danger"></i></a></td> -->
-                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php echo $row['id']; ?>),&&tb=mitm_contact&&returnpage=contact.php </a></td> -->
+                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php //echo $row['id']; ?>),&&tb=mitm_contact&&returnpage=contact.php </a></td> -->
                                                 <td class="text-center">
                                                     <a
                                                         onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_contact', tbc='id', returnpage='contact.php');">

@@ -313,16 +313,6 @@
 								</ul>
 							</li>
 						</ul>
-						<!-- <ul class="navbar-nav">
-				<li class="nav-item ">
-				  <a class="nav-link active third-menu-color " href="diploma">Diploma</a>
-				</li>
-			  </ul> -->
-						<!-- <ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active third-menu-color" href="notice">Notice</a>
-							</li>
-						</ul> -->
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link active third-menu-color dropdown-toggle" href="#" id="DropdownMenu9"
@@ -487,26 +477,6 @@
 							</p>
 						<?php } ?>
 					</section>
-					<!-- <p>
-						<span class="calendar-container">
-							<img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-							<span class="date-and-day text-danger">
-								<span>01/01/2024</span>
-							</span>
-						</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-download"
-								aria-hidden="true"></i></a>
-					</p>
-					<p>
-						<span class="calendar-container">
-							<img class="calendar-img" src="assets/img/calendar.png" alt="Calendar Icon" />
-							<span class="date-and-day text-danger">
-								<span>01/01/2024</span>
-							</span>
-						</span>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit.<a href=""><i class="fa fa-picture-o"
-								aria-hidden="true"></i></a>
-					</p>-->
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-12 col-12">
@@ -538,9 +508,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
 
 	<!-- FOOTER section START-->
 	<footer class="">

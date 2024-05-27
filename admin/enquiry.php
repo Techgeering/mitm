@@ -69,7 +69,7 @@ if ($form === NULL) {
                     <div class="navbar-nav w-100">
                         <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
                         <a href="enquiry.php" class="nav-item nav-link active">
-                            <i class="bi bi-file-earmark-text me-2"></i>Admission Enquiry
+                            <i class="bi bi-file-earmark-text me-2"></i>Admission Enq
                         </a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -90,10 +90,15 @@ if ($form === NULL) {
                         <a href="notice.php" class="nav-item nav-link">
                             <i class="bi bi-bell me-2"></i> Notice
                         </a>
+                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>
+                        <a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>
+
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                            Student</a>
-                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
+                        Std</a>
+                        <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -128,14 +133,16 @@ if ($form === NULL) {
                                             <th scope="col" class="text-center">Full Name</th>
                                             <th scope="col" class="text-center">Email</th>
                                             <th scope="col" class="text-center">Phone</th>
+                                            <th scope="col" class="text-center">Address</th>
                                             <th scope="col" class="text-center">course</th>
-                                            <th scope="col" class="text-center">Message</th>
+                                            <th scope="col" class="text-center">Last Exam Appeared</th>
+                                            <th scope="col" class="text-center">Last Exam Percentage</th>
+                                            <th scope="col" class="text-center">Entrance Appreared</th>
                                             <th scope="col" class="text-center">Date & Time</th>
                                             <th scope="col" class="text-center">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                         <?php include 'db.php';
 
                                         $sql = "SELECT * FROM mitm_enquiry ORDER BY id DESC";
@@ -159,10 +166,19 @@ if ($form === NULL) {
                                                     <?php echo $row['enquiry_mobile']; ?>
                                                 </td>
                                                 <td class="text-center">
+                                                    <?php echo $row['enquiry_address']; ?>
+                                                </td>
+                                                <td class="text-center">
                                                     <?php echo $row['enquiry_course']; ?>
                                                 </td>
                                                 <td class="text-center">
-                                                    <?php echo $row['enquiry_message']; ?>
+                                                    <?php echo $row['last_exam_appeared']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['last_exam_percentage']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['entrance_appeared']; ?>
                                                 </td>
                                                 <td class="text-center">
                                                     <?php echo $row['dte']; ?>
@@ -182,8 +198,11 @@ if ($form === NULL) {
                                             <th scope="col" class="text-center">Full Name</th>
                                             <th scope="col" class="text-center">Email</th>
                                             <th scope="col" class="text-center">Phone</th>
+                                            <th scope="col" class="text-center">Address</th>
                                             <th scope="col" class="text-center">course</th>
-                                            <th scope="col" class="text-center">Message</th>
+                                            <th scope="col" class="text-center">Last Exam Appeared</th>
+                                            <th scope="col" class="text-center">Last Exam Percentage</th>
+                                            <th scope="col" class="text-center">Entrance Appreared</th>
                                             <th scope="col" class="text-center">Date & Time</th>
                                             <th scope="col" class="text-center">Delete</th>
                                         </tr>
