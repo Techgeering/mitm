@@ -153,7 +153,7 @@ if ($form === NULL) {
                     <div class="row g-4">
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">Notice</h6>
+                                <h6 class="mb-4">College Notice</h6>
                                 <div class="col-sm-12 mb-2">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modal-bs-primary">
