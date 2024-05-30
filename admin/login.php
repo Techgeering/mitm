@@ -4,7 +4,6 @@
 <head>
   <!-- Design by foolishdeveloper.com -->
   <title>MITM | Home</title>
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -27,10 +26,6 @@
     <input type="password" id="password" placeholder="Password" name="password">
 
     <button class="btn btn-info btn-block" type="submit" name="submit">submit</button>
-    <!-- <div class="social">
-          <div class="go"><i class="fab fa-google"></i>  Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-        </div> -->
   </form>
   <?php
   include 'db.php';
@@ -43,9 +38,11 @@
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
     if ($row > 0) {
+      $college_type = $row["college_type"];
       session_start();
       $_SESSION["mitm_user_username"] = "$username";
-      header("location:index.php");
+      $_SESSION["college_type"] = "$college_type";
+      header("location:contact.php");
 
     } else {
       echo 'not found';

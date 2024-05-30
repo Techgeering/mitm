@@ -1,6 +1,7 @@
 <?php
 session_start();
 $form = $_SESSION["mitm_user_username"];
+$collage = $_SESSION["college_type"];
 if ($form === NULL) {
     header("location:login.php");
 } else {
@@ -63,16 +64,22 @@ if ($form === NULL) {
             <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
                     <a href="index.html" class="navbar-brand mx-4 mb-3">
-                        <h3 class="text-primary">MITM</h3>
+                        <?php if ($collage == 1) { ?>
+                            <h3 class="text-primary">MITM</h3>
+                        <?php } elseif ($collage == 2) { ?>
+                            <h3 class="text-primary">NAUMI</h3>
+                        <?php } ?>
                     </a>
                     <div class="navbar-nav w-100">
-                        <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
-                        <a href="enquiry.php" class="nav-item nav-link"><i
-                                class="bi bi-file-earmark-text me-2"></i>Admission Enquiry</a>
-                        <div class="nav-item dropdown">
+                        <?php
+                        if ($collage === '1') {
+                            echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="enquiry.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
+                            echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Life</a>
-                            <div class="dropdown-menu bg-transparent border-0">
+                                    class="fa fa-object-group nav-icon"></i>Life</a>';
+                            echo '<div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
                                 </a>
@@ -80,16 +87,49 @@ if ($form === NULL) {
                                     <i class="bi bi-play-circle me-2"></i> Video
                                 </a>
                             </div>
-                        </div>
-                        <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
-                            Event</a>
-                        <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>
-                        <a href="placement.php" class="nav-item nav-link active"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                            Student</a>
-                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
-                        <a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>
+                        </div>';
+                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
+                            Event</a>';
+                            echo '<a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
+                            echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>';
+                            echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>';
+
+                            echo '<a href="placement.php" class="nav-item nav-link active"><i
+                                class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                                Std</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="logout.php" class="nav-item nav-link"><i
+                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                        } else {
+                            echo '<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                    class="fa fa-object-group nav-icon"></i>Life</a>';
+                            echo '<div class="dropdown-menu bg-transparent border-0">
+                                <a href="life-image.php" class="dropdown-item">
+                                    <i class="bi bi-image me-2"></i> Image
+                                </a>
+                                <a href="life-video.php" class="dropdown-item">
+                                    <i class="bi bi-play-circle me-2"></i> Video
+                                </a>
+                            </div>
+                        </div>';
+                            echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>';
+                            echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>';
+                            echo '<a href="placement.php" class="nav-item nav-link active"><i
+                                class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                            Student</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="logout.php" class="nav-item nav-link"><i
+                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                        }
+                        ?>
                     </div>
                 </nav>
             </div>
@@ -133,15 +173,15 @@ if ($form === NULL) {
                                     <tbody>
 
                                         <?php include 'db.php';
-                                        $sql = "SELECT * FROM mitm_placement ORDER BY id DESC";
+                                        $sql = "SELECT * FROM mitm_placement where college_type= '$collage' ORDER BY id DESC";
                                         $result = $conn->query($sql);
                                         $i = 1;
                                         while ($row = $result->fetch_assoc()) { ?>
                                             <tr>
                                                 <td class=text-center><?php echo $i;
                                                 $i++; ?></td>
-                                                <td class=text-center><img src="upload/<?php echo $row['image']; ?>" width="50"
-                                                        height="50">
+                                                <td class=text-center><img src="upload/companies/<?php echo $row['image']; ?>"
+                                                        width="50" height="50">
                                                 </td>
                                                 <td class=text-center><?php echo $row['date_of_upload']; ?></td>
                                                 <td class=text-center><?php $status = $row['status'];
@@ -182,7 +222,6 @@ if ($form === NULL) {
                     </div>
                 </div>
 
-
                 <?php
 
                 if (isset($_POST['addgallery'])) {
@@ -193,7 +232,7 @@ if ($form === NULL) {
                     $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
                     $new_file_name = uniqid() . '.' . $file_type;
 
-                    $upload_dir = "upload/";
+                    $upload_dir = "upload/companies/";
                     if (!is_dir($upload_dir)) {
                         mkdir($upload_dir);
                     } else {
@@ -209,8 +248,8 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_placement(image,status) 
-             VALUES('$new_file_name','1')";
+                    $sql = "INSERT INTO mitm_placement(image,status,college_type) 
+             VALUES('$new_file_name','1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo "<script>window.location.href='placement.php';</script>";
                     } else {

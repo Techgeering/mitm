@@ -128,18 +128,6 @@
 									</span>
 								</li>
 							</ul>
-							<!-- <div class="text-muted text-center">
-				  <code>
-					Inspiration from :
-					<a href="https://dribbble.com/shots/14126196-Contact-Form-01/attachments/5749555?mode=media">
-					  Erşad Başbağ
-					</a></code>
-				  <br />
-				  <code>Created By : walid cherhane </code> <br />
-				  <code><a class="fs-3" href="https://codepen.io/walidcherhane" target="_blank">
-					  <ion-icon name="logo-codepen"></ion-icon>
-					</a></code>
-				</div> -->
 						</div>
 					</div>
 				</div>

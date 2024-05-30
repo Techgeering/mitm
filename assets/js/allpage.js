@@ -76,35 +76,36 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 $("#mitmcontact").submit(function (e) {
   e.preventDefault();
 
-  var fname = document.getElementById('fname').value;
-  var lname = document.getElementById('lname').value;
-  var email = document.getElementById('cmail').value;
-  var phone = document.getElementById('cphone').value;
-  var message = document.getElementById('cmessage').value;
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var email = document.getElementById("cmail").value;
+  var phone = document.getElementById("cphone").value;
+  var message = document.getElementById("cmessage").value;
 
-  var errorMessage = document.getElementById('error-message');
+  var errorMessage = document.getElementById("error-message");
   var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
-  var phonepat = /^[0-9]{10}$/
-  var fnamecon = /[A-Za-z\s]{1,50}/
-  var lnamecon = /[A-Za-z\s]{1,50}/
-  var error = false
+  var phonepat = /^[0-9]{10}$/;
+  var fnamecon = /[A-Za-z\s]{1,50}/;
+  var lnamecon = /[A-Za-z\s]{1,50}/;
+  var error = false;
 
-  if (fname === "" || lname === "" || email === "" || phone === "" || message === "") {
-    errorMessage.innerText = "Please fill all the feilds"
-  }
-  else if (!fname.match(fnamecon)) {
-    errorMessage.innerText = "Enter a valid name"
-  }
-  else if (!lname.match(lnamecon)) {
-    errorMessage.innerText = "Enter a valid name"
-  }
-  else if (!email.match(emailRegex)) {
-    errorMessage.innerText = "Enter a valid email"
-  }
-  else if (!phone.match(phonepat)) {
-    errorMessage.innerText = "please enter valid phone number "
-  }
-  else {
+  if (
+    fname === "" ||
+    lname === "" ||
+    email === "" ||
+    phone === "" ||
+    message === ""
+  ) {
+    errorMessage.innerText = "Please fill all the feilds";
+  } else if (!fname.match(fnamecon)) {
+    errorMessage.innerText = "Enter a valid name";
+  } else if (!lname.match(lnamecon)) {
+    errorMessage.innerText = "Enter a valid name";
+  } else if (!email.match(emailRegex)) {
+    errorMessage.innerText = "Enter a valid email";
+  } else if (!phone.match(phonepat)) {
+    errorMessage.innerText = "please enter valid phone number ";
+  } else {
     errorMessage.innerText = "";
     $.ajax({
       type: "POST",
@@ -114,25 +115,25 @@ $("#mitmcontact").submit(function (e) {
         lname: lname,
         email: email,
         phone: phone,
-        message: message
+        message: message,
       },
-      dataType: "json",  // Specify the expected data type
+      dataType: "json", // Specify the expected data type
       success: function (data) {
         console.log(data); // Log the response for debugging
         if (data.status === "success") {
           // Show success message using ToastAlert
-          toastr.success(data.message, 'Success');
+          toastr.success(data.message, "Success");
 
-          document.getElementById('fname').value = "";
-          document.getElementById('lname').value = "";
-          document.getElementById('cmail').value = "";
-          document.getElementById('cphone').value = "";
-          document.getElementById('cmessage').value = "";
+          document.getElementById("fname").value = "";
+          document.getElementById("lname").value = "";
+          document.getElementById("cmail").value = "";
+          document.getElementById("cphone").value = "";
+          document.getElementById("cmessage").value = "";
         } else {
           // Show error message using SweetAlert
           Swal.fire({
-            icon: 'error',
-            title: 'Error!',
+            icon: "error",
+            title: "Error!",
             text: data.message,
           });
         }
@@ -143,85 +144,96 @@ $("#mitmcontact").submit(function (e) {
       },
       complete: function () {
         $(".loading").hide(); // Hide loading message on completion
-      }
+      },
     });
   }
-
 });
 
 /*for Admission Enquiry Form not Refreshed after send blank abd error input fields*/
-			$("#mitmenquiry").submit(function (e) {
-				e.preventDefault();
+$("#mitmenquiry").submit(function (e) {
+  e.preventDefault();
 
-				var fullname = document.getElementById("enquiryname").value;
-				var emailid = document.getElementById("enquiryemail").value;
-				var mobile = document.getElementById("enquiryphone").value;
-				var course = document.getElementById("enquirycourse").value;
-				var message = document.getElementById("enquirymessage").value;
+  var fullname = document.getElementById("enquiryname").value;
+  var emailid = document.getElementById("enquiryemail").value;
+  var mobile = document.getElementById("enquiryphone").value;
+  var address = document.getElementById("enquiryaddress").value;
+  var course = document.getElementById("enquirycourse").value;
+  var lexam = document.getElementById("lastexam").value;
+  var lexamper = document.getElementById("lastexampct").value;
+  var entrancee = document.getElementById("entrance").value;
 
-				var errorstatus = document.getElementById("error-status");
-				var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
-				var phonepat = /^[0-9]{10}$/;
-				var fnamecon = /[A-Za-z\s]{1,50}/;
-				var error = false;
+  var errorstatus = document.getElementById("error-status");
+  var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+  var phonepat = /^[0-9]{10}$/;
+  var fnamecon = /[A-Za-z\s]{1,50}/;
+  var error = false;
 
-				if (
-					fullname === "" ||
-					emailid === "" ||
-					mobile === "" ||
-					course === "" ||
-					message === ""
-				) {
-					errorstatus.innerText = "Please fill all the feilds";
-				} else if (!fullname.match(fnamecon)) {
-					errorstatus.innerText = "Enter a valid name";
-				} else if (!emailid.match(emailRegex)) {
-					errorstatus.innerText = "Enter a valid email";
-				} else if (!mobile.match(phonepat)) {
-					errorstatus.innerText = "Enter a valid phone number";
-				} else {
-					errorstatus.innerText = "";
-					$.ajax({
-						type: "POST",
-						url: "enquiry-forminsert.php",
-						data: {
-							name: fullname,
-							email: emailid,
-							phone: mobile,
-							course: course,
-							message: message,
-						},
-						dataType: "json", // Specify the expected data type
-						success: function (data) {
-							console.log(data); // Log the response for debugging
-							if (data.status === "success") {
-								// Show success message using ToastAlert
-								toastr.success(data.message, "Success");
+  if (
+    fullname === "" ||
+    emailid === "" ||
+    mobile === "" ||
+    address === "" ||
+    course === "" ||
+    lexam === "" ||
+    lexamper === "" ||
+    entrancee === ""
+  ) {
+    errorstatus.innerText = "Please fill all the feilds";
+  } else if (!fullname.match(fnamecon)) {
+    errorstatus.innerText = "Enter a valid name";
+  } else if (!emailid.match(emailRegex)) {
+    errorstatus.innerText = "Enter a valid email";
+  } else if (!mobile.match(phonepat)) {
+    errorstatus.innerText = "Enter a valid phone number";
+  } else {
+    errorstatus.innerText = "";
+    $.ajax({
+      type: "POST",
+      url: "enquiry-forminsert.php",
+      data: {
+        name: fullname,
+        email: emailid,
+        phone: mobile,
+        address: address,
+        course: course,
+        lexamapp: lexam,
+        lexamper: lexamper,
+        entranceapp: entrancee,
+      },
+      dataType: "json", // Specify the expected data type
+      success: function (data) {
+        console.log(data); // Log the response for debugging
+        if (data.status === "success") {
+          // Show success message using ToastAlert
+          toastr.success(data.message, "Success");
 
-								document.getElementById("enquiryname").value = "";
-								document.getElementById("enquiryemail").value = "";
-								document.getElementById("enquiryphone").value = "";
-								document.getElementById("enquirycourse").value = "";
-								document.getElementById("enquirymessage").value = "";
-							} else {
-								// Show error message using SweetAlert
-								Swal.fire({
-									icon: "error",
-									title: "Error!",
-									text: data.message,
-								});
-							}
-						},
-						error: function (xhr, status, error) {
-							// Handle other AJAX errors if needed
-							console.error("AJAX Error:", xhr, status, error);
-						},
-						complete: function () {
-							$(".loading").hide(); // Hide loading message on completion
-						},
-					});
-				}
-			});
+          document.getElementById("enquiryname").value = "";
+          document.getElementById("enquiryemail").value = "";
+          document.getElementById("enquiryphone").value = "";
+          document.getElementById("enquiryaddress").value = "";
+          document.getElementById("enquirycourse").value = "";
+          document.getElementById("lastexam").value = "";
+          document.getElementById("lastexampct").value = "";
+          document.getElementById("entrance").value = "";
+        } else {
+          // Show error message using SweetAlert
+          Swal.fire({
+            icon: "error",
+            title: "Error!",
+            text: data.message,
+          });
+        }
+      },
+      error: function (xhr, status, error) {
+        // Handle other AJAX errors if needed
+        console.error("AJAX Error:", xhr, status, error);
+      },
+      complete: function () {
+        $(".loading").hide(); // Hide loading message on completion
+      },
+    });
+  }
+});
 
 /*ENQUIRY BUTTON OPEN & CLOSE*/
 
@@ -230,16 +242,15 @@ function openNav() {
   var width;
 
   if (screenWidth >= 1200) {
-      width = "600px"; // Set width to 600px for large screens
+    width = "600px"; // Set width to 600px for large screens
   } else if (screenWidth >= 601 && screenWidth < 1200) {
-      width = "500px"; // Set width to 500px for medium screens
+    width = "500px"; // Set width to 500px for medium screens
   } else {
-      width = "436px"; // Set width to 400px for small screens
+    width = "436px"; // Set width to 400px for small screens
   }
 
   document.getElementById("myfirstcaptch").style.width = width;
 }
-
 
 function closeNav() {
   document.getElementById("myfirstcaptch").style.width = "0";
@@ -268,7 +279,7 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /*  COUNTER JS
 /* ----------------------------------------------------------- */
- count = document.querySelectorAll(".count");
+count = document.querySelectorAll(".count");
 let arr = Array.from(count);
 
 arr.map(function (item) {
@@ -369,8 +380,4 @@ $(document).ready(function () {
   });
 });
 
-		//for CONTACT Form not Refreshed after send blank abd error input fields.
-
-
-			
-		
+//for CONTACT Form not Refreshed after send blank abd error input fields.

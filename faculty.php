@@ -156,7 +156,7 @@
 		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
 
 			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1";
+			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
 			$Sql_query = mysqli_query($conn, $sql);
 			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 			foreach ($All_fname as $row) {

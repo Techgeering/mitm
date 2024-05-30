@@ -68,7 +68,7 @@ if ($form === NULL) {
                     <div class="navbar-nav w-100">
                         <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
                         <a href="enquiry.php" class="nav-item nav-link"><i
-                                class="bi bi-file-earmark-text me-2"></i>Admission Enquiry</a>
+                                class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Life
@@ -85,9 +85,13 @@ if ($form === NULL) {
                         <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link active"><i class="bi bi-bell me-2"></i>Notice</a>
+                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College Notice</a>
+                        <a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            Notice</a>
+
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                            Student</a>
+                        Std</a>
                             <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
