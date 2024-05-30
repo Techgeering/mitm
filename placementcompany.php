@@ -73,7 +73,7 @@
 						$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 						foreach ($All_fname as $row) {
 							?>
-							<img src="admin/upload/companies/<?php echo $row['image']; ?>" alt="">
+							<img src="$image_url/admin/upload/companies/<?php echo $row['image']; ?>" alt="">
 						<?php } ?>
 					</div>
 					<!-- <div class="col-lg-3 comp-img ">
