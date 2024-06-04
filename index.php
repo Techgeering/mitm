@@ -48,7 +48,6 @@
 
 	<?php include 'navbar.php' ?>
 
-
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
@@ -74,12 +73,12 @@
 		</div>
 		<div class="carousel-inner" style="height: 437px">
 			<div class="carousel-item active img-carousel">
-				<img src="assets/img/home4.JPG" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/homecaro1.jpg" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
-						<h1 class="animation">education</h1>
+						<!-- <h1 class="animation">education</h1> -->
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-4">
 							<div class="home-text-box">
 								<div class="row">
@@ -127,17 +126,17 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/home7.JPG" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/homecaro2.jpg" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
-						<h1 class="animation2 animation">education2</h1>
+						<!-- <h1 class="animation2 animation">education2</h1> -->
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-4">
 							<div class="home-text-box">
 								<div class="row">
@@ -185,17 +184,17 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
 			<div class="carousel-item img-carousel">
-				<img src="assets/img/home.JPG" class="carousel-img zoom" alt="picture" />
+				<img src="assets/img/homecaro3.jpg" class="carousel-img zoom" alt="picture" />
 				<div class="carousel-caption carousel-box-position d-none d-md-block">
 					<div class="container">
-						<h1 class="animation animation3">education3</h1>
+						<!-- <h1 class="animation animation3">education3</h1> -->
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-4">
 							<div class="home-text-box">
 								<div class="row">
@@ -243,7 +242,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -264,15 +263,6 @@
 						under privileged at an affordable cost and means. The Academic value is given and utmost
 						importance with an aim to provide a comprehensive and contemporary Engineering education.
 					</p>
-					<!-- <p class="abt-uspara">
-						MITM creates an environmental based on knowledge, truth, wisdom and enlighten, that inspires
-						young minds today to become the worthy citizens of tomorrow. This Institution is exclusively
-						designed for providing quality education. The environment is highly conductive for building a
-						solid foundation of knowledge, development of personality, confidence building, Pursuit of
-						excellence and self-discipline and enhancement of creativity. Living in such environment with
-						people having similar goals and aspirations is an exciting experience during one's academic
-						life.
-					</p> -->
 					<p class="abt-uspara">
 						The Institute is recognized by
 						Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to Biju Pattnaik

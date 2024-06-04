@@ -31,11 +31,7 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-<<<<<<< HEAD
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>">
-=======
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php  echo time(); ?>"/>
->>>>>>> eaaf2cd610b65f6d7809db428999ca1a4cda8a27
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>"/>
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
