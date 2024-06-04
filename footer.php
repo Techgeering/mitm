@@ -44,7 +44,7 @@
                             <a href="about" class="link-decoration">About MITM</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
+                            <a href="missionvision" class="link-decoration">Vision & Mission</a>
                         </div>
                         <div>
                             <a href="chairmansays" class="link-decoration">Chairperson's Message</a>

@@ -55,7 +55,7 @@
 			<h3 class="text-uppercase text-primary text-center about-texthead">About us</h3>
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-6 order-md-1 order-1">
-					<img src="assets/img/birla.jpg" alt="Birla Image" class="img-fluid"
+					<img src="assets/img/abtus.JPG" alt="Birla Image" class="img-fluid"
 						style="margin-top: 3px; margin-bottom: 9px;">
 				</div>
 				<div class="col-12 col-sm-6 col-md-6 order-md-2 order-2">

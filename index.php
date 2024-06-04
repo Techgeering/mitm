@@ -314,7 +314,7 @@
 			<!-- Topic Cards -->
 			<div id="cards_landscape_wrap-2">
 				<div class="container">
-					<div class="row">
+					<div class="row justify-content-center">
 						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
@@ -324,13 +324,12 @@
 										</div>
 										<div class="text-container">
 											<h6 class="text-white">B.Tech</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+						<!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
 									<div class="text-box">
@@ -339,13 +338,12 @@
 										</div>
 										<div class="text-container">
 											<h6 class="text-white">M.Tech</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+						</div> -->
+						<!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
 									<div class="text-box">
@@ -355,12 +353,11 @@
 
 										<div class="text-container">
 											<h6 class="text-white">MCA</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
-						</div>
+						</div> -->
 						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
@@ -370,13 +367,26 @@
 										</div>
 										<div class="text-container">
 											<h6 class="text-white">MBA</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+							<a href="">
+								<div class="card-flyer">
+									<div class="text-box">
+										<div class="image-box">
+											<img src="assets/img/polytechnic.png" alt="" />
+										</div>
+										<div class="text-container">
+											<h6 class="text-white">Polytechnic</h6>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
 									<div class="text-box">
@@ -385,13 +395,12 @@
 										</div>
 										<div class="text-container">
 											<h6 class="text-white">Diploma</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+						</div> -->
+						<!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 							<a href="">
 								<div class="card-flyer">
 									<div class="text-box">
@@ -400,12 +409,11 @@
 										</div>
 										<div class="text-container">
 											<h6 class="text-white">Computer Science</h6>
-											<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
 										</div>
 									</div>
 								</div>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -495,7 +503,7 @@
 				<p id="alumniCount" class="fw-bold text-center text-white placement-count">0</p>
 			</div>
 			<div class="col-12 col-md-7 placement-data py-2">
-				<img src="assets/img/comp.jpg" alt="" class="img-fluid" />
+				<img src="assets/img/comp.jpg" alt="" class="placement-img" />
 				<!-- Add more images or content here -->
 			</div>
 		</div>
