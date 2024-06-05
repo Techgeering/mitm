@@ -78,7 +78,7 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -106,7 +106,7 @@ if ($form === NULL) {
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -240,8 +240,10 @@ if ($form === NULL) {
                 if (isset($_POST['add'])) {
 
                     $notice = $_POST["noticetitle"];
-                    $sql = "INSERT INTO exam_notice(noticetitle,status,college_type) 
-             VALUES('$notice','1','$collage')";
+                    $enoticedate = $_POST["examnoticedate"];
+
+                    $sql = "INSERT INTO exam_notice(noticetitle,publish_date,status,college_type) 
+             VALUES('$notice','$enoticedate','1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo "<script>window.location.href='examnotice.php';</script>";
                     } else {
@@ -256,7 +258,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Upload Notice</h4>
+                                <h4 class="modal-title">Upload Exam Notice</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
@@ -266,6 +268,10 @@ if ($form === NULL) {
                                             <label for="exampleInputtext">notice</label>
                                             <textarea id="title" class="form-control" name="noticetitle" rows="5"
                                                 required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Date of Upload</label>
+                                            <input type="date" id="date" class="form-control" name="examnoticedate" required />
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
@@ -287,7 +293,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Update News</h4>
+                                <h4 class="modal-title">Update Exam Notice</h4>
                                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>

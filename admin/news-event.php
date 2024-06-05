@@ -71,7 +71,7 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -223,7 +223,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Upload Image</h4>
+                                <h4 class="modal-title">Upload News & Event</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="<?php $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
@@ -257,7 +257,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Update News</h4>
+                                <h4 class="modal-title">Update News & Event</h4>
                                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>

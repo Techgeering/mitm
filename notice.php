@@ -435,15 +435,11 @@
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
 
-
 	<div class="heading-bg-img" style="background-image: url(assets/img/headingbgimg.png); margin-top: 166px; ">
 		<div class="heading-bg-color">
 			<h1 class="heading-text-position text-uppercase">NOTICE</h1>
 		</div>
 	</div>
-
-
-
 
 	<section class="container notice-section py-2">
 		<div class="row">
@@ -497,12 +493,6 @@
 						<li>
 							<?php echo $row['notice']; ?>
 						</li>
-						<!-- <li>
-							2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						</li> -->
-						<!-- <li>
-						3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					</li> -->
 					<?php } ?>
 				</div>
 			</div>

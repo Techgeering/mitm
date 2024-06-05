@@ -73,7 +73,7 @@ if ($form === NULL) {
                         </a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">

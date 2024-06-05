@@ -92,7 +92,7 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -119,7 +119,7 @@ if ($form === NULL) {
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">

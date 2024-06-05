@@ -71,7 +71,7 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Life
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
@@ -85,14 +85,15 @@ if ($form === NULL) {
                         <a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link active"><i class="bi bi-bell me-2"></i>Notice</a>
-                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College Notice</a>
+                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>
                         <a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>
 
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                        Std</a>
-                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
+                            Std</a>
+                        <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                         <a href="logout.php" class="nav-item nav-link"><i
                                 class="far fa-share-square nav-icon"></i>Logout</a>
                     </div>
@@ -204,9 +205,10 @@ if ($form === NULL) {
                 if (isset($_POST['add'])) {
 
                     $notice = $_POST["notice"];
+                    $uploaddate = $_POST["date"];
 
-                    $sql = "INSERT INTO mitm_notice(notice,status) 
-             VALUES('$notice','1')";
+                    $sql = "INSERT INTO mitm_notice(notice,date_of_upload,status) 
+             VALUES('$notice','$uploaddate','1')";
                     if ($conn->query($sql) === true) {
                         echo "<script>window.location.href='notice.php';</script>";
                     } else {
@@ -232,6 +234,10 @@ if ($form === NULL) {
                                             <textarea id="notice" class="form-control" name="notice" rows="5"
                                                 required></textarea>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Date of Upload</label>
+                                            <input type="date" id="date" class="form-control" name="date" required />
+                                        </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-secondary"
@@ -252,7 +258,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Update News</h4>
+                                <h4 class="modal-title">Update Notice</h4>
                                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>

@@ -78,7 +78,7 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Life</a>
+                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -105,7 +105,7 @@ if ($form === NULL) {
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Life</a>
+                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -284,7 +284,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Upload Image</h4>
+                                <h4 class="modal-title">Upload Placement Student</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
@@ -411,7 +411,7 @@ if ($form === NULL) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">placement</h4>
+                                <h4 class="modal-title">Update Placement Student</h4>
                                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -483,6 +483,7 @@ if ($form === NULL) {
                 </script>
                 <script>
                     //member image
+                    $("#zxy").attr("src", "assets/img/no-image.png");
                     $("#zxy2").change(function () {
                         const file3 = this.files[0];
                         if (file3) {
