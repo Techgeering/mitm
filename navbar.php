@@ -283,7 +283,7 @@
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">College Notice</a>
+											href="collegenotice.php">College Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
