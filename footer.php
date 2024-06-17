@@ -143,9 +143,9 @@
                                 <a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a>
                             </div> -->
                         <h4 class="footer-heading-color text-uppercase">training and PLACEMENTS</h4>
-                        <div>
+                        <!-- <div>
                             <a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
-                        </div>
+                        </div> -->
                         <div>
                             <a href="placementcamp" class="link-decoration">Placement Track Record</a>
                         </div>
@@ -157,7 +157,7 @@
                     <div class="col-lg-3">
                         <div class="text-size">
                             <h4 class="footer-heading-color">CONTACT US</h4>
-                            <div class="fw-bold">City Office:</div>
+                            <div class="fw-bold fs-3">City Office:</div>
                             <div>
                                 <div>Plot No : A/14, </div>
                                 <div>
@@ -173,7 +173,7 @@
                             <div>Phone No : <a style="color: white;" href="tel:0674235988">0674-235988</a></div>
                             <div>Phone No : <a style="color: white;" href="tel:06742355277">0674-2355277</a></div>
 
-                            <div class="fw-bold">Campus :</div>
+                            <div class="fw-bold fs-3">Campus :</div>
                             <div>
                                 <div>
                                     Modern Institute of Technology & Management

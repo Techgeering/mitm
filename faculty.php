@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.6">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -153,6 +153,7 @@
 
 
 	<div class="container p-5" style="margin-top: 175px;">
+	<h1 class="all-heading-color text-center fac">FACULTIES</h1>
 		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
 
 			<?php include 'admin/db.php';
