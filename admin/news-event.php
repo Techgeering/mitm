@@ -69,6 +69,8 @@ if ($form === NULL) {
                         <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
                         <a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>
+                        <a href="feedbackdata.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Feedback</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery
@@ -86,16 +88,15 @@ if ($form === NULL) {
                             and
                             Event</a>
                         <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i> Notice</a>
-                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College Notice</a>
+                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                            Notice</a>
                         <a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>
 
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                        Std</a>
-                            <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
-                        <a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>
+                            Std</a>
+                        <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                     </div>
                 </nav>
             </div>
@@ -111,6 +112,14 @@ if ($form === NULL) {
                     <a href="#" class="sidebar-toggler flex-shrink-0">
                         <i class="fa fa-bars"></i>
                     </a>
+                    <div class="ms-auto d-flex align-items-center"> <!-- Added d-flex and align-items-center classes -->
+                        <a href="logout.php" class="nav-item nav-link me-3"> <!-- Added margin between buttons -->
+                            <i class="far fa-share-square nav-icon"></i> Logout
+                        </a>
+                        <a href="passchange.php" class="nav-item nav-link">
+                            <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
+                        </a>
+                    </div>
 
                 </nav>
                 <!-- Navbar End -->
@@ -289,7 +298,7 @@ if ($form === NULL) {
                     </div>
                     <!-- /.modal-dialog -->
                 </div>
-                
+
 
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>

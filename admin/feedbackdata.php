@@ -38,7 +38,9 @@ if ($form === NULL) {
 
         <!-- Template Stylesheet -->
         <link href="assets/css/style.css" rel="stylesheet">
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- Include SweetAlert library -->
+
         <!-- pagination -->
         <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
@@ -47,6 +49,19 @@ if ($form === NULL) {
         <!-- DataTables JS -->
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- End pagination -->
+
+
+
+        <!-- DataTables CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <!-- DataTables Buttons CSS -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css">
+        <!-- DataTables Extensions CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+
+
     </head>
 
     <body>
@@ -76,10 +91,13 @@ if ($form === NULL) {
                             echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
                             echo '<a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
+                            echo '<a href="feedbackdata.php" class="nav-item nav-link active"><i
+                                class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Gallery</a>';
-                            echo '<div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
+                            </a>
+                            <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
                                 </a>
@@ -88,24 +106,23 @@ if ($form === NULL) {
                                 </a>
                             </div>
                         </div>';
-                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
+                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
                             Event</a>';
                             echo '<a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
                             echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
-
-                            echo '<a href="placement.php" class="nav-item nav-link active"><i
-                                class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                                Std</a>';
+                            Std</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
                         } else {
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Gallery</a>';
-                            echo '<div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
+                            </a>
+                            <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
                                 </a>
@@ -119,8 +136,7 @@ if ($form === NULL) {
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
-                            echo '<a href="placement.php" class="nav-item nav-link active"><i
-                                class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
@@ -130,7 +146,6 @@ if ($form === NULL) {
                 </nav>
             </div>
             <!-- Sidebar End -->
-
             <!-- Content Start -->
             <div class="content">
                 <!-- Navbar Start -->
@@ -149,63 +164,64 @@ if ($form === NULL) {
                             <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
                         </a>
                     </div>
-
                 </nav>
                 <!-- Navbar End -->
-
                 <!-- Table Start -->
                 <div class="container-fluid pt-4 px-4">
                     <div class="row g-4">
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">Placement</h6>
-                                <div class="col-sm-12 mb-2">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modal-bs-primary">
-                                        <i class="fas fa-plus"></i>Add
-                                    </button>
-                                </div>
+                                <h6 class="mb-4">Feedback</h6>
+                                <!-- <button onclick="downloadCSV()">CSV</button> -->
                                 <table id="example1" class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">placement</th>
-                                            <th scope="col" class="text-center">Date Of Upload</th>
-                                            <th scope="col" class="text-center">manage</th>
+                                            <th scope="col">Slno</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Number</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Feedback</th>
+                                            <th scope="col">Date of Upload</th>
+                                            <th scope="col">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         <?php include 'db.php';
-                                        $sql = "SELECT * FROM mitm_placement where college_type= '$collage' ORDER BY id DESC";
+
+                                        $sql = "SELECT * FROM mitm_feedback ORDER BY id DESC";
                                         $result = $conn->query($sql);
                                         $i = 1;
-                                        while ($row = $result->fetch_assoc()) { ?>
+                                        while ($row = $result->fetch_assoc()) {
+                                            ?>
                                             <tr>
-                                                <td class=text-center><?php echo $i;
-                                                $i++; ?></td>
-                                                <td class=text-center><img src="upload/companies/<?php echo $row['image']; ?>"
-                                                        width="50" height="50">
+                                                <td class="text-center">
+                                                    <?php echo $i;
+                                                    $i++; ?>
                                                 </td>
-                                                <td class=text-center><?php echo $row['date_of_upload']; ?></td>
-                                                <td class=text-center><?php $status = $row['status'];
-                                                $status = $row['status'];
-                                                $idm = $row['id'];
-                                                $tb = 'mitm_placement';
-                                                $tbc = 'id';
-                                                $tbc1 = 'status';
-                                                $returnpage = 'placement.php';
-
-                                                if ($status == 1) {
-                                                    echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
-                                                    <i class='fas fa-unlock'></i></a>";
-                                                } else {
-                                                    echo "<a href='inactive.php?status0=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-danger' onclick='return confirmAction(\"inactive\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
-                                                    <i class='fas fa-lock'></i></a>";
-                                                }
-                                                ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['feedback_role']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['feedback_name']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['feedback_number']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['feedback_email']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['feedback']; ?>
+                                                </td>
+                                                <td class="text-center">
+                                                    <?php echo $row['date_of_upload']; ?>
+                                                </td>
+                                                <td class="text-center">
                                                     <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_placement', tbc='id', returnpage='placement.php');">
+                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_feedback', tbc='id', returnpage='feedbackdata.php');">
                                                         <i class="fas fa-trash-alt btn btn-danger"></i>
                                                     </a>
                                                 </td>
@@ -214,83 +230,21 @@ if ($form === NULL) {
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">placement</th>
-                                            <th scope="col" class="text-center">Date Of Upload</th>
-                                            <th scope="col" class="text-center">manage</th>
+                                            <th scope="col">Slno</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Number</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Feedback</th>
+                                            <th scope="col">Date of Upload</th>
+                                            <th scope="col">Delete</th>
                                         </tr>
-                                        <tfoot>
+                                    </tfoot>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <?php
-
-                if (isset($_POST['addgallery'])) {
-
-                    $image_name = $_FILES['image']['name'];
-                    $image_size = $_FILES['image']['size'];
-                    $image_tmp = $_FILES['image']['tmp_name'];
-                    $file_type = pathinfo($image_name, PATHINFO_EXTENSION);
-                    $new_file_name = uniqid() . '.' . $file_type;
-
-                    $upload_dir = "upload/companies/";
-                    if (!is_dir($upload_dir)) {
-                        mkdir($upload_dir);
-                    } else {
-                        $conn->error;
-                    }
-                    $target_file = $upload_dir . $new_file_name;
-                    if (move_uploaded_file($image_tmp, $target_file)) {
-                        // echo "<script>
-                        //     alert('image uploaded successfuly');
-                        //     </script>";
-                    } else {
-                        // echo "<script>
-                        //     alert('image not uploaded');
-                        //     </script>";
-                    }
-                    $sql = "INSERT INTO mitm_placement(image,status,college_type) 
-             VALUES('$new_file_name','1','$collage')";
-                    if ($conn->query($sql) === true) {
-                        echo "<script>window.location.href='placement.php';</script>";
-                    } else {
-                        $conn->error;
-                    }
-                    $conn->close();
-                }
-
-                ?>
-
-                <div class="modal fade" data-bs-backdrop="static" id="modal-bs-primary">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Upload placement</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post' enctype="multipart/form-data">
-                                <div class="modal-body">
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label for="exampleInputimage">Placement</label>
-                                            <input type="file" id="exampleInputimage" name="image" required>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" name="addgallery" value="Submit"
-                                            class="btn btn-primary">Upload</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Table End -->
                 <?php include "common/footer.php" ?>
             <?php } ?>

@@ -37,7 +37,6 @@
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Alumni Network</a>
                         </div>
-
                     </div>
                     <div class="col-lg-2">
                         <h4 class="footer-heading-color">ABOUT US</h4>
@@ -103,9 +102,6 @@
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Publication Details of Teachers</a>
                         </div>
-                        <div>
-                            <button class="login-button" onclick="Login()">Administration Login</button>
-                        </div>
                         <!-- <h4 class="footer-heading-color">DIPLOMA</h4>
                             <div>
                                 <a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
@@ -124,7 +120,8 @@
                                 Ragging Policy</a>
                         </div>
                         <div>
-                            <a href="grievance.html" class="link-decoration">Grievance Cell</a>
+                            <a href="grievance.html"
+                                class="link-decoration">Grievance Cell</a>
                         </div>
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
@@ -146,9 +143,9 @@
                                 <a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a>
                             </div> -->
                         <h4 class="footer-heading-color text-uppercase">training and PLACEMENTS</h4>
-                        <!-- <div>
+                        <div>
                             <a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
-                        </div> -->
+                        </div>
                         <div>
                             <a href="placementcamp" class="link-decoration">Placement Track Record</a>
                         </div>
@@ -160,7 +157,7 @@
                     <div class="col-lg-3">
                         <div class="text-size">
                             <h4 class="footer-heading-color">CONTACT US</h4>
-                            <div class="fw-bold fs-3">City Office:</div>
+                            <div class="fw-bold">City Office:</div>
                             <div>
                                 <div>Plot No : A/14, </div>
                                 <div>
@@ -176,7 +173,7 @@
                             <div>Phone No : <a style="color: white;" href="tel:0674235988">0674-235988</a></div>
                             <div>Phone No : <a style="color: white;" href="tel:06742355277">0674-2355277</a></div>
 
-                            <div class="fw-bold fs-3">Campus :</div>
+                            <div class="fw-bold">Campus :</div>
                             <div>
                                 <div>
                                     Modern Institute of Technology & Management
@@ -203,9 +200,3 @@
     </div>
 </footer>
 <!-- FOOTER section end-->
-<script>
-    function Login() {
-        // Replace 'login.html' with the URL of your login page
-        window.location.href = 'http://localhost/mitm/admin/login.php';
-    }
-</script>

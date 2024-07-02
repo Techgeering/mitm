@@ -60,8 +60,8 @@ if ($form === NULL) {
             </div>
             <!-- Spinner End -->
 
-             <!-- Sidebar Start -->
-             <div class="sidebar pe-4 pb-3">
+            <!-- Sidebar Start -->
+            <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
                     <a href="index.html" class="navbar-brand mx-4 mb-3">
                         <?php if ($collage == 1) { ?>
@@ -76,6 +76,8 @@ if ($form === NULL) {
                             echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
                             echo '<a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
+                            echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
                                     class="fa fa-object-group nav-icon"></i>Gallery</a>';
@@ -101,8 +103,6 @@ if ($form === NULL) {
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                                 Std</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
-                            echo '<a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>';
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
@@ -126,8 +126,7 @@ if ($form === NULL) {
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
-                            echo '<a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                          
                         }
                         ?>
                     </div>
@@ -145,7 +144,14 @@ if ($form === NULL) {
                     <a href="#" class="sidebar-toggler flex-shrink-0">
                         <i class="fa fa-bars"></i>
                     </a>
-
+                    <div class="ms-auto d-flex align-items-center"> <!-- Added d-flex and align-items-center classes -->
+                        <a href="logout.php" class="nav-item nav-link me-3"> <!-- Added margin between buttons -->
+                            <i class="far fa-share-square nav-icon"></i> Logout
+                        </a>
+                        <a href="passchange.php" class="nav-item nav-link">
+                            <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
+                        </a>
+                    </div>
                 </nav>
                 <!-- Navbar End -->
 

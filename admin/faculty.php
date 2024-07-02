@@ -76,6 +76,8 @@ if ($form === NULL) {
                             echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
                             echo '<a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
+                            echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                     class="fa fa-object-group nav-icon"></i>Gallery</a>
@@ -101,8 +103,7 @@ if ($form === NULL) {
                             Std</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link active"><i
                                 class="fas fa-user-graduate"></i>Faculty</a>';
-                            echo '<a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>';
+                            
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
@@ -127,8 +128,6 @@ if ($form === NULL) {
                             Student</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link active"><i
                                 class="fas fa-user-graduate"></i>Faculty</a>';
-                            echo '<a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>';
                         }
                         ?>
                     </div>
@@ -146,7 +145,14 @@ if ($form === NULL) {
                     <a href="#" class="sidebar-toggler flex-shrink-0">
                         <i class="fa fa-bars"></i>
                     </a>
-
+                    <div class="ms-auto d-flex align-items-center"> <!-- Added d-flex and align-items-center classes -->
+                        <a href="logout.php" class="nav-item nav-link me-3"> <!-- Added margin between buttons -->
+                            <i class="far fa-share-square nav-icon"></i> Logout
+                        </a>
+                        <a href="passchange.php" class="nav-item nav-link">
+                            <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
+                        </a>
+                    </div>
                 </nav>
                 <!-- Navbar End -->
 
@@ -169,6 +175,8 @@ if ($form === NULL) {
                                             <th scope="col" class="text-center">Image</th>
                                             <th scope="col" class="text-center">Name</th>
                                             <th scope="col" class="text-center">Designation</th>
+                                            <th scope="col" class="text-center">Phone Number</th>
+                                            <th scope="col" class="text-center">Email</th>
                                             <th scope="col" class="text-center">Manage</th>
                                         </tr>
                                     </thead>
@@ -187,6 +195,9 @@ if ($form === NULL) {
                                                 </td>
                                                 <td class=text-center><?php echo $row['faculty_name']; ?></td>
                                                 <td class=text-center><?php echo $row['designation']; ?></td>
+                                                <td class=text-center><?php echo $row['phone_number']; ?></td>
+                                                <td class=text-center><?php echo $row['email_id']; ?></td>
+
                                                 <td class=text-center><?php $status = $row['status'];
                                                 $status = $row['status'];
                                                 $idm = $row['id'];
@@ -204,7 +215,7 @@ if ($form === NULL) {
                                                 }
                                                 ?>
                                                     <button type="button" name="update1"
-                                                        onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>')"
+                                                        onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>','<?php echo $row['phone_number']; ?>','<?php echo $row['email_id']; ?>')"
                                                         class="btn btn-primary m-2" data-bs-toggle="modal"
                                                         data-bs-target="#updatefaculty">
                                                         <i class='fas fa-edit'></i>
@@ -223,6 +234,8 @@ if ($form === NULL) {
                                             <th scope="col" class="text-center">Image</th>
                                             <th scope="col" class="text-center">Name</th>
                                             <th scope="col" class="text-center">Designation</th>
+                                            <th scope="col" class="text-center">Phone Number</th>
+                                            <th scope="col" class="text-center">Email</th>
                                             <th scope="col" class="text-center">Manage</th>
                                         </tr>
                                         <tfoot>
@@ -236,6 +249,8 @@ if ($form === NULL) {
 
                     $name = $_POST['name'];
                     $designation = $_POST['designation'];
+                    $phonenumber = $_POST['phonenumber'];
+                    $email = $_POST['email'];
 
                     $image_name = $_FILES['image']['name'];
                     $image_size = $_FILES['image']['size'];
@@ -259,8 +274,8 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, status, college_type) 
-             VALUES('$new_file_name','$name','$designation','1','$collage')";
+                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, phone_number, email_id, status, college_type) 
+             VALUES('$new_file_name','$name','$designation', '$phonenumber', '$email', '1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo '<script>window.location.href = "faculty.php";</script>';
                     } else {
@@ -293,6 +308,15 @@ if ($form === NULL) {
                                             <input type="text" class="form-control" id="designation" name="designation"
                                                 required>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phonenumber" name="phonenumber"
+                                                required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Email</label>
+                                            <input type="text" class="form-control" id="email" name="email" required>
+                                        </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-secondary"
@@ -311,6 +335,8 @@ if ($form === NULL) {
                     $id = $_POST["id1"];
                     $name = $_POST['name'];
                     $designation = $_POST['designation'];
+                    $phonenumber = $_POST['phonenumber'];
+                    $email = $_POST['email'];
 
                     // Check if a new image is uploaded
                     if (!empty($_FILES['image']['name'])) {
@@ -344,7 +370,7 @@ if ($form === NULL) {
                         if (move_uploaded_file($image_tmp, $target_file)) {
                             // Image uploaded successfully
                             // Update the database with the new image
-                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' WHERE id='$id'";
+                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' , phone_number='$phonenumber' , email_id='$email' WHERE id='$id'";
                             if ($conn->query($sql) === true) {
                                 echo '<script>window.location.href = "faculty.php";</script>';
                             } else {
@@ -356,7 +382,7 @@ if ($form === NULL) {
                         }
                     } else {
                         // No new image uploaded, update other fields only
-                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation' WHERE id='$id'";
+                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation', phone_number='$phonenumber', email_id='$email' WHERE id='$id'";
                         if ($conn->query($sql) === true) {
                             echo '<script>window.location.href = "faculty.php";</script>';
                         } else {
@@ -397,6 +423,14 @@ if ($form === NULL) {
                                         <label for="text">Designation</label>
                                         <input type="text" class="form-control" id="designation1" name="designation">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="text">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone1" name="phonenumber">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="text">Email</label>
+                                        <input type="text" class="form-control" id="email1" name="email">
+                                    </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-outline-dark"
                                             data-bs-dismiss="modal">Close</button>
@@ -415,17 +449,21 @@ if ($form === NULL) {
 
             <script>
                 //id get for update Members.-->
-                function myfcn4(id1, image, name, designation) {
+                function myfcn4(id1, image, name, designation, phonenumber, email) {
                     document.getElementById("zxy11").value = id1;
                     document.getElementById("image11").src = "upload/member/" + image;
                     document.getElementById("name1").value = name;
                     document.getElementById("designation1").value = designation;
+                    document.getElementById("phone1").value = phonenumber;
+                    document.getElementById("email1").value = email;
+
                 }
             </script>
             <script>
                 //member image
                 $("#preimage").attr("src", "assets/img/no-image.png");
                 $("#zxy22").change(function () {
+                    email
                     const file3 = this.files[0];
                     if (file3) {
                         let reader3 = new FileReader();

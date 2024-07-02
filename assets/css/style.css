@@ -1976,3 +1976,16 @@ top: 96%;
 [data-bs-theme = "dark"] .carousel .carousel-control-prev-icon {
   filter: none;
 }
+
+.login-button {
+  background-color: #41e0fd;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background-color: #41e0fd;
+}

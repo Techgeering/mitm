@@ -50,6 +50,8 @@ if ($form === NULL) {
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- End pagination -->
 
+
+
         <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
         <!-- DataTables Buttons CSS -->
@@ -84,18 +86,16 @@ if ($form === NULL) {
                         <?php } ?>
                     </a>
                     <div class="navbar-nav w-100">
-                        <?php
+                    <?php
                         if ($collage === '1') {
-                            echo '<a href="contact.php" class="nav-item nav-link active"><i
-                                class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
                             echo '<a href="enquiry.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Gallery
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -112,15 +112,16 @@ if ($form === NULL) {
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
+
                             echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>';
-                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link active"><i
+                                class="fas fa-user-graduate"></i>Faculty</a>';
                         } else {
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-object-group nav-icon"></i> Gallery
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -130,16 +131,17 @@ if ($form === NULL) {
                                 </a>
                             </div>
                         </div>';
-                            echo '<a href="contact.php" class="nav-item nav-link active"><i
-                                class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
                             echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
+
                             echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>';
-                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link active"><i
+                                class="fas fa-user-graduate"></i>Faculty</a>';
                         }
                         ?>
                     </div>
@@ -165,119 +167,82 @@ if ($form === NULL) {
                             <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
                         </a>
                     </div>
-
                 </nav>
                 <!-- Navbar End -->
 
-                <!-- Table Start -->
-                <div class="container-fluid pt-4 px-4">
-                    <div class="row g-4">
-                        <div class="">
-                            <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">Contact</h6>
-                                <!-- <button onclick="downloadCSV()">CSV</button> -->
-                                <table id="example1" class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Slno</th>
-                                            <th scope="col">Full Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Message</th>
-                                            <th scope="col">Date & Time</th>
-                                            <th scope="col">Delete</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <?php include 'db.php';
-
-                                        $sql = "SELECT * FROM mitm_contact where college_type='$collage' ORDER BY id DESC";
-                                        $result = $conn->query($sql);
-                                        $i = 1;
-                                        while ($row = $result->fetch_assoc()) {
-                                            ?>
-                                            <tr>
-                                                <td class="text-center">
-                                                    <?php echo $i;
-                                                    $i++; ?>
-                                                </td>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['contact_name']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['contact_email']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['contact_phone']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['contact_message']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['dte_tim']; ?>
-                                                </td>
-                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php //echo $row['id']; ?>)"><i
-                                                        class="fas fa-trash-alt btn btn-danger"></i></a></td> -->
-                                                <!-- <td class="text-center"><a onclick="confirmDelete(<?php //echo $row['id']; ?>),&&tb=mitm_contact&&returnpage=contact.php </a></td> -->
-                                                <td class="text-center">
-                                                    <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_contact', tbc='id', returnpage='contact.php');">
-                                                        <i class="fas fa-trash-alt btn btn-danger"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="col">Slno</th>
-                                            <th scope="col">Full Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Message</th>
-                                            <th scope="col">Date & Time</th>
-                                            <th scope="col">Delete</th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                <div class="content-wrapper">
+                    <!-- Content Header (Page header) -->
+                    <section class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-sm-12">
+                                    <h4>Password Update</h4>
+                                </div>
                             </div>
+                        </div><!-- /.container-fluid -->
+                    </section>
+
+                    <!-- Main content -->
+                    <section class="content-wrapper mb-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <div class="card">
+                                        <!--<div class="card-header">-->
+                                        <!--  <h3 class="card-title">DataTable with default features</h3>-->
+                                        <!--</div>-->
+                                        <!-- /.card-header -->
+                                        <div class="card-body mb-2">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <form action="passwordupdate.php" method="post"
+                                                        enctype="multipart/form-data">
+                                                        <div class="form-group col-sm-12  mb-2">
+                                                            <input type="password" name="cur_pas" class="form-control"
+                                                                placeholder="Enter current password" required>
+                                                        </div>
+                                                        <div class="form-group col-sm-12 mb-2">
+                                                            <input type="password" name="new_pas" class="form-control"
+                                                                placeholder="Enter new password" required>
+                                                        </div>
+                                                        <div class="form-group col-sm-12 mb-2">
+                                                            <input type="password" name="rnew_pas" class="form-control"
+                                                                placeholder="Re-enter new password" required>
+                                                        </div>
+                                                        <div class="form-group col-sm-12 mb-3">
+                                                            <input type="submit" name="changepass" class="btn btn-primary"
+                                                                value="Update" required>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p>Modern Institute of Technology & Management (MITM),Bhubaneswar
+                                                        Bidyavihar , Bhagabatipur</p>
+                                                    <p>Bhubaneswar , Odisha</p>
+                                                    <hr>
+                                                    <h5> Contact</h5>
+                                                    <p><i class="far fa-building"></i> Techgeering Solutions Pvt. Ltd.</p>
+                                                    <p><i class="bi bi-envelope"></i> info@techgeering.com</p>
+                                                    <p><i class="bi bi-phone"></i>+91 7855 865 181 | <i
+                                                            class="bi bi-whatsapp"></i>
+                                                        +91 7855 865 181</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
                         </div>
-                    </div>
+                        <!-- /.container-fluid -->
+                    </section>
+                    <!-- /.content -->
                 </div>
-                <!-- Table End -->
+
+
                 <?php include "common/footer.php" ?>
             <?php } ?>
-            <!-- <script>
-                function downloadCSV() {
-                    // Create a new CSV file
-                    var csv = '';
-
-                    // Add column headers
-                    csv += 'Slno,Full Name,Email,Phone,Message,Date & Time\n';
-
-                    // Iterate through the table rows and add data
-                    <?php
-                    $result = $conn->query($sql);
-                    while ($row = $result->fetch_assoc()) {
-                        ?>
-                        csv += '<?php echo $i; ?>,<?php echo $row['contact_name']; ?>,<?php echo $row['contact_email']; ?>,<?php echo $row['contact_phone']; ?>,<?php echo $row['contact_message']; ?>,<?php echo $row['dte_tim']; ?>\n';
-                        <?php
-                        $i++;
-                    }
-                    ?>
-
-                    // Create a Blob containing the CSV data
-                    var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-
-                    // Create a link element and trigger the download
-                    var link = document.createElement('a');
-                    link.href = window.URL.createObjectURL(blob);
-                    link.download = 'mitm_contact_data.csv';
-                    link.style.display = 'none';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }
-            </script> -->

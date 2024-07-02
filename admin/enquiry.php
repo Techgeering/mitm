@@ -71,6 +71,8 @@ if ($form === NULL) {
                         <a href="enquiry.php" class="nav-item nav-link active">
                             <i class="bi bi-file-earmark-text me-2"></i>Admission Enq
                         </a>
+                        <a href="feedbackdata.php" class="nav-item nav-link"><i
+                                class="bi bi-file-earmark-text me-2"></i>Feedback</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery
@@ -97,10 +99,9 @@ if ($form === NULL) {
 
                         <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
-                        Std</a>
+                            Std</a>
                         <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
-                        <a href="logout.php" class="nav-item nav-link"><i
-                                class="far fa-share-square nav-icon"></i>Logout</a>
+                       
                     </div>
                 </nav>
             </div>
@@ -116,7 +117,14 @@ if ($form === NULL) {
                     <a href="#" class="sidebar-toggler flex-shrink-0">
                         <i class="fa fa-bars"></i>
                     </a>
-
+                    <div class="ms-auto d-flex align-items-center"> <!-- Added d-flex and align-items-center classes -->
+                        <a href="logout.php" class="nav-item nav-link me-3"> <!-- Added margin between buttons -->
+                            <i class="far fa-share-square nav-icon"></i> Logout
+                        </a>
+                        <a href="passchange.php" class="nav-item nav-link">
+                            <i class="fas fa-cog nav-icon"></i> Setting <!-- Used Font Awesome cog icon -->
+                        </a>
+                    </div>
                 </nav>
                 <!-- Navbar End -->
 
@@ -126,88 +134,90 @@ if ($form === NULL) {
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
                                 <h6 class="mb-4">Enquiry</h6>
-                                <table id="example1" class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Full Name</th>
-                                            <th scope="col" class="text-center">Email</th>
-                                            <th scope="col" class="text-center">Phone</th>
-                                            <th scope="col" class="text-center">Address</th>
-                                            <th scope="col" class="text-center">course</th>
-                                            <th scope="col" class="text-center">Last Exam Appeared</th>
-                                            <th scope="col" class="text-center">Last Exam Percentage</th>
-                                            <th scope="col" class="text-center">Entrance Appreared</th>
-                                            <th scope="col" class="text-center">Date & Time</th>
-                                            <th scope="col" class="text-center">Delete</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php include 'db.php';
-
-                                        $sql = "SELECT * FROM mitm_enquiry ORDER BY id DESC";
-                                        $result = $conn->query($sql);
-                                        $i = 1;
-                                        while ($row = $result->fetch_assoc()) {
-                                            ?>
+                                <div class="table-responsive">
+                                    <table id="example1" class="table table-hover">
+                                        <thead>
                                             <tr>
-                                                <td class="text-center">
-                                                    <?php echo $i;
-                                                    $i++; ?>
-                                                </td>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['enquiry_name']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['enquiry_email']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['enquiry_mobile']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['enquiry_address']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['enquiry_course']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['last_exam_appeared']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['last_exam_percentage']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['entrance_appeared']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <?php echo $row['dte']; ?>
-                                                </td>
-                                                <td class="text-center">
-                                                    <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_enquiry', tbc='id', returnpage='enquiry.php');">
-                                                        <i class="fas fa-trash-alt btn btn-danger"></i>
-                                                    </a>
-                                                </td>
+                                                <th scope="col" class="text-center">Slno</th>
+                                                <th scope="col" class="text-center">Full Name</th>
+                                                <th scope="col" class="text-center">Email</th>
+                                                <th scope="col" class="text-center">Phone</th>
+                                                <th scope="col" class="text-center">Address</th>
+                                                <th scope="col" class="text-center">course</th>
+                                                <th scope="col" class="text-center">Last Exam Appeared</th>
+                                                <th scope="col" class="text-center">Last Exam Percentage</th>
+                                                <th scope="col" class="text-center">Entrance Appreared</th>
+                                                <th scope="col" class="text-center">Date & Time</th>
+                                                <th scope="col" class="text-center">Delete</th>
                                             </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Full Name</th>
-                                            <th scope="col" class="text-center">Email</th>
-                                            <th scope="col" class="text-center">Phone</th>
-                                            <th scope="col" class="text-center">Address</th>
-                                            <th scope="col" class="text-center">course</th>
-                                            <th scope="col" class="text-center">Last Exam Appeared</th>
-                                            <th scope="col" class="text-center">Last Exam Percentage</th>
-                                            <th scope="col" class="text-center">Entrance Appreared</th>
-                                            <th scope="col" class="text-center">Date & Time</th>
-                                            <th scope="col" class="text-center">Delete</th>
-                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php include 'db.php';
+
+                                            $sql = "SELECT * FROM mitm_enquiry ORDER BY id DESC";
+                                            $result = $conn->query($sql);
+                                            $i = 1;
+                                            while ($row = $result->fetch_assoc()) {
+                                                ?>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <?php echo $i;
+                                                        $i++; ?>
+                                                    </td>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['enquiry_name']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['enquiry_email']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['enquiry_mobile']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['enquiry_address']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['enquiry_course']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['last_exam_appeared']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['last_exam_percentage']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['entrance_appeared']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['dte']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a
+                                                            onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_enquiry', tbc='id', returnpage='enquiry.php');">
+                                                            <i class="fas fa-trash-alt btn btn-danger"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
                                         <tfoot>
-                                </table>
+                                            <tr>
+                                                <th scope="col" class="text-center">Slno</th>
+                                                <th scope="col" class="text-center">Full Name</th>
+                                                <th scope="col" class="text-center">Email</th>
+                                                <th scope="col" class="text-center">Phone</th>
+                                                <th scope="col" class="text-center">Address</th>
+                                                <th scope="col" class="text-center">course</th>
+                                                <th scope="col" class="text-center">Last Exam Appeared</th>
+                                                <th scope="col" class="text-center">Last Exam Percentage</th>
+                                                <th scope="col" class="text-center">Entrance Appreared</th>
+                                                <th scope="col" class="text-center">Date & Time</th>
+                                                <th scope="col" class="text-center">Delete</th>
+                                            </tr>
+                                            <tfoot>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
