@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'admin/db.php';
 
 // SQL query to add phone_number and email columns to mitm_faculty table
 $sql = "ALTER TABLE mitm_faculty
