@@ -302,8 +302,8 @@ if ($form === NULL) {
                                 <div class="modal-body">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputimage">Select a file</label>
-                                            <input type="file" id="exampleInputimage" name="image" required>
+                                            <label for="exampleInputimage">Choose Faculty Image</label>
+                                            <input type="file" id="exampleInputimage" name="image" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputtext">Faculty Name</label>
@@ -324,16 +324,16 @@ if ($form === NULL) {
                                             <input type="text" class="form-control" id="email" name="email" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputtext">Branch</label>
+                                            <label for="branch1">Branch</label>
                                             <!-- <input type="text" class="form-control" id="exampleInputtext" name="collegename" required> -->
-                                            <select name="branch" id="branch1">
+                                            <select name="branch" id="branch1" class="form-control">
                                                 <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
                                                 <option value="CIVIL ENGINEERING">CIVIL</option>
-                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">E & C E</option>
+                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ECE</option>
                                                 <option value="ELECTRICAL ENGINEERING">ELECTRICAL</option>
-                                                <option value="Electronics and Electrical Engineering">E & E E</option>
+                                                <option value="Electronics and Electrical Engineering">EEE</option>
                                                 <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MBA</option>
-                                                <option value="MECHANICAL ENGINEERING">MECHANICAL</option>
+                                                <option value="MECHANICAL ENGINEERING">MECH</option>
                                             </select>
                                         </div>
                                     </div>
