@@ -153,27 +153,27 @@
 		<h1 class="all-heading-color text-center fac">FACULTIES</h1>
 
 		<?php
-        include 'admin/db.php';
-        // Fetch distinct branches
-        $sql = "SELECT DISTINCT branch FROM mitm_faculty WHERE status = 1 AND college_type = 1";
-        $Sql_query = mysqli_query($conn, $sql);
-        $All_branches = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+		include 'admin/db.php';
+		// Fetch distinct branches
+		$sql = "SELECT DISTINCT branch FROM mitm_faculty WHERE status = 1 AND college_type = 1";
+		$Sql_query = mysqli_query($conn, $sql);
+		$All_branches = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 
-        foreach ($All_branches as $branch_row) {
-            $branch = $branch_row['branch'];
-            ?>
+		foreach ($All_branches as $branch_row) {
+			$branch = $branch_row['branch'];
+			?>
 
-            <h4 class="text-uppercase mission-head"><?php echo $branch; ?></h4>
+			<h4 class="text-uppercase mission-head"><?php echo $branch; ?></h4>
 
-            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                <?php
-                // Fetch faculty members of the current branch
-                $sql = "SELECT * FROM mitm_faculty WHERE status = 1 AND college_type = 1 AND branch = '$branch'";
-                $Sql_query = mysqli_query($conn, $sql);
-                $All_faculty = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+			<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+				<?php
+				// Fetch faculty members of the current branch
+				$sql = "SELECT * FROM mitm_faculty WHERE status = 1 AND college_type = 1 AND branch = '$branch'";
+				$Sql_query = mysqli_query($conn, $sql);
+				$All_faculty = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 
-                foreach ($All_faculty as $row) {
-                    ?>
+				foreach ($All_faculty as $row) {
+					?>
 					<div class="col">
 						<div class="card h-100 shadow-sm">
 							<div class="text-center">
@@ -189,7 +189,8 @@
 									<h1>
 										<?php echo $row['faculty_name']; ?>
 									</h1>
-									<h4>Associate Professor</h4>
+									<h4> <?php echo $row['Professor']; ?>
+									</h4>
 								</div>
 								<div class="mb-3">
 									<h2 class="text-uppercase text-center role">

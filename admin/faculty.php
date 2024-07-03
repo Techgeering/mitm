@@ -176,6 +176,7 @@ if ($form === NULL) {
                                                 <th scope="col" class="text-center">Image</th>
                                                 <th scope="col" class="text-center">Name</th>
                                                 <th scope="col" class="text-center">Designation</th>
+                                                <th scope="col" class="text-center">Professor</th>
                                                 <th scope="col" class="text-center">Phone Number</th>
                                                 <th scope="col" class="text-center">Email</th>
                                                 <th scope="col" class="text-center">Branch</th>
@@ -197,6 +198,7 @@ if ($form === NULL) {
                                                     </td>
                                                     <td class=text-center><?php echo $row['faculty_name']; ?></td>
                                                     <td class=text-center><?php echo $row['designation']; ?></td>
+                                                    <td class=text-center><?php echo $row['Professor']; ?></td>
                                                     <td class=text-center><?php echo $row['phone_number']; ?></td>
                                                     <td class=text-center><?php echo $row['email_id']; ?></td>
                                                     <td class=text-center><?php echo $row['branch']; ?></td>
@@ -218,7 +220,7 @@ if ($form === NULL) {
                                                     }
                                                     ?>
                                                         <button type="button" name="update1"
-                                                            onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>','<?php echo $row['phone_number']; ?>','<?php echo $row['email_id']; ?>','<?php echo $row['branch']; ?>')"
+                                                            onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>','<?php echo $row['Professor']; ?>','<?php echo $row['phone_number']; ?>','<?php echo $row['email_id']; ?>','<?php echo $row['branch']; ?>')"
                                                             class="btn btn-primary m-2" data-bs-toggle="modal"
                                                             data-bs-target="#updatefaculty">
                                                             <i class='fas fa-edit'></i>
@@ -237,6 +239,7 @@ if ($form === NULL) {
                                                 <th scope="col" class="text-center">Image</th>
                                                 <th scope="col" class="text-center">Name</th>
                                                 <th scope="col" class="text-center">Designation</th>
+                                                <th scope="col" class="text-center">Professor</th>
                                                 <th scope="col" class="text-center">Phone Number</th>
                                                 <th scope="col" class="text-center">Email</th>
                                                 <th scope="col" class="text-center">Branch</th>
@@ -254,6 +257,7 @@ if ($form === NULL) {
 
                     $name = $_POST['name'];
                     $designation = $_POST['designation'];
+                    $Professor = $_POST['Professor'];
                     $phonenumber = $_POST['phonenumber'];
                     $email = $_POST['email'];
                     $branch1 = $_POST['branch'];
@@ -280,8 +284,8 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, phone_number, email_id, branch, status, college_type) 
-             VALUES('$new_file_name','$name','$designation', '$phonenumber', '$email', '$branch1', '1','$collage')";
+                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, Professor, phone_number, email_id, branch, status, college_type) 
+             VALUES('$new_file_name','$name','$designation', '$Professor', '$phonenumber', '$email', '$branch1', '1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo '<script>window.location.href = "faculty.php";</script>';
                     } else {
@@ -313,6 +317,11 @@ if ($form === NULL) {
                                         <div class="form-group">
                                             <label for="exampleInputtext">Designation</label>
                                             <input type="text" class="form-control" id="designation" name="designation"
+                                                required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Professor</label>
+                                            <input type="text" class="form-control" id="Professor1" name="Professor"
                                                 required>
                                         </div>
                                         <div class="form-group">
@@ -359,6 +368,7 @@ if ($form === NULL) {
                     $id = $_POST["id1"];
                     $name = $_POST['name'];
                     $designation = $_POST['designation'];
+                    $professor2 = $_POST['Professor'];
                     $phonenumber = $_POST['phonenumber'];
                     $email = $_POST['email'];
                     $branch = $_POST['branch'];
@@ -395,7 +405,7 @@ if ($form === NULL) {
                         if (move_uploaded_file($image_tmp, $target_file)) {
                             // Image uploaded successfully
                             // Update the database with the new image
-                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' , phone_number='$phonenumber' , email_id='$email' , branch='$branch' WHERE id='$id'";
+                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' , Professor='$professor2' phone_number='$phonenumber' , email_id='$email' , branch='$branch' WHERE id='$id'";
                             if ($conn->query($sql) === true) {
                                 echo '<script>window.location.href = "faculty.php";</script>';
                             } else {
@@ -407,7 +417,7 @@ if ($form === NULL) {
                         }
                     } else {
                         // No new image uploaded, update other fields only
-                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation', phone_number='$phonenumber', email_id='$email' , branch='$branch' WHERE id='$id'";
+                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation', Professor='$professor2', phone_number='$phonenumber', email_id='$email' , branch='$branch' WHERE id='$id'";
                         if ($conn->query($sql) === true) {
                             echo '<script>window.location.href = "faculty.php";</script>';
                         } else {
@@ -448,6 +458,10 @@ if ($form === NULL) {
                                         <label for="text">Designation</label>
                                         <input type="text" class="form-control" id="designation1" name="designation">
                                     </div>
+                                    <div class="form-group">
+                                            <label for="text">Professor</label>
+                                            <input type="text" class="form-control" id="Professor2" name="Professor">
+                                        </div>
                                     <div class="form-group">
                                         <label for="text">Phone Number</label>
                                         <input type="text" class="form-control" id="phone1" name="phonenumber">
@@ -492,15 +506,15 @@ if ($form === NULL) {
 
             <script>
                 //id get for update Members.-->
-                function myfcn4(id1, image, name, designation, phonenumber, email, branch) {
+                function myfcn4(id1, image, name, designation , Professor , phonenumber, email, branch) {
                     document.getElementById("zxy11").value = id1;
                     document.getElementById("image11").src = "upload/member/" + image;
                     document.getElementById("name1").value = name;
                     document.getElementById("designation1").value = designation;
+                    document.getElementById("Professor2").value = Professor;
                     document.getElementById("phone1").value = phonenumber;
                     document.getElementById("email1").value = email;
                     document.getElementById("branch1").value = branch;
-
                 }
             </script>
             <script>
