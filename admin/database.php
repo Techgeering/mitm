@@ -4,7 +4,9 @@ include 'db.php';
 // SQL query to add phone_number and email columns to mitm_faculty table
 $sql = "ALTER TABLE mitm_faculty
         ADD COLUMN phone_number VARCHAR(20),
-        ADD COLUMN email_id VARCHAR(50)";
+        ADD COLUMN email_id VARCHAR(50),
+        ADD COLUMN branch VARCHAR(100)";
+
 
 // Execute the query and check for errors
 if ($conn->query($sql) === TRUE) {
