@@ -152,259 +152,62 @@
 	<div class="container p-5" style="margin-top: 175px;">
 		<h1 class="all-heading-color text-center fac">FACULTIES</h1>
 
-		<h4 class="text-uppercase mission-head">COMPUTER SCIENCE ENGINEERING </h4>
+		<?php
+		include 'admin/db.php';
+		// Fetch distinct branches
+		$sql = "SELECT DISTINCT branch FROM mitm_faculty WHERE status = 1 AND college_type = 1";
+		$Sql_query = mysqli_query($conn, $sql);
+		$All_branches = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
 
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
+		foreach ($All_branches as $branch_row) {
+			$branch = $branch_row['branch'];
+			?>
+
+			<h4 class="text-uppercase mission-head"><?php echo $branch; ?></h4>
+
+			<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+				<?php
+				// Fetch faculty members of the current branch
+				$sql = "SELECT * FROM mitm_faculty WHERE status = 1 AND college_type = 1 AND branch = '$branch'";
+				$Sql_query = mysqli_query($conn, $sql);
+				$All_faculty = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
+
+				foreach ($All_faculty as $row) {
+					?>
+					<div class="col">
+						<div class="card h-100 shadow-sm">
+							<div class="text-center">
+								<div class="img-hover-zoom img-hover-zoom--colorize">
+									<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
+										alt="Another Image zoom-on-hover effect">
+								</div>
 							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
+							<div class="card-body">
+								<div class="clearfix mb-3">
+								</div>
+								<div class="my-2 text-center">
+									<h1>
+										<?php echo $row['faculty_name']; ?>
+									</h1>
+									<h4>Associate Professor</h4>
+								</div>
+								<div class="mb-3">
+									<h2 class="text-uppercase text-center role">
+										<?php echo $row['designation']; ?>
+									</h2>
+									<h2 class="text-uppercase text-center role">
+										<?php echo $row['phone_number']; ?>
+									</h2>
+									<h2 class="text-uppercase text-center role">
+										<?php echo $row['email_id']; ?>
+									</h2>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-		</div>
-
-		<h4 class="text-uppercase mission-head">COMPUTER SCIENCE ENGINEERING(AI & ML)</h4>
-
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
-
-		<h4 class="text-uppercase mission-head">MASTERS IN BUSINESS ADMINISTRATIVE</h4>
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
-
-		<h4 class="text-uppercase mission-head">ELECTRICAL ENGINEERING</h4>
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
-
-		<h4 class="text-uppercase mission-head">CIVIL ENGINEERING</h4>
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
-
-		<h4 class="text-uppercase mission-head">Master in Business Adminstartion</h4>
-		<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-			<?php include 'admin/db.php';
-			$sql = "SELECT * FROM `mitm_faculty`where status = 1 AND college_type= 1";
-			$Sql_query = mysqli_query($conn, $sql);
-			$All_fname = mysqli_fetch_all($Sql_query, MYSQLI_ASSOC);
-			foreach ($All_fname as $row) {
-				?>
-				<div class="col">
-					<div class="card h-100 shadow-sm">
-						<div class="text-center">
-							<div class="img-hover-zoom img-hover-zoom--colorize">
-								<img class="shadow" src="admin/upload/member/<?php echo $row['image']; ?>"
-									alt="Another Image zoom-on-hover effect">
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="clearfix mb-3">
-							</div>
-							<div class="my-2 text-center">
-								<h1>
-									<?php echo $row['faculty_name']; ?>
-								</h1>
-								<h4>Associate Professor</h4>
-							</div>
-							<div class="mb-3">
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['designation']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['phone_number']; ?>
-								</h2>
-								<h2 class="text-uppercase text-center role">
-									<?php echo $row['email_id']; ?>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
+				<?php } ?>
+			</div>
+		<?php } ?>
 	</div>
 
 	</div>

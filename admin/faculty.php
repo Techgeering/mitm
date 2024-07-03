@@ -103,7 +103,7 @@ if ($form === NULL) {
                             Std</a>';
                             echo '<a href="faculty.php" class="nav-item nav-link active"><i
                                 class="fas fa-user-graduate"></i>Faculty</a>';
-                            
+
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
@@ -168,78 +168,83 @@ if ($form === NULL) {
                                         <i class="fas fa-plus"></i>Add
                                     </button>
                                 </div>
-                                <table id="example1" class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Image</th>
-                                            <th scope="col" class="text-center">Name</th>
-                                            <th scope="col" class="text-center">Designation</th>
-                                            <th scope="col" class="text-center">Phone Number</th>
-                                            <th scope="col" class="text-center">Email</th>
-                                            <th scope="col" class="text-center">Manage</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <?php include 'db.php';
-                                        $sql = "SELECT * FROM mitm_faculty where college_type= '$collage' ORDER BY id DESC";
-                                        $result = $conn->query($sql);
-                                        $i = 1;
-                                        while ($row = $result->fetch_assoc()) { ?>
+                                <div class="table-responsive">
+                                    <table id="example1" class="table table-hover">
+                                        <thead>
                                             <tr>
-                                                <td class=text-center><?php echo $i;
-                                                $i++; ?></td>
-                                                <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>"
-                                                        width="50" height="50">
-                                                </td>
-                                                <td class=text-center><?php echo $row['faculty_name']; ?></td>
-                                                <td class=text-center><?php echo $row['designation']; ?></td>
-                                                <td class=text-center><?php echo $row['phone_number']; ?></td>
-                                                <td class=text-center><?php echo $row['email_id']; ?></td>
-
-                                                <td class=text-center><?php $status = $row['status'];
-                                                $status = $row['status'];
-                                                $idm = $row['id'];
-                                                $tb = 'mitm_faculty';
-                                                $tbc = 'id';
-                                                $tbc1 = 'status';
-                                                $returnpage = 'faculty.php';
-
-                                                if ($status == 1) {
-                                                    echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
-                                                    <i class='fas fa-unlock'></i></a>";
-                                                } else {
-                                                    echo "<a href='inactive.php?status0=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-danger' onclick='return confirmAction(\"inactive\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
-                                                    <i class='fas fa-lock'></i></a>";
-                                                }
-                                                ?>
-                                                    <button type="button" name="update1"
-                                                        onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>','<?php echo $row['phone_number']; ?>','<?php echo $row['email_id']; ?>')"
-                                                        class="btn btn-primary m-2" data-bs-toggle="modal"
-                                                        data-bs-target="#updatefaculty">
-                                                        <i class='fas fa-edit'></i>
-                                                    </button>
-                                                    <a
-                                                        onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_faculty', tbc='id', returnpage='faculty.php');">
-                                                        <i class="fas fa-trash-alt btn btn-danger"></i>
-                                                    </a>
-                                                </td>
+                                                <th scope="col" class="text-center">Slno</th>
+                                                <th scope="col" class="text-center">Image</th>
+                                                <th scope="col" class="text-center">Name</th>
+                                                <th scope="col" class="text-center">Designation</th>
+                                                <th scope="col" class="text-center">Phone Number</th>
+                                                <th scope="col" class="text-center">Email</th>
+                                                <th scope="col" class="text-center">Branch</th>
+                                                <th scope="col" class="text-center">Manage</th>
                                             </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="col" class="text-center">Slno</th>
-                                            <th scope="col" class="text-center">Image</th>
-                                            <th scope="col" class="text-center">Name</th>
-                                            <th scope="col" class="text-center">Designation</th>
-                                            <th scope="col" class="text-center">Phone Number</th>
-                                            <th scope="col" class="text-center">Email</th>
-                                            <th scope="col" class="text-center">Manage</th>
-                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <?php include 'db.php';
+                                            $sql = "SELECT * FROM mitm_faculty where college_type= '$collage' ORDER BY id DESC";
+                                            $result = $conn->query($sql);
+                                            $i = 1;
+                                            while ($row = $result->fetch_assoc()) { ?>
+                                                <tr>
+                                                    <td class=text-center><?php echo $i;
+                                                    $i++; ?></td>
+                                                    <td class=text-center><img src="upload/member/<?php echo $row['image']; ?>"
+                                                            width="50" height="50">
+                                                    </td>
+                                                    <td class=text-center><?php echo $row['faculty_name']; ?></td>
+                                                    <td class=text-center><?php echo $row['designation']; ?></td>
+                                                    <td class=text-center><?php echo $row['phone_number']; ?></td>
+                                                    <td class=text-center><?php echo $row['email_id']; ?></td>
+                                                    <td class=text-center><?php echo $row['branch']; ?></td>
+
+                                                    <td class=text-center><?php $status = $row['status'];
+                                                    $status = $row['status'];
+                                                    $idm = $row['id'];
+                                                    $tb = 'mitm_faculty';
+                                                    $tbc = 'id';
+                                                    $tbc1 = 'status';
+                                                    $returnpage = 'faculty.php';
+
+                                                    if ($status == 1) {
+                                                        echo "<a href='active.php?status=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-success' onclick='return confirmAction(\"active\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
+                                                    <i class='fas fa-unlock'></i></a>";
+                                                    } else {
+                                                        echo "<a href='inactive.php?status0=$idm&tb=$tb&tbc=$tbc&tbc1=$tbc1&returnpage=$returnpage' class='btn btn-danger' onclick='return confirmAction(\"inactive\", $idm, \"$tb\", \"$tbc\", \"$tbc1\", \"$returnpage\")'>
+                                                    <i class='fas fa-lock'></i></a>";
+                                                    }
+                                                    ?>
+                                                        <button type="button" name="update1"
+                                                            onclick="myfcn4(<?php echo $row['id']; ?>,'<?php echo $row['image']; ?>','<?php echo $row['faculty_name']; ?>','<?php echo $row['designation']; ?>','<?php echo $row['phone_number']; ?>','<?php echo $row['email_id']; ?>','<?php echo $row['branch']; ?>')"
+                                                            class="btn btn-primary m-2" data-bs-toggle="modal"
+                                                            data-bs-target="#updatefaculty">
+                                                            <i class='fas fa-edit'></i>
+                                                        </button>
+                                                        <a
+                                                            onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_faculty', tbc='id', returnpage='faculty.php');">
+                                                            <i class="fas fa-trash-alt btn btn-danger"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
                                         <tfoot>
-                                </table>
+                                            <tr>
+                                                <th scope="col" class="text-center">Slno</th>
+                                                <th scope="col" class="text-center">Image</th>
+                                                <th scope="col" class="text-center">Name</th>
+                                                <th scope="col" class="text-center">Designation</th>
+                                                <th scope="col" class="text-center">Phone Number</th>
+                                                <th scope="col" class="text-center">Email</th>
+                                                <th scope="col" class="text-center">Branch</th>
+                                                <th scope="col" class="text-center">Manage</th>
+                                            </tr>
+                                            <tfoot>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -251,6 +256,7 @@ if ($form === NULL) {
                     $designation = $_POST['designation'];
                     $phonenumber = $_POST['phonenumber'];
                     $email = $_POST['email'];
+                    $branch1 = $_POST['branch'];
 
                     $image_name = $_FILES['image']['name'];
                     $image_size = $_FILES['image']['size'];
@@ -274,8 +280,8 @@ if ($form === NULL) {
                         //     alert('image not uploaded');
                         //     </script>";
                     }
-                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, phone_number, email_id, status, college_type) 
-             VALUES('$new_file_name','$name','$designation', '$phonenumber', '$email', '1','$collage')";
+                    $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, phone_number, email_id, branch, status, college_type) 
+             VALUES('$new_file_name','$name','$designation', '$phonenumber', '$email', '$branch1', '1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo '<script>window.location.href = "faculty.php";</script>';
                     } else {
@@ -317,6 +323,18 @@ if ($form === NULL) {
                                             <label for="exampleInputtext">Email</label>
                                             <input type="text" class="form-control" id="email" name="email" required>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">Branch</label>
+                                            <!-- <input type="text" class="form-control" id="exampleInputtext" name="collegename" required> -->
+                                            <select name="branch" id="branch1">
+                                                <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING</option>
+                                                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS ADMINISTRATIVE</option>
+                                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-secondary"
@@ -337,6 +355,7 @@ if ($form === NULL) {
                     $designation = $_POST['designation'];
                     $phonenumber = $_POST['phonenumber'];
                     $email = $_POST['email'];
+                    $branch = $_POST['branch'];
 
                     // Check if a new image is uploaded
                     if (!empty($_FILES['image']['name'])) {
@@ -370,7 +389,7 @@ if ($form === NULL) {
                         if (move_uploaded_file($image_tmp, $target_file)) {
                             // Image uploaded successfully
                             // Update the database with the new image
-                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' , phone_number='$phonenumber' , email_id='$email' WHERE id='$id'";
+                            $sql = "UPDATE mitm_faculty SET image='$new_file_name', faculty_name='$name', designation='$designation' , phone_number='$phonenumber' , email_id='$email' , branch='$branch' WHERE id='$id'";
                             if ($conn->query($sql) === true) {
                                 echo '<script>window.location.href = "faculty.php";</script>';
                             } else {
@@ -382,7 +401,7 @@ if ($form === NULL) {
                         }
                     } else {
                         // No new image uploaded, update other fields only
-                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation', phone_number='$phonenumber', email_id='$email' WHERE id='$id'";
+                        $sql = "UPDATE mitm_faculty SET faculty_name='$name', designation='$designation', phone_number='$phonenumber', email_id='$email' , branch='$branch' WHERE id='$id'";
                         if ($conn->query($sql) === true) {
                             echo '<script>window.location.href = "faculty.php";</script>';
                         } else {
@@ -431,6 +450,18 @@ if ($form === NULL) {
                                         <label for="text">Email</label>
                                         <input type="text" class="form-control" id="email1" name="email">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputtext">Branch</label>
+                                        <!-- <input type="text" class="form-control" id="branch1" name="branch" required> -->
+                                        <select name="branch" id="branch1">
+                                                <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING</option>
+                                                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS ADMINISTRATIVE</option>
+                                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+                                        </select>
+                                    </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="button" class="btn btn-outline-dark"
                                             data-bs-dismiss="modal">Close</button>
@@ -449,13 +480,14 @@ if ($form === NULL) {
 
             <script>
                 //id get for update Members.-->
-                function myfcn4(id1, image, name, designation, phonenumber, email) {
+                function myfcn4(id1, image, name, designation, phonenumber, email, branch) {
                     document.getElementById("zxy11").value = id1;
                     document.getElementById("image11").src = "upload/member/" + image;
                     document.getElementById("name1").value = name;
                     document.getElementById("designation1").value = designation;
                     document.getElementById("phone1").value = phonenumber;
                     document.getElementById("email1").value = email;
+                    document.getElementById("branch1").value = branch;
 
                 }
             </script>
