@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 03, 2024 at 09:13 AM
+-- Generation Time: Jul 02, 2024 at 03:47 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,17 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `mitm`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `allbranch`
---
-
-CREATE TABLE `allbranch` (
-  `id` int(11) NOT NULL,
-  `branch` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -290,7 +279,6 @@ CREATE TABLE `mitm_faculty` (
   `designation` mediumtext NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `email_id` varchar(50) NOT NULL,
-  `branch` varchar(100) NOT NULL,
   `status` int(3) NOT NULL,
   `college_type` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -299,17 +287,17 @@ CREATE TABLE `mitm_faculty` (
 -- Dumping data for table `mitm_faculty`
 --
 
-INSERT INTO `mitm_faculty` (`id`, `image`, `faculty_name`, `designation`, `phone_number`, `email_id`, `branch`, `status`, `college_type`) VALUES
-(21, '664ae5b899bff.jpg', 'Mr. Binayak Sahoo', 'Associate Professor', '', '', '', 1, 2),
-(22, '664ae5ed74b2d.jpg', 'Mr. Suryapratap Biswajit Puhan', 'HOD OF CIVIL ENGINEERING', '', '', '', 1, 2),
-(23, '664af8eb67829.jpg', 'sushree', 'iujh', '', '', '', 1, 2),
-(27, '6683dd0f62a64.jpg', 'Mr. Binayak Sahoo', 'HOD OF COMPUTER SCIENCE & ENGINEERING', '1212121212', 'binayak12@gmail.com', 'COMPUTER SCIENCE ENGINEERING', 1, 1),
-(28, '6683dd93b2bd7.jpg', 'Mr. Suryapratap Biswajit Puhan', 'HOD OF CIVIL ENGINEERING', '1233244323', 'suryapratap11@gmail.com', 'CIVIL ENGINEERING', 1, 1),
-(29, '6683dde276b61.jpg', 'Mrs. Shradhanjali Panda', 'HOD OF ELECTRONICS AND COMMUNICATION ENGINEERING', '2342332453', 'shradha@gmail.com', 'ELECTRONICS AND COMMUNICATION ENGINEERING', 1, 1),
-(30, '6683de41b3c62.jpg', 'Mr. Debasish Hota', 'HOD OF ELECTRICAL AND ELECTRONICS ENGINEERING', '1111111111', 'debasish11@gmail.com', 'ELECTRICAL ENGINEERING', 1, 1),
-(31, '6683de864d006.jpg', 'Mr. Girija Sankar Panigrahi', 'HOD OF ELECTRICAL ENGINEERING', '2323232323', 'girija@11gmail.com', 'ELECTRICAL ENGINEERING', 1, 1),
-(32, '6683df3b9e0de.jpg', 'Mr. Naresh Kumar Ojha', 'HOD OF MBA', '3232323232', 'naresh@12gmail.com', 'MASTERS IN BUSINESS ADMINISTRATIVE', 1, 1),
-(33, '6683df8862c30.jpg', 'Mr. Ajit Kumar Dhal', 'HOD OF MECHANICAL ENGINEERING', '4545454545', 'ajit34@gmail.com', 'MECHANICAL ENGINEERING', 1, 1);
+INSERT INTO `mitm_faculty` (`id`, `image`, `faculty_name`, `designation`, `phone_number`, `email_id`, `status`, `college_type`) VALUES
+(21, '664ae5b899bff.jpg', 'Mr. Binayak Sahoo', 'Associate Professor', '', '', 1, 2),
+(22, '664ae5ed74b2d.jpg', 'Mr. Suryapratap Biswajit Puhan', 'HOD OF CIVIL ENGINEERING', '', '', 1, 2),
+(23, '664af8eb67829.jpg', 'sushree', 'iujh', '', '', 1, 2),
+(27, '6683dd0f62a64.jpg', 'Mr. Binayak Sahoo', 'HOD OF COMPUTER SCIENCE & ENGINEERING', '1212121212', 'binayak12@gmail.com', 1, 1),
+(28, '6683dd93b2bd7.jpg', 'Mr. Suryapratap Biswajit Puhan', 'HOD OF CIVIL ENGINEERING', '1233244323', 'suryapratap11@gmail.com', 1, 1),
+(29, '6683dde276b61.jpg', 'Mrs. Shradhanjali Panda', 'HOD OF ELECTRONICS AND COMMUNICATION ENGINEERING', '2342332453', 'shradha@gmail.com', 1, 1),
+(30, '6683de41b3c62.jpg', 'Mr. Debasish Hota', 'HOD OF ELECTRICAL AND ELECTRONICS ENGINEERING', '1111111111', 'debasish11@gmail.com', 1, 1),
+(31, '6683de864d006.jpg', 'Mr. Girija Sankar Panigrahi', 'HOD OF ELECTRICAL ENGINEERING', '2323232323', 'girija@11gmail.com', 1, 1),
+(32, '6683df3b9e0de.jpg', 'Mr. Naresh Kumar Ojha', 'HOD OF MBA', '3232323232', 'naresh@12gmail.com', 1, 1),
+(33, '6683df8862c30.jpg', 'Mr. Ajit Kumar Dhal', 'HOD OF MECHANICAL ENGINEERING', '4545454545', 'ajit34@gmail.com', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -554,12 +542,6 @@ INSERT INTO `naumi_contact` (`id`, `cont_name`, `cont_email`, `cont_number`, `co
 --
 
 --
--- Indexes for table `allbranch`
---
-ALTER TABLE `allbranch`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `college`
 --
 ALTER TABLE `college`
@@ -660,12 +642,6 @@ ALTER TABLE `naumi_contact`
 --
 
 --
--- AUTO_INCREMENT for table `allbranch`
---
-ALTER TABLE `allbranch`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `college`
 --
 ALTER TABLE `college`
@@ -705,7 +681,7 @@ ALTER TABLE `mitm_enquiry`
 -- AUTO_INCREMENT for table `mitm_faculty`
 --
 ALTER TABLE `mitm_faculty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `mitm_feedback`
