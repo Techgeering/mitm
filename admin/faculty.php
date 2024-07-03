@@ -327,12 +327,13 @@ if ($form === NULL) {
                                             <label for="exampleInputtext">Branch</label>
                                             <!-- <input type="text" class="form-control" id="exampleInputtext" name="collegename" required> -->
                                             <select name="branch" id="branch1">
-                                                <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING</option>
-                                                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
-                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
-                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
-                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS ADMINISTRATIVE</option>
-                                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+                                                <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
+                                                <option value="CIVIL ENGINEERING">CIVIL</option>
+                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">E & C E</option>
+                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL</option>
+                                                <option value="Electronics and Electrical Engineering">E & E E</option>
+                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MBA</option>
+                                                <option value="MECHANICAL ENGINEERING">MECHANICAL</option>
                                             </select>
                                         </div>
                                     </div>
@@ -451,15 +452,16 @@ if ($form === NULL) {
                                         <input type="text" class="form-control" id="email1" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputtext">Branch</label>
+                                        <label for="branch1">Branch</label>
                                         <!-- <input type="text" class="form-control" id="branch1" name="branch" required> -->
-                                        <select name="branch" id="branch1">
-                                                <option value="COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING</option>
-                                                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
-                                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
-                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
-                                                <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MASTERS IN BUSINESS ADMINISTRATIVE</option>
-                                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+                                        <select name="branch" id="branch1" class="form-control">
+                                            <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
+                                            <option value="CIVIL ENGINEERING">CIVIL</option>
+                                            <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ECE</option>
+                                            <option value="ELECTRICAL ENGINEERING">EE</option>
+                                            <option value="Electronics and Electrical Engineering">EEE</option>
+                                            <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MBA</option>
+                                            <option value="MECHANICAL ENGINEERING">MECH</option>
                                         </select>
                                     </div>
                                     <div class="modal-footer justify-content-between">
