@@ -341,7 +341,7 @@ if ($form === NULL) {
                                                     <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
                                                     <option value="CIVIL ENGINEERING">CIVIL</option>
                                                     <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ECE</option>
-                                                    <option value="ELECTRICAL ENGINEERING">ELECTRICAL</option>
+                                                    <option value="ELECTRICAL ENGINEERING">EE</option>
                                                     <option value="Electronics and Electrical Engineering">EEE</option>
                                                     <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MBA</option>
                                                     <option value="MECHANICAL ENGINEERING">MECH</option>
@@ -478,7 +478,7 @@ if ($form === NULL) {
                                                 <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
                                                 <option value="CIVIL ENGINEERING">CIVIL</option>
                                                 <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ECE</option>
-                                                <option value="ELECTRICAL ENGINEERING">ELECTRICAL</option>
+                                                <option value="ELECTRICAL ENGINEERING">EE</option>
                                                 <option value="Electronics and Electrical Engineering">EEE</option>
                                                 <option value="MASTERS IN BUSINESS ADMINISTRATIVE">MBA</option>
                                                 <option value="MECHANICAL ENGINEERING">MECH</option>
