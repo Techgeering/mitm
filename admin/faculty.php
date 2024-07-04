@@ -260,7 +260,7 @@ if ($form === NULL) {
                     $Professor = $_POST['Professor'];
                     $phonenumber = $_POST['phonenumber'];
                     $email = $_POST['email'];
-                    $branch1 = $_POST['branch'];
+                    $branch2 = $_POST['branch'];
 
                     $image_name = $_FILES['image']['name'];
                     $image_size = $_FILES['image']['size'];
@@ -285,7 +285,7 @@ if ($form === NULL) {
                         //     </script>";
                     }
                     $sql = "INSERT INTO mitm_faculty (image, faculty_name, designation, Professor, phone_number, email_id, branch, status, college_type) 
-             VALUES('$new_file_name','$name','$designation', '$Professor', '$phonenumber', '$email', '$branch1', '1','$collage')";
+             VALUES('$new_file_name','$name','$designation', '$Professor', '$phonenumber', '$email', '$branch2', '1','$collage')";
                     if ($conn->query($sql) === true) {
                         echo '<script>window.location.href = "faculty.php";</script>';
                     } else {
@@ -334,9 +334,9 @@ if ($form === NULL) {
                                             <input type="text" class="form-control" id="email" name="email" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="branch1">Branch</label>
+                                            <label for="branch">Branch</label>
                                             <!-- <input type="text" class="form-control" id="exampleInputtext" name="collegename" required> -->
-                                            <select name="branch" id="branch1" class="form-control">
+                                            <select name="branch" class="form-control">
                                                 <?php if ($collage == 1) { ?>
                                                     <option value="COMPUTER SCIENCE ENGINEERING">CSE</option>
                                                     <option value="CIVIL ENGINEERING">CIVIL</option>
