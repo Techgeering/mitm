@@ -471,7 +471,7 @@ if ($form === NULL) {
                                         <input type="text" class="form-control" id="email1" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="branch1">Branch</label>
+                                        <label for="branch">Branch</label>
                                         <!-- <input type="text" class="form-control" id="branch1" name="branch" required> -->
                                         <select name="branch" id="branch1" class="form-control">
                                             <?php if ($collage == 1) { ?>
