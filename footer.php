@@ -104,7 +104,7 @@
                             <a href="javascript:void(0)" class="link-decoration">Publication Details of Teachers</a>
                         </div>
                         <div>
-                            <button class="login-button" onclick="Login()">Administration Login</button>
+                            <button class="login-button btn btn-success" onclick="Login()">Admisistor Login</button>
                         </div>
                         <!-- <h4 class="footer-heading-color">DIPLOMA</h4>
                             <div>

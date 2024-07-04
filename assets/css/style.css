@@ -1978,7 +1978,7 @@ top: 96%;
 }
 
 .login-button {
-  background-color: #41e0fd;
+  /* background-color: #41e0fd; */
   color: white;
   border: none;
   padding: 10px 10px;
@@ -1987,5 +1987,5 @@ top: 96%;
 }
 
 .login-button:hover {
-  background-color: #41e0fd;
+  /* background-color: #41e0fd; */
 }
