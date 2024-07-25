@@ -137,6 +137,11 @@
 				font-size: 2rem;
 			}
 		}
+
+		.dtext h2 {
+			margin-top: 10px !important;
+			margin-bottom: 10px !important;
+		}
 	</style>
 
 
@@ -192,7 +197,7 @@
 									<h4> <?php echo $row['Professor']; ?>
 									</h4>
 								</div>
-								<div class="mb-3">
+								<div class="mb-3 dtext">
 									<h2 class="text-uppercase text-center role">
 										<?php echo $row['designation']; ?>
 									</h2>
