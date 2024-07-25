@@ -78,6 +78,8 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
+                            echo '<a href="grievance.php" class="nav-item nav-link">
+                                <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery

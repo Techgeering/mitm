@@ -73,6 +73,8 @@ if ($form === NULL) {
                         </a>
                         <a href="feedbackdata.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>
+                        <a href="grievance.php" class="nav-item nav-link">
+                            <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery
@@ -101,7 +103,7 @@ if ($form === NULL) {
                         <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>
                         <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
-                       
+
                     </div>
                 </nav>
             </div>

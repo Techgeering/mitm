@@ -49,9 +49,6 @@ if ($form === NULL) {
         <!-- DataTables JS -->
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
         <!-- End pagination -->
-
-
-
         <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
         <!-- DataTables Buttons CSS -->
@@ -59,8 +56,6 @@ if ($form === NULL) {
             href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css">
         <!-- DataTables Extensions CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-
-
 
     </head>
 
@@ -93,11 +88,12 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
-                            echo '<a href="grievance.php" class="nav-item nav-link">
+                            echo '<a href="grievance.php" class="nav-item nav-link active">
                                 <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>';
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
+                            </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -107,23 +103,22 @@ if ($form === NULL) {
                                 </a>
                             </div>
                         </div>';
-                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i>News and
+                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
                             Event</a>';
                             echo '<a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
                             echo '<a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
-
                             echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>';
-                            echo '<a href="faculty.php" class="nav-item nav-link active"><i
-                                class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
                         } else {
                             echo '<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                    class="fa fa-object-group nav-icon"></i>Gallery</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-object-group nav-icon"></i> Gallery
+                            </a>
                             <div class="dropdown-menu bg-transparent border-0">
                                 <a href="life-image.php" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
@@ -138,12 +133,10 @@ if ($form === NULL) {
                             Notice</a>';
                             echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
-
                             echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
                             echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Student</a>';
-                            echo '<a href="faculty.php" class="nav-item nav-link active"><i
-                                class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
                         }
                         ?>
                     </div>
@@ -171,80 +164,102 @@ if ($form === NULL) {
                     </div>
                 </nav>
                 <!-- Navbar End -->
+                <!-- Table Start -->
+                <div class="container-fluid pt-4 px-4">
+                    <div class="row g-4">
+                        <div class="">
+                            <div class="bg-light rounded h-100 p-4">
+                                <h6 class="mb-4">Grievance</h6>
+                                <!-- <button onclick="downloadCSV()">CSV</button> -->
+                                <div class="table-responsive">
+                                    <table id="example1" class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Slno</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Registration</th>
+                                                <th scope="col">Branch</th>
+                                                <th scope="col">Year</th>
+                                                <th scope="col">Gender</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Grievance</th>
+                                                <th scope="col">Date of Upload</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
 
-                <div class="content-wrapper">
-                    <!-- Content Header (Page header) -->
-                    <section class="content-header">
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-sm-12">
-                                    <h4>Password Update</h4>
+                                            <?php include 'db.php';
+
+                                            $sql = "SELECT * FROM mitm_grievance ORDER BY id DESC";
+                                            $result = $conn->query($sql);
+                                            $i = 1;
+                                            while ($row = $result->fetch_assoc()) {
+                                                ?>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <?php echo $i;
+                                                        $i++; ?>
+                                                    </td>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_name']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_registration']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_branch']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_year']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_gender']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_phone']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance_email']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['grievance']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <?php echo $row['date_of_upload']; ?>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a
+                                                            onclick="confirmDelete(<?php echo $row['id']; ?>, tb='mitm_grievance', tbc='id', returnpage='grievance.php');">
+                                                            <i class="fas fa-trash-alt btn btn-danger"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="col">Slno</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Registration</th>
+                                                <th scope="col">Branch</th>
+                                                <th scope="col">Year</th>
+                                                <th scope="col">Gender</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Grievance</th>
+                                                <th scope="col">Date of Upload</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
                                 </div>
                             </div>
-                        </div><!-- /.container-fluid -->
-                    </section>
-
-                    <!-- Main content -->
-                    <section class="content-wrapper mb-2">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12">
-
-                                    <div class="card">
-                                        <!--<div class="card-header">-->
-                                        <!--  <h3 class="card-title">DataTable with default features</h3>-->
-                                        <!--</div>-->
-                                        <!-- /.card-header -->
-                                        <div class="card-body mb-2">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <form action="passwordupdate.php" method="post"
-                                                        enctype="multipart/form-data">
-                                                        <div class="form-group col-sm-12  mb-2">
-                                                            <input type="password" name="cur_pas" class="form-control"
-                                                                placeholder="Enter current password" required>
-                                                        </div>
-                                                        <div class="form-group col-sm-12 mb-2">
-                                                            <input type="password" name="new_pas" class="form-control"
-                                                                placeholder="Enter new password" required>
-                                                        </div>
-                                                        <div class="form-group col-sm-12 mb-2">
-                                                            <input type="password" name="rnew_pas" class="form-control"
-                                                                placeholder="Re-enter new password" required>
-                                                        </div>
-                                                        <div class="form-group col-sm-12 mb-3">
-                                                            <input type="submit" name="changepass" class="btn btn-primary"
-                                                                value="Update" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <p>Modern Institute of Technology & Management (MITM),Bhubaneswar
-                                                        Bidyavihar , Bhagabatipur</p>
-                                                    <p>Bhubaneswar , Odisha</p>
-                                                    <hr>
-                                                    <h5> Contact</h5>
-                                                    <p><i class="far fa-building"></i> Techgeering Solutions Pvt. Ltd.</p>
-                                                    <p><i class="bi bi-envelope"></i> info@techgeering.com</p>
-                                                    <p><i class="bi bi-phone"></i>+91 7855 865 181 | <i
-                                                            class="bi bi-whatsapp"></i>
-                                                        +91 7855 865 181</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.card-body -->
-                                    </div>
-                                    <!-- /.card -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
                         </div>
-                        <!-- /.container-fluid -->
-                    </section>
-                    <!-- /.content -->
+                    </div>
                 </div>
-
-
+                <!-- Table End -->
                 <?php include "common/footer.php" ?>
             <?php } ?>

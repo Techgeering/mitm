@@ -124,7 +124,7 @@
                                 Ragging Policy</a>
                         </div>
                         <div>
-                            <a href="grievance.html" class="link-decoration">Grievance Cell</a>
+                            <a href="grievance.php" class="link-decoration">Grievance Cell</a>
                         </div>
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>

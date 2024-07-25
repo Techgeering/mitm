@@ -78,6 +78,8 @@ if ($form === NULL) {
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
                             echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
+                            echo '<a href="grievance.php" class="nav-item nav-link">
+                                <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                     class="fa fa-object-group nav-icon"></i>Gallery</a>
@@ -459,9 +461,9 @@ if ($form === NULL) {
                                         <input type="text" class="form-control" id="designation1" name="designation">
                                     </div>
                                     <div class="form-group">
-                                            <label for="text">Professor</label>
-                                            <input type="text" class="form-control" id="Professor2" name="Professor">
-                                        </div>
+                                        <label for="text">Professor</label>
+                                        <input type="text" class="form-control" id="Professor2" name="Professor">
+                                    </div>
                                     <div class="form-group">
                                         <label for="text">Phone Number</label>
                                         <input type="text" class="form-control" id="phone1" name="phonenumber">
@@ -506,7 +508,7 @@ if ($form === NULL) {
 
             <script>
                 //id get for update Members.-->
-                function myfcn4(id1, image, name, designation , Professor , phonenumber, email, branch) {
+                function myfcn4(id1, image, name, designation, Professor, phonenumber, email, branch) {
                     document.getElementById("zxy11").value = id1;
                     document.getElementById("image11").src = "upload/member/" + image;
                     document.getElementById("name1").value = name;
