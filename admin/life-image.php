@@ -12,7 +12,7 @@ if ($form === NULL) {
 
     <head>
         <meta charset="utf-8">
-        <title>MITM | Home</title>
+        <title>MITM | Gallery Image</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -162,7 +162,7 @@ if ($form === NULL) {
                     <div class="row g-4">
                         <div class="">
                             <div class="bg-light rounded h-100 p-4">
-                                <h6 class="mb-4">LIFE @ MITM</h6>
+                                <h6 class="mb-4">Gallery Image</h6>
                                 <div class="col-sm-12 mb-2">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modal-bs-primary">
