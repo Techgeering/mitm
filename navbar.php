@@ -1,3 +1,4 @@
+<?php include 'admin/db.php'?>
 <button onclick="topFunction()" id="myBtn" title="Go to top">
 		<i class="fa fa-arrow-up" aria-hidden="true"></i>
 	</button>
@@ -53,7 +54,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-1 second-nav-position">
-							<a href="index">
+							<a href="<?php echo $base_url;?>">
 								<img src="assets/img/logos1.png" class="img-fluid ms-4" />
 							</a>
 						</div>
@@ -311,7 +312,7 @@
 		<div class="second-nav-bg d-block d-lg-none d-md-block d-sm-block">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="">
-					<a class="navbar-brand" href="index.php"><img src="assets/img/logos1.png" alt=""
+					<a class="navbar-brand" href="<?php echo $base_url ;?>"><img src="assets/img/logos1.png" alt=""
 							class="mob-logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
