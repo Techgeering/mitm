@@ -66,39 +66,39 @@ if ($form === NULL) {
                         <h3 class="text-primary">MITM</h3>
                     </a>
                     <div class="navbar-nav w-100">
-                        <a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
-                        <a href="enquiry.php" class="nav-item nav-link"><i
+                        <a href="contact" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>
+                        <a href="enquiry" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>
-                        <a href="feedbackdata.php" class="nav-item nav-link"><i
+                        <a href="feedbackdata" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>
-                        <a href="grievance.php" class="nav-item nav-link">
+                        <a href="grievance" class="nav-item nav-link">
                             <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
-                                <a href="life-image.php" class="dropdown-item">
+                                <a href="life-image" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
                                 </a>
-                                <a href="life-video.php" class="dropdown-item">
+                                <a href="life-video" class="dropdown-item">
                                     <i class="bi bi-play-circle me-2"></i> Video
                                 </a>
                             </div>
                         </div>
-                        <a href="news-event.php" class="nav-item nav-link active"><i class="bi bi-newspaper me-2"></i> News
+                        <a href="news-event" class="nav-item nav-link active"><i class="bi bi-newspaper me-2"></i> News
                             and
                             Event</a>
-                        <a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i> Notice</a>
-                        <a href="collegenotice.php" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
+                        <a href="notice" class="nav-item nav-link"><i class="bi bi-bell me-2"></i> Notice</a>
+                        <a href="collegenotice" class="nav-item nav-link"><i class="fas fa-bullhorn"></i>College
                             Notice</a>
-                        <a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                        <a href="examnotice" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>
 
-                        <a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
-                        <a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                        <a href="placement" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>
+                        <a href="placement-student1" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>
-                        <a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
+                        <a href="faculty" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>
                     </div>
                 </nav>
             </div>

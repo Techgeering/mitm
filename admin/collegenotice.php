@@ -73,37 +73,37 @@ if ($form === NULL) {
                     <div class="navbar-nav w-100">
                         <?php
                         if ($collage === '1') {
-                            echo '<a href="contact.php" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
-                            echo '<a href="enquiry.php" class="nav-item nav-link"><i
+                            echo '<a href="contact" class="nav-item nav-link"><i class="far fa-comments nav-icon"></i>Contact</a>';
+                            echo '<a href="enquiry" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Admission Enq</a>';
-                            echo '<a href="feedbackdata.php" class="nav-item nav-link"><i
+                            echo '<a href="feedbackdata" class="nav-item nav-link"><i
                                 class="bi bi-file-earmark-text me-2"></i>Feedback</a>';
-                            echo '<a href="grievance.php" class="nav-item nav-link">
+                            echo '<a href="grievance" class="nav-item nav-link">
                                 <i class="fas fa-exclamation-circle"></i> Grievance Cell</a>';
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fa fa-object-group nav-icon"></i> Gallery
                             </a>
                             <div class="dropdown-menu bg-transparent border-0">
-                                <a href="life-image.php" class="dropdown-item">
+                                <a href="life-image" class="dropdown-item">
                                     <i class="bi bi-image me-2"></i> Image
                                 </a>
-                                <a href="life-video.php" class="dropdown-item">
+                                <a href="life-video" class="dropdown-item">
                                     <i class="bi bi-play-circle me-2"></i> Video
                                 </a>
                             </div>
                         </div>';
-                            echo '<a href="news-event.php" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
+                            echo '<a href="news-event" class="nav-item nav-link"><i class="bi bi-newspaper me-2"></i> News and
                             Event</a>';
-                            echo '<a href="notice.php" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
-                            echo '<a href="collegenotice.php" class="nav-item nav-link active"><i class="fas fa-bullhorn"></i>College
+                            echo '<a href="notice" class="nav-item nav-link"><i class="bi bi-bell me-2"></i>Notice</a>';
+                            echo '<a href="collegenotice" class="nav-item nav-link active"><i class="fas fa-bullhorn"></i>College
                             Notice</a>';
-                            echo '<a href="examnotice.php" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
+                            echo '<a href="examnotice" class="nav-item nav-link"><i class="fas fa-exclamation-triangle"></i>Exam
                             Notice</a>';
-                            echo '<a href="placement.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
-                            echo '<a href="placement-student1.php" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
+                            echo '<a href="placement" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement</a>';
+                            echo '<a href="placement-student1" class="nav-item nav-link"><i class="fas fa-briefcase"></i>Placement
                             Std</a>';
-                            echo '<a href="faculty.php" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
+                            echo '<a href="faculty" class="nav-item nav-link"><i class="fas fa-user-graduate"></i>Faculty</a>';
                         } else {
                             echo '<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
