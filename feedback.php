@@ -474,12 +474,12 @@
                 </div>
             </div>
             <div class="col-lg-8 col-md-6 mb-4">
-                <form id="" class="feedback-form">
+                <form id="feedbackform" class="feedback-form">
                     <h2>Feedback Form</h2>
                     <div class="mb-3">
                         <!-- <h3 class="form-heading"></h3> -->
                         <label for="category" class="form-label">Please Select Your Role</label>
-                        <select class="form-select fs-4" id="category" name="category">
+                        <select class="form-select fs-4" id="rolecategory">
                             <!-- <option value="">Choose One</option> -->
                             <option value="Student">Student</option>
                             <option value="Staff">Staff</option>
@@ -492,25 +492,24 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="feedbackname">
                         </div>
                         <div class="col-md-6">
                             <label for="number" class="form-label">Number</label>
-                            <input type="tel" class="form-control" id="number" name="number"
-                                placeholder="Enter your number">
+                            <input type="tel" class="form-control" id="feedbacknumber">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                        <input type="email" class="form-control" id="feedbackemail">
                     </div>
                     <div class="mb-3">
                         <label for="feedback" class="form-label">Feedback <span style="color: red">*</span></label>
-                        <textarea class="form-control" id="feedback" name="feedback" rows="5"
-                            placeholder="Enter your feedback" required></textarea>
+                        <textarea class="form-control" id="feedbackmsg" rows="5"></textarea>
                         <small class="form-text text-muted">Please provide your feedback.</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <label id="error-msg" class="text-danger"></label>
+                    <button type="submit" name="feedbacksubmit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
@@ -726,6 +725,80 @@
     <script>
         // Initialize Wow.js
         new WOW().init();
+    </script>
+
+    <script>
+        $("#feedbackform").submit(function (e) {
+            e.preventDefault();
+
+            var category = document.getElementById('rolecategory').value;
+            var fname = document.getElementById('feedbackname').value;
+            var fnumber = document.getElementById('feedbacknumber').value;
+            var femail = document.getElementById('feedbackemail').value;
+            var fmessage = document.getElementById('feedbackmsg').value;
+
+            var errormsg = document.getElementById('error-msg');
+            var emailf = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+            var phonepatf = /^[0-9]{10}$/
+            var fnameconf = /[A-Za-z\s]{1,50}/
+            var error = false
+
+            if (category === "" || fname === "" || fnumber === "" || femail === "" || fmessage === "") {
+                errormsg.innerText = "Please fill all the feilds"
+            }
+            else if (!fname.match(fnameconf)) {
+                errormsg.innerText = "Enter a valid name"
+            }
+            else if (!femail.match(emailf)) {
+                errormsg.innerText = "Enter a valid email"
+            }
+            else if (!fnumber.match(phonepatf)) {
+                errormsg.innerText = "please enter valid phone number "
+            }
+            else {
+                errormsg.innerText = "";
+                $.ajax({
+                    type: "POST",
+                    url: "feedback-forminsert.php",
+                    data: {
+                        feedrole: category,
+                        feedname: fname,
+                        feednumber: fnumber,
+                        feedemail: femail,
+                        feedmessage: fmessage
+                    },
+                    dataType: "json",  // Specify the expected data type
+                    success: function (data) {
+                        console.log(data); // Log the response for debugging
+                        if (data.status === "success") {
+                            // Show success message using ToastAlert
+                            toastr.success(data.message, 'Success');
+
+                            document.getElementById('rolecategory').value = "";
+                            document.getElementById('feedbackname').value = "";
+                            document.getElementById('feedbacknumber').value = "";
+                            document.getElementById('feedbackemail').value = "";
+                            document.getElementById('feedbackmsg').value = "";
+                        } else {
+                            // Show error message using SweetAlert
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error!',
+                                text: data.message,
+                            });
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle other AJAX errors if needed
+                        console.error("AJAX Error:", xhr, status, error);
+                    },
+                    complete: function () {
+                        $(".loading").hide(); // Hide loading message on completion
+                    }
+                });
+            }
+
+        });
     </script>
 
 </body>
