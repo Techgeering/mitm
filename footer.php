@@ -10,7 +10,7 @@
                             <a href="javascript:void(0)" class="link-decoration">Festivals</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Sports</a>
+                            <a href="sportscomplex" class="link-decoration">Sports</a>
                         </div>
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Workshops</a>

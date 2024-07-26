@@ -31,11 +31,7 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-<<<<<<< HEAD
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>">
-=======
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php  echo time(); ?>"/>
->>>>>>> eaaf2cd610b65f6d7809db428999ca1a4cda8a27
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -49,7 +45,7 @@
 
 <body>
 
-<?php include 'navbar.php' ?>
+	<?php include 'navbar.php' ?>
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
@@ -64,16 +60,24 @@
 					<h4 class="text-uppercase mission-heads">Mission</h4>
 					<div class="missionpara-data">
 						<li class="py-4 mission-para">
-							<span class="fw-bold">Academic Excellence:</span> Strive to provide a rigorous and innovative learning environment that fosters critical thinking, creativity, and scholarly achievement across diverse fields of study.
+							<span class="fw-bold">Academic Excellence:</span> Strive to provide a rigorous and
+							innovative learning environment that fosters critical thinking, creativity, and scholarly
+							achievement across diverse fields of study.
 						</li>
 						<li class="py-4 mission-para">
-						<span class="fw-bold">Student Success:</span> Dedicate resources and support systems to ensure the holistic development and success of every student, empowering them to reach their fullest potential academically, professionally, and personally.
+							<span class="fw-bold">Student Success:</span> Dedicate resources and support systems to
+							ensure the holistic development and success of every student, empowering them to reach their
+							fullest potential academically, professionally, and personally.
 						</li>
 						<li class="py-4 mission-para">
-						<span class="fw-bold">Community Engagement:</span> Actively engage with local and global communities through service-learning initiatives, research partnerships, and outreach programs that address societal challenges and promote social responsibility.
+							<span class="fw-bold">Community Engagement:</span> Actively engage with local and global
+							communities through service-learning initiatives, research partnerships, and outreach
+							programs that address societal challenges and promote social responsibility.
 						</li>
 						<li class="py-4 mission-para">
-						<span class="fw-bold" >Diversity and Inclusion:</span> Cultivate a welcoming and inclusive campus culture that celebrates diversity in all its forms, respects individual perspectives, and promotes equity and access to education for all students, faculty, and staff.
+							<span class="fw-bold">Diversity and Inclusion:</span> Cultivate a welcoming and inclusive
+							campus culture that celebrates diversity in all its forms, respects individual perspectives,
+							and promotes equity and access to education for all students, faculty, and staff.
 						</li>
 					</div>
 				</div>
@@ -87,16 +91,25 @@
 				<div class="col-lg-8 col-sm-12 order-lg-1">
 					<h4 class="text-uppercase mission-head">Vision</h4>
 					<li class="py-4 vision-para">
-						<span class="fw-bold" >Empowering Education:</span> Our website envisions a dynamic online platform that empowers learners with accessible, innovative, and personalized educational experiences, transcending geographical barriers to foster lifelong learning.
+						<span class="fw-bold">Empowering Education:</span> Our website envisions a dynamic online
+						platform that empowers learners with accessible, innovative, and personalized educational
+						experiences, transcending geographical barriers to foster lifelong learning.
 					</li>
 					<li class="py-4 vision-para">
-						<span class="fw-bold" >Seamless Connectivity:</span> We aspire to create a digital hub that seamlessly connects students, faculty, staff, alumni, and the broader community, facilitating collaboration, communication, and knowledge sharing in an inclusive and user-friendly manner.
+						<span class="fw-bold">Seamless Connectivity:</span> We aspire to create a digital hub that
+						seamlessly connects students, faculty, staff, alumni, and the broader community, facilitating
+						collaboration, communication, and knowledge sharing in an inclusive and user-friendly manner.
 					</li>
 					<li class="py-4 vision-para">
-						<span class="fw-bold" >Inspiring Engagement:</span> Our vision is to inspire vibrant online engagement by showcasing the rich tapestry of academic, cultural, and extracurricular activities within our college community, encouraging active participation, dialogue, and exploration.
+						<span class="fw-bold">Inspiring Engagement:</span> Our vision is to inspire vibrant online
+						engagement by showcasing the rich tapestry of academic, cultural, and extracurricular activities
+						within our college community, encouraging active participation, dialogue, and exploration.
 					</li>
 					<li class="py-4 vision-para">
-						<span class="fw-bold" >Transformative Impact:</span> Through our website, we aim to make a transformative impact by leveraging technology to advance academic excellence, support student success, promote social responsibility, and contribute to positive societal change on a local and global scale.
+						<span class="fw-bold">Transformative Impact:</span> Through our website, we aim to make a
+						transformative impact by leveraging technology to advance academic excellence, support student
+						success, promote social responsibility, and contribute to positive societal change on a local
+						and global scale.
 					</li>
 				</div>
 				<div class="col-lg-4 col-sm-12 order-lg-2 py-2">
@@ -105,7 +118,7 @@
 			</div>
 		</div>
 	</section>
-<!-- 
+	<!-- 
 	<section class="abt-sec-col">
 		<div class="container">
 			<div class="row">
