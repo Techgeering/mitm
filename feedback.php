@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
     <title>MITM | Feedback</title>
 </head>
 <style>
@@ -474,7 +473,7 @@
                 </div>
             </div>
             <div class="col-lg-8 col-md-6 mb-4">
-                <form id="feedbackform" class="feedback-form">
+                <form id="feedbackform">
                     <h2>Feedback Form</h2>
                     <div class="mb-3">
                         <!-- <h3 class="form-heading"></h3> -->
@@ -516,201 +515,8 @@
     </div>
 
 
-    <!-- FOOTER section START-->
-    <footer class="">
-        <div class="footer-bg-img" style="background-image: url(assets/img/home6.JPG)">
-            <div class="footer-bg-color">
-                <div class="container">
-                    <div class="row text-position">
-                        <div class="col-lg-2">
-                            <h4 class="footer-heading-color text-uppercase">Activities & Events</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Festivals</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Sports</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Workshops</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Industry Tours</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Seminars & Conference</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Annual Function</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Tech. Fest</a>
-                            </div>
-                            <h4 class="footer-heading-color text-uppercase">Students</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Rules & Regulation</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Student Affairs</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Alumni Network</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <h4 class="footer-heading-color">ABOUT US</h4>
-                            <div>
-                                <a href="about" class="link-decoration">About MITM</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Vision & Mission</a>
-                            </div>
-                            <div>
-                                <a href="chairmansays" class="link-decoration">Chairperson's Message</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
-                            </div>
-                            <div>
-                                <a href="principalsays" class="link-decoration">Principal's Message</a>
-                            </div>
-                            <!-- <h6 class="fw-bold">NEWSLETTER : </h6>
-                          <p>We will send out weekly newest article and some great offers</p>
-                          <form class="" action="" method="POST" id="newsletterform" role="form">
-                                 <input type="email" class="form-control mb-2" name="newsletter" id="newsletter" required placeholder="Type your Email">
-                                 <button class="form-control" type="submit" id="newssubmit" name="newssubmit">Subscribe!</button>
-                            </form> -->
-                            <h4 class="footer-heading-color text-uppercase ">Gallery</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Photo Collection</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Video Collection</a>
-                            </div>
-                            <h4 class="footer-heading-color text-uppercase ">Library</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Photos</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Library In Charge Statement &
-                                    Photo</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <h4 class="footer-heading-color">DEPARTMENTS</h4>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Computer Science & Engineering</a>
-                            </div>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Electronics & Comm. Engineering</a>
-                            </div>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Electrical & Electronics
-                                    Engineering</a>
-                            </div>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Mechanical Engineering</a>
-                            </div>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Electrical Engineering</a>
-                            </div>
-                            <div>
-                                <a href="ugcourse" class="link-decoration">Civil Engineering</a>
-                            </div>
-                            <h4 class="footer-heading-color text-uppercase">research and publications</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Publication Details of Teachers</a>
-                            </div>
-                            <!-- <h4 class="footer-heading-color">DIPLOMA</h4>
-                        <div>
-                            <a href="javascript:void(0)" class="link-decoration">Civil Engineering</a>
-                        </div>
-                        <div>
-                            <a href="javascript:void(0)" class="link-decoration">Mechanical engineering</a>
-                        </div>
-                        <div>
-                            <a href="javascript:void(0)" class="link-decoration">Electrical Engineering</a>
-                        </div> -->
-                        </div>
-                        <div class="col-lg-2">
-                            <h4 class="footer-heading-color text-uppercase">Cell Committee</h4>
-                            <div>
-                                <a href="assets/pdf/anti-ragging (2).pdf" target="_blank" class="link-decoration">Anti
-                                    Ragging Policy</a>
-                            </div>
-                            <div>
-                                <a href="assets/pdf/grievanceredressal.pdf" target="_blank"
-                                    class="link-decoration">Grievance Cell</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Admission Cell</a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Help Desk</a>
-                            </div>
-                            <div>
-                                <a href="feedback" class="link-decoration">Feedback</a>
-                            </div>
-                            <!-- <h4 class="footer-heading-color">DIPLOMA</h4>
-                        <div>
-                            <a href="javascript:void(0)" class="link-decoration">Anti Ragging Policy</a>
-                        </div>
-                        <div>
-                            <a href="javascript:void(0)" class="link-decoration">Rules and Procedure</a>
-                        </div> -->
-                            <h4 class="footer-heading-color text-uppercase">training and PLACEMENTS</h4>
-                            <div>
-                                <a href="javascript:void(0)" class="link-decoration">Placement Overview</a>
-                            </div>
-                            <div>
-                                <a href="placementcamp" class="link-decoration">Placement Track Record</a>
-                            </div>
-                            <div>
-                                <a href="placementcompany" class="link-decoration">Our Recruiters</a>
-                            </div>
-                        </div>
+    <?php include 'footer.php' ?>
 
-                        <div class="col-lg-3">
-                            <div class="text-size">
-                                <h4 class="footer-heading-color">CONTACT US</h4>
-                                <div class="fw-bold">Corporate Office:</div>
-                                <div>HIG-44 ,</div>
-                                <div>
-                                    Infront of Tech-Mahindra, Jayadev Vihar, Bhubaneswar
-                                </div>
-                                <div>Dist: Khurda, Odisha, Pin: 751142</div>
-                                <div>Email Id : <a style="color: white;" href="mailto:info@mitm.com">info@mitm.com</a>
-                                </div>
-                                <div>Phone No : <a style="color: white;" href="tel:09439897178">094398 97178</a></div>
-
-                                <div class="fw-bold">Campus :</div>
-                                <div>
-                                    <div>
-                                        Modern Institute of Technology & Management
-                                        (MITM),Bhubaneswar
-                                    </div>
-                                    <div>Santi Niketan, Ghangapatana</div>
-                                    <div>
-                                        PO: Kantabada, Bhubaneswar Dist: Khurda, Odisha, Pin: 752054
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-dark text-white">
-            <p class="mb-0 text-center">
-                &copy;<span id="year"></span> All Right Reserved | Powered by
-                <a class="techgeering-decoration" href="https://www.techgeering.com/" target="_blank">T<span
-                        class="e-color">e</span>chgeering</a>
-            </p>
-        </div>
-    </footer>
-    <!-- FOOTER section end-->
 
     <script type="text/javascript"
         src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
@@ -759,7 +565,7 @@
                 errormsg.innerText = "";
                 $.ajax({
                     type: "POST",
-                    url: "feedback-forminsert.php",
+                    url: "feedback-insert.php",
                     data: {
                         feedrole: category,
                         feedname: fname,

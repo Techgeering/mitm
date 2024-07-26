@@ -515,10 +515,7 @@
         </div>
     </div>
 
-
-    <!-- FOOTER section START-->
     <?php include 'footer.php' ?>
-    <!-- FOOTER section end-->
 
     <script type="text/javascript"
         src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
@@ -534,7 +531,7 @@
         // Initialize Wow.js
         new WOW().init();
     </script>
-    
+
     <script>
         $("#feedbackform").submit(function (e) {
             e.preventDefault();
@@ -608,7 +605,6 @@
 
         });
     </script>
-
 
 </body>
 

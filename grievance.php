@@ -4,7 +4,7 @@
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<title>MITM | Faculty</title>
+	<title>MITM | Grievance</title>
 	<!-- Favicon -->
 	<link href="assets/img/logos1.png" rel="icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
