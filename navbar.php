@@ -4,7 +4,7 @@
 	</button>
 
 	<!--top nav start for desktop view-->
-	<div class="fixed-top top-z-index">
+	<div class="fixed-top top-z-index">0
 		<div class="top-bgcolor d-none d-lg-block d-md-block d-sm-none">
 			<div class="container">
 				<div class="row">
