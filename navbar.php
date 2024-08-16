@@ -288,11 +288,11 @@
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="javascript:void(0)">Exam Notice</a>
+											href="examnotice.php">Exam Notice</a>
 									</li>
 									<li>
 										<a class="dropdown-item dropdown-menu-box dropdown-menu-hover"
-											href="committee.html">Committee Members</a>
+											href="committee">Committee Members</a>
 									</li>
 									<!-- <li><a class="dropdown-item dropdown-menu-hover" href="activities">Activities of T&P Cell</a></li> -->
 								</ul>

@@ -50,9 +50,9 @@
                         <div>
                             <a href="chairmansays" class="link-decoration">Chairperson's Message</a>
                         </div>
-                        <div>
+                        <!-- <div>
                             <a href="javascript:void(0)" class="link-decoration">Vice Chairman's Message</a>
-                        </div>
+                        </div> -->
                         <div>
                             <a href="principalsays" class="link-decoration">Principal's Message</a>
                         </div>
@@ -120,18 +120,24 @@
                     <div class="col-lg-2">
                         <h4 class="footer-heading-color text-uppercase">Cell Committee</h4>
                         <div>
+                            <a href="assets/pdf/internalcomplaint.pdf" target="_blank" class="link-decoration">Internal Complain Committee</a>
+                        </div>
+                        <div>
                             <a href="assets/pdf/anti-ragging (2).pdf" target="_blank" class="link-decoration">Anti
                                 Ragging Policy</a>
                         </div>
                         <div>
-                            <a href="grievance.php" class="link-decoration">Grievance Cell</a>
+                            <a href="assets/pdf/industryinteraction.pdf" class="link-decoration">Institution Industry Interaction Cell</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Women’s’ Redressal Cell</a>
+                            <a href="assets/pdf/grievanceredressal.pdf" class="link-decoration">Grievance Cell</a>
                         </div>
-                        <div>
+                        <!-- <div>
+                            <a href="assets/pdf/grievanceredressal.pdf" class="link-decoration">Women’s’ Redressal Cell</a>
+                        </div> -->
+                        <!-- <div>
                             <a href="javascript:void(0)" class="link-decoration">Admission Cell</a>
-                        </div>
+                        </div> -->
                         <div>
                             <a href="javascript:void(0)" class="link-decoration">Help Desk</a>
                         </div>
@@ -153,6 +159,9 @@
                             <a href="placementcamp" class="link-decoration">Placement Track Record</a>
                         </div>
                         <div>
+                            <a href="placementcamp" class="link-decoration">Placement Overview</a>
+                        </div>
+                        <div>
                             <a href="placementcompany" class="link-decoration">Our Recruiters</a>
                         </div>
                     </div>
@@ -160,7 +169,7 @@
                     <div class="col-lg-3">
                         <div class="text-size">
                             <h4 class="footer-heading-color">CONTACT US</h4>
-                            <div class="fw-bold fs-3">City Office:</div>
+                            <div class="fw-bold fs-4 footer-heading-color">City Office:</div>
                             <div>
                                 <div>Plot No : A/14, </div>
                                 <div>
@@ -176,7 +185,7 @@
                             <div>Phone No : <a style="color: white;" href="tel:0674235988">0674-235988</a></div>
                             <div>Phone No : <a style="color: white;" href="tel:06742355277">0674-2355277</a></div>
 
-                            <div class="fw-bold fs-3">Campus :</div>
+                            <div class="fw-bold fs-4 footer-heading-color">Campus :</div>
                             <div>
                                 <div>
                                     Modern Institute of Technology & Management

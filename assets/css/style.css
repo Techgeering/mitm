@@ -1057,6 +1057,21 @@ ion-icon:not([name="logo-codepen"]) {
 .abt-us{
   margin-top: 126px;
 }
+
+/* For screens smaller than 768px (typically mobile devices) */
+@media (max-width: 767.98px) {
+  .abt-us {
+      margin-top: 60px; /* Adjust this value as needed for mobile */
+  }
+}
+
+/* For screens smaller than 576px (small mobile devices) */
+@media (max-width: 575.98px) {
+  .abt-us {
+      margin-top: 90px; /* Further reduce the margin for smaller screens */
+  }
+}
+
 .place-head{
   margin-top: 126px;
 }
