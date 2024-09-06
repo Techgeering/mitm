@@ -31,7 +31,7 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>" />
 
 	<!--toaster alert-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -45,20 +45,20 @@
 
 <body>
 
-<?php include 'navbar.php' ?>
+	<?php include 'navbar.php' ?>
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
 
-	<section class="abt">
+	<section class="abt d-none d-lg-block">
 		<div class="container abt-us">
 			<h3 class="text-uppercase text-primary text-center about-texthead">About us</h3>
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-6 order-md-1 order-1">
+				<div class="col-lg-6 col-sm-12 col-md-6 order-md-1 order-1">
 					<img src="assets/img/abtus.JPG" alt="Birla Image" class="img-fluid"
 						style="margin-top: 3px; margin-bottom: 9px;">
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 order-md-2 order-2">
+				<div class="col-lg-6 col-sm-12 col-md-6 order-md-2 order-2">
 					<h5>
 						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
 						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
@@ -72,6 +72,7 @@
 						excellence and self-discipline and enhancement of creativity. Living in such environment with
 						people having similar goals and aspirations is an exciting experience during one's academic
 						life.
+					</h5>
 				</div>
 			</div>
 			<div>
@@ -84,6 +85,45 @@
 					student as a dedicated professional and a better citizen. Owing to this, in addition to our
 					normal teaching schedule, we conduct extracurricular activity for their intellectual,
 					professional and social development.
+				</h5>
+			</div>
+		</div>
+	</section>
+
+	<section class="abt d-lg-none d-md-block d-sm-block">
+		<div class="container abt-us">
+			<h3 class="text-uppercase text-primary text-center about-texthead">About us</h3>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 col-md-12 order-md-1 order-1">
+					<img src="assets/img/abtus.JPG" alt="Birla Image" class="img-fluid"
+						style="margin-top: 3px; margin-bottom: 9px;">
+				</div>
+				<div class="col-lg-6 col-sm-12 col-md-12 order-md-2 order-2">
+					<h5>
+						Modern Institute of Technology & Management (MITM), was set up in the year 2008 in the Temple
+						city, Bhubaneswar, with a mission to provide higher education in the field of Engineering to the
+						under privileged at an affordable cost and means. The Academic value is given and utmost
+						importance with an aim to provide a comprehensive and contemporary Engineering education.
+
+						MITM creates an environmental based on knowledge, truth, wisdom and enlighten, that inspires
+						young minds today to become the worthy citizens of tomorrow. This Institution is exclusively
+						designed for providing quality education. The environment is highly conductive for building a
+						solid foundation of knowledge, development of personality, confidence building, Pursuit of
+						excellence and self-discipline and enhancement of creativity. Living in such environment with
+						people having similar goals and aspirations is an exciting experience during one's academic
+						life.
+					</h5>
+					<h5>
+						The Institute is recognized by Govt. of Odisha, approved by AICTE, New Delhi, is affiliated to
+						Biju Pattnaik
+						University of Technology, Rourkela, Odisha. The Institute has also got certification of ISO
+						9001:2008 for its Quality Management System.The Institute maintains principled academically
+						atmosphere with all round development activities, so that the institute can groom the incoming
+						student as a dedicated professional and a better citizen. Owing to this, in addition to our
+						normal teaching schedule, we conduct extracurricular activity for their intellectual,
+						professional and social development.
+					</h5>
+				</div>
 			</div>
 		</div>
 	</section>

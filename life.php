@@ -15,7 +15,6 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/css/bootstrap.min.css">
 
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet"
@@ -42,7 +41,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-
 	<title>MITM | About Us</title>
 
 	<style>
@@ -50,8 +48,6 @@
 		.tabcontent {
 			display: none;
 			padding: 6px 5px;
-			/* border: 1px solid #ccc; */
-			/* border-top: none; */
 		}
 
 		.card {
@@ -63,8 +59,33 @@
 		.tab .tablinks {
 			text-align: center;
 		}
-	</style>
 
+		.btn-container {
+			display: flex;
+			justify-content: center;
+			margin: 20px 0;
+		}
+
+		.btn-container .btn {
+			padding: 10px 20px;
+			margin: 0 10px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.btn-container .btn.active {
+			background-color: #0056b3;
+			/* Different color when active */
+		}
+
+		.btn-container .btn:hover {
+			background-color: #0056b3;
+		}
+	</style>
 </head>
 
 <body>
@@ -80,11 +101,11 @@
 		</div>
 	</div>
 
-
 	<div class="btn-container">
 		<button class="btn" onclick="showImages()">Images</button>
 		<button class="btn" onclick="showVideos()">Videos</button>
 	</div>
+
 	<section class="photo-gallery py-2" id="imageSection">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="gallery">
@@ -101,6 +122,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="photo-gallery py-2" id="videoSection" style="display:none;">
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid" id="videoGallery">
@@ -119,45 +141,43 @@
 			</div>
 		</div>
 	</section>
+
 	<script>
-		const gallery = document.getElementById('gallery');
-		const videoGallery = document.getElementById('videoGallery');
-		const imageSection = document.getElementById('imageSection');
-		const videoSection = document.getElementById('videoSection');
-		const modal = document.getElementById('myModal');
-		const modalContent = document.getElementById('modalContent');
+		document.addEventListener('DOMContentLoaded', function () {
+			const urlParams = new URLSearchParams(window.location.search);
+			const section = urlParams.get('section');
 
-		function showImages() {
-			imageSection.style.display = 'block';
-			videoSection.style.display = 'none';
-		}
-
-		function showVideos() {
-			imageSection.style.display = 'none';
-			videoSection.style.display = 'block';
-		}
-
-		gallery.addEventListener('click', (event) => {
-			const target = event.target.closest('.col');
-			if (target) {
-				const type = target.getAttribute('data-type');
-				const src = target.getAttribute('data-src');
-
-				if (type === 'image') {
-					modalContent.innerHTML = `<img src="${src}" class="img-fluid" alt="Full size image">`;
-				} else if (type === 'video') {
-					modalContent.innerHTML = `<video controls width="100%" height="auto">
-											<source src="${src}" type="video/mp4">
-										  </video>`;
-				}
-
-				modal.style.display = 'flex';
+			if (section === 'video') {
+				showVideos();
+			} else {
+				showImages();
 			}
 		});
 
-		modal.addEventListener('click', () => {
-			modal.style.display = 'none';
-		}); ``	
+		function showImages() {
+			document.getElementById('imageSection').style.display = 'block';
+			document.getElementById('videoSection').style.display = 'none';
+			setActiveButton('Images');
+		}
+
+		function showVideos() {
+			document.getElementById('imageSection').style.display = 'none';
+			document.getElementById('videoSection').style.display = 'block';
+			setActiveButton('Videos');
+		}
+
+		function setActiveButton(buttonType) {
+			const buttons = document.querySelectorAll('.btn-container .btn');
+			buttons.forEach(button => {
+				button.classList.remove('active');
+			});
+
+			if (buttonType === 'Images') {
+				buttons[0].classList.add('active');
+			} else if (buttonType === 'Videos') {
+				buttons[1].classList.add('active');
+			}
+		}
 	</script>
 
 
@@ -168,8 +188,6 @@
 		src="assets/bootstrap-5.0.2-dist/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/allpage.js?v=<?php echo time(); ?>"></script>
-	<!-- Toastr JS -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
 
 	<script>
 		// Initialize Wow.js

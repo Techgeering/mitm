@@ -7,35 +7,35 @@
                     <div class="col-lg-2">
                         <h4 class="footer-heading-color text-uppercase">Activities & Events</h4>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Festivals</a>
+                            <a href="festivals.php" class="link-decoration">Festivals</a>
                         </div>
                         <div>
-                            <a href="sportscomplex" class="link-decoration">Sports</a>
+                            <a href="sports.php" class="link-decoration">Sports</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Workshops</a>
+                            <a href="workshops.php" class="link-decoration">Workshops</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Industry Tours</a>
+                            <a href="industry-tour.php" class="link-decoration">Industry Tours</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Seminars & Conference</a>
+                            <a href="seminar-conference.php" class="link-decoration">Seminars & Conference</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Annual Function</a>
+                            <a href="annual-function.php" class="link-decoration">Annual Function</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Tech. Fest</a>
+                            <a href="tech-fest.php" class="link-decoration">Tech. Fest</a>
                         </div>
                         <h4 class="footer-heading-color text-uppercase">Students</h4>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Rules & Regulation</a>
+                            <a href="rules-regulation.php" class="link-decoration">Rules & Regulation</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Student Affairs</a>
+                            <a href="student-affairs.php" class="link-decoration">Student Affairs</a>
                         </div>
                         <div>
-                            <a href="javascript:void(0)" class="link-decoration">Alumni Network</a>
+                            <a href="alumini-network.php" class="link-decoration">Alumni Network</a>
                         </div>
 
                     </div>
@@ -67,7 +67,7 @@
                             <a href="life.php" class="link-decoration">Photo Collection</a>
                         </div>
                         <div>
-                            <a href="life.php" class="link-decoration">Video Collection</a>
+                            <a href="life.php?section=video">Video Collection</a>
                         </div>
                         <h4 class="footer-heading-color text-uppercase ">Library</h4>
                         <div>
@@ -120,14 +120,16 @@
                     <div class="col-lg-2">
                         <h4 class="footer-heading-color text-uppercase">Cell Committee</h4>
                         <div>
-                            <a href="assets/pdf/internalcomplaint.pdf" target="_blank" class="link-decoration">Internal Complain Committee</a>
+                            <a href="assets/pdf/internalcomplaint.pdf" target="_blank" class="link-decoration">Internal
+                                Complain Committee</a>
                         </div>
                         <div>
                             <a href="assets/pdf/anti-ragging (2).pdf" target="_blank" class="link-decoration">Anti
                                 Ragging Policy</a>
                         </div>
                         <div>
-                            <a href="assets/pdf/industryinteraction.pdf" class="link-decoration">Institution Industry Interaction Cell</a>
+                            <a href="assets/pdf/industryinteraction.pdf" class="link-decoration">Institution Industry
+                                Interaction Cell</a>
                         </div>
                         <div>
                             <a href="assets/pdf/grievanceredressal.pdf" class="link-decoration">Grievance Cell</a>

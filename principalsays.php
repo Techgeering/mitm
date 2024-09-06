@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=<?php echo time(); ?>" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 	<!--toaster alert-->
@@ -44,7 +44,7 @@
 
 <body>
 
-<?php include 'navbar.php' ?>
+	<?php include 'navbar.php' ?>
 	<!--enquiry start-->
 	<?php include 'enquiry.php' ?>
 	<!--enquiry end -->
@@ -63,7 +63,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<img class="elevate-img" src="assets/img/principalmitm.jpg" alt="" width="100%">
-							<h4 class="text-uppercase principal-head text-center">Dr. Dillip Kumar Sahoo</h4>
+							<h4 class="text-uppercase chairman-head text-center">Dr. Dillip Kumar Sahoo</h4>
 							<h5 class="text-uppercase fw-bold principal-desig text-center">Principal</h5>
 						</div>
 						<div class="col-lg-8 col-sm-12">
@@ -89,15 +89,6 @@
 								intensive base in the whole globe and translate yours dreams in reality.
 							</h4>
 						</div>
-						<!-- <div class="col-lg-12">
-							<h4 class="pricipal-para1">
-								MITM also offers strong student support system by a special team of faculty formed in
-								the close proximately of principal for which student grievances and their requirements
-								are fully taken care off in time.
-								Being a part of MITM family, i warmly invite participation to make it a knowledge
-								intensive base in the whole globe and translate yours dreams in reality.
-							</h4>
-						</div> -->
 					</div>
 				</div>
 

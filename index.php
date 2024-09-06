@@ -372,7 +372,7 @@
 
 	
 	<!-- testimonial section start-->
-	<div class="courses-color">
+	<!-- <div class="courses-color">
 		<div class="container">
 			<div class="courses-position">
 				<h1 class="text-center text-white">What Alumini Speaks About Us ?</h1>
@@ -441,7 +441,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- testimonial section end-->
 
 	<?php include 'footer.php' ?>
