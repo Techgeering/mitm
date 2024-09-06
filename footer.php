@@ -132,7 +132,7 @@
                                 Interaction Cell</a>
                         </div>
                         <div>
-                            <a href="assets/pdf/grievanceredressal.pdf" class="link-decoration">Grievance Cell</a>
+                            <a href="grievance.php" class="link-decoration">Grievance Cell</a>
                         </div>
                         <!-- <div>
                             <a href="assets/pdf/grievanceredressal.pdf" class="link-decoration">Women’s’ Redressal Cell</a>
