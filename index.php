@@ -62,51 +62,54 @@
 
 	<!-- home page start-->
 	<main id="main">
-      <section id="main-carousel" style="margin-top: 168px;" >
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col px-0">
-              <div class="carousel slide kb-carousel carousel-fade" id="carouselKenBurns" data-bs-ride="carousel">
-                <!-- Carousel Items -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/img/homecaro1.jpg" class="d-block w-100" alt="Slide 1">
-                    <!-- <div class="carousel-caption kb-caption kb-caption-left">
-                      <h1 data-animation="animated">Ken Burns</h1>
-                      <h3 data-animation="animated">A zoom effect with CSS3</h3>
-                    </div> -->
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/homecaro2.jpg" class="d-block w-100" alt="Slide 2">
-                    <!-- <div class="carousel-caption kb-caption kb-caption-right">
-                      <h1 data-animation="animated">Catch Your Eye</h1>
-                      <h3 data-animation="animated">It attracts the attention of customers</h3>
-                    </div> -->
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/homecaro3.jpg" class="d-block w-100" alt="Slide 3">
-                    <!-- <div class="carousel-caption kb-caption kb-caption-center">
-                      <h1 data-animation="animated">Super Effect</h1>
-                      <h3 data-animation="animated">Demonstrate your benefits</h3>
-                    </div> -->
-                  </div>
-                </div>
+		<section id="main-carousel" style="margin-top: 168px;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col px-0">
+						<div class="carousel slide kb-carousel carousel-fade" id="carouselKenBurns"
+							data-bs-ride="carousel">
+							<!-- Carousel Items -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="assets/img/homecaro1.jpg" class="d-block w-100" alt="Slide 1">
+									<!-- <div class="carousel-caption kb-caption kb-caption-left">
+					  <h1 data-animation="animated">Ken Burns</h1>
+					  <h3 data-animation="animated">A zoom effect with CSS3</h3>
+					</div> -->
+								</div>
+								<div class="carousel-item">
+									<img src="assets/img/homecaro2.jpg" class="d-block w-100" alt="Slide 2">
+									<!-- <div class="carousel-caption kb-caption kb-caption-right">
+					  <h1 data-animation="animated">Catch Your Eye</h1>
+					  <h3 data-animation="animated">It attracts the attention of customers</h3>
+					</div> -->
+								</div>
+								<div class="carousel-item">
+									<img src="assets/img/homecaro3.jpg" class="d-block w-100" alt="Slide 3">
+									<!-- <div class="carousel-caption kb-caption kb-caption-center">
+					  <h1 data-animation="animated">Super Effect</h1>
+					  <h3 data-animation="animated">Demonstrate your benefits</h3>
+					</div> -->
+								</div>
+							</div>
 
-                <!-- Carousel Arrows -->
-                <button class="carousel-control-prev kb-control-prev" type="button" data-bs-target="#carouselKenBurns" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next kb-control-next" type="button" data-bs-target="#carouselKenBurns" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+							<!-- Carousel Arrows -->
+							<button class="carousel-control-prev kb-control-prev" type="button"
+								data-bs-target="#carouselKenBurns" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next kb-control-next" type="button"
+								data-bs-target="#carouselKenBurns" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<!-- home page end-->
 
 	<section>
@@ -288,18 +291,14 @@
 					<h1 class="text-center text-uppercase">
 						A Comprehensive Teaching Approach
 					</h1>
-					<p class="para-size">
-						Lorem Ipsum est simplement du faux texte employé dans la
-						composition et la mise en page avant impression. Le Lorem Ipsum
-						est le faux texte standard de l'imprimerie depuis les années 1500,
-						quand un imprimeur anonyme assembla ensemble des morceaux de texte
-						pour réaliser un livre spécimen de polices de texte. Il n'a pas
-						fait que survivre cinq siècles, mais s'est aussi adapté à la
-						bureautique informatique, sans que son contenu n'en soit modifié.
-						Il a été popularisé dans les années 1960 grâce à la vente de
-						feuilles Letraset contenant des passages du Lorem Ipsum, et, plus
-						récemment, par son inclusion dans des applications de mise en page
-						de texte, comme Aldus PageMaker.
+					<p class="para-size mt-5">
+						Teaching is not just about sharing knowledge; it's about inspiring students and shaping futures.
+						Our approach blends time-tested methods with modern tools to create an engaging learning
+						experience. By understanding each student's unique needs, we tailor lessons to encourage growth,
+						foster creativity, and build confidence. Whether in traditional settings or through innovative
+						digital platforms, we are dedicated to making education a transformative journey that prepares
+						learners for the challenges of tomorrow.
+					</p>
 					</p>
 				</div>
 				<div class="col-lg-6">
@@ -370,7 +369,7 @@
 
 
 
-	
+
 	<!-- testimonial section start-->
 	<!-- <div class="courses-color">
 		<div class="container">
@@ -465,10 +464,9 @@
 				if (currentCount === endValue) {
 					clearInterval(interval);
 				}
-			}, 20); // Adjust the interval (speed) as needed
+			}, 20);
 		}
 
-		// Start count animations for each section
 		startCountAnimation("recruitersCount", 150);
 		startCountAnimation("studentsPlacedCount", 200);
 		startCountAnimation("alumniCount", 500);
